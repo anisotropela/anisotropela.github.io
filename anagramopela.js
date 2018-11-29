@@ -24,7 +24,7 @@ var anagramList = [
     "Pale orations",
     "Ontario leaps",
     "Satin or paleo?",
-    "I snort a leipoa",
+    "Snort a leipoa",
     "Iron at El Paso",
     "Atop Rosaline",
     "Orleans patio",
@@ -42,7 +42,8 @@ var anagramList = [
     "Anal isotrope",
     "Rapist on alo&euml;",
     "Tailor's paeon",
-    "Personal at I/O"
+    "Personal at I/O",
+    "Sort an ape oil"
 ]
 
 function newAnagram() {
