@@ -17,6 +17,32 @@ var anagramList = [
     "Airplane soot",
     "Poor Saint Ale",
     "Toenail's porn",
+    "To Palaeornis!",
+    "Anita, spooler",
+    "Arion, apostle",
+    "Rosa antipole",
+    "Pale orations",
+    "Ontario leaps",
+    "Satin or paleo?",
+    "I snort a leipoa",
+    "Iron at El Paso",
+    "Atop Rosaline",
+    "Orleans patio",
+    "Stolen aporia",
+    "Aerosol paint",
+    "Looser pi&ntilde;ata",
+    "Soil near a top",
+    "Arise, platoon!",
+    "Tonsorial ape",
+    "A lotion rapes",
+    "Isolator pane",
+    "Teaspoon rail",
+    "Opiate Larson",
+    "Loon parasite",
+    "Anal isotrope"
+    "Rapist on alo&euml;",
+    "Tailor's paeon",
+    "Personal at I/O"
 ]
 
 function newAnagram() {
