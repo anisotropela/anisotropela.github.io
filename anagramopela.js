@@ -39,7 +39,7 @@ var anagramList = [
     "Teaspoon rail",
     "Opiate Larson",
     "Loon parasite",
-    "Anal isotrope"
+    "Anal isotrope",
     "Rapist on alo&euml;",
     "Tailor's paeon",
     "Personal at I/O"
