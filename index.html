@@ -113,7 +113,24 @@ http://themeforest.net/user/owwwlab/
                     </span> </p>
                     <button onclick="expandButton()" id="myBtn">Read more</button>
 
-                    <script src="./scripts/expand.js"></script>
+                    <!-- <script src="./scripts/expand.js"></script> -->
+                    <script>
+                        function expandButton() {
+                            var dots = document.getElementById("dots");
+                            var moreText = document.getElementById("more");
+                            var btnText = document.getElementById("myBtn");
+
+                            if (dots.style.display === "none") {
+                                dots.style.display = "inline";
+                                btnText.innerHTML = "Read more";
+                                moreText.style.display = "none";
+                            } else {
+                                dots.style.display = "none";
+                                btnText.innerHTML = "Read less";
+                                moreText.style.display = "inline";
+                            }
+                        }
+                    </script>
 
                     <p>
                     <h2><font color=red>Please note that this website is under construction, so most links currently don't lead anywhere.</font></h2>
