@@ -45,6 +45,9 @@ http://themeforest.net/user/owwwlab/
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
     <!-- #####End load google fonts-->
     <title>Peter's website</title>
+    <style>
+    #more {display: none;}
+    </style>
   </head>
   <!-- #####End head-->
   <body class="fullwidth side-header slim-container">
@@ -56,17 +59,21 @@ http://themeforest.net/user/owwwlab/
               <div class="ol-user-profile"><a href="#" class="avatar"><img src="./pics/mig.jpg"></a>
                 <h1 class="title">Peter Laursen</h1>
                 <h2 class="subtitle">Postdoc at the Institute for Theoretical Astrophysics, University of Oslo</h2>
+                <h2 class="subtitle">Afiliated with the Cosmic Dawn Center, Niels Bohr Institute, University of Copenhagen</h2>
               </div>
             </div>
             <ul id="primary-menu">
-              <li class="current-menu-item"><a href="index.html" title="Home"><span>Home</span></a> </li>
-              <li><a href="publications.html" title="Publications"><span>Publications</span></a> </li>
-              <li><a href="research.html" title="Research"><span>Research</span></a> </li>
-              <li><a href="project-single.html" title="Project Single"><span>Project Single</span></a> </li>
-              <li><a href="students.html" title="PHD Students"><span>Students</span></a> </li>
-              <li><a href="gallery.html" title="Gallery"><span>Gallery</span></a> </li>
-              <li><a href="contact.html" title="Contact Me"><span>Contact Me</span></a> </li>
-              <li><a href="#" title="Download CV"><span>CV</span></a> </li>
+              <li class="current-menu-item"><a href="index.html" title="Home"         ><span>Home</span></a> </li>
+              <li><a href="news.html"                            title="News"         ><span>News</span></a> </li>
+              <li><a href="research.html"                        title="Research"     ><span>Research</span></a> </li>
+              <li><a href="outreach.html"                        title="Outreach"     ><span>Outreach</span></a> </li>
+              <li><a href="cv.html"                              title="CV"           ><span>CV</span></a> </li>
+         <!-- <li><a href="publications.html"                    title="Publications" ><span>Publications</span></a> </li> -->
+         <!-- <li><a href="students.html"                        title="Students"     ><span>Students</span></a> </li>     -->
+         <!-- <li><a href="gallery.html"                         title="Gallery"      ><span>Gallery</span></a> </li>      -->
+              <li><a href="personal.html"                        title="Personal"     ><span>Personal</span></a> </li>
+              <li><a href="contact.html"                         title="Contact"      ><span>Contact</span></a> </li>
+              <li><a href="about.html"                           title="About"        ><span>About</span></a> </li>
             </ul>
             <div class="header-icons">
               <!-- #####Begin mobile menu trigger-->
@@ -79,7 +86,7 @@ http://themeforest.net/user/owwwlab/
             </div>
           </div>
         </div>
-        <div data-img-src="./pics/SN2005at_tall.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+        <div data-img-src="./pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
       </header>
       <!-- end #header-->
       <section id="contents">
@@ -89,38 +96,45 @@ http://themeforest.net/user/owwwlab/
             <section class="section p-top-0">
               <div class="ol-particles h-200"></div>
               <div class="container pull-up-50">
-                <h2>This website is under construction, so most links currently don't lead anywhere.</h2>
+                <h2>Short bio</h2>
                 <div class="row">
                   <div class="col-md-8">
                     <p>
-                    But you may click <a href='./stuff/anagramopela.html'>here</a> for anagrams,
+                      <span class="ol-dropcaps square bordered light">I</span> am an astrophysicist ("postdoctoral fellow"), interested in galaxies (and the rest of the Universe).
+                    My work is mainly numerical/theoretical (as opposed to observational/experimental). That is, I develop computer programs that simulate the physics of the Universe, and use these programs to interpret and predict real observations.
+                    </p>
+                    
+                    <p>
+                    <span id="dots"></span><span id="more">I'm particularly interested in the early Universe, how galaxies formed, and which physical properties governed the galaxies at that time. Why? Because galaxies are enigmatic and immensely beautiful, besides being the building blocks of our Universe. Understanding these guys helps us understand the cosmos around us and our place in it.
+                    <br><br>
+                    Specifically, I use gravito/hydro-dynamical codes to simulate the formation of galaxies, and subsequently simulate the radiative transfer of their emitted light, i.e. how they would actually look if observed from Earth. In essence, by comparing real and synthetic observations, I can learn about the physical parameters of the real ones, e.g. their masses, star formation, gas kinematics, temperatures, dust contents, etc.
+                    <br><br>
+                    More generally, I would like to contribute to expanding our horizon, in one way or another.
+                    </span> </p>
+                    <button onclick="expandButton()" id="myBtn">Read more</button>
+
+                    <script src="./scripts/expand.js"></script>
+
+                    <p>
+                    <h2><font color=red>Please note that this website is under construction, so most links currently don't lead anywhere.</font></h2>
+                    <font size=1 color=red>(or maybe even lead to some random template page)</font>
+                    </p>
+
+                    <p>
+                    <font color=red>But you may click <a href='./stuff/anagramopela.html'>here</a> for anagrams,
                     <a href='./outreach/twitter.html'>here</a> for my recent tweets,
                     or visit my still-embarrassingly-old-fashioned-but-nevertheless-reasonably-up-to-date website
                     <a href='https://dark-cosmology.dk/~pela/'>here</a>.
+                    </font>
                     </p>
                     <p>
                     <div class="sp-blank-50 shadow-line"></div>
                     </p>
 
-                    <p>
-                      <span class="ol-dropcaps square bordered light">I</span> am an astrophysicist ("postdoctoral fellow") at the University of Oslo.
-                    My work is mainly numerical/theoretical (as opposed to observational/experimental). That is, I develop computer programs that simulate the physics of the Universe, and use these programs to interpret and predict real observations.
-                    </p>
-
-                    <p>
-                    I'm particularly interested in the early Universe, how galaxies formed, and which physical properties governed the galaxies at that time. Why? Because galaxies are enigmatic and immensely beautiful, besides being the building blocks of our Universe. Understanding these guys helps us understand the cosmos around us and our place in it.
-                    </p>
-
-                    <p>
-                    More specifically, I use gravito/hydro-dynamical codes to simulate the formation of galaxies, and subsequently simulate the radiative transfer of their emitted light, i.e. how they would actually look if observed from Earth. In essence, by comparing real and synthetic observations, I can learn about the physical parameters of the real ones, e.g. their masses, star formation, gas kinematics, temperatures, dust contents, etc.
-                    </p>
-
-                    <p>
-                    More generally, I would like to contribute to expanding our horizon, in one way or another.
-                    </p>
 
                   </div>
-                  <div class="col-md-4">
+                  <!-- Begin right column -->
+             <!-- <div class="col-md-4">
                     <h4 class="with-underline">Academic Positions</h4>
                     <ul class="with-shaded-label">
                       <li> 
@@ -142,7 +156,12 @@ http://themeforest.net/user/owwwlab/
                         </div>
                       </li>
                     </ul>
+                  </div> -->
+                  <div class="col-md-4">
+                    <h4 class="with-underline">Latest tweets</h4>
+                    <a class="twitter-timeline" data-width="220" data-height="300" data-theme="light" href="https://twitter.com/anisotropela?ref_src=twsrc%5Etfw">Tweets by anisotropela</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                   </div>
+                  <!-- End right column -->
                 </div>
                 <div class="sp-blank-50 shadow-line"></div>
                 <h2 class="m-top-50">Selected Awards</h2>

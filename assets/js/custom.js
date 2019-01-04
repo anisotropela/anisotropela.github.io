@@ -2378,7 +2378,7 @@ function olIsTouchDevice(){
         }).fail(function (data) {
             // for debug
             console.log(data);
-            $form.prepend('<div class="alert alert-danger alert-thin with-big-icons"><i class="oli oli-cancel"></i>There was an error! Could not send email.</div>');
+            $form.prepend('<div class="alert alert-danger alert-thin with-big-icons"><i class="oli oli-cancel"></i>Listen I\'m not very good at this. Please just copy-paste your text into a regular email and get in touch with me that way. I\'m so sorry...</div>');
         });
 
         

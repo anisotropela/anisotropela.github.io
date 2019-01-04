@@ -4372,7 +4372,7 @@ button, button:active, button:focus, button:hover, .btn, .btn:active, .btn:focus
 /*	Typography
  *	===================================================
  */
-body {
+body {                                   /* Homemade "Read more" button */
     font-family: 'Sintony',sans-serif;
     font-size: 14px;
     color: #636363;
@@ -4380,7 +4380,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-p {
+p {                         /* Body text */
     line-height: 24px;
     margin-bottom: 20px;
     color: #777;
@@ -4389,11 +4389,19 @@ p {
     margin-bottom: 0;
 }
 a {
-    color: #505050;
+    color: #a1b8ff;   /* Unvisited links */
     text-decoration: none;
 }
-a:hover, a:focus {
+a:visited {         /* Visited links */
+    color: #7085cc;
+}
+a:hover, a:focus {   /* Links on hover; MUST come after a:link and a:visited */
     color: #FF3366;
+    cursor: pointer;
+}
+a:active {   /* Selected links*/
+    color: #ff0000;
+    text-decoration: none;
 }
 .theme-color {
     color: #FF3366;
@@ -4404,7 +4412,7 @@ a:hover, a:focus {
 .dark-color {
     color: #4b4b4b !important;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {  /* Headlines */
     font-family: "Play",sans-serif;
     font-weight: 700;
     margin: 0;
@@ -5718,7 +5726,7 @@ p.highlight {
     }
     .side-header #header ul#primary-menu >li.current-menu-item >a:after {
         font-weight: bold;
-        font-size: 10px;
+        font-size: 30px;
     }
     .side-header #header ul#primary-menu >li:first-child {
         border-top: 1px solid rgba(146, 146, 146, 0.18);
@@ -8115,7 +8123,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     color: #4b4b4b;
     background-color: #eee;
     padding: 15px 20px;
-    text-transform: capitalize;
+ /* text-transform: capitalize; */
     position: relative;
     margin-bottom: 2px;
     transition: all 0.3s ease;
