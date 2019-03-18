@@ -60,8 +60,8 @@ http://themeforest.net/user/owwwlab/
             <div class="logo-wrapper">
               <div class="ol-user-profile"><a href="#" class="avatar"><img src="./pics/mig.jpg"></a>
                 <h1 class="title">Peter&nbsp;Laursen</h1>
-                <h2 class="subtitle">Postdoc at the Institute for Theoretical Astrophysics, University of Oslo</h2>
-                <h2 class="subtitle">Affiliated with the Cosmic Dawn Center, Niels Bohr Institute, University of Copenhagen</h2>
+                <h2 class="subtitle">Postdoc at the Institute for Theoretical Astrophysics, UiO</h2>
+                <h2 class="subtitle">Affiliated with the Cosmic Dawn Center, UoC</h2>
               </div>
             </div>
             <ul id="primary-menu">
@@ -111,160 +111,177 @@ http://themeforest.net/user/owwwlab/
         <div class="page-contents">
           <!-- #####Begin main area-->
           <section id="main-area">
-            <section class="section p-top-0">
-              <div class="ol-particles h-200"></div>
-              <div class="container pull-up-50">
-         <!--     <h1><font color=red>Website under construction; most links currently don't lead anywhere.</font></h1> <p> <font color=red> You can visit my still-embarrassingly-old-fashioned-but-nevertheless-reasonably-up-to-date website <a href='https://dark-cosmology.dk/~pela/'>here</a>.  </font> </p> <br> <br> -->
-                  <!-- Begin left column -->
-                  <h2>Short bio</h2>
-                  <div class="row">
-                      <div class="col-md-8">
-                          <p>
-                          <span class="ol-dropcaps square bordered light">I</span> am an astrophysicist ("postdoctoral fellow"), interested in galaxies (and the rest of the Universe).
-                          My work is mainly numerical/theoretical (as opposed to observational/experimental). That is, I develop computer programs that simulate the physics of the Universe, and use these programs to interpret and predict real observations.
-                          </p>
+              <section class="section p-top-0 p-bottom-40">
+                  <div class="ol-particles h-200"></div>
+                  <div class="container pull-up-50">
+                      <!--     <h1><font color=red>Website under construction; most links currently don't lead anywhere.</font></h1> <p> <font color=red> You can visit my still-embarrassingly-old-fashioned-but-nevertheless-reasonably-up-to-date website <a href='https://dark-cosmology.dk/~pela/'>here</a>.  </font> </p> <br> <br> -->
+                      <!-- Begin left column -->
+                      <h2>Short bio</h2>
+                      <div class="row">
+                          <div class="col-md-8">
+                              <p>
+                              <span class="ol-dropcaps square bordered light">I</span> am an astrophysicist ("postdoctoral fellow"), interested in galaxies (and the rest of the Universe).
+                              My work is mainly numerical/theoretical (as opposed to observational/experimental). That is, I develop computer programs that simulate the physics of the Universe, and use these programs to interpret and predict real observations.
+                              </p>
 
-                          <p>
-                          <span id="dots"></span><span id="more">I'm particularly interested in the early Universe, how galaxies formed, and which physical properties governed the galaxies at that time. Why? Because galaxies are enigmatic and immensely beautiful, besides being the building blocks of our Universe. Understanding these guys helps us understand the cosmos around us and our place in it.
-                              <br><br>
-                              Specifically, I use gravito/hydro-dynamical codes to simulate the formation of galaxies, and subsequently simulate the radiative transfer of their emitted light, i.e. how they would actually look if observed from Earth. In essence, by comparing real and synthetic observations, I can learn about the physical parameters of the real ones, e.g. their masses, star formation, gas kinematics, temperatures, dust contents, etc.
-                              <br><br>
+                              <p>
+                              I'm particularly interested in the early Universe, how galaxies formed, and which physical properties governed the galaxies at that time. Why? Because galaxies are enigmatic and immensely beautiful, besides being the building blocks of our Universe. Understanding these guys helps us understand the cosmos around us and our place in it.
+                              </p>
+                              <p>
+                              Specifically, I use hydro-dynamically simulated model galaxies, simulating the radiative transfer of their emitted light out through the interstellar and intergalactic medium in order to calculate how they would actually look if observed from Earth.
+                              In essence, by comparing real and synthetic observations, we can learn about the physics of the real ones, e.g. their masses, star formation, gas kinematics, temperatures, dust contents, etc.
+                              </p>
+                              <p>
                               More generally, I would like to contribute to expanding our horizon, in one way or another.
-                          </span> </p>
-                          <button onclick="expandButton()" id="myBtn">More&hellip;</button>
+                              </p>
 
-                          <!-- <script src="./scripts/expand.js"></script> -->
-                          <script>
-                              function expandButton() {
-                                  var dots = document.getElementById("dots");
-                                  var moreText = document.getElementById("more");
-                                  var btnText = document.getElementById("myBtn");
+                              <!--
+                              <p>
+                              <span id="dots"></span><span id="more">I'm particularly interested in the early Universe, how galaxies formed, and which physical properties governed the galaxies at that time. Why? Because galaxies are enigmatic and immensely beautiful, besides being the building blocks of our Universe. Understanding these guys helps us understand the cosmos around us and our place in it.
+                                  <br><br>
+                                  Specifically, I use gravito/hydro-dynamical codes to simulate the formation of galaxies, and subsequently simulate the radiative transfer of their emitted light, i.e. how they would actually look if observed from Earth. In essence, by comparing real and synthetic observations, I can learn about the physical parameters of the real ones, e.g. their masses, star formation, gas kinematics, temperatures, dust contents, etc.
+                                  <br><br>
+                                  More generally, I would like to contribute to expanding our horizon, in one way or another.
+                              </span>
+                              </p>
 
-                                  if (dots.style.display === "none") {
-                                      dots.style.display = "inline";
-                                      btnText.innerHTML = "More&hellip;";
-                                      moreText.style.display = "none";
-                                  } else {
-                                      dots.style.display = "none";
-                                      btnText.innerHTML = "Less&hellip;";
-                                      moreText.style.display = "inline";
+                              <button onclick="expandButton()" id="myBtn">More&hellip;</button>
+                              -->
+
+                              <!-- <script src="./scripts/expand.js"></script> -->
+                              <!--
+                              <script>
+                                  function expandButton() {
+                                      var dots = document.getElementById("dots");
+                                      var moreText = document.getElementById("more");
+                                      var btnText = document.getElementById("myBtn");
+
+                                      if (dots.style.display === "none") {
+                                          dots.style.display = "inline";
+                                          btnText.innerHTML = "More&hellip;";
+                                          moreText.style.display = "none";
+                                      } else {
+                                          dots.style.display = "none";
+                                          btnText.innerHTML = "Less&hellip;";
+                                          moreText.style.display = "inline";
+                                      }
                                   }
-                              }
-                          </script>
+                              </script>
+                              -->
 
-                          <!-- <p> <div class="sp-blank-50 shadow-line"></div> </p> -->
+                              <!-- <p> <div class="sp-blank-50 shadow-line"></div> </p> -->
+                          </div>
+                          <!-- End left column -->
+
+                          <!-- Begin right column -->
+                          <div class="col-md-4" style="border: thin solid black">
+                              <br><h4 class="with-underline">Latest tweets</h4>
+                              <a class="twitter-timeline" data-width="280" data-height="300" data-theme="light" href="https://twitter.com/anisotropela?ref_src=twsrc%5Etfw">Tweets by anisotropela</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                          </div>
+                          <!-- End right column -->
+
                       </div>
-                      <!-- End left column -->
-
-                  <!-- Begin right column -->
-                  <div class="col-md-4" style="border: thin solid black">
-                      <br><h4 class="with-underline">Latest tweets</h4>
-                    <a class="twitter-timeline" data-width="280" data-height="300" data-theme="light" href="https://twitter.com/anisotropela?ref_src=twsrc%5Etfw">Tweets by anisotropela</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  </div>
-                  <!-- End right column -->
-
-                </div>
-                <!-- <div class="sp-blank-50 shadow-line"></div> -->
-
-              </div>
-            </section>
-
-            <!-- begin publications -->
-            <section class="section bg-gray">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h2>Selected Publications</h2>
-                    <p>As described in the <a href="./research.html">research section</a>, most of my work has been devoted to <a href="./encyclo/LyaRT.html">Lyman &alpha; radiative transfer</a> in galaxies and the intergalactic medium.</p>
-                    <a href="publications.html" class="btn btn-anim-drawer btn-round btn-small">See full list of publications</a>
-                  </div>
-                  <div class="col-md-8">
-
-                    <div class="pub-item with-icon">
-                      <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
-                      <div class="content-wrapper">
-                        <h3 class="title">Intergalactic transmission and its impact on the Ly&alpha; line</h3>
-                        <div class="description">
-                          <div class="citation">
-                              <p>Assessing how the circum- and intergalactic gas affects the Ly&alpha; spectral line.</p>
-                              <p>Awarded <a href="https://www.popularastronomi.se/2011/12/arets-basta-astronomiforskning-2011"><u>Sweden's most cited astrophysical paper 2011</u></a>.</p>
-                          </div><a href="http://adsabs.harvard.edu/abs/2011ApJ...728...52L" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2011, ApJ, 728, 52</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="pub-item with-icon">
-                      <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
-                      <div class="content-wrapper">
-                        <h3 class="title">On the (non-)enhancement of the Ly&alpha; equivalent width by a multiphase interstellar medium</h3>
-                        <div class="description">
-                          <div class="citation">
-                              A systematic study of whether or not a clumpy interstellar medium can boost the Ly&alpha;-to-continuum ratio significantly, as has been previously assumed.<br><br>
-                              It can't.
-                          </div><a href="http://adsabs.harvard.edu/abs/2013ApJ...766..124L" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2013, ApJ, 766, 124</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="pub-item with-icon">
-                      <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
-                      <div class="content-wrapper">
-                          <h3 class="title">Chasing Lyman &alpha;-emitting galaxies at <em>z</em> = 8.8</h3>
-                        <div class="description">
-                          <div class="citation">
-                              <li>Predictions of the expected detectability and physical properties of the most distant galaxies.</li>
-                                  <li>Analytical evaluation of the amount of cooling radiation from forming galaxies.</li>
-                                  <li>A mathematical tool for adding numbers with asymmetrical uncertainties.</li>
-                          </div><a href="http://adsabs.harvard.edu/abs/2018arXiv180607392L" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2019, arXiv:1806.07392</a>
-                        </div>
-                      </div>
-                    </div>
+                      <!-- <div class="sp-blank-50 shadow-line"></div> -->
 
                   </div>
-                </div>
-              </div>
-            </section>
-            <!-- end publications -->
+              </section>
 
-            <!-- begin observations -->
-            <section data-img-src="observations/keyhole_banner.jpg" data-parallax-mode="mode-5" class="section ov-grad1-alpha-40 dark-wrapper parallax-layer">
-                <div class="container">
-                    <!-- #####Begin call to action-->
-                    <div class="row call-out tb-vcenter-wrapper">
-                        <div class="col-sm-9 vcenter call-out ol-animate fadeInUpBig"> <!-- the "call-out ol-animate fadeInUpBig" was taken from main/pages/shortcodes/animate.html to make text fly up when you scroll down-->
-                            <h2 class="title">Astronomical observations</h2>
-                            <h4 class="sub-title">Pretty images I took while observing in Chile, La Palma, and other places.</h4>
-                        </div>
-                        <div class="col-sm-3 vcenter text-center"><a href="./gallery.html" class="btn btn-medium btn-wide btn-trans btn-skin-white btn-circle"> <span>view</span></a></div>
-                    </div>
-                    <!-- #####End call to action-->
-                </div>
-            </section>
-            <!-- end observations -->
+              <!-- begin publications -->
+              <section class="section  p-top-40 p-bottom-40 bg-gray">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <h2>Selected Publications</h2>
+                              <p>As described in the <a href="./research.html">research section</a>, most of my work has been devoted to <a href="./encyclo/LyaRT.html">Lyman &alpha; radiative transfer</a> in galaxies and the intergalactic medium.</p>
+                              <a href="publications.html" class="btn btn-anim-drawer btn-round btn-small">See full list of publications</a>
+                          </div>
+                          <div class="col-md-8">
 
-            <section class="section slim-container">
-              <div class="container">
-                <h2>Research Projects</h2>
-                <p>Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.</p>
-                <!-- #####Begin featured item-->
-                <!-- #####Begin carousel-->
-                <div data-cols="3" data-nav="true" data-margin="20" data-cols-md='2' data-loop="true" class="owl-carousel items featured-items owwwlab-theme nav-center m-top-50"><a href="#" class="featured-item boxed">
-                    <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/01.jpg" alt="image"></div>
-                    <h3 class="features-title">Computer Architecture</h3></a><a href="#" class="featured-item boxed">
-                    <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/02.jpg" alt="image"></div>
-                    <h3 class="features-title">Analysis of Algorithm</h3></a><a href="#" class="featured-item boxed">
-                    <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/03.jpg" alt="image"></div>
-                    <h3 class="features-title">Image Processing</h3></a><a href="#" class="featured-item boxed">
-                    <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/04.jpg" alt="image"></div>
-                    <h3 class="features-title">Analysis of Algorithm</h3></a><a href="#" class="featured-item boxed">
-                    <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/05.jpg" alt="image"></div>
-                    <h3 class="features-title">Computer Architecture</h3></a><a href="#" class="featured-item boxed">
-                    <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/06.jpg" alt="image"></div>
-                    <h3 class="features-title">Language processing</h3></a></div>
-                <!-- #####End carousel-->
-                <!-- #####End featured item-->
-              </div>
-            </section>
+                              <div class="pub-item with-icon">
+                                  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+                                  <div class="content-wrapper">
+                                      <h3 class="title">Intergalactic transmission and its impact on the Ly&alpha; line</h3>
+                                      <div class="description">
+                                          <div class="citation">
+                                              <p>Assessing how the circum- and intergalactic gas affects the Ly&alpha; spectral line.</p>
+                                              <p>Awarded <a href="https://www.popularastronomi.se/2011/12/arets-basta-astronomiforskning-2011"><u>Sweden's most cited astrophysical paper 2011</u></a>.</p>
+                                          </div><a href="http://adsabs.harvard.edu/abs/2011ApJ...728...52L" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2011, ApJ, 728, 52</a>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="pub-item with-icon">
+                                  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+                                  <div class="content-wrapper">
+                                      <h3 class="title">On the (non-)enhancement of the Ly&alpha; equivalent width by a multiphase interstellar medium</h3>
+                                      <div class="description">
+                                          <div class="citation">
+                                              A systematic study of whether or not a clumpy interstellar medium can boost the Ly&alpha;-to-continuum ratio significantly, as has been previously assumed.<br><br>
+                                              It can't.
+                                          </div><a href="http://adsabs.harvard.edu/abs/2013ApJ...766..124L" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2013, ApJ, 766, 124</a>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="pub-item with-icon">
+                                  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+                                  <div class="content-wrapper">
+                                      <h3 class="title">Chasing Lyman &alpha;-emitting galaxies at <em>z</em> = 8.8</h3>
+                                      <div class="description">
+                                          <div class="citation">
+                                              <li>Predictions of the expected detectability and physical properties of the most distant galaxies.</li>
+                                              <li>Analytical evaluation of the amount of cooling radiation from forming galaxies.</li>
+                                              <li>A mathematical tool for adding numbers with asymmetrical uncertainties.</li>
+                                          </div><a href="http://adsabs.harvard.edu/abs/2018arXiv180607392L" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2019, arXiv:1806.07392</a>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <!-- end publications -->
+
+              <!-- begin observations -->
+              <section data-img-src="observations/keyhole_banner.jpg" data-parallax-mode="mode-5" class="section ov-grad1-alpha-40 dark-wrapper parallax-layer">
+                  <div class="container">
+                      <!-- #####Begin call to action-->
+                      <div class="row call-out tb-vcenter-wrapper">
+                          <div class="col-sm-9 vcenter call-out ol-animate fadeInUpBig"> <!-- the "call-out ol-animate fadeInUpBig" was taken from main/pages/shortcodes/animate.html to make text fly up when you scroll down-->
+                              <h2 class="title">Astronomical observations</h2>
+                              <h4 class="sub-title">Pretty images I took while observing in Chile, La Palma, and other places.</h4>
+                          </div>
+                          <div class="col-sm-3 vcenter text-center"><a href="./gallery.html" class="btn btn-medium btn-wide btn-trans btn-skin-white btn-circle"> <span>view</span></a></div>
+                      </div>
+                      <!-- #####End call to action-->
+                  </div>
+              </section>
+              <!-- end observations -->
+
+              <section class="section slim-container">
+                  <div class="container">
+                      <h2>Research Projects</h2>
+                      <p>Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.</p>
+                      <!-- #####Begin featured item-->
+                      <!-- #####Begin carousel-->
+                      <div data-cols="3" data-nav="true" data-margin="20" data-cols-md='2' data-loop="true" class="owl-carousel items featured-items owwwlab-theme nav-center m-top-50"><a href="#" class="featured-item boxed">
+                              <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/01.jpg" alt="image"></div>
+                              <h3 class="features-title">Computer Architecture</h3></a><a href="#" class="featured-item boxed">
+                              <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/02.jpg" alt="image"></div>
+                              <h3 class="features-title">Analysis of Algorithm</h3></a><a href="#" class="featured-item boxed">
+                              <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/03.jpg" alt="image"></div>
+                              <h3 class="features-title">Image Processing</h3></a><a href="#" class="featured-item boxed">
+                              <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/04.jpg" alt="image"></div>
+                              <h3 class="features-title">Analysis of Algorithm</h3></a><a href="#" class="featured-item boxed">
+                              <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/05.jpg" alt="image"></div>
+                              <h3 class="features-title">Computer Architecture</h3></a><a href="#" class="featured-item boxed">
+                              <div class="features-image ov-light-alpha-50"><img src="assets/img/featured-items/06.jpg" alt="image"></div>
+                              <h3 class="features-title">Language processing</h3></a></div>
+                      <!-- #####End carousel-->
+                      <!-- #####End featured item-->
+                  </div>
+              </section>
           </section>
           <!-- #####End main area
           -->
