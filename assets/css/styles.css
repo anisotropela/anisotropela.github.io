@@ -5726,7 +5726,7 @@ p.highlight {
     }
     .side-header #header ul#primary-menu >li.current-menu-item >a:after {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 30px; /* size of arrow at current menu item BUT WHERE DO I SET THE TEXT SIZE?  */
     }
     .side-header #header ul#primary-menu >li:first-child {
         border-top: 1px solid rgba(146, 146, 146, 0.18);
