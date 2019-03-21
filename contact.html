@@ -48,49 +48,54 @@ http://themeforest.net/user/owwwlab/
   </head>
   <!-- #####End head-->
   <body class="fullwidth side-header slim-container">
-    <div id="wrapper" class="regular-layout">
-      <header id="header" class=" dark">
-        <div class="head-main">
-          <div class="container">
-            <div class="logo-wrapper">
-              <div class="ol-user-profile"><a href="#" class="avatar"><img src="./pics/mig.jpg"></a>
-                <h1 class="title">Peter Laursen</h1>
-                <h2 class="subtitle">Postdoc in astrophysics</h2>
+      <div id="wrapper" class="regular-layout">
+
+          <!-- begin header (side menu) -->
+          <header id="header" class=" dark">
+              <div class="head-main">
+                  <div class="container">
+                      <!-- begin logo -->
+                      <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                          <div class="features-image">
+                              <img src="./logos/logo.png" alt="anisotropela">
+                          </div>
+                          <!--
+                              <div class="logo-wrapper ">
+                              <div class="ol-user-profile"><a href="#" class="avatar"><img src="./pics/mig.jpg"></a>
+                              <h1 class="title">Peter&nbsp;Laursen</h1>
+                              <h3 class="subtitle">Astrophysicist</h3>
+                              </div>
+                              </div>
+                          -->
+                      </div>
+                      <!-- end logo -->
+                      <ul id="primary-menu">
+                          <li><a href="index.html" title="Home"         ><span>Home</span></a> </li>
+                          <li><a href="news.html"     title="News"         ><span>News</span></a> </li>
+                          <li><a href="https://dark-cosmology.dk/~pela/Research.html" title="Research"     ><span>Research</span></a> </li>
+                          <li><a href="outreach.html" title="Outreach"     ><span>Outreach</span></a> </li>
+                          <li><a href="teaching.html" title="TeachSpv"     ><span>Teaching / supervision</span></a> </li>
+                          <li><a href="https://dark-cosmology.dk/~pela/CV.html"       title="CV"           ><span>CV</span></a> </li>
+                          <li class="current-menu-item"><a href="contact.html"  title="Contact"      ><span>Contact me</span></a> </li>
+                          <li><a href="personal.html" title="Personal"     ><span>Personal</span></a> </li>
+                          <li><a href="about.html"    title="About"        ><span>About</span></a> </li>
+                      </ul>
+                      <div class="header-icons">
+                          <!-- #####Begin mobile menu trigger-->
+                          <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                              <div class="hamburger-box">
+                                  <div class="hamburger-inner"></div>
+                              </div>
+                          </div>
+                          <!-- #####End mobile menu trigger-->
+                      </div>
+                  </div>
               </div>
-            </div>
-            <ul id="primary-menu">
-              <li><a href="index.html" title="Home"><span>Home</span></a>
-              </li>
-              <li><a href="publications.html" title="Publications"><span>Publications</span></a>
-              </li>
-              <li><a href="research.html" title="Research"><span>Research</span></a>
-              </li>
-              <li><a href="project-single.html" title="Project Single"><span>Project Single</span></a>
-              </li>
-              <li><a href="students.html" title="PHD Students"><span>PHD Students</span></a>
-              </li>
-              <li><a href="gallery.html" title="Gallery"><span>Gallery</span></a>
-              </li>
-              <li class="current-menu-item"><a href="contact.html" title="Contact Me"><span>Contact Me</span></a>
-              </li>
-              <li><a href="#" title="Download CV"><span>Download CV</span></a>
-              </li>
-            </ul>
-            <div class="header-icons">
-              <!-- #####Begin mobile menu trigger-->
-              <div class="ol-mobile-trigger hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-              </div>
-              <!-- #####End mobile menu trigger-->
-            </div>
-          </div>
-        </div>
-        <div data-img-src="./pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
-      </header>
-      <!-- end #header-->
-      <section id="contents">
+              <div data-img-src="./pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+          </header>
+          <!-- #end header (side menu) -->
+          <!-- end #header-->
+          <section id="contents">
         <!-- #####Begin page head-->
         <div class="page-head lined bg-white shadow-line ol-particles">
           <div class="container">
@@ -100,10 +105,8 @@ http://themeforest.net/user/owwwlab/
               </div>
               <div class="breadcrumb-wrapper vcenter">
                 <ul class="breadcrumb">
-                  <li><a href="#"><i class="oli oli-home"></i></a></li>
-                  <li><a href="#">publication</a></li>
-                  <li><a href="#">publication type</a></li>
-                  <li>learning environment</li>
+                  <li><a href="./index.html"><i class="oli oli-home"></i></a></li>
+                  <li>contact</li>
                 </ul>
               </div>
             </div>
@@ -121,9 +124,9 @@ http://themeforest.net/user/owwwlab/
                     <!-- #####Begin accordion-->
                     <div class="ol-accordion">
                       <!-- #####Begin accordion item-->
-                      <div class="ac-item open">
+                      <div class="ac-item">
                         <div class="item-head"><i class="icon oi-plus"></i><span>Email me</span></div>
-                        <div class="item-body open">
+                        <div class="item-body">
                             <p>
                             <a href="mailto:pela@astro.uio.no?subject=Hi%20there&body=Dear Peter,%0D%0A%0D%0AI saw your lovely website, and I just wanted to say that..."><img border=0 alt='email' src='./pics/email.png' height=16></a>
                             </p>
@@ -160,8 +163,7 @@ http://themeforest.net/user/owwwlab/
                         <div class="item-head"><i class="icon oi-plus"></i><span>Come see me</span></div>
                         <div class="item-body">
                           <p>
-                          Office in Norway:<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;
+                          Office in Norway:
                           <a href="./pics/kontorNO.png" class="ol-hover hover-5 ol-lightbox">
                               <img src="./pics/kontorNOicon.png" alt="image hover">
                               <div class="ol-overlay ov-light-alpha-80"></div>
@@ -173,7 +175,7 @@ http://themeforest.net/user/owwwlab/
 
                           <p>
                           Office in Denmark:<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;2.4.02
+                          2.4.02
                           </p>
                         </div>
                       </div>
