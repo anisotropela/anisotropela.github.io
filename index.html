@@ -56,11 +56,11 @@ http://themeforest.net/user/owwwlab/
           <!-- begin header (side menu) -->
           <header id="header" class=" dark">
               <div class="head-main">
-                  <div class="container">
+                  <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
                       <!-- begin logo -->
                       <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
                           <div class="features-image">
-                              <img src="./logos/logo.png" alt="anisotropela">
+                              <a href="./about.html"><img src="./logos/logo.png" alt="anisotropela"></a>
                           </div>
                           <!--
                               <div class="logo-wrapper ">
@@ -81,7 +81,6 @@ http://themeforest.net/user/owwwlab/
                           <li><a href="https://dark-cosmology.dk/~pela/CV.html"       title="CV"           ><span>CV</span></a> </li>
                           <li><a href="contact.html"  title="Contact"      ><span>Contact me</span></a> </li>
                           <li><a href="personal.html" title="Personal"     ><span>Personal</span></a> </li>
-                          <li><a href="about.html"    title="About"        ><span>About</span></a> </li>
                       </ul>
                       <div class="header-icons">
                           <!-- #####Begin mobile menu trigger-->
@@ -111,7 +110,7 @@ http://themeforest.net/user/owwwlab/
                       <!-- Begin left column -->
                       <!-- <h2>Short bio</h2> -->
                       <h1>It's not rocket science&hellip;</h1>
-                      <h4>&hellip;but it's close enough</h4>
+                      <h4>(but it's close)</h4>
                       <div class="row">
                           <div class="col-md-8">
                               <p>
@@ -194,82 +193,110 @@ http://themeforest.net/user/owwwlab/
               <!-- end intro -->
 
               <!-- begin news -->
-              <section class="section p-top-50 p-bottom-20 slim-container">
+              <section class="section p-top-30 p-bottom-20 slim-container">
                   <div class="container p-bottom-20">
                       <h2>News</h2>
                       <p>A carousel of my most recent activities.</p>
                       <!-- #####Begin featured item-->
                       <!-- #####Begin carousel-->
-                      <div data-cols="3" data-nav="true" data-margin="20" data-cols-md='2' data-loop="true" class="owl-carousel items featured-items owwwlab-theme nav-center m-top-50">
+                      <div data-cols="3" data-nav="true" data-margin="20" data-cols-md='2' data-loop="true" class="owl-carousel items featured-items owwwlab-theme nav-center m-top-0">
 
                           <!-- begin tweets -->
                           <!-- <div style="border: thin solid black"> -->
                           <div class="features-image ov-light-alpha-50">
-                              <h3 class="features-title">Latest tweets</h3>
-                              <a class="twitter-timeline" data-width="280" data-height="300" data-theme="light" href="https://twitter.com/anisotropela?ref_src=twsrc%5Etfw">Tweets by anisotropela</a>
+                              <p>
+                              <center><h3 class="features-title">Latest tweets</h3></center>
+                              </p>
+                              <p>
+                              <a class="twitter-timeline" data-width="280" data-height="300" data-theme="light" href="https://twitter.com/anisotropela?ref_src=twsrc%5Etfw">Seeing my tweets here requires<br>connection to the internet</a>
                               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </p>
                           </div>
                           <!-- end tweets -->
 
                           <!-- begin paper -->
                           <div class="features-image ov-light-alpha-50">
-                              <h3 class="features-title">Latest scientific paper</h3>
+                              <p>
+                              <center><h3 class="features-title">Latest scientific paper</h3></center>
+                              </p>
+                              <p>
                               <a href="https://arxiv.org/abs/1806.07392" class="featured-item boxed">
                                   <div class="features-image ov-light-alpha-50">
-                                      <img src="./pics/news_z8p8LAEs.jpg" alt="image">
+                                      <img src="./pics/news_paper.jpg" alt="image">
                                   </div>
                               </a>
+                              </p>
                           </div>
                           <!-- begin paper -->
 
                           <!-- begin SE -->
                           <div class="features-image ov-light-alpha-50">
-                              <h3 class="features-title">Latest answers on StackExchange</h3>
+                              <p>
+                              <center><h4 class="features-title">Latest answers on StackExchange</h4></center>
+                              </p>
+                              <p>
                                   <a href="https://stackexchange.com/users/5587898"> <img src="https://stackexchange.com/users/flair/5587898.png" alt="My SE profile" title="My SE profile"> </a>
+                              </p>
                           </div>
                           <!-- begin SE -->
 
                           <!-- begin award -->
                           <div class="features-image ov-light-alpha-50">
-                              <h3 class="features-title">Latest award</h3>
+                              <p>
+                              <center><h3 class="features-title">Latest award</h3></center>
+                              </p>
+                              <p>
                               <a href="https://titan.uio.no/node/3198" class="featured-item boxed">
                                   <div class="features-image ov-light-alpha-50">
                                       <img src="./pics/news_award.jpg" alt="image">
                                   </div>
                               </a>
+                              </p>
                           </div>
                           <!-- begin award -->
 
                           <!-- begin APOD -->
                           <div class="features-image ov-light-alpha-50">
-                              <h3 class="features-title">Astronomy picture of the day</h3>
+                              <p>
+                              <center><h3 class="features-title">Astronomy picture of the day</h3></center>
+                              </p>
+                              <p>
                               <a href="https://apod.nasa.gov/apod/astropix.html" class="featured-item boxed">
                                   <div class="features-image ov-light-alpha-50">
-                                      <img src="http://apod.cidehom.com/pix/2019/190318.jpg" alt="image">
+                                      <img width=280 src="http://apod.cidehom.com/pix/2019/190402.jpg" alt="Seeing an image here requires internet">
                                   </div>
                               </a>
+                              </p>
                           </div>
                           <!-- end APOD -->
 
                           <!-- begin popsci -->
                           <div class="features-image ov-light-alpha-50">
-                              <h3 class="features-title">Latest popsci article</h3>
+                              <p>
+                              <center><h3 class="features-title">Latest popsci article</h3></center>
+                              </p>
+                              <p>
                               <a href="http://sciencenordic.com/big-bang-–-eyewitness-account" class="featured-item boxed">
                                   <div class="features-image ov-light-alpha-50">
                                       <img src="./pics/news_popsci.jpg" alt="image">
                                   </div>
                               </a>
+                              </p>
                           </div>
                           <!-- begin popsci -->
 
                           <!-- begin music -->
                           <div class="features-image ov-light-alpha-50">
-                              <h3 class="features-title">Music I'm currently listening to</h3>
+                              <p>
+                              <center><h3 class="features-title">Music I'm currently listening to</h3></center>
+                              </p>
+                              <p>
                               <a href="https://www.last.fm/user/pelathehun/library/artists?date_preset=LAST_7_DAYS" class="featured-item boxed">
                                   <div class="features-image ov-light-alpha-50">
                                       <img src="./pics/news_lastfm.jpg" alt="image">
                                   </div>
                               </a>
+                              </p>
                           </div>
                           <!-- end music -->
 
