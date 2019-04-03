@@ -1,0 +1,32 @@
+
+
+#header.dark{
+	background-color: #C7403C;
+}
+
+
+.sp-cities{
+	height: 80px;
+	background-size: contain;
+	background-repeat: repeat-x;
+        background-position: bottom;
+}
+
+#footer {
+	background-color: #f5f5f5;
+}
+
+#footer #footer-bar{
+	background-color: #eee;
+	border-top:none;
+}
+
+.page-head {
+	height: 200px;
+}
+
+@media (max-width: 1200px) {
+	.page-head{
+		height: 150px;
+	}
+}
