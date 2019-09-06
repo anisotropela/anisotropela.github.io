@@ -4389,7 +4389,7 @@ p {                         /* Body text */
     margin-bottom: 0;
 }
 a {
-    color: #a1b8ff;   /* Unvisited links */
+    color: #a1b8ff;   /* Unvisited link; Big Bang */
     text-decoration: none;
 }
 a:visited {         /* Visited links */
@@ -8114,13 +8114,16 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
  *	===================================================
  */
 .ol-accordion a {
-    text-decoration: none;
-    color: #4b4b4b;
+    /* text-decoration: none; this culprit makes links not being red when hovering
+    /* color: #4b4b4b; this culprit makes links being non-Big Bang*/    
 }
+/* .ol-accordion a:visited {  */       /* Visited links */
+/*     color: #12fe54;        */
+/* }                          */    /* WHY DOESN'T THIS WORK */
 .ol-accordion .item-head {
     cursor: pointer;
     font-size: 15px;
-    color: #4b4b4b;
+    color: #4b4b4b; /* Headline on accordion button*/
     background-color: #eee;
     padding: 15px 20px;
  /* text-transform: capitalize; */
@@ -8141,25 +8144,25 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     display: none;
     padding: 20px 10px 40px;
     font-size: 14px;
-    color: #636363;
+    color: #636363; /* regular (non-link) text inside accordion */
 }
 .ol-accordion .item-head:hover, .ol-accordion .item-head:focus {
-    background-color: #dedede;
+    background-color: #dedede; /* color of accordion when hovering */
 }
 .ol-accordion .ac-item.open .item-head {
     color: #fff;
-    background-color: #FF3366;
+    background-color: #FF3366; /* color of accordion when open */
 }
 .ol-accordion .ac-item.open .item-head .ol-toggle-icon {}
 .ol-accordion .ac-item.open .item-head .ol-toggle-icon, .ol-accordion .ac-item.open .item-head .ol-toggle-icon:after {
-    background-color: #fff;
+    background-color: #fff; /* ??? */
 }
 .ol-accordion .ac-item {}
 .ol-accordion .ac-item.open .item-head .ol-toggle-icon {}
 .dark-wrapper .ol-accordion {}
 .dark-wrapper .ol-accordion .item-head {
-    background-color: #3a3a3a;
-    color: #cbcbcb;
+    background-color: #3a3a3a; /* ??? */
+    color: #cbcbcb; /* ??? */
 }
 .ol-accordion.blue-skin .ac-item.open .item-head {
     background-color: #76bcfe;
@@ -8558,6 +8561,34 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 .alert.alert-narrow, .alert.alert-thin {
     padding: 20px;
 }
+
+/*
+ * From https://www.w3schools.com/howto/howto_css_notification_button.asp
+ * Works fine, but not inside side menu links, apparently...
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+*/
 
 /*	Modals
  *	===================================================
@@ -10496,8 +10527,10 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
     top: 1px;
 }
 .pub-item .description .citation, .pub-item .description .citation a {
-    font-style: italic;
+    /*
+    font-style: italic; This overrides my usual style, which i don't want
     color: #9d9d9d;
+    */
     max-width: 70%;
 }
 .pub-item .description .citation {
