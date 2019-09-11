@@ -44,7 +44,7 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
         <!-- #####End load google fonts-->
-        <title>About</title>
+        <title>Encyclopedia</title>
     </head>
     <!-- #####End head-->
     <body class="fullwidth side-header slim-container">
@@ -57,7 +57,7 @@
                         <!-- begin logo -->
                         <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
                             <div class="features-image">
-                                <img src="./logos/logo.png" alt="anisotropela">
+                                <a href="./about.html"><img src="./logos/logo.png" alt="anisotropela"></a>
                             </div>
                             <!--
                                 <div class="logo-wrapper ">
@@ -73,7 +73,7 @@
                             <li><a href="index.html"    title="Home"         ><span>Home</span></a> </li>
                             <li><a href="news.html"     title="News"         ><span>News<sup><sup><sup><img height=17px src="./pics/notification.png"></sup></sup></sup></span></a> </li>
                             <li><a href="research.html" title="Research"     ><span>Research</span></a> </li>
-                            <li><a href="outreach.html" title="Outreach"     ><span>Outreach</span></a> </li>
+                            <li class="current-menu-item"><a href="outreach.html" title="Outreach"     ><span>Outreach</span></a> </li>
                             <li><a href="teaching.html" title="TeachSpv"     ><span>Teaching / supervision</span></a> </li>
                             <li><a href="cv.html"       title="CV"           ><span>CV</span></a> </li>
                             <li><a href="contact.html"  title="Contact"      ><span>Contact me</span></a> </li>
@@ -101,17 +101,17 @@
                         <div class="tb-vcenter-wrapper">
                             <div class="title-wrapper vcenter">
                                 <!-- <h1 class="title">About anisotropela</h1> -->
-                                <h1>About anisotropela</h1>
+                                <h1>Encyclopedia for non-astronomers</h1>
                             </div>
                             <div class="breadcrumb-wrapper vcenter">
                                 <div>
-                                    <a href="./om.html"><img height=20px src="./pics/flagDK1.png" onmouseover="this.src='./pics/flagDK2.png'" onmouseout="this.src='./pics/flagDK1.png'" /></a>
+                                    <a href="./encyklo.html"><img height=20px src="./pics/flagDK1.png" onmouseover="this.src='./pics/flagDK2.png'" onmouseout="this.src='./pics/flagDK1.png'" /></a>
                                 </div>
                                 <ul class="breadcrumb">
                                     <li><a href="./index.html"><i class="oli oli-home"></i></a></li>
                                     <!--  <li><a href="#">publication</a></li> -->
                                     <!--  <li><a href="#">publication type</a></li> -->
-                                    <li>About</li>
+                                    <li>Encyclopedia</li>
                                 </ul>
                             </div>
                         </div>
@@ -124,25 +124,6 @@
                     <!-- #####Begin main area-->
                     <section id="main-area">
 
-                        <!-- begin gray row -->
-                        <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
-                            <div class="container"> 
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p>
-                                        anisotropela is great for making anagrams. Try it yourself:
-                                        </p>
-                                        <p>
-                                        <button onClick='newAnagram()'>New anagram</button>
-                                        <h3 id='anagramDisplay' class="title"></h3>
-                                        <script src='./scripts/anagramopela.js'></script>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- end gray row -->
-
                         <!-- begin first row -->
                         <section class="section p-top-20 p-bottom-20">
                             <div class="container">
@@ -151,31 +132,52 @@
                                     <!-- begin left column -->
                                     <div class="col-md-8">
                                         <p id="top">
-                                        The name <em>anisotropela</em> is a portmanteau of "anisotropic", "Peter", and "Laursen".
+                                        <font color=red>This page is under construction so until I fix it, the links lead to my old, non-mobile-friendly version.</font>
                                         </p>
                                         <p>
-                                        <em>pela</em> has been my username on most platforms since it was assigned to me at <a href="https://ruc.dk">Roskilde University</a>, where I did my bachelor.
+                                        <font color=red>I wrote most of these articles when I was a student, so some of them may need a brush-up/update.</font>
                                         </p>
                                         <p>
-                                        <em>Anisotropic</em> means "not the same in all directions" and is an allusion to one of my early research results, namely that Lyman &alpha; radiation escapes anisotropically from galaxies.
-                                        My supercool logo is intended to illustrate this.
+                                        Here you'll find brief introductions to some of the exciting stuff that I spend my time with. More will come along the way.
+                                        If something doesn't make sense, or if you have further questions, just <a href="./contact.html">get in touch</a>.
                                         </p>
+                                        <div class="item-head">
+                                            <i class="icon oi-plus"></i>
+                                            <span>
+                                                <ul class="icon-list icon-border circle">
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/BH.html"  >Black holes</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/DLA.html" >Damped Ly&alpha; absorbers</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/GC.html"  >Globular clusters</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/GRB.html" >Gamma-ray bursts</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/GW.html"  >Gravitational waves</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/LHC.html" >The Large Hadron Collider</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/Lya.html" >Lyman &alpha;</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/NS.html"  >Neutron stars</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/Nova.html">Novae</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/PN.html"  >Planetary nebulae</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/RT.html"  >Radiative transfer and resonant scattering</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/RG.html"  >Red giants</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/z.html"   >Redshift</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/SN.html"  >Supernovae</a></li>
+                                                    <li><i class="oli oli-rocket"></i><a href="https://www.dark-cosmology.dk/~pela/Encyclo/WD.html"  >White dwarves</a></li>
+                                                </ul>
+                                            </span>
+                                        </div>
                                     </div>
                                     <!-- end left column -->
 
                                     <!-- begin right column -->
                                     <div class="col-md-4">
-                                        <div class="ol-hover hover-2"><img src="./pics/anis_Laursen2007.jpg" alt="image hover"/>
+                                        <div class="ol-hover hover-2"><img src="./pics/anis.jpg" alt="image hover"/>
                                             <div class="ol-overlay ov-grad1-alpha-80"></div>
                                             <div class="icons">
-                                                <a href="./pics/anis_Laursen2007.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <a href="./pics/anis.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
                                                 <a href="#"><i class="oli oli-right"></i></a>
                                             </div>
-                                            <h3 class="title">Anisotropic escape</h3>
+                                            <h3 class="title">A simulated galaxy</h3>
                                         </div>
                                         <div>
-                                            <font size=-2>Two images of the same (computer-simulated) galaxy, viewed from two different directions.
-                                            The brightness of the central, observable parts easily varies by a factor of ten (from <a href="https://arxiv.org/abs/astro-ph/0610761">Laursen &amp; Sommer-Larsen 2007</a>).</font>
+                                            <font size=-2>Behold! It's Lyman &alpha;!</font>
                                         </div>
                                     </div>
                                     <!-- end right column -->
@@ -185,21 +187,36 @@
                         </section>
                         <!-- end first row -->
 
-                        <!-- begin white row -->
-                        <section class="section section-narrow p-top-0 p-bottom-40">
+                        <!-- begin gray row -->
+                        <!--
+                        <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
                             <div class="container"> 
                                 <div class="row">
                                     <div class="col-md-8">
                                         <p>
-                                        By the way, "anisotropela" was coined in 2013 where during a workshop I was required to make a Twitter account.
-                                        I didn't use it at all for five years until 2018, when I started tweeting vigorously about astronomy.
-                                        Why don't you follow me:
-                                        <a href="https://twitter.com/anisotropela?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="en" data-show-count="false">Follow @anisotropela</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                        WALLAH WALLAH WALLAH
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </section>
+                        -->
+                        <!-- end gray row -->
+
+                        <!-- begin white row -->
+                        <!--
+                        <section class="section section-narrow p-top-20 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>
+                                        WALLAH WALLAH WALLAH
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        -->
                         <!-- end white row -->
 
                     </section>
@@ -216,6 +233,7 @@
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
                                 <div class="sp-blank-20"></div>
+                                
                             </div>
                         </div>
                     </div>
@@ -225,18 +243,7 @@
         </div>
         <!-- #####Begin scripts-->
         <script src="assets/js/vendors/vendors.js"></script>
-        <!-- Local Revolution tools-->
-        <!-- Only for local and can be removed on server-->
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
         <script src="assets/js/custom.js"></script>
-        <script src="http://localhost:35729/livereload.js"></script>
         <!-- #####End scripts-->
     </body>
 </html>
