@@ -1,14 +1,15 @@
-cp obs_template.html GC.html        
-cp obs_template.html Moon.html      
-cp obs_template.html P2007.html     
-cp obs_template.html SN2005at.html  
-cp obs_template.html SN2007gr.html  
-cp obs_template.html ant.html       
-cp obs_template.html butter.html    
-cp obs_template.html eagle.html     
-cp obs_template.html key.html       
-cp obs_template.html laser.html     
-cp obs_template.html pin.html       
-cp obs_template.html sombrero.html  
-cp obs_template.html supernova.html 
-cp obs_template.html virgo.html     
+vim -s BB.vim SN2005at.html
+vim -s BB.vim SN2007gr.html
+vim -s BB.vim ant.html
+vim -s BB.vim butter.html
+vim -s BB.vim cloudfall.html
+vim -s BB.vim eagle.html
+vim -s BB.vim gc.html
+vim -s BB.vim key.html
+vim -s BB.vim key.html
+vim -s BB.vim laser.html
+vim -s BB.vim moon.html
+vim -s BB.vim not.html
+vim -s BB.vim pin.html
+vim -s BB.vim sombrero.html
+vim -s BB.vim virgo.html
