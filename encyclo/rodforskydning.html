@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--
+    _       _   
+    | |     | |    
+    Designed and Coded By           | | __ _| |__  
+    / _ \ \ /\ / /\ \ /\ / /\ \ /\ / / |/ _` | '_ \ 
+    | (_) \ V  V /  \ V  V /  \ V  V /| | (_| | |_) |
+    \___/ \_/\_/    \_/\_/    \_/\_/ |_|\__,_|_.__/ 
+
+    http://themeforest.net/user/owwwlab/
+
+-->
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>R&oslash;dforskydning</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li class="current-menu-item"><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>R&oslash;dforskydning</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="../research.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../encyklo.html">Encyklop&aelig;di</a></li>
+                                    <li>R&oslash;dforskydning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <p>
+                                            R&oslash;dforskydning betyder, at b&oslash;lgel&aelig;ngden af noget lys bliver l&aelig;ngere, og at lyset dermed mister energi.
+                                            </p>
+                                            <p>
+                                            Normalt skyldes det, at det der udsender lyset og den der modtager det bev&aelig;ger sig v&aelig;k fra hinanden.
+                                            Men i astrofysik kan det ogs&aring; skyldes at Universets udvider sig, eller at det udsendes fra et omr&aring;de med kraftig tyngdekraft.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="G&aring; til encyklop&aelig;dien" class="btn btn-small btn-circle btn-an-split"><span>G&aring; til encyklop&aelig;dien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Popul&aelig;re artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">Her kommer nogle snart</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(meget snart; jeg lover)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">Her kommer nogle snart</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(meget snart; jeg lover)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (doppler) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Bev&aelig;gelse &aelig;ndrer lysets b&oslash;lgel&aelig;ngde</h3>
+                                        <p>
+                                        N&aring;r et lysende objekt &mdash; f.eks. en stjerne eller en lommelygte &mdash; bev&aelig;ger sig hen imod os,
+                                        bliver lysets b&oslash;lgel&aelig;ngde kortere, og kommer dermed til at ligge i den <em>bl&aring;</em> ende af spektret.
+                                        Omvendt, hvis kilden bev&aelig;ger sig v&aelig;k fra os bliver b&oslash;lgel&aelig;ngden l&aelig;ngere og dermed <em>r&oslash;dere</em>.
+                                        </p>
+                                        <p>
+                                        I det f&oslash;rste tilf&aelig;lde siges lyset at v&aelig;re blevet <em>bl&aring;forskudt</em>,
+                                        i det andet <em>r&oslash;dforskudt</em>. I begge tilf&aelig;lde skyldes det <em>Dopplereffekten</em>.
+                                        </p>
+                                        <p>
+                                        Hvis lyset allerede har en kortere b&oslash;lgel&aelig;ngde end bl&aring;t lys &mdash; f.eks. ultraviolet &mdash; og s&aring; bliver forskudt til det er bl&aring;t,
+                                        siger det alts&aring; stadig at v&aelig;re blevet r&oslash;dforskudt.
+                                        </p>
+                                        <p>
+                                        En analog effekt opleves n&aring;r sirenen fra en ambulance der kommer mod os lyder h&oslash;jere, mens den lyder lavere n&aring;r den bev&aelig;ger sig v&aelig;k igen.
+                                        For lys er &aring;rsagen dog en fundamentalt anden, og m&aring; beskrives vha. relativitetsteori.
+                                        </p>
+                                        <p>
+                                        Fra laboratoriefors&oslash;g ved man, hvilke b&oslash;lgel&aelig;ngder de forskellige grundstoffer udsender lys ved.
+                                        Ved at m&aring;le hvor meget lyset fra et fjernt objekt er forskudt, kan man (meget pr&aelig;cist) regne ud, hvor hurtigt det bev&aelig;ger sig.
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#dopplerModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                        
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/encyclo/DopplerEffekt.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/encyclo/DopplerEffekt.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Dopplereffekt</strong>: Lys f&aring;r en kortere (l&aelig;ngere) b&oslash;lgel&aelig;ngde,
+                                                hvis det der lyser bev&aelig;ger sig hen imod (v&aelig;k fra) os, og kommer derved til at ligge i den bl&aring; (r&oslash;de) ende af spektret.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (expansion) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Kosmologisk r&oslash;dforskydning</h3>
+                                        <p>
+                                        Galakser ligger spredt rundt i Universet, og ligger egentlig nogenlunde stille i rummet, men fordi selve rummet udvider sig, fjerner alle galakserne sig alligevel fra hinanden.
+                                        Hver gang Universet fordobler sin st&oslash;rrelse, &oslash;ges afstanden mellem to galakser til det dobbelte.
+                                        Hvis to galakser p&aring; et tidspunkt l&aring; f.eks. 100 millioner lys&aring;r fra hinanden, vil de efter denne tid ligge 200 mio. lys&aring;r fra hinanden,
+                                        mens to andre der startede med at ligge 200 mio. lys&aring;r fra hinanden vil ende 400 mio. lys&aring;r fra hinanden.
+                                        </p>
+                                        <p>
+                                        Dvs., at jo l&aelig;ngere to galakser ligger fra hinanden, jo hurtigere fjerner de sig fra hinanden.
+                                        Fordi galakserne ligger stille i rummet, er der ingen Doppler-forskydning i spil. Men en forudsigelse af Einsteins generelle relativitetsteori er,
+                                        at lys som rejser gennem et ekspanderende rum f&aring;r "strukket" sin b&oslash;lgel&aelig;ngde proportionalt med udvidelsen.
+                                        </p>
+                                        <p>
+                                        P&aring; den m&aring;de kan vi bruge en galakses r&oslash;dforskydning som et m&aring;l for dens afstand fra os.
+                                        </p>
+                                        <p>
+                                        Eftersom lyset har brugt tid p&aring; at n&aring; ned til os, ser vi l&aelig;ngere tilbage i tiden, jo l&aelig;ngere en galakse ligger v&aelig;k.
+                                        Derfor er en galakses r&oslash;dforskydning samtidig et m&aring;l for Universets alder p&aring; den tid vi ser galaksen.
+                                        </p>
+                                        <!--
+                                        <p>
+                                        For meget store afstande er r&oslash;dforskydning og hastighed ikke l&aelig;ngere proportionale, men faktisk er det s&aring;dan,
+                                        at galakser der ligger l&aelig;ngere v&aelig;k end ca. 13.7 mia. lys&aring;r, bev&aelig;ger sig hurtigere v&aelig;k end med lysets hastighed.
+                                        Dette strider <em>ikke</em> mod fysikkens love, da denne fartgr&aelig;nse kun g&aelig;lder i ikke-accelererende referencerammer.
+                                        Galakser kan ogs&aring; sagtens ligge l&aelig;ngere v&aelig;k end 13.7 mia. lys&aring;r, selvom Universet alder er 13.7 &aring;r,
+                                        netop fordi det udvider sig. Det fjerneste objekt vi i teorien kan se ligger faktisk 42 mia. lys&aring;r v&aelig;k.
+                                        I praksis kan vi dog ikke se s&aring; langt.
+                                        </p>
+                                        -->
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#kosmoModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                        
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/encyclo/expansion.jpg" alt="image hover"/>
+                                            <div class="ol-overlay ov-grad1-alpha-10"></div>
+                                            <div class="icons">
+                                                <a href="../pics/encyclo/expansion.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Kosmologisk r&oslash;dforskydning</strong>: Galakser i et ekspanderende Univers fjerner sig fra hinanden, hurtigere og hurtigere, og med en hastighed der &oslash;ges med afstanden mellem dem.
+                                                Galakse B ligger dobbelt s&aring; langt v&aelig;k fra "midtergalaksen" som galakse A, og fjerner sig derfor dobbelt s&aring; hurtigt.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (gravitation) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Gravitationel r&oslash;dforskydning</h3>
+                                        <p>
+                                        Den sidste m&aring;de at lys kan blive r&oslash;dforskudt p&aring; er, at selve tyngdekraften fra et tungt legeme f&aring;r lyset til at miste energi.
+                                        For at bev&aelig;ge sig v&aelig;k fra et legeme ("kravle op af tyngdepotential-br&oslash;nden"),
+                                        m&aring; lyset bruge noget energi til at overvinde tyngdekraften, og n&aring;r lysets energi mindskes, &oslash;ges b&oslash;lgel&aelig;ngden.
+                                        </p>
+                                        <p>
+                                        Denne effekt, der beskrives ved den <i>generelle relativitetsteori</i>, er normalt meget mindre end Dopplereffekten.
+                                        Lyset fra vores Sol r&oslash;dforskydes f.eks. ca. en milliontedel, men for sm&aring;, kompakte objekter s&aring;som <a href="./hvid_dvaerg.html">hvide dv&aelig;rge</a>
+                                        er det ca. 1/10.000, og for lys udsendt fra overfladen af et <a href='./sort_hul.html'>sort hul</a> er r&oslash;dforskydningen uendelig stor,
+                                        s&aring; lyset mister al sin energi og undslipper derfor ikke.
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#graviModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                        
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/encyclo/gravitationel_z.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/encyclo/gravitationel_z.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Gravitationel z</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Gravitationel r&oslash;dforskydning</strong>: Fotoner der udsendes fra en lyskilde n&aelig;r jordoverfladen r&oslash;dforskydes eferh&aring;nden som de
+                                                fjerner sig fra Jorden. Effekten er ekstrem lille for Jorden, men kan alligevel m&aring;les; for stjerner, som er meget tungere, er effekten st&oslash;rre. </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <footer id="footer">
+                <div id="footer-main" class="text-center bg-gray">
+                    <div class="container">
+                        <div class="row">
+                            <!-- -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end #footer-->
+            <!-- modals -->
+            <div id="dopplerModal" tabindex="-1" role="dialog" aria-labelledby="dopplerModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="dopplerModalLabel" class="modal-title">Dopplereffekt</h4>
+                            <div class="modal-body">
+                                <p>
+                                Hvis "hvileb&oslash;lgel&aelig;ngden" (m&aring;lt i et laboratorium) er \(\lambda_0\), og objektet bev&aelig;ger sig med hastigheden \(v\) i forhold til dig
+                                (hvor \(v\gt0\) betyder "v&aelig;k fra dig", og \(v\lt0\) er "hen mod dig"),
+                                vil du observere b&oslash;lgel&aelig;ngden \(\lambda_\mathrm{obs}\) givet ved
+                                $$
+                                \frac{\lambda_\mathrm{obs}}{\lambda_0} =  \sqrt{\frac{1 + v/c}{1 - v/c}},
+                                $$
+                                hvor \(c\) er lysets hastighed.
+                                </p>
+                                <p>
+                                Dvs. at hvis du m&aring;ler \(\lambda_\mathrm{obs}\), s&aring; ved du at objektet bev&aelig;ger sig med hastigheden
+                                $$
+                                {v \over c} = \sqrt{{(\lambda_\mathrm{obs} / \lambda_0)^2 - 1} \over {(\lambda_\mathrm{obs} / \lambda_0)^2 + 1}}.
+                                $$
+                                R&oslash;dforskydningen betegnes "\(z\)" og angiver hvor mange gange b&oslash;lgel&aelig;ngden er blevt l&aelig;ngere.
+                                Dvs. at
+                                $$
+                                z \equiv \frac{\Delta\lambda}{\lambda_0} = \frac{\lambda_\mathrm{obs}-\lambda_0}{\lambda_0}
+                                $$
+                                $$
+                                \Rightarrow \qquad 1 + z = \frac{\lambda_\mathrm{obs}}{\lambda_0}.
+                                $$
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="kosmoModal" tabindex="-1" role="dialog" aria-labelledby="kosmoModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="kosmoModalLabel" class="modal-title">Kosmologisk r&oslash;dforskydning</h4>
+                            <div class="modal-body">
+                                <p>
+                                To galakser der ligger afstanden \(d\) fra hinanden, fjerner sig fra hinanden med hastigheden \(v\) givet ved Hubbles lov:
+                                $$
+                                v = H_0 d,
+                                $$
+                                hvor proportionalitetsfaktoren \(H_0\) er Hubblekonstanten. I dag er \(H_0 \simeq 70\) km/s per Mpc (1 Mpc, eller megaparsec, er ca. 3.3 mio. lys&aring;r),
+                                men tidligere var den st&oslash;rre.
+                                </p>    
+                                <p>    
+                                R&oslash;dforskydningen \(z\) vokser med Universets udvidelse; hvis Universets st&oslash;rrelse var en br&oslash;kdel \(a\) dengang lysets blev udsent
+                                ift. hvad det det er i dag, s&aring; vil det lys vi modtager i dag have en r&oslash;dforskydning givet ved
+                                $$
+                                z+1 = \frac{1}{a}.
+                                $$
+                                For sm&aring; hastigheder ift. lyset (\(v \lesssim 0.1c\)) &mdash; dvs. for n&aelig;re galakser &mdash; er r&oslash;dforskydningen omtrent proportional med hastigheden (\(z \simeq \frac{v}{c}\),
+                                s&aring; hvis man m&aring;ler en galakses r&oslash;dforskydning kan man regne dens afstand ud som
+                                $$
+                                d = \frac{cz}{H_0}.
+                                $$
+                                For fjernere galakser m&aring; man tage h&oslash;jde for, at udvidelseshastigheden har &aelig;ndret sig undervejs, s&aring; det bliver noget mere komplekst.
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-toggle="modal" data-target="#kosmoModal2" class="btn btn-circle btn-small btn-skin-blue">Jeg er ligeglad hvor komplekst det er. Vis mig det!</button>
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="kosmoModal2" tabindex="-1" role="dialog" aria-labelledby="kosmoModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="kosmoModalLabel" class="modal-title">Kosmologisk r&oslash;dforskydning</h4>
+                            <div class="modal-body">
+                                <p>
+                                For fjernere galakser m&aring; man tage h&oslash;jde for, at udvidelseshastigheden har &aelig;ndret sig undervejs, s&aring; det m&aring; man have en model for.
+                                Den alment accepterede model er den s&aring;kaldte <a href="https://en.wikipedia.org/wiki/Friedmann–Lemaître–Robertson–Walker_metric">FLRW-metrik</a>, med udvidelsen beskrevet ved de
+                                s&aring;kaldte <a href="https://en.wikipedia.org/wiki/Friedmann_equations">Friedmann-ligninger</a>.
+                                Man f&aring;r s&aring;, at afstanden til en galakse med r&oslash;dforskydningen \(z\) er
+                                $$
+                                d = \frac{c}{H_0} \int_0^z \frac{dz'}{E(z')},
+                                $$
+                                hvor
+                                $$
+                                E(z) = \sqrt{
+                                \Omega_\mathrm{r} (1+z)^4 +
+                                \Omega_\mathrm{m} (1+z)^3 +
+                                \Omega_k          (1+z)^2 +
+                                \Omega_\Lambda    
+                                },
+                                $$
+                                og
+                                $$
+                                \{
+                                \Omega_\mathrm{r},
+                                \Omega_\mathrm{m},
+                                \Omega_k,
+                                \Omega_\Lambda
+                                \} \simeq \{\lt10^{-4},\,0.3,\,0,\,0.7\}
+                                $$
+                                er de relative energit&aelig;theder af hhv. str&aring;ling, stof (alm. + m&oslash;rkt), "krumning", og m&oslash;rk energi.
+                                </p>    
+                                <p>    
+                                Universets alder, dengang lyset blev udsendt, er givet ved
+                                $$
+                                t = \frac{1}{H_0} \int_0^z \frac{dz'}{(1+z')E(z')}.
+                                $$
+                                Hvis du ikke orker at udf&oslash;re disse integraler selv, kan du f.eks. bruge <a href="http://www.astro.ucla.edu/~wright/CosmoCalc.html">Ned Wrights kosmologiske lommeregner</a>.
+                                </p>    
+                                <p>    
+                                Hvis du kan Python'sk, kan du g&oslash;re det med astropy:<br>
+                                <div class="icon-box ib-v1 ib-boxed">
+                                    <span style="font-family: courier">
+                                        from astropy.cosmology import Planck15<br>
+                                        from astropy import units as u<br>
+                                        z = 6.66 # beregn for denne roedforskydning<br>
+                                        d = Planck15.comoving_distance(z)<br>
+                                        t = Planck15.age(z)<br>
+                                        print("Galaksens afstand er:", d.to(u.Glyr))<br>
+                                        print("Universets alder var:", t)<br>
+                                    </span>
+                                </div>
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="graviModal" tabindex="-1" role="dialog" aria-labelledby="graviModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="graviModalLabel" class="modal-title">Gravitationel r&oslash;dforskydning</h4>
+                            <div class="modal-body">
+                                <p>
+                                Hvis en lysstr&aring;le udsendes i afstanden \(r_1\) fra centrum af en (sf&aelig;risk) masse \(M\) med hvileb&oslash;lgel&aelig;ngden \(\lambda_0\),
+                                og observeres i afstanden \(r_2\) til at have b&oslash;lgel&aelig;ngden \(\lambda_\mathrm{obs}\), vil den blive r&oslash;dforskudt med en faktor
+                                $$
+                                1 + z = \frac{\lambda_\mathrm{obs}}{\lambda_0}
+                                $$
+                                $$
+                                = \frac{\sqrt{1 - 2GM/r_2 c^2}}{\sqrt{1 - 2GM/r_1 c^2}},
+                                $$
+                                hvor \(G\) og \(c\) er hhv. Newtons gravitationskonstant og lysets hastighed.
+                                </p>
+                                <p>
+                                F.eks. vil en gr&oslash;n lysstr&aring;le udsendt med b&oslash;lgel&aelig;ngden 550 nm fra bunden til toppen af Rundet&aring;rn
+                                (s&aring;dan at \(r_1 = \) Jordens radius, og \(r_2 = r_1 +\) 35 meter)
+                                f&aring; en r&oslash;dforskydning p&aring; \(z = 0.0000000000000038\). N&aring;r den n&aring;r toppen,
+                                vil b&oslash;lgel&aelig;ngden derfor v&aelig;re \(\lambda_\mathrm{obs} = 550.0000000000021\) nm.
+                                </p>
+                                <p>
+                                Ikke meget, men alligevel nok til at kunne m&aring;les.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
