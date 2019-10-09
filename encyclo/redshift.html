@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!--
+    _       _   
+    | |     | |    
+    Designed and Coded By           | | __ _| |__  
+    / _ \ \ /\ / /\ \ /\ / /\ \ /\ / / |/ _` | '_ \ 
+    | (_) \ V  V /  \ V  V /  \ V  V /| | (_| | |_) |
+    \___/ \_/\_/    \_/\_/    \_/\_/ |_|\__,_|_.__/ 
+
+    http://themeforest.net/user/owwwlab/
+
+-->
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Redshift</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../about.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../index.html"     title="Home"         ><span>Home</span></a> </li>
+                            <li><a href="../news.html"      title="News"         ><span>News<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../research.html"    title="Research"     ><span>Research</span></a> </li>
+                            <li class="current-menu-item"><a href="../outreach.html"  title="Outreach"     ><span>Outreach</span></a> </li>
+                            <li><a href="../teaching.html"  title="TeachSpv"     ><span>Teaching / supervision</span></a> </li>
+                            <li><a href="../cv.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../contact.html"   title="Contact"      ><span>Contact me</span></a> </li>
+                            <li><a href="../personal.html"  title="Personal"     ><span>Personal</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Redshift</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./rodforskydning.html"><img height=20px src="../pics/flagDK1.png" onmouseover="this.src='../pics/flagDK2.png'" onmouseout="this.src='../pics/flagDK1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../index.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../outreach.html">Outreach</a></li>
+                                    <li><a href="../encyclo.html">Encyclopedia</a></li>
+                                    <li>Redshift</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Quick explanation</span></h3>
+                                            <p>
+                                            Redshift is arguably the most important concept in astronomy.
+                                            </p>
+                                            <p>
+                                            Quite simply, it means that the wavelength of some light gets longer, and that the light hence is shifted toward the red end of the spectrum.
+                                            </p>
+                                            <p>
+                                            Usually the reason is that the emitter and the receiver are moving away from each other.
+                                            But in astronomy the reason can also be that the Universe expands, or because the light is emitted from a region of strong gravity.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyclo.html" data-text="Go to the encyclopedia" class="btn btn-small btn-circle btn-an-split"><span>Go to the encyclopedia</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Popular posts</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">There'll be some here soon</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(very soon; promise)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">There'll be some here soon</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(very soon; promise)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (doppler) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Movement changes the wavelength of light</h3>
+                                        <p>
+                                        When a shining object &mdash; e.g. a star or a flashlight &mdash; is moving toward us, the wavelength of the light gets shorter and will hence be shifted toward the <em>blue</em> end of the spectrum.
+                                        Conversely, if the source is moving away from us, the wavelength gets longer, and hence <em>redder</em>.
+                                        </p>
+                                        <p>
+                                        In the first case the light is said the be <em>blueshifted</em>, in the second it's <em>redshifted</em>. In both cases, the reason is the <em>Doppler effect</em>.
+                                        </p>
+                                        <p>
+                                        If the light already has a shorter wavelength than blue light &mdash; e.g. ultraviolet &mdash; and is then shifted until it's blue,
+                                        we still say that it has been redshifted.
+                                        </p>
+                                        <p>
+                                        An analogous effect is met when the sirene from an ambulance approaching us sounds more high-pitched, while it's more low-pitched when it recedes again.
+                                        For light, however, the cause is fundamentally different, and is described by the theory of relativity.
+                                        </p>
+                                        <p>
+                                        From lab experiments we know at which wavelengths the different elements emit light.
+                                        By measuring how much the light from a distant object has been shifted, we can (very accurately) calculate how fast it moves.
+                                        </p>
+                                        <p>
+                                        The best spectrographs can measure the speed of stars many light-years away with an accuracy of 1 m/s.
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#dopplerModal" class="btn btn-circle btn-small btn-skin-blue">Show me the equations</button>
+
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/encyclo/DopplerEffekt.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/encyclo/DopplerEffekt.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Doppler effect</strong>: The wavelength of light from an object approaching us (receding from us) is sqeezed (stretched),
+                                                and is hence shifted toward the blue (red) end of the spectrum. </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (expansion) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Cosmological redshift</h3>
+                                        <p>
+                                        Galaxies are scattered in the Universe, and are actually rather stationary, but because space itself expands, all galaxies recede from each other.
+                                        When the Universe doubles its size, the distance between two galaxies is doubled.
+                                        If two galaxies at some moment lie, say, 100 million light-years from each other, after this time has passed they'll be 200 million light-years from each other,
+                                        while two other galaxies initially lying 200 million light-years from each other end up 400 million light-years from each other
+                                        </p>
+                                        <p>
+                                        Hence, the farther two galaxies are from each other, the faster they recede from each other.
+                                        Because the galaxies lie still in space, there is no Doppler shift involved (well, actually they do move around with a few 100 km/s, so there <em>is</em> an additional Doppler shift,
+                                        but let's ignore that for now). But a prediction of Einstein's general theory of relativity is that space may expand, and
+                                        that light traveling through an expanding space has its wavelength "stretched", proportionally to the expansion.
+                                        </p>
+                                        <h6>Redshift, time, and distance</h6>
+                                        <p>
+                                        Because light is redshifted more and more on its way through space, we can use galaxy's redshift as a measure of its distance.
+                                        </p>
+                                        <p>
+                                        And since light doesn't travel infinitely fast, but took some time to reach us, we look further back in time the farther a galaxy is away.
+                                        Thus, at the same time a galaxy's redshift is a measure of the age of the Universe at the time we see the galaxy.
+                                        </p>
+                                        <p>
+                                        That's pretty cool, right?
+                                        </p>
+                                        <!--
+                                            <p>
+                                            For meget store afstande er r&oslash;dforskydning og hastighed ikke l&aelig;ngere proportionale, men faktisk er det s&aring;dan,
+                                            at galakser der ligger l&aelig;ngere v&aelig;k end ca. 13.7 mia. lys&aring;r, bev&aelig;ger sig hurtigere v&aelig;k end med lysets hastighed.
+                                            Dette strider <em>ikke</em> mod fysikkens love, da denne fartgr&aelig;nse kun g&aelig;lder i ikke-accelererende referencerammer.
+                                            Galakser kan ogs&aring; sagtens ligge l&aelig;ngere v&aelig;k end 13.7 mia. lys&aring;r, selvom Universet alder er 13.7 &aring;r,
+                                            netop fordi det udvider sig. Det fjerneste objekt vi i teorien kan se ligger faktisk 42 mia. lys&aring;r v&aelig;k.
+                                            I praksis kan vi dog ikke se s&aring; langt.
+                                            </p>
+                                        -->
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#kosmoModal" class="btn btn-circle btn-small btn-skin-blue">Show me the equations</button>
+
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/encyclo/expansion.jpg" alt="image hover"/>
+                                            <div class="ol-overlay ov-grad1-alpha-10"></div>
+                                            <div class="icons">
+                                                <a href="../pics/encyclo/expansion.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Cosmological redshift</strong>:
+                                                Galaxies in an expanding Universe recede from each other, faster and faster, and with a velocity increasing with their mutual distance.
+                                                Galaxy B is twice as far from the middle galaxy as galaxy A, and hence recedes twice as fast.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (gravitation) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Gravitational redshift</h3>
+                                        <p>
+                                        The third way that light may be redshifted is by gravity itself, causing the light to lose energy.
+                                        In order to move away from an object ("crawl up the potential well"), the light must move between different reference frames.
+                                        We can say that it must spend energy to overcome gravity, and when the energy of light decreases, its wavelength <em>in</em>creases.
+                                        </p>
+                                        <p>
+                                        This effect, described by general relativity, is usually much smaller than the Doppler effect.
+                                        For instance, light from our Sun is redshifted by roughly a millionth, but for small, compact objects such as <a href="./white_dwarf.html">white dwarves</a>
+                                        it's some 1/10,000, and for light emitter from the surface of a <a href='./black_hole.html'>black hole</a> the redshift is infinitely large, so light loses all its energy and hence doesn't escape.
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#graviModal" class="btn btn-circle btn-small btn-skin-blue">Show me the equations</button>
+
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/encyclo/gravitationel_z.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/encyclo/gravitationel_z.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Gravitationel z</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Gravitational redhsift</strong>: Photons emitted from a light source at ground level are redshifted as they recede from Earth.
+                                                The effect is extremely small for Earth, but can still be measured, and for stars which are much heavier, the effect is larger.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+                <footer id="footer" class="dark-wrapper">
+                    <div id="footer-main">
+                        <div class="container">
+                            <div class="center-logo text-center"><a href="../about.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                            <div class="sp-blank-10"></div>
+                            <div class="row">
+
+                                <!-- begin first col -->
+                                <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                    <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="./logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                    <div class="widget">
+                                        <h4>Main pages</h4>
+                                        <div class="links">
+                                            <ul>
+                                                <!-- <li><a href="./index.html"   >Home</a></li> -->
+                                                <li><a href="../news.html"    >News</a></li>
+                                                <li><a href="../research.html">Research</a></li>
+                                                <li><a href="../outreach.html">Outreach</a></li>
+                                                <li><a href="../teaching.html">Teaching / supervision</a></li>
+                                                <li><a href="../cv.html"      >CV</a></li>
+                                                <li><a href="../contact.html" >Contact me</a></li>
+                                                <li><a href="../personal.html">Personal</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- #####End widget-->
+                                </div>
+                                <!-- end first col -->
+
+                                <!-- begin middle col -->
+                                <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                    <!-- #####Begin widget-->
+                                    <div class="widget">
+                                        <h4>Quick links</h4>
+                                        <div class="links">
+                                            <ul>
+                                                <li><a href="../about.html"        >About this site</a></li>
+                                                <li><a href="../questions.html"    >Ask a question</a></li>
+                                                <li><a href="./rodforskydning.html">This page in Danish</a></li>
+                                                <li><a href="../publications.html" >Publications</a></li>
+                                                <li><a href="../observations.html" >Observations</a></li>
+                                                <li><a href="../encyclo.html"      >Encyclopedia</a></li>
+                                                <li><a href="../notes.html"        >Random notes</a></li>
+                                                <li><a href="../teaching/classic_papers.html" >"Classic papers" course</a></li>
+                                                <li><a href="http://sciencenordic.com/big-bang-–-eyewitness-account">The Big Bang</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- #####End widget-->
+                                </div>
+                                <!-- end middle col -->
+
+                                <!-- begin left col -->
+                                <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                    <!-- #####Begin widget-->
+                                    <div class="widget">
+                                        <h4>Random stuff</h4>
+                                        <div class="links">
+                                            <ul>
+                                                <li><a href="../stuff/comics.html"            >Comics</a></li>
+                                                <li><a href="../stuff/conferences.html"       >Conferences</a></li>
+                                                <li><a href="../stuff/menHansDillerLever.html">Books</a></li>
+                                                <li><a href="../stuff/rom.html"               >Rum</a></li>
+                                                <li><a href="../observations/key.html"        >The Keyhole Nebula</a></li>
+                                                <!-- <li><a href="./stuff/photos.html"                    >Photos</a></li> -->
+                                                <li><a                                         >Photos</a></li>
+                                                <li><a                                         >Family</a></li>
+                                                <!-- <li><a href="./stuff/familie.html"           >Family</a></li> -->
+                                                <li><a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- #####End widget-->
+                                </div>
+                                <!-- end left col -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-bar">
+                        <div class="container">
+                            <div class="row tb-vcenter-wrapper bottom-bar">
+                                <div class="col-sm-4 vcenter">
+                                    <a href="./index.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                                </div>
+                                <div class="col-sm-4 vcenter">
+                                    <!-- #####Begin social icons-->
+                                    <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                        <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                        <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                        <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                        <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                        <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                    <!-- #####End social icons-->
+                                </div>
+                                <div class="col-sm-4 text-right">
+                                    <ul class="breadcrumb">
+                                        <li><a href="../index.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                        <li><a href="../outreach.html">Outreach</a></li>
+                                        <li><a href="../encyclo.html">Encyclopedia</a></li>
+                                        <li>Redshift</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end #footer-->
+                <!-- modals -->
+                <div id="dopplerModal" tabindex="-1" role="dialog" aria-labelledby="dopplerModalLabel" class="modal fade">
+                    <div role="document" class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                                <h4 id="dopplerModalLabel" class="modal-title">Doppler effect</h4>
+                                <div class="modal-body">
+                                    <p>
+                                    If the "rest wavelength" (measured in a lab) is \(\lambda_0\), and the object is moving with velocity \(v\) with respect to you
+                                    (where \(v\gt0\) means "away from you", and \(v\lt0\) is "toward you"), you'll observe the wavelength
+                                    \(\lambda_\mathrm{obs}\) given by
+                                    $$
+                                    \frac{\lambda_\mathrm{obs}}{\lambda_0} =  \sqrt{\frac{1 + v/c}{1 - v/c}},
+                                    $$
+                                    where \(c\) is the speed of light.
+                                    </p>
+                                    <p>
+                                    Hence, if you measure \(\lambda_\mathrm{obs}\), you know that the object is moving with velocity
+                                    $$
+                                    {v \over c} = \sqrt{{(\lambda_\mathrm{obs} / \lambda_0)^2 - 1} \over {(\lambda_\mathrm{obs} / \lambda_0)^2 + 1}}.
+                                    $$
+                                    The redshift is designated "\(z\)" and represents how many times the wavelength has increased.
+                                    That is,
+                                    $$
+                                    z \equiv \frac{\Delta\lambda}{\lambda_0} = \frac{\lambda_\mathrm{obs}-\lambda_0}{\lambda_0}
+                                    $$
+                                    $$
+                                    \Rightarrow \qquad 1 + z = \frac{\lambda_\mathrm{obs}}{\lambda_0}.
+                                    $$
+                                    </p>    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="kosmoModal" tabindex="-1" role="dialog" aria-labelledby="kosmoModalLabel" class="modal fade">
+                    <div role="document" class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                                <h4 id="kosmoModalLabel" class="modal-title">Cosmological redshift</h4>
+                                <div class="modal-body">
+                                    <p>
+                                    Two galaxies lying at a distance \(d\) from each other, recede from each other at a velocity \(v\) given by Hubble's law:
+                                    $$
+                                    v = H_0 d,
+                                    $$
+                                    where the factor \(H_0\) is the Hubble constant. Today \(H_0 \simeq 70\) km/s per Mpc (1 Mpc, or megaparsec, is roughly 3.3 million light-years), but earlier it was larger.
+                                    </p>    
+                                    <p>    
+                                    The redshift \(z\) increases with the expansion; if the size of the Universe was a fraction \(a\) when the light was emitted, compared to today,
+                                    then the light we receive today will have a redshift given by
+                                    $$
+                                    z+1 = \frac{1}{a}.
+                                    $$
+                                    For small velocities compared to light (\(v \lesssim 0.1c\)) &mdash; i.e. for nearby galaxies &mdash; the redshift is roughly proportional to the velocity (\(z \simeq v/c\),
+                                    so if you measure a galaxy's redshift you can calculate its distance to be
+                                    $$
+                                    d = \frac{cz}{H_0}.
+                                    $$
+                                    For more distant galaxies you must take into account the fact the the expansion velocity has changed during the journey, so it becomes somewhat more complicated.
+                                    </p>    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-toggle="modal" data-target="#kosmoModal2" class="btn btn-circle btn-small btn-skin-blue">I don't care how complicated it is.<br>Just show me those equations already!</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="kosmoModal2" tabindex="-1" role="dialog" aria-labelledby="kosmoModalLabel" class="modal fade">
+                    <div role="document" class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                                <h4 id="kosmoModalLabel" class="modal-title">Cosmological redshift</h4>
+                                <div class="modal-body">
+                                    <p>
+                                    For more distant galaxies, the evolving expansion rate must be taken into account, so we need a model for that.
+                                    The commonly accepted model is the so-called <a href="https://en.wikipedia.org/wiki/Friedmann–Lemaître–Robertson–Walker_metric">FLRW metric</a>, with the expansion described by the
+                                    so-called <a href="https://en.wikipedia.org/wiki/Friedmann_equations">Friedmann equations</a>.
+                                    You then get that the distance to a galaxy of redshift \(z\) is
+                                    $$
+                                    d = \frac{c}{H_0} \int_0^z \frac{dz'}{E(z')},
+                                    $$
+                                    where
+                                    $$
+                                    E(z) = \sqrt{
+                                    \Omega_\mathrm{r} (1+z)^4 +
+                                    \Omega_\mathrm{m} (1+z)^3 +
+                                    \Omega_k          (1+z)^2 +
+                                    \Omega_\Lambda    
+                                    },
+                                    $$
+                                    and
+                                    $$
+                                    \{
+                                    \Omega_\mathrm{r},
+                                    \Omega_\mathrm{m},
+                                    \Omega_k,
+                                    \Omega_\Lambda
+                                    \} \simeq \{\lt10^{-4},\,0.3,\,0,\,0.7\}
+                                    $$
+                                    are the relative energy densities of radiation, matter (normal + dark), "curvature", and dark energy, respectively.
+                                    </p>    
+                                    <p>    
+                                    The age of the Universe when the light was emitted is given by
+                                    $$
+                                    t = \frac{1}{H_0} \int_0^z \frac{dz'}{(1+z')E(z')}.
+                                    $$
+                                    If you're too lazy to do these integrals yourself, you can use e.g. <a href="http://www.astro.ucla.edu/~wright/CosmoCalc.html">Ned Wright's Cosmological calculator</a>.
+                                    </p>    
+                                    <p>    
+                                    If you speak Pythonic, you can do it with astropy:<br>
+                                    <div class="icon-box ib-v1 ib-boxed">
+                                        <span style="font-family: courier">
+                                            from astropy.cosmology import Planck15<br>
+                                            from astropy import units as u<br>
+                                            z = 6.66 # beregn for denne roedforskydning<br>
+                                            d = Planck15.comoving_distance(z)<br>
+                                            t = Planck15.age(z)<br>
+                                            print("Galaksens afstand er:", d.to(u.Glyr))<br>
+                                            print("Universets alder var:", t)<br>
+                                        </span>
+                                    </div>
+                                    </p>    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="graviModal" tabindex="-1" role="dialog" aria-labelledby="graviModalLabel" class="modal fade">
+                    <div role="document" class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                                <h4 id="graviModalLabel" class="modal-title">Gravitational redshift</h4>
+                                <div class="modal-body">
+                                    <p>
+                                    If a light ray is emitted at the distance \(r_1\) from the center of a (spherical) body of mass \(M\) with the rest wavelength \(\lambda_0\),
+                                    and is observed at a distance \(r_2\) to have a wavelength \(\lambda_\mathrm{obs}\), it will have been redshifted by a factor
+                                    $$
+                                    1 + z = \frac{\lambda_\mathrm{obs}}{\lambda_0} = \frac{\sqrt{1 - 2GM/r_2 c^2}}{\sqrt{1 - 2GM/r_1 c^2}},
+                                    $$
+                                    where \(G\) og \(c\) are Newton's gravitational constant and the speed of light, respectively.
+                                    </p>
+                                    <p>
+                                    For instance, a green light ray emitted with a wavelength 550 nm from the bottom to the top of the <a href="https://en.wikipedia.org/wiki/Rundetaarn">Round Tower</a>
+                                    (so that \(r_1 = \) the radius of Earth, and \(r_2 = r_1 +\) 35 meter)
+                                    aqcuire a redshift of \(z = 0.0000000000000038\). When it reaches the top
+                                    the wavelength will thus be \(\lambda_\mathrm{obs} = 550.0000000000021\) nm.
+                                    </p>
+                                    <p>
+                                    Not a lot, but nevertheless enough to be measured.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

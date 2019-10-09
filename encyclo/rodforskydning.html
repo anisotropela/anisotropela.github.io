@@ -75,8 +75,8 @@
                         <ul id="primary-menu">
                             <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
                             <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
-                            <li class="current-menu-item"><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
-                            <li><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
                             <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
                             <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
                             <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
@@ -108,10 +108,11 @@
                             </div>
                             <div class="breadcrumb-wrapper vcenter">
                                 <div>
-                                    <a href="../research.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
                                 </div>
                                 <ul class="breadcrumb">
                                     <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
                                     <li><a href="../encyklo.html">Encyklop&aelig;di</a></li>
                                     <li>R&oslash;dforskydning</li>
                                 </ul>
@@ -135,7 +136,10 @@
                                             <i class="oli oli-rocket"></i>
                                             <h3 class="title"><span>Kort forklaring</span></h3>
                                             <p>
-                                            R&oslash;dforskydning betyder, at b&oslash;lgel&aelig;ngden af noget lys bliver l&aelig;ngere, og at lyset dermed mister energi.
+                                            R&oslash;dforskydning er m&aring;ske nok det vigtigste begreb i astronomi overhovedet.
+                                            </p>
+                                            <p>
+                                            Det betyder kort og godt, at b&oslash;lgel&aelig;ngden af noget lys bliver l&aelig;ngere, og at lyset dermed forskydes mod den r&oslash;de ende af spektret.
                                             </p>
                                             <p>
                                             Normalt skyldes det, at det der udsender lyset og den der modtager det bev&aelig;ger sig v&aelig;k fra hinanden.
@@ -210,6 +214,9 @@
                                         Ved at m&aring;le hvor meget lyset fra et fjernt objekt er forskudt, kan man (meget pr&aelig;cist) regne ud, hvor hurtigt det bev&aelig;ger sig.
                                         </p>
                                         <p>
+                                        De bedste spektrografer kan m&aring;le hastigheden af stjerner mange lys&aring;r v&aelig;k med en n&oslash;jagtighed p&aring; 1 m/s.
+                                        </p>
+                                        <p>
                                         <button type="button" data-toggle="modal" data-target="#dopplerModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
                                         
                                         </p>
@@ -253,15 +260,19 @@
                                         </p>
                                         <p>
                                         Dvs., at jo l&aelig;ngere to galakser ligger fra hinanden, jo hurtigere fjerner de sig fra hinanden.
-                                        Fordi galakserne ligger stille i rummet, er der ingen Doppler-forskydning i spil. Men en forudsigelse af Einsteins generelle relativitetsteori er,
-                                        at lys som rejser gennem et ekspanderende rum f&aring;r "strukket" sin b&oslash;lgel&aelig;ngde proportionalt med udvidelsen.
+                                        Fordi galakserne ligger stille i rummet, er der ingen Doppler-forskydning i spil (okay faktisk bev&aelig;ger de sig rundt med nogle 100 km/s, s&aring; der er <em>ogs&aring;</em> en
+                                        Dopplereffekt, men lad os ignorere den for nu). Anyway, en forudsigelse af Einsteins generelle relativitetsteori er, at rum kan udvide sig,
+                                        og at lys som rejser gennem et ekspanderende rum f&aring;r "strukket" sin b&oslash;lgel&aelig;ngde proportionalt med udvidelsen.
                                         </p>
                                         <p>
-                                        P&aring; den m&aring;de kan vi bruge en galakses r&oslash;dforskydning som et m&aring;l for dens afstand fra os.
+                                        Fordi lyset r&oslash;dforskydes mere og mere p&aring; sin vej gennem rummet, kan vi bruge en galakses r&oslash;dforskydning som et m&aring;l for dens afstand fra os.
                                         </p>
                                         <p>
-                                        Eftersom lyset har brugt tid p&aring; at n&aring; ned til os, ser vi l&aelig;ngere tilbage i tiden, jo l&aelig;ngere en galakse ligger v&aelig;k.
+                                        Og eftersom lyset ikke rejser uendeligt hurtigt, men har brugt tid p&aring; at n&aring; ned til os, ser vi l&aelig;ngere tilbage i tiden, jo l&aelig;ngere en galakse ligger v&aelig;k.
                                         Derfor er en galakses r&oslash;dforskydning samtidig et m&aring;l for Universets alder p&aring; den tid vi ser galaksen.
+                                        </p>
+                                        <p>
+                                        Det er p&aelig;nt sejt, ikke?
                                         </p>
                                         <!--
                                         <p>
@@ -310,11 +321,11 @@
                                         <h3>Gravitationel r&oslash;dforskydning</h3>
                                         <p>
                                         Den sidste m&aring;de at lys kan blive r&oslash;dforskudt p&aring; er, at selve tyngdekraften fra et tungt legeme f&aring;r lyset til at miste energi.
-                                        For at bev&aelig;ge sig v&aelig;k fra et legeme ("kravle op af tyngdepotential-br&oslash;nden"),
-                                        m&aring; lyset bruge noget energi til at overvinde tyngdekraften, og n&aring;r lysets energi mindskes, &oslash;ges b&oslash;lgel&aelig;ngden.
+                                        For at bev&aelig;ge sig v&aelig;k fra et legeme ("kravle op af tyngdepotential-br&oslash;nden"), m&aring; lyset bev&aelig;ge sig mellem forskellige referencerammer;
+                                        vi kan sige, at det m&aring; bruge noget energi til at overvinde tyngdekraften, og n&aring;r lysets energi mindskes, &oslash;ges b&oslash;lgel&aelig;ngden.
                                         </p>
                                         <p>
-                                        Denne effekt, der beskrives ved den <i>generelle relativitetsteori</i>, er normalt meget mindre end Dopplereffekten.
+                                        Denne effekt, der beskrives ved den generelle relativitetsteori, er normalt meget mindre end Dopplereffekten.
                                         Lyset fra vores Sol r&oslash;dforskydes f.eks. ca. en milliontedel, men for sm&aring;, kompakte objekter s&aring;som <a href="./hvid_dvaerg.html">hvide dv&aelig;rge</a>
                                         er det ca. 1/10.000, og for lys udsendt fra overfladen af et <a href='./sort_hul.html'>sort hul</a> er r&oslash;dforskydningen uendelig stor,
                                         s&aring; lyset mister al sin energi og undslipper derfor ikke.
@@ -337,8 +348,8 @@
                                             <!-- <h3 class="title">Gravitationel z</h3> -->
                                         </div>
                                         <div>
-                                            <font size=-2><strong>Gravitationel r&oslash;dforskydning</strong>: Fotoner der udsendes fra en lyskilde n&aelig;r jordoverfladen r&oslash;dforskydes eferh&aring;nden som de
-                                                fjerner sig fra Jorden. Effekten er ekstrem lille for Jorden, men kan alligevel m&aring;les; for stjerner, som er meget tungere, er effekten st&oslash;rre. </font>
+                                            <font size=-2><strong>Gravitationel r&oslash;dforskydning</strong>: Fotoner der udsendes fra en lyskilde n&aelig;r jordoverfladen r&oslash;dforskydes eferh&aring;nden som de fjerner sig fra Jorden.
+                                                Effekten er ekstrem lille for Jorden, men kan alligevel m&aring;les; for stjerner, som er meget tungere, er effekten st&oslash;rre. </font>
                                         </div>
                                     </div>
                                     <!-- end right column -->
@@ -417,8 +428,7 @@
                                 $$
                                 v = H_0 d,
                                 $$
-                                hvor proportionalitetsfaktoren \(H_0\) er Hubblekonstanten. I dag er \(H_0 \simeq 70\) km/s per Mpc (1 Mpc, eller megaparsec, er ca. 3.3 mio. lys&aring;r),
-                                men tidligere var den st&oslash;rre.
+                                hvor proportionalitetsfaktoren \(H_0\) er Hubblekonstanten. I dag er \(H_0 \simeq 70\) km/s per Mpc (1 Mpc, eller megaparsec, er ca. 3.3 mio. lys&aring;r), men tidligere var den st&oslash;rre.
                                 </p>    
                                 <p>    
                                 R&oslash;dforskydningen \(z\) vokser med Universets udvidelse; hvis Universets st&oslash;rrelse var en br&oslash;kdel \(a\) dengang lysets blev udsent
@@ -435,7 +445,7 @@
                                 </p>    
                             </div>
                             <div class="modal-footer">
-                                <button type="button" data-toggle="modal" data-target="#kosmoModal2" class="btn btn-circle btn-small btn-skin-blue">Jeg er ligeglad hvor komplekst det er. Vis mig det!</button>
+                                <button type="button" data-toggle="modal" data-target="#kosmoModal2" class="btn btn-circle btn-small btn-skin-blue">Jeg er ligeglad<br>hvor komplekst det er.<br>Vis mig det!</button>
                                 <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
                             </div>
                         </div>
@@ -519,10 +529,7 @@
                                 Hvis en lysstr&aring;le udsendes i afstanden \(r_1\) fra centrum af en (sf&aelig;risk) masse \(M\) med hvileb&oslash;lgel&aelig;ngden \(\lambda_0\),
                                 og observeres i afstanden \(r_2\) til at have b&oslash;lgel&aelig;ngden \(\lambda_\mathrm{obs}\), vil den blive r&oslash;dforskudt med en faktor
                                 $$
-                                1 + z = \frac{\lambda_\mathrm{obs}}{\lambda_0}
-                                $$
-                                $$
-                                = \frac{\sqrt{1 - 2GM/r_2 c^2}}{\sqrt{1 - 2GM/r_1 c^2}},
+                                1 + z = \frac{\lambda_\mathrm{obs}}{\lambda_0} = \frac{\sqrt{1 - 2GM/r_2 c^2}}{\sqrt{1 - 2GM/r_1 c^2}},
                                 $$
                                 hvor \(G\) og \(c\) er hhv. Newtons gravitationskonstant og lysets hastighed.
                                 </p>
@@ -543,7 +550,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- end modals -->
 
         </div>
