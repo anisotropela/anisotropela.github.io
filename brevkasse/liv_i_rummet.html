@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Liv i Universet</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Om liv i Universet</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Liv i Universet</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Sp&oslash;rgsm&aring;let</h3>
+                                            <p>
+                                            Hvor langt v&aelig;k man med rimelig sikkerhed sige der ikke er liv som ligner vores? Alts&aring; i forhold til kommunikationsevner osv.?
+                                            </p>
+                                            <!--
+                                            <p>
+                                            Hilsen Anders
+                                            </p>
+                                            -->
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="G&aring; til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>G&aring; til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede sp&oslash;rgsm&aring;l</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="https://dark-cosmology.dk/~pela/Encyclo/VerdensBegyndelse.html" class="entry-image"><img src="../pics/brevkasse/bigBang_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="https://dark-cosmology.dk/~pela/Encyclo/VerdensBegyndelse.html">Om verdens begyndelse</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(gammelt sp&oslash;rgsm&aring;l; ligger stadig p&aring; min gamle hjemmeside)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!--
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">Her kommer nogle snart</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(meget snart; jeg lover)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (tl;dr) -->
+                        <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>tl;dr</h3>
+                                        <p>
+                                        Mit svar greb lidt om sig, men konklusionen er: Vi kan kun med rimelig sikkerhed sige, at der ikke er "liv som vores" andre steder i vort eget solsystem.
+                                        </p>
+                                        <p>
+                                        Med noget mindre sikkerhed kan vi nok ogs&aring; sige, at der heller ikke er liv (som vores) p&aring; de allern&aelig;rmeste naboplaneter.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            <hr style="border: none; border-bottom: 1px solid; color:#cccccc">
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (naboer) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Hvad er "liv som ligner vores?"</h3>
+                                        <p>
+                                        Sp&oslash;rgsm&aring;let er sv&aelig;rt at svare p&aring;, is&aelig;r fordi definitionen af "liv som ligner vores" kommer til at have indflydelse p&aring; svaret.
+                                        Hvis vi sammenligner vores nuv&aelig;rende civilisation med den for 100 &aring;r siden, eller om 100 &aring;r, er den jo ekstrem forskellig, og 100 &aring;r er meget lidt i kosmiske sammenh&aelig;nge.
+                                        S&aring; at finde en civilisation der var bare nogenlunde p&aring; samme stadie som os ville v&aelig;re lidt af et lykketr&aelig;f.
+                                        </p>
+                                        <p>
+                                        Men lad os for argumentets skyld forestille os en civilisation pr&aelig;cis som vores.
+                                        </p>
+
+                                        <h3>Naboplaneterne</h3>
+                                        <p>
+                                        I vores eget solsystem ville vi med sikkerhed kunne se, hvis en s&aring;dan civilisation eksisterede andre steder end p&aring; Jorden, da vi efterh&aring;nden har haft rumsonder ude i de fjerneste afkroge.
+                                        </p>
+                                        <p>
+                                        Der kunne m&aring;ske t&aelig;nkes at findes mikrobeliv, f.eks. under iskappen p&aring; Saturns m&aring;ne, Titan. Men det er vi ligeglade med ligenu.
+                                        </p>
+
+                                        <h3>Nabostjernerne</h3>
+                                        <p>
+                                        En civilisation som vores kr&aelig;ver nok en moderstjerne. I det hele taget er det sv&aelig;rt at forestille nogetsomhelst liv eksistere <em>uden</em> en stjerne til at forsyne den med energi.
+                                        </p>
+                                        <p>
+                                        Den kr&aelig;ver ogs&aring; en planet til at bo p&aring;.
+                                        Planeter kommer i to former: Gasplaneter (som Jupiter og Saturn), og stenplaneter (som Jorden og Mars).
+                                        En civilisation som vores kr&aelig;ver en jordplanet (det er sv&aelig;rt i det hele taget at forestille sig nogen form for liv eksistere p&aring; en gasplanet, da der ikke rigtig er noget sted at opholde sig,
+                                        men man skal passe p&aring; med at v&aelig;re for fordomsfuld)
+                                        </p>
+                                        <p>
+                                        Den n&aelig;rmeste nabostjerne, Proxima Centauri, <em>har</em> faktisk en stenplanet (som s&aring; opfindsomt hedder "Proxima Centauri b"; "b" fordi det var den anden planet der blev opdaget her).
+                                        Stjernen og dens planeter ligger godt fire lys&aring;r v&aelig;k. Hvorvidt Proxima b er beboelig ved vi faktisk ikke. Den er lidt st&oslash;rre end Jorden, s&aring; der er lidt st&aelig;rkere tyngdekraft;
+                                        <em>hvis</em> der liv, har de nok udviklet sig til nogle muskul&oslash;se sataner for at kunne vade rundt omkring.
+                                        </p>
+                                        <p>
+                                        Et problem for liv er m&aring;ske, at planeten ligger 20 gange s&aring; t&aelig;t p&aring; dens moderstjerne som Jorden g&oslash;r p&aring; Solen. Stjernen er ikke s&aring; varm som Solen, s&aring; der er faktisk temmelig koldt p&aring; planeten,
+                                        men der er en ret kraftig "solvind" (str&aring;lingstryk), som nok har bl&aelig;st enhver atmosf&aelig;re v&aelig;k.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/proxima_b.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/proxima_b.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Proxima Centauri b</strong>: S&aring;den her ser vores n&aelig;rmeste nabo-exoplanet m&aring;ske ud
+                                                (kredit: <a href="https://www.eso.org/public/images/ann16056a/">ESO</a>).</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (kommunikation) -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Kommunikation</h3>
+                                        <p>
+                                        De n&aelig;st-n&aelig;rmeste planeter med sandsynlighed for liv er nok Barnard's Star b (6 lys&aring;r, men der er &ndash;170&deg;C), Ross 128 b (11 lys&aring;r, op til +28&deg;C) og Luyten b (12 lys&aring;r, &ndash;14&deg;C).
+                                        </p>
+                                        <p>
+                                        Men du vil jo vide, om vi kan v&aelig;re <em>sikre</em> p&aring;, om der er liv eller ej. Vi kan l&aelig;re rigtig meget om atmosf&aelig;rens sammens&aelig;tning (f.eks. om den er blevet beriget med CO<sub>2</sub> fra ud&aring;nding),
+                                        temperaturen, osv. vha. spektroskopiske observationer. Men hvis ikke vi ligefrem skal rejse dertil, er den bedste m&aring;de nok at lytte efter radiosignaler.
+                                        </p>
+                                        <p>
+                                        Intensiteten af radiosignaler (og andet lys) aftager med afstanden i anden potens, og det g&oslash;r det rigtig sv&aelig;rt at detektere signaler ret langt v&aelig;k.
+                                        Med vores nuv&aelig;rende teknologi (og dermed teknologien for en civilisation der ligner vores) kan man ikke detektere "typiske" radiosignaler l&aelig;ngere v&aelig;k end et par lys&aring;r.
+                                        <!-- Det er d&eacute;t som "SETI-projektet" g&aring;r ud p&aring;. -->
+                                        </p>
+                                        <p>
+                                        Det vil alts&aring; sige, at vi <em>ikke</em> kan v&aelig;re sikre p&aring;, at der ikke er en civilisation p&aring; selv de n&aelig;rmeste naboplaneter.
+                                        </p>
+                                        <p>
+                                        Men i &oslash;jeblikket (og mindst 7-8 &aring;r ud i fremtiden) er et projekt under opbygning som hedder "Square Kilometer Array". Med dette k&aelig;mpe array af radioantenner vil man kunne detektere
+                                        ekstraterrastriale radiosignaler af lignende styrke ud til ca. 150 lys&aring;r. SKA vil ogs&aring; kunne lede efter signalar fra aminosyrer og andre organiske forbindelser.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/SKA.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/SKA.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Square Kilometer Array</strong>: S&aring;dan her kommer det til at se ud (kredit: <a href="https://www.skatelescope.org/copyright/">SKA</a>).</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (breakthrough) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Breakthrough Starshot</h3>
+                                        <p>
+                                        Et endnu federe projekt g&aring;r ud p&aring; rent faktisk at bes&oslash;ge Proxima b. Almindelige rumskibe flyver med noget i retning af 0.01% af lysets hastighed, s&aring; det ville tage 40.000 &aring;r at komme dertil,
+                                        og s&aring; l&aelig;nge gider vi ikke vente. Men et projekt der hedder "Breakthrough Starshot" g&aring;r ud p&aring; at bygge en fl&aring;de p&aring; ca. 1000 bittesm&aring; romsonder.
+                                        </p>
+                                        <p>
+                                        Hver sonde kommer til at veje et par gram,
+                                        og v&aelig;re udstyret med et ca. 4&times;4 m<sup>2</sup> sejl, som vi hernede p&aring; Jorden kan skyde p&aring; med en laserstr&aring;le, der s&aring; kan accelerere sonderne op p&aring; 20% af lysets hastighed.
+                                        </p>
+                                        <p>
+                                        Det vil s&aring; tage ca. 20 &aring;r at flyve til Proxima b, og yderligere 4 &aring;r f&oslash;r deres information om Proxima b n&aring;r tilbage til Jorden.
+                                        I &oslash;jeblikket er planen at sende dem afsted i 2036, s&aring; med lidt held burde vi have de f&oslash;rste billeder i 2060.
+                                        </p>
+                                        <p>
+                                        Hvis Proxima b <em>har</em> en civilisation, og hvis den er nogenlunde ligesom vores, vil fl&aring;den jo s&aring; nok desv&aelig;rre blive skudt ned idet den ankommer&hellip;
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/breakthrough.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/breakthrough.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>En nanofl&aring;de</strong>: Selve trykket fra lyset i laserstr&aring;len bl&aelig;ser sonderne afsted (kredit: <a href="https://breakthroughinitiatives.org/initiative/3">Breakthrough Initiative</a>).</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- end fifth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <section class="section p-top-20 p-bottom-40">
+                    <div class="container">
+                    </div>
+                </section>
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="Om"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Hovedsider</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../index.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Genveje</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="../questions.html"        >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklop&aelig;di</a></li>
+                                            <li><a href="../encyclo/rodforskydning.html"      >Hvad er r&oslash;dforskydning?</a></li>
+                                            <li><a href="../noter.html"        >Random noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html" >"Classic papers"-kursus</a></li>
+                                            <li><a href="https://videnskab.dk/naturvidenskab/big-bang-en-oejenvidneberetning">Big Bang</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../stuff/comics.html"            >Tegneserier</a></li>
+                                            <li><a href="../stuff/conferences.html"       >Konferencer</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">B&oslash;ger</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a></li>
+                                            <li><a href="../observations/key.html"        >N&oslash;glehulst&aring;gen</a></li>
+                                            <!-- <li><a href="./stuff/photos.html"            >Photos</a></li> -->
+                                            <li><a                                       >Fotos</a></li>
+                                            <li><a href="../stuff/albums.html"            >Musikalbum</a></li>
+                                            <li><a                                       >Familie</a></li>
+                                            <!-- <li><a href="./stuff/familie.html"           >Family</a></li> -->
+                                            <li><a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosange</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../index.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Liv i Universet</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
