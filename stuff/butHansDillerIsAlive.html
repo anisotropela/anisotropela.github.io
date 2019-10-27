@@ -130,49 +130,255 @@
                                     That's meta-humanity-humour for ya.
                                     </p>
                                     <p>
-                                    These are the books we've read:
+                                    These are the books we've read. We also rated them on a scale from 0 to 5.
+                                    Click a column header to sort according to that one.
                                     </p>
 
                                     <!-- begin left column -->
                                     <div class="col-md-8">
                                         <p id="top">
-                                    <ul>
-                                        <li>Sophus Helle and Morten Søndergaard (transl.): <strong>Gilgamesh</strong></li>
-                                        <li>Brett Easton Ellis:                            <strong>Less Than Zero</strong></li>
-                                        <li>F. Scott Fitzgerald:                           <strong>The Great Gatsby</strong></li>
-                                        <li>Günther Grass:                                 <strong>The Tin Drum</strong></li>
-                                        <li>Peter Adolphsen:                               <strong>Rynkekneppesygen</strong> ("<em>The Wrinkle Fuck Disease</em>")</li>
-                                        <li>Svend Aage Madsen:                             <strong>Between Heaven And Earth</strong></li>
-                                        <li>Ourselves:                                     <strong>Egne noveller</strong> (we wrote our own novels)</li>
-                                        <li>Louis-Ferdinand Céline:                        <strong>Death On Credit</strong></li>
-                                        <li>Karen Blixen:                                  <strong>Seven Gothic Tales</strong></li>
-                                        <li>Erich Maria Remarch:                           <strong>All Quiet On The Western Front</strong></li>
-                                        <li>Jens Blendstrup:                               <strong>Slagterkoner og bagerenker                        </strong> </li>
-                                        <li>Jan Sonnergaard:                               <strong>Radiator (og andre noveller)                      </strong> </li>
-                                        <li>H. P. Lovecraft:                               <strong>The Call of Cthulhu; The Whisperer in the Darkness</strong> </li>
-                                        <li>Michel Houellebecq:                            <strong>H. P. Lovecraft: Against the World, Against Life  </strong> </li>
-                                        <li>John Le Carré:                                 <strong>The Spy Who Came In From The Cold</strong></li>
-                                        <li>Peter Madsen:                                  <strong>The Book Of Job</strong> (comic book version)</li>
-                                        <li>Virginia Woolf:                                <strong>To The Lighthouse</strong></li>
-                                        <li>Aksel Sandemose:                               <strong>A Fugitive Crosses His Tracks</strong></li>
-                                        <li>Morten Pape:                                   <strong>Planen                                            </strong> </li>
-                                        <li>Orhan Pamuk:                                   <strong>The White Castle</strong></li>
-                                        <li>Thomas Pynchon:                                <strong>Bleeding Edge</strong></li>
-                                        <li>Dan Turèll:                                    <strong>Images Of Vangede</strong></li>
-                                        <li>Harper Lee:                                    <strong>To Kill A Mocking Bird</strong></li>
-                                        <li>Michel Houellebecq:                            <strong>The Map And The Territory</strong></li>
-                                        <li>Joseph  Conrad:                                <strong>Heart Of Darkness</strong></li>
-                                        <li>Fjodor Dostojevski:                            <strong>Notes From Underground</strong></li>
-                                        <li>Charles Dickens:                               <strong>A Tale Of Two Cities</strong></li>
-                                        <li>Gabriel García Marquéz:                        <strong>One Hundred Years Of Solitude</strong></li>
-                                        <li>Knut Hamsun:                                   <strong>Hunger</strong></li>
-                                        <li>Lewis Carroll:                                 <strong>Alice In Wonderland</strong></li>
-                                        <li>John Steinbeck:                                <strong>East Of Eden</strong></li>
-                                        <li>Ernest Hemingway:                              <strong>The Old Man And The Sea</strong></li>
-                                    </ul>
-                                        </p>
-                                        <hr>
+
+
+                                        <div class="item-body open">
+                                            <!-- The following sortable table is from https://stackoverflow.com/a/51648529/4428818 -->
+                                            <script src="../scripts/sortableTable.js"></script>             <!-- <script src="https://www.w3schools.com/lib/w3.js"></script>                -->
+                                            <link href="../scripts/sortableTable.css" rel="stylesheet" />   <!-- <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />  -->
+                                            <font size=-1>
+                                                <div style="overflow-x:auto;">
+                                                    <table id="usersTable" class="w3-table-all">
+                                                        <tr>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Author</th>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(2)')" style="cursor:pointer">Title</th>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(3)')" style="cursor:pointer">Stars (0-5)</th>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(4)')" style="cursor:pointer">Spread</th>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Isaac Asimov</td>
+                                                            <td><strong>Caves of steel</strong></td>
+                                                            <td>1.7</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Sophus Helle og Morten S&oslash;ndergaard (overs.)</td>
+                                                            <td><strong>Gilgamesh</strong></td>
+                                                            <td>3.8</td>
+                                                            <td>&plusmn;0.8</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Brett Easton Ellis</td>
+                                                            <td><strong>Less than zero</strong></td>
+                                                            <td>2.8</td>
+                                                            <td>&plusmn;0.7</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>F. Scott Fitzgerald</td>
+                                                            <td><strong>The Great Gatsby</strong></td>
+                                                            <td>2.6</td>
+                                                            <td>&plusmn;1.0</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Günther Grass</td>
+                                                            <td><strong>The Tin Drum</strong></td>
+                                                            <td>1.5</td>
+                                                            <td>&plusmn;0.9</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Peter Adolphsen</td>
+                                                            <td><strong>Rynkekneppesygen</strong></td>
+                                                            <td>3.6</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Svend Aage Madsen</td>
+                                                            <td><strong>Between Heaven And Earth</strong></td>
+                                                            <td>4.1</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Ourselves</td>
+                                                            <td><strong>We wrote our own short stories</strong></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Louis-Ferdinand C&eacute;line</td>
+                                                            <td><strong>Death On Credit</strong></td>
+                                                            <td>4.9</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Karen Blixen</td>
+                                                            <td><strong>Seven Gothic Tales</strong></td>
+                                                            <td>2.3</td>
+                                                            <td>&plusmn;0.8</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Erich Maria Remarch</td>
+                                                            <td><strong>All Quiet On The Western Front</strong></td>
+                                                            <td>4.3</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Jens Blendstrup</td>
+                                                            <td><strong>Slagterkoner og bagerenker</strong></td>
+                                                            <td>4.2</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Jan Sonnergaard</td>
+                                                            <td><strong>Radiator (and other short stories)</strong></td>
+                                                            <td>3.8</td>
+                                                            <td>&plusmn;0.7</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>H. P. Lovecraft</td>
+                                                            <td><strong>The Call of Cthulhu and other short stories</strong></td>
+                                                            <td>4.0</td>
+                                                            <td>&plusmn;1.0</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>John Le Carr&eacute;</td>
+                                                            <td><strong>The Spy Who Came In From The Cold</strong></td>
+                                                            <td>2.2</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Peter Madsen</td>
+                                                            <td><strong>The Book Of Job</strong> (comic book version)</td>
+                                                            <td>1.0</td>
+                                                            <td>&plusmn;0.4</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Virginia Woolf</td>
+                                                            <td><strong>To The Lighthouse</strong></td>
+                                                            <td>2.5</td>
+                                                            <td>&plusmn;0.5</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Aksel Sandemose</td>
+                                                            <td><strong>A Fugitive Crosses His Tracks</strong></td>
+                                                            <td>4.0</td>
+                                                            <td>&plusmn;1.0</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Morten Pape</td>
+                                                            <td><strong>Planen</strong></td>
+                                                            <td>4.3</td>
+                                                            <td>&plusmn;0.4</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Orhan Pamuk</td>
+                                                            <td><strong>The White Castle</strong></td>
+                                                            <td>2.9</td>
+                                                            <td>&plusmn;1.5</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Thomas Pynchon</td>
+                                                            <td><strong>Bleeding Edge</strong></td>
+                                                            <td>0.4</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Dan Tur&egrave;ll</td>
+                                                            <td><strong>Images Of Vangede</strong></td>
+                                                            <td>3.6</td>
+                                                            <td>&plusmn;0.4</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Harper Lee</td>
+                                                            <td><strong>To Kill A Mocking Bird</strong></td>
+                                                            <td>3.2</td>
+                                                            <td>&plusmn;0.2</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Michel Houellebecq</td>
+                                                            <td><strong>The Map And The Territory</strong></td>
+                                                            <td>4.5</td>
+                                                            <td>&plusmn;0.3</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Joseph  Conrad</td>
+                                                            <td><strong>Heart Of Darkness</strong></td>
+                                                            <td>2.9</td>
+                                                            <td>&plusmn;0.5</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Fjodor Dostojevski</td>
+                                                            <td><strong>Notes From Underground</strong></td>
+                                                            <td>4.3</td>
+                                                            <td>&plusmn;0.4</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Charles Dickens</td>
+                                                            <td><strong>A Tale Of Two Cities</strong></td>
+                                                            <td>2.9</td>
+                                                            <td>&plusmn;0.4</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Gabriel García Marqu&eacute;z</td>
+                                                            <td><strong>One Hundred Years Of Solitude</strong></td>
+                                                            <td>2.5</td>
+                                                            <td>&plusmn;0.6</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Knut Hamsun</td>
+                                                            <td><strong>Hunger</strong></td>
+                                                            <td>4.5</td>
+                                                            <td>&plusmn;0.3</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Lewis Carroll</td>
+                                                            <td><strong>Alice In Wonderland</strong></td>
+                                                            <td>3.4</td>
+                                                            <td>&plusmn;0.5</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>John Steinbeck</td>
+                                                            <td><strong>East Of Eden</strong></td>
+                                                            <td>4.0</td>
+                                                            <td>&plusmn;0.0</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Ernest Hemingway:</td>
+                                                            <td><strong>The Old Man And The Sea</strong></td>
+                                                            <td>3.0</td>
+                                                            <td>&plusmn;0.0</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </font>
+                                            </p>
+                                            <p>
+                                            Our general enthusiasm for the books we've read has been distributed as follows:
+                                            <table>
+                                                <tr>
+                                                    <td>Morten:&nbsp;&nbsp;</td>
+                                                    <td>3.2 &plusmn;1.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mikkel: </td>
+                                                    <td>3.4 &plusmn;1.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jeff: </td>
+                                                    <td>2.9 &plusmn;1.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Klaus: </td>
+                                                    <td>3.3 &plusmn;1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peter: </td>
+                                                    <td>3.5 &plusmn;1.0</td>
+                                                </tr>
+
+
+                                            </table>
+                                            </p>
+                                        </div>
                                     </div>
+                                    <!-- end left column -->
+                                    <!-- wallah -->
                                     <!-- end left column -->
 
                                     <!-- begin right column -->
@@ -196,7 +402,7 @@
                         <!-- begin gray row -->
                         <!--
                             <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
-                            <div class="container"> 
+                            <div class="container">
                             <div class="row">
                             <div class="col-md-8">
                             <p>
