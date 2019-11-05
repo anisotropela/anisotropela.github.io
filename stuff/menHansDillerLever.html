@@ -139,8 +139,8 @@
                                     </p>
                                     <p>
                                     Vi har ogs&aring; hver is&aelig;r givet dem stjerner p&aring; en skala fra 0 til 5.
-                                    Her ses gennemsnit og spredning (standardafvigelse).
-                                    Klik en s&oslash;jleoverskrift for at sortere efter den.
+                                    Her ses gennemsnit og spredning (alts&aring; hvor enige eller uenige vi har v&aelig;ret om karakteren). 
+                                    <!-- Klik en s&oslash;jleoverskrift for at sortere efter den. -->
                                     </p>
 
                                     <!-- begin left column -->
@@ -155,10 +155,16 @@
                                                 <div style="overflow-x:auto;">
                                                     <table id="usersTable" class="w3-table-all">
                                                         <tr>
-                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Forfatter</th>
-                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(2)')" style="cursor:pointer">Titel</th>
-                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(3)')" style="cursor:pointer">Stjerner (0-5)</th>
-                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(4)')" style="cursor:pointer">Spredning</th>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Forfatter      <i class="fa fa-fw fa-sort"></i></th>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(2)')" style="cursor:pointer">Titel          <i class="fa fa-fw fa-sort"></i></th>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(3)')" style="cursor:pointer">Stjerner (0-5) <i class="fa fa-fw fa-sort"></i></th>
+                                                            <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(4)')" style="cursor:pointer">Spredning      <i class="fa fa-fw fa-sort"></i></th>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>Siri Hustvedt</td>
+                                                            <td><strong>Den Flammende Verden</strong></td>
+                                                            <td>(er i gang med at l&aelig;se)</td>
+                                                            <td></td>
                                                         </tr>
                                                         <tr class="item">
                                                             <td>Isaac Asimov</td>
@@ -234,7 +240,7 @@
                                                         </tr>
                                                         <tr class="item">
                                                             <td>Jan Sonnergaard</td>
-                                                            <td><button type="button" data-toggle="modal" data-target="#RadiatorModal" class="btn btn-round btn-extra-small btn-trans"></button> <strong>Radiator (og andre noveller)</strong></td>
+                                                            <td><button type="button" data-toggle="modal" data-target="#RadiatorModal" class="btn btn-round btn-extra-small btn-trans"></button> <strong>Radiator</strong> (og andre noveller)</td>
                                                             <td>3.8</td>
                                                             <td>&plusmn;0.7</td>
                                                         </tr>
@@ -347,7 +353,7 @@
                                                             <td>&plusmn;0.0</td>
                                                         </tr>
                                                         <tr class="item">
-                                                            <td>Ernest Hemingway:</td>
+                                                            <td>Ernest Hemingway</td>
                                                             <td><button type="button" data-toggle="modal" data-target="#HavetModal" class="btn btn-round btn-extra-small btn-trans"></button> <strong>Den Gamle Mand Og Havet</strong></td>
                                                             <td>3.0</td>
                                                             <td>&plusmn;0.0</td>
@@ -561,6 +567,16 @@
             <!-- #####End footer-->
 
             <!-- begin modals -->
+<!--
+    1. Skriv et element i listen uden note-button.
+    2. StÃ¥ i et beskrivende ord fra titlen og udfÃ¸r fÃ¸lgende record:
+       yiw_%a€PS<button type="button" data-toggle="modal" data-target="#WALLAHModal" class="btn btn-round btn-extra-small btn-trans"></button> [201~?wallahPllllllli€kb€kb€kb€kb€kb€kbG?end modalsO€PS<div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">                <div role="document" class="modal-dialog">                    <div class="modal-content">                        <div class="modal-header">                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>                            <h4 id="WALLAHModalLabel" class="modal-title">WALLAHtitle</h4>                            <div class="modal-body">                                WALLAHtext                            </div>                            <div class="modal-footer">                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>                            </div>                        </div>                    </div>                </div>            </div>[201~?wallahNnnnnnPllllllli€kb€kb€kb€kb€kb€kbNPllllllli€kb€kb€kb€kb€kb€kbNP      a€kb€kb€kb€kb€kb€kbNkkkkk_f" */strongyit``/wallahP den
+    3. Kopier tekst fra Evernote og konvertÃ©r til html vha. denne side:
+       https://wordtohtml.net
+    4. Cursoren burde stÃ¥ ved "WALLAHtext". Tryk 'cc' og paste html-teksten.
+    5. Tryk ESC og udfÃ¸r fÃ¸lgende record:
+       [pis, den er forsvundet... den ='ede, foldede, gik op til sidste ord i nÃ¦ste element]
+-->
 
             <!-- MODAL TEMPLATE
             <div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">
