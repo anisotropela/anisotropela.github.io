@@ -4412,6 +4412,51 @@ a:active {   /* Selected links*/
 .dark-color {
     color: #4b4b4b !important;
 }
+
+/* begin tooltips */
+/*
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #008000;
+  color: #006000;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #008000;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; */ /* Use half the width (120/2 = 60), to center tooltip */
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  /*
+  opacity: 0;
+  transition: opacity 1s;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; */ /* At the bottom of the tooltip */
+  /*
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #008000 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+*/
+/* end tooltips */
+
 h1, h2, h3, h4, h5, h6 {  /* Headlines */
     font-family: "Play",sans-serif;
     font-weight: 700;
@@ -5849,7 +5894,7 @@ ul#primary-menu >li {
 ul#primary-menu >li > a {
     display: block;
     font-size: 14px;
-    text-transform: capitalize;
+ /* text-transform: capitalize; */
     letter-spacing: 0px;
     padding: 0px 2px 0px 18px;
     color: rgba(0 ,0 ,0 , 0.7);
@@ -6358,7 +6403,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 .page-head h1.title {
     font-size: 26px;
     font-weight: 700;
-    text-transform: capitalize;
+ /* text-transform: capitalize; */
     letter-spacing: 1px;
 }
 .page-head h1.title.alt {
@@ -6539,7 +6584,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     padding: 0;
     color: #636363;
     font-size: 10px;
-    text-transform: capitalize;
+ /* text-transform: capitalize; */
     background: transparent;
 }
 .breadcrumb li:first-of-type {
@@ -7471,7 +7516,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     font-size: 18px;
     font-weight: bold;
     font-weight: 700;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     margin-bottom: 25px;
     margin-left: 65px;
     position: relative;

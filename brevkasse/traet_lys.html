@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Tr&aelig;t lys</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Om tr&aelig;t lys</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Tr&aelig;t lys</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Sp&oslash;rgsm&aring;let</h3>
+                                            <p>
+                                            Jeg har et sp&oslash;rgsm&aring;l, som jeg stadig ikke kan f&aring;r svar p&aring;, fx
+                                            ved at l&aelig;se om det. For mig ser det ud som om at hele modellen
+                                            om Universets udvidelse baseres p&aring; r&oslash;dforskydningen og at den
+                                            udelukkende fortolkes som hastighed bort fra os. Har vi andre,
+                                            uafh&aelig;ngige m&aring;linger, som bekr&aelig;fter denne udvidelse? Det passer
+                                            vist ogs&aring; med relativitetsteorien.
+                                            </p>
+                                            <p>
+                                            I andre sammenh&aelig;nge mener man, at fotoner kan miste energi, fx
+                                            fra centrum af en stjerne og ud til overfladen, eller i den
+                                            f&oslash;rste tid efter "Big Bang", hvor der er frie elektroner. Man
+                                            kunne vel ogs&aring; forstille sig, at fotoner kunne miste energi
+                                            (r&oslash;dforskydning) p&aring; vejen gennem Universet ved en eller anden
+                                            for os ukendt proces. Der er jo s&aring; meget, vi ikke ved om
+                                            Universet (m&oslash;rkt stof eller m&oslash;rk energi). Er det ikke korrekt,
+                                            at vi ikke ser (eller er i stand til at m&aring;le) r&oslash;dforskydning i
+                                            vores egen galaksehob, hvor afstandene er "sm&aring;".  Her ser det
+                                            ud til, at fx Andromeda og M&aelig;lkevejen n&aelig;rmer sig hinanden &mdash; p&aring;
+                                            grund af tyngdekraften. R&oslash;dforskydningen ses (s&aring; vidt jeg
+                                            forst&aring;r) kun for galakser udenfor vores galaksehob, som ligger
+                                            meget fjernt fra os og fotonerne derfor bev&aelig;ger sig gennem et
+                                            meget stort "tomt" rum, s&aring; selv en svag effekt f&aring;r betydning.
+                                            </p>
+                                            <p>
+                                            Hilsen <br>
+                                            Finn
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="G&aring; til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>G&aring; til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede sp&oslash;rgsm&aring;l</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./rodforskydning.html" class="entry-image"><img src="../pics/brevkasse/redshift_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./rodforskydning.html">Om r&oslash;dforskydning</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!--
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">Her kommer nogle snart</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(meget snart; jeg lover)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Svar for travle mennesker</h3>
+                                            <p>
+                                            De m&aring;der du n&aelig;vner, er ikke konsistent med det vi observerer. N&aring;r vi tror vi har styr p&aring; &aring;rsagen til r&oslash;dforskydningen,
+                                            er det fordi teorien der beskriver den er gennemtestet p&aring; mange forskellige m&aring;der, og fordi observationerne passer ind i en st&oslash;rre sammenh&aelig;ng.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin third row (WALLAHlong_answer_1) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Dit forslag ville "sl&oslash;re" observationer</h3>
+                                        <p>
+                                        Hej Finn,
+                                        </p>
+                                        <p>
+                                        De m&aring;der du n&aelig;vner, hvorp&aring; fotoner kan miste energi, har vi rigtig godt styr p&aring;; de har begge at g&oslash;re med, at fotonerne hele tiden spredes p&aring; partikler, som
+                                        har en vis temperatur, og dermed f&aring;r samme temperatur, eller energi. Det skyldes det princip der kaldes "termodynamisk ligev&aelig;gt".
+                                        </p>
+                                        <p>
+                                        N&aring;r vi er temmelig sikre p&aring;, at ingen s&aring;danne mekanismer er p&aring; spil, skyldes det, at i alle disse
+                                        tilf&aelig;lde &aelig;ndrer fotonen ogs&aring; retning. Det vil sige, at jo l&aelig;ngere v&aelig;k en
+                                        galakse ligger, desto mere "t&aring;get"/udvisket ville synet af den v&aelig;re.
+                                        </p>
+                                        <p>
+                                        P&aring; samme m&aring;de som at tr&aelig;erne i en t&aring;get skov bliver mere og mere utydelige, jo l&aelig;ngere
+                                        v&aelig;k de st&aring;r, fordi lyset fra dem spredes p&aring; vanddr&aring;berne.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (WALLAHlong_answer_2) -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Tr&aelig;t lys</h3>
+                                        <p>
+                                        Men du har selvf&oslash;lgelig ret i, at dette ikke er noget bevis for, at der ikke
+                                        skulle kunne findes en anden &aring;rsag. Der er da ogs&aring; gennem tiden blevet
+                                        foresl&aring;et forskellige forklaringer; de s&aring;kaldte "tired light"-hypoteser. Men
+                                        udover problemet med de "t&aring;gede" galakser beskrevet ovenfor, skal disse teorier
+                                        ogs&aring; kunne forklare hvordan overfladelysstyrken af galakser, deres
+                                        tidsforl&aelig;ngelse ("time dilation"), og det termiske spektrum af den kosmiske
+                                        mikrob&oslash;lgebaggrundsstr&aring;ling &aelig;ndrer sig med afstanden. Og det har de ikke v&aelig;ret
+                                        i stand til.
+                                        </p>
+                                        <p>
+                                        Is&aelig;r d&eacute;t med tidforl&aelig;ngelsen er efter min mening overbevisende
+                                        evidens for, at vi forst&aring;r mekanismen korrekt: Andre f&aelig;nomener (ikke fotoner)
+                                        har deres frekvenser reduceret med pr&aelig;cis samme faktor som lyset, nemlig (1+<i>z</i>),
+                                        hvor <i>z</i> er r&oslash;dskydningen. Speficikt aftager lysstyrken af supernovaer
+                                        langsommere med denne faktor, jo l&aelig;ngere v&aelig;k de ligger.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/traetLys.gif" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/traetLys.gif" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Sammenh&aelig;ng mellem r&oslash;dforskydning og tidsforl&aelig;ngelse</strong>: De mekanismer du foresl&aring;r ville give en sammenh&aelig;ng
+                                                mellem r&oslash;dforskydning (x-aksen) og tidsforl&aelig;ngelse (y-aksen) som vist ved den stiplede linje. Men det vi ser er de sorte prikker, som er konsistent
+                                                med den teoretiske forudsigelse (den sorte linje)
+                                                (kredit: <a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...682..724B/abstract">Bolndin et al. 2008</a>).</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (WALLAHlong_answer_2) -->
+                        <section class="section section-narrow p-top-60 bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Vores teorier er testet p&aring; mange uafh&aelig;ngige m&aring;der</h3>
+
+                                        <p>
+                                        N&aring;r langt de fleste tror p&aring;, at r&oslash;dforskydningen skyldes udvidelsen, er det
+                                        fordi det passer ind i en allerede velfunderet teori p&aring; en smuk og simpel vis.
+                                        R&oslash;dforskydning som f&oslash;lge af bev&aelig;gelse er testet teoretisk masser af gange. Det
+                                        er ganske simpelt, og kr&aelig;ver slet ikke s&aelig;rlig h&oslash;je hastigheder, s&aring; det kan let
+                                        testes i et laboratorium.
+                                        </p>
+                                        <p>
+                                        Men faktisk fortolkes r&oslash;dforskydningen ikke som om, at galakserne har en bev&aelig;gelse v&aelig;k fra hinanden. Almindelig Dopplerforskydning
+                                        kr&aelig;ver, at lyskilden har en hastighed ift. hinanden i det &oslash;jeblik lyset
+                                        udsendes og/eller modtages. Men den generelle relativitetsteori &mdash; som er blevet
+                                        testet et utal af gange, og som til stadighed testes &mdash; forudsiger, at selve
+                                        rummets udvidelse "str&aelig;kker" fotonernes b&oslash;lgel&aelig;ngde, p&aring; pr&aelig;cis den m&aring;de som
+                                        observeres.
+                                        </p>
+                                        <p>
+                                        I princippet kunne man forestille sig et univers der var statisk,
+                                        s&aring; pludselig gik ind i en fase hvor det udvidede sig til dobbelt st&oslash;rrelse, og
+                                        dern&aelig;st blev statisk igen. Det lys som udsendes af en galakse f&oslash;r
+                                        udvidelsesfasen, og som vi modtager efter, vil vi se som v&aelig;rende r&oslash;dforskudt
+                                        til dobbelt b&oslash;lgel&aelig;ngde, p&aring; trods af at universet var statisk b&aring;de under
+                                        udsendelse og modtagelse.
+                                        </p>
+
+                                        <p>
+                                        S&aring;dan et univers lever vi nu ikke i, for det ville vi kunne se p&aring;
+                                        r&oslash;dforskydningens sammenh&aelig;ng med afstanden. Tilsyneladende lever vi i et
+                                        univers, hvor udvidelsen i starten aftog i grad med at alting tiltrak hinanden,
+                                        men p&aring; et tidspunkt fik en endnu ikke forst&aring;et mekanisme udvidelsen til at
+                                        accelerere igen. Indtil vi ved mere om denne mekanisme, kalder vi den for m&oslash;rk
+                                        energi. Men det er en anden historie.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (WALLAHlong_answer_2) -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>De n&aelig;rmeste galakser er ikke alle r&oslash;dforskudt</h3>
+                                        <p>
+                                        Det er ikke helt korrekt, at vi ikke m&aring;ler r&oslash;dforskydning for lokale galakser.
+                                        Alle galakser har en eller anden hastighed ift. os. Galakser ligger nogenlunde
+                                        stille i Universet, men ikke helt; de har typisk hastigheder p&aring; nogle hundrede,
+                                        eller m&aring;ske tusind km/s ift. den "kosmiske referenceramme".
+                                        </p>
+                                        <p>
+                                        Denne hastighed
+                                        kaldes galaksernes "pekuli&aelig;rhastighed", og kan b&aring;de v&aelig;re v&aelig;k fra os, mod os,
+                                        eller til h&oslash;jre. En galakse totale hastighed ift. os er summen er dens
+                                        pekuli&aelig;rhastighed og dens "kosmiske hastighed", alts&aring; den hastighed der skyldes
+                                        Universets udvidelse.
+                                        </p>
+                                        <p>
+                                        F&oslash;rstn&aelig;vnte er nogenlunde ens for alle galakser i
+                                        tilf&aelig;ldige retninger, uanset deres afstand, mens sidstn&aelig;vnte vokser
+                                        proportionalt med afstanden, og altid er v&aelig;k fra os. For lokale galakser
+                                        dominerer pekuli&aelig;rhastighed alts&aring;, og vi m&aring;ler derfor deres hastighed til
+                                        100-1000 km/s, b&aring;de mod os og v&aelig;k fra os. F.eks. er Andromedas r&oslash;dforskydning
+                                        faktisk "negativ", eller mere pr&aelig;cist, den har en bl&aring;forskydning pga. dens
+                                        hastighed mod os.
+                                        </p>
+                                        <p>
+                                        Bedste hilsener,<br>
+                                        Peter
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./music.html"       >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklop&aelig;di</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er r&oslash;dforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >N&oslash;glehulst&aring;gen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">B&oslash;ger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Tr&aelig;t lys</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

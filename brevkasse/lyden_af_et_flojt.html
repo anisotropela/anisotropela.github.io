@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Lyden af et fl&oslash;jt</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Om lyden af et fl&oslash;jt</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Lyden af et fl&oslash;jt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Sp&oslash;rgsm&aring;let</h3>
+                                            <p>
+                                            K&aelig;re Peter<br>
+                                            Hvad giver lyden n&aring;r man fl&oslash;jter?<br>
+                                            </p>
+                                            <p>
+                                            James.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="G&aring; til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>G&aring; til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede sp&oslash;rgsm&aring;l</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./kaffe.html" class="entry-image"><img src="../pics/brevkasse/coffee_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./kaffe.html">Om lyden af en kop kaffe</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(gammelt sp&oslash;rgsm&aring;l; ligger stadig p&aring; min gamle hjemmeside)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!--
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">Her kommer nogle snart</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(meget snart; jeg lover)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Svar til travle mennesker</h3>
+                                            <p>
+                                            N&aring;r luft bev&aelig;ger sig hurtigt forbi en skarp kant (som f.eks. spidsede l&aelig;ber), skabes turbulens som giver anledning til trykb&oslash;lger.
+                                            </p>
+                                            <p>
+                                            En kombination af mundhulens st&oslash;rrelse og mundens &aring;bning bestemmer, hvilke b&oslash;lgel&aelig;ngder der forst&aelig;rkes og hvilke der udslukkes,
+                                            s&aring;dan at kun en enkelt tone h&oslash;res.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (turbulens)  -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Turbulens og trykb&oslash;lger</h3>
+                                        <p>
+                                        Fysikken bag lyden af et fl&oslash;jt er ikke helt triviel og afh&aelig;nger af, pr&aelig;cis hvad der er der fl&oslash;jter,
+                                        f.eks. om det er et fl&oslash;jt fra l&aelig;berne, en blokfl&oslash;jte, fl&oslash;jten p&aring; en vandkedel, et pust henover en flaske, osv.
+                                        </p>
+                                        <p>
+                                        Men grundliggende er mekanismen, at luft-flowet henover en kant bliver turbulent. Det vil sige, at det ikke flyder afsted i en j&aelig;vn str&oslash;m,
+                                        men hele tiden &aelig;ndrer retning p&aring; tv&aelig;rs af udbredelsesretningen.
+                                        </p>
+                                        <p>
+                                        Disse bev&aelig;gelser frem og tilbage skaber sm&aring; over- og undertryk, der udbreder sig afsted gemmem luften med lydens hastighed &mdash;
+                                        for d&eacute;t er nemlig lige akkurat hvad lyd er; skiftende trykb&oslash;lger der bev&aelig;ger sig gennem luften.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/vortex.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/vortex.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Turbulens</strong>: Luftstr&oslash;mmen i en blokfl&oslash;jte "sk&aelig;res over" og bliver turbulent, hvilket danner vorticer som breder sig ud som lydb&oslash;lger.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (flojte) -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Lyden af en fl&oslash;jte</h3>
+                                        <p>
+                                        Turbulens er temmelig kaotisk, s&aring; luftb&oslash;lgerne skabes med forskellige b&oslash;lgel&aelig;ngder, og dermed frekvenser.
+                                        Sammenh&aelig;ngen mellem en b&oslash;lges b&oslash;lgel&aelig;ngde \(\lambda\) og frekvens \(f\) er givet ved \(\lambda = c / f\), hvor \(c\) er lydens hastighed.
+                                        Alts&aring;, jo kortere b&oslash;lgel&aelig;ngde, jo h&oslash;jere frekvens, dvs. jo lysere tone.
+                                        </p>
+                                        <p>
+                                        I en blokfl&oslash;jte bev&aelig;ger b&oslash;lgerne sig langs fl&oslash;jten fra mundstykket og ud mod enden.
+                                        N&aring;r de m&oslash;der det "frie" rum, forts&aelig;tter b&oslash;lgerne ud i rummet, men samtidig reflekteres b&oslash;lgen tilbage langs fl&oslash;jten.
+                                        Denne reflektion skyldes, at n&aring;r et lille overtryk forlader fl&oslash;jten, efterlades et lille undertryk, som s&aring; udbreder sig tilbage gennem fl&oslash;jten.
+                                        </p>
+                                        <p>
+                                        Derved bev&aelig;ger b&oslash;lger med flere forskellige b&oslash;lgel&aelig;ngder sig frem og tilbage i fl&oslash;jten.
+                                        N&aring;r to b&oslash;lgetoppe eller -dale m&oslash;des, forst&aelig;rker de hinanden, mens n&aring;r en top og en dal m&oslash;des, udslukker de hinanden. Dette kaldes <em>interferens</em>.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/standingWaveOpen.mov" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/standingWaveOpen.mov" class="ol-lightbox bg-red"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Trykudbredelser af grundtonen i et &aring;bent r&oslash;r</strong>: I et r&oslash;r der er &aring;bent i begge ender (f.eks. en fl&oslash;jte), rejser en b&oslash;lgetop (det t&aelig;tte omr&aring;de) frem,
+                                                reflekteres som en b&oslash;lgedal (det tynde omr&aring;de), rejser tilbage, reflekteres som en b&oslash;lgetop, og s&aring; videre. Afstanden mellem to b&oslash;lgetoppe svarer derfor (omtrent) til to r&oslash;rl&aelig;ngder
+                                                (kredit: <a href="http://newt.phys.unsw.edu.au/music">UNSW</a>).</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (overtoner) -->
+                        <section class="section section-narrow p-top-60 bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Grundtone og overtoner</h3>
+                                        <p>
+                                        Fordi fl&oslash;jter normalt er &aring;bne i begge ender, vil et overtryk reflekteres som et undertryk i begge ender.
+                                        Det betyder, at b&oslash;lgel&aelig;ngder som "passer" til fl&oslash;jtens l&aelig;ngde \(L\) med et <em>helt</em> antal <em>halve</em> b&oslash;lgel&aelig;ngder forst&aelig;rkes,
+                                        mens alle andre udslukkes. Dermed skabes <em>st&aring;ende b&oslash;lger</em> med bestemte b&oslash;lgel&aelig;ngder.
+                                        </p>
+                                        <p>
+                                        Den l&aelig;ngste b&oslash;lgel&aelig;ngde der passer til fl&oslash;jten, \(\lambda = 2L\), giver den dens dybeste tone, grundtonen.
+                                        Lidt kortere b&oslash;lgel&aelig;ngder udslukkes, men hvis de har en l&aelig;ngde p&aring; \(\lambda = 1L, \frac{2}{3}L, \frac{1}{2}L\), &hellip; forst&aelig;rkes de; dette giver instrumentet dets <em>overtoner</em>.
+                                        </p>
+                                        <p>
+                                        For eksempel vil grundtonen af en fl&oslash;jte p&aring; en halv meter have en b&oslash;lgel&aelig;ngde p&aring; \(\lambda =\) 1 m. Da lydens hastighed ved normalt atmosf&aelig;risk tryk og temperatur er \(c =\) 340 m/s,
+                                        bliver frekvensen \(f = c / \lambda = \) 340 Hz, hvilket ligger s&aring;dan ca. midt mellem en E- og en F-tone.
+                                        </p>
+                                        <p>
+                                        (Dette er ikke helt korrekt, dog: I virkeligheden reflekteres trykb&oslash;lgen lidt udenfor fl&oslash;jtens munding, ca. 0.6 gange fl&oslash;jtens diameter.
+                                        S&aring; hvis fl&oslash;jten er 2.5 cm tyk, f&aring;s 330 Hz, hvilket er et n&aelig;sten rent E.)
+                                        </p>
+                                        <p>
+                                        Ved at lette fingrene fra hullerne i fl&oslash;jten, g&oslash;res den effektivt set kortere, hvilket s&aring; giver lysere tonere.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/overtoner.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/overtoner.jpg" class="ol-lightbox bg-red"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Grund- og overtoner af et fl&oslash;jt</strong>: Spektret et et fl&oslash;jt med grundtonen 1061.5 Hz, hvilket er et lidt falsk C. Overtoner ses tydeligst ved ca. 2100 Hz (C'et en oktav h&oslash;jere), 3950 Hz (et B),
+                                                og 8600 Hz (C'et 2 oktaver h&oslash;jere). Den store bule til venstre for grundtonen er lavfrekvent st&oslash;j fra udsugningen p&aring; trappen, hvor jeg stod og optog fl&oslash;jtet.
+                                                (lavet med app'en <a href="https://apps.apple.com/us/app/n-track-tuner/id409786458">n-Track Tuner</a>).</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (klarinet)  -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Lyden af en klarinet</h3>
+                                        <p>
+                                        Fl&oslash;jter har en &aring;bning henne ved munden, s&aring; et overtryk reflekteres som et undertryk, og omvendt, i begge ender. Andre instrumenter, f.eks. klarinetter og oboer, er kun &aring;bne i den ene ende,
+                                        s&aring; i mund-enden reflekteres et overtryk som et overtryk.
+                                        </p>
+                                        <p>
+                                        Effekten er, at b&oslash;lgel&aelig;ngderne bliver <em>dobbelt</em> s&aring; lange som fl&oslash;jten; derfor giver s&aring;dan nogle instrumenter dybere toner.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/standingWaveHalfOpen.mov" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/standingWaveHalfOpen.mov" class="ol-lightbox bg-red"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Trykudbredelser af grundtonen i et halv&aring;bent r&oslash;r</strong>: I et r&oslash;r der er lukket i den ene ende (f.eks. en klarinet),
+                                                reflekteres en b&oslash;lgetop som en b&oslash;lgetop i den lukkede ende og skal derfor rejse to gange frem og tilbage,
+                                                f&oslash;r den har udf&oslash;rt el hel b&oslash;lge. Derfor bliver b&oslash;lgel&aelig;ngden dobbelt s&aring; lang, og tonen dobbelt s&aring; dyb
+                                                (kredit: <a href="http://newt.phys.unsw.edu.au/music">UNSW</a>).</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fifth row -->
+
+                        <!-- begin sixth row (flojte) -->
+                        <section class="section section-narrow p-top-60 bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Lyden af et fl&oslash;jt</h3>
+                                        <p>
+                                        Fysikken i et menneskefl&oslash;jt er lidt anderledes, selvom grundprincipperne er de samme. Her har vi et stort kammer med en lille &aring;bning, hvilket minder lidt om en flaske.
+                                        Et s&aring;dan system giver en s&aring;kaldt <em>Helmholtz-resonans</em>, hvor man kan vise, at frekvensen ved normalt tryk og temperatur bliver ca.
+                                        $$
+                                        f = 7260\,\mathrm{Hz}\,\times\,\sqrt{\frac{d}{D^3}},
+                                        $$
+                                        hvor &aring;bningen og hulrummets diametre \(d\) og \(D\) er m&aring;lt i cm.
+                                        </p>
+                                        <h6>Fl&oslash;jte-eksperiment</h6>
+                                        <p>
+                                        Jeg har lige foretaget f&oslash;lgende eksperiment. Jeg formede munden til et fl&oslash;jt og m&aring;lte dybden af min munds hulrum til 2 cm med en tandstik (afstand fra l&aelig;ber til tungen, som afkorter mundhulen),
+                                        og diameteren af hullet skabt af mine spidsede l&aelig;ber til 3 mm. If&oslash;lge formlen ovenfor skulle frekvensen s&aring; v&aelig;re 7260 Hz \(\sqrt{0.3/2^3} \simeq \) 1400 Hz, hvilket er ret t&aelig;t p&aring; et F.
+                                        </p>
+                                        <p>
+                                        If&oslash;lge min frekvensm&aring;ler var mit fl&oslash;jt et E ved ca. 1354.5 Hz &mdash; blot en halv tone ved siden af :)
+                                        </p>
+                                        <p>
+                                        Science &mdash; it works, bitches!
+                                        </p>
+                                        <p>
+                                        <br>
+                                        Bedste hilsener,<br>
+                                        Peter
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/mitFlojt.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/mitFlojt.jpg" class="ol-lightbox bg-red"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Et fl&oslash;jt</strong>: Resultatet af mit fl&oslash;jt ligger en halv tone under den groft udregnede teoretiske v&aelig;rdi.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end sixth row -->
+
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./music.html"       >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklop&aelig;di</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er r&oslash;dforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >N&oslash;glehulst&aring;gen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">B&oslash;ger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Lyden af et fl&oslash;jt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
