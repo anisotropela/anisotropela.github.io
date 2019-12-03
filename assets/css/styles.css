@@ -6773,6 +6773,15 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     background-color: rgb(217, 176, 15);
     color: #fff;
 }
+.btn-skin-logoyellow {
+    background-color: #F6E359;
+    border-color: rgb(246, 227, 89);
+    color: #fff;
+}
+.btn-skin-logoyellow:hover, .btn-skin-logoyellow:focus {
+    background-color: rgb(246, 227, 89);
+    color: #fff;
+}
 .btn-skin-dark {
     background-color: #555;
     border-color: rgb(70, 70, 70);
@@ -6804,6 +6813,9 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 .btn-trans.btn-skin-yellow {
     color: rgb(217, 176, 15);
 }
+.btn-trans.btn-skin-logoyellow {
+    color: rgb(246, 227, 89);
+}
 .btn-trans.btn-skin-dark {
     color: rgb(70, 70, 70);
 }
@@ -6813,8 +6825,8 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 .btn-trans.btn-skin-white:hover, .btn-trans.btn-skin-white:focus {
     color: #555;
 }
-.btn-trans.btn-skin-red, .btn-trans.btn-skin-blue, .btn-trans.btn-skin-green, .btn-trans.btn-skin-purple, .btn-trans.btn-skin-yellow, .btn-trans.btn-skin-dark {}
-.btn-trans.btn-skin-red:hover, .btn-trans.btn-skin-red:focus, .btn-trans.btn-skin-blue:hover, .btn-trans.btn-skin-blue:focus, .btn-trans.btn-skin-green:hover, .btn-trans.btn-skin-green:focus, .btn-trans.btn-skin-purple:hover, .btn-trans.btn-skin-purple:focus, .btn-trans.btn-skin-yellow:hover, .btn-trans.btn-skin-yellow:focus, .btn-trans.btn-skin-dark:hover, .btn-trans.btn-skin-dark:focus {
+.btn-trans.btn-skin-red, .btn-trans.btn-skin-blue, .btn-trans.btn-skin-green, .btn-trans.btn-skin-purple, .btn-trans.btn-skin-yellow, .btn-trans.btn-skin-logoyellow, .btn-trans.btn-skin-dark {}
+.btn-trans.btn-skin-red:hover, .btn-trans.btn-skin-red:focus, .btn-trans.btn-skin-blue:hover, .btn-trans.btn-skin-blue:focus, .btn-trans.btn-skin-green:hover, .btn-trans.btn-skin-green:focus, .btn-trans.btn-skin-purple:hover, .btn-trans.btn-skin-purple:focus, .btn-trans.btn-skin-yellow:hover, .btn-trans.btn-skin-logoyellow:hover, .btn-trans.btn-skin-yellow:focus, .btn-trans.btn-skin-logoyellow:focus, .btn-trans.btn-skin-dark:hover, .btn-trans.btn-skin-dark:focus {
     color: #fff;
 }
 /* icons */
@@ -6826,10 +6838,18 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     right: -10px;
     float: right;
 }
-.btn-skin-red i, .btn-skin-red span, .btn-skin-blue i, .btn-skin-blue span, .btn-skin-green i, .btn-skin-green span, .btn-skin-purple i, .btn-skin-purple span, .btn-skin-yellow i, .btn-skin-yellow span, .btn-skin-dark i, .btn-skin-dark span {
+.btn-skin-red i, .btn-skin-red span,
+.btn-skin-blue i, .btn-skin-blue span,
+.btn-skin-green i, .btn-skin-green span,
+.btn-skin-purple i, .btn-skin-purple span,
+.btn-skin-dark i, .btn-skin-dark span {
     color: #fff;
 }
-.dark-wrapper .btn-skin-red, .dark-wrapper .btn-skin-blue, .dark-wrapper .btn-skin-green, .dark-wrapper .btn-skin-purple, .dark-wrapper .btn-skin-yellow, .dark-wrapper .btn-skin-dark {
+.btn-skin-yellow i, .btn-skin-yellow span,
+.btn-skin-logoyellow i, .btn-skin-logoyellow span {
+    color: #7F548E;
+}
+.dark-wrapper .btn-skin-red, .dark-wrapper .btn-skin-blue, .dark-wrapper .btn-skin-green, .dark-wrapper .btn-skin-purple, .dark-wrapper .btn-skin-yellow, .btn-skin-logoyellow, .dark-wrapper .btn-skin-dark {
     color: #f5f5f5;
 }
 .btn-anim-i i {
@@ -13295,6 +13315,9 @@ iframe {
 }
 .bg-yellow {
     background-color: #f1c40f !important;
+}
+.bg-logoyellow {
+    background-color: #F6E359 !important;
 }
 .bg-lemon {
     background-color: #a9e84f !important;
