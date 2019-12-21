@@ -7372,6 +7372,13 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     color: #fff;
     border-color: #f1c40f;
 }
+.social-icons.hover-logo {}
+.social-icons.hover-logo[class*="shape-"] li a {}
+.social-icons.hover-logo[class*="shape-"] li a:hover, .social-icons.hover-logo[class*="shape-"] li a:focus {
+    background-color: var(--gul);
+    color: var(--lilla);
+    border-color: var(--orange)
+}
 .social-icons.hover-dark {}
 .social-icons.hover-dark[class*="shape-"] li a {}
 .social-icons.hover-dark[class*="shape-"] li a:hover, .social-icons.hover-dark[class*="shape-"] li a:focus {
