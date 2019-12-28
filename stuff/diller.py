@@ -3,6 +3,7 @@ import numpy as np
 def dillit():
     #                       Mi  Mo  Je  Kl  Pe
     grades = {
+        'Flammende      ': np.array([3.5 , 4.5 , 3   , 4   , 4  ]),
         'Staalhulerne   ': np.array([1.5 , 1.5 , 2   , 1.5 , 2  ]),
         'Gilgamesh      ': np.array([4   , 5   , 2.5 , 3.5 , 4  ]),
         'Under Nul      ': np.array([2.5 , 3   , 4   , 2.5 , 2  ]),
