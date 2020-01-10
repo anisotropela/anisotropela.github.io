@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Kosmologisk simulering</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Seneste aktiviteter<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Kosmologisk simulering</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./cosmological_simulation.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklop&aelig;di</a></li>
+                                    <li>Kosmologisk simulering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <p>
+                                            En kosmologisk simulering er en omfattende computersimulering af hvordan Universet og dets galakser udvikler sig gennem tiden.
+                                            </p>
+                                            <p>
+                                            Ligesom man med et kamera med et vist antal pixels til rådighed må vælge, om man vil tage et nærbillede med høj opløsning, eller et panoramabillede med lav opløsning,
+                                            kan en kosmologisk simulering fokusere på enten at simulere Universets storskalastruktur eller de enkelte galakser nøjagtigt.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="G&aring; til encyklop&aelig;dien" class="btn btn-small btn-circle btn-an-split"><span>G&aring; til encyklop&aelig;dien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">Her kommer nogle snart</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(meget snart; jeg lover)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="#" class="entry-image"><img src="../pics/anis.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="">Her kommer nogle snart</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>(meget snart; jeg lover)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin row (knowledge) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Hvordan skaffer vi os viden om Universet?</h3>
+                                        <p>
+                                        N&aring;r astronomer vil vide et eller andet om Universet, kan vi &mdash; i mods&aelig;tning til kvantefysikere, biologer, kemikere, osv. &mdash; sj&aelig;ldent
+                                        lave et eksperiment i et laboratorium. Hvis vi vil vide hvordan k&aelig;mpegasskyer kollapser og danner galakser, hvad der sker n&aring;r to
+                                        galakser st&oslash;der sammen, hvordan stjerner og planeter bliver dannet, osv., kan vi i det store hele g&oslash;re tre ting:
+                                        </p>
+                                        <p>
+                                        <strong>Vi kan observere Universet</strong>
+                                        Men fordi de fleste processer i Universet sker p&aring; s&aring; lange tidsskalaer, at der g&aring;r mange menneskealdre
+                                        mellem synlige &aelig;ndringer, ser vi s&aring; at sige kun still-billeder af hvad der sker. Til geng&aelig;ld kan vi noget de andre ikke kan, nemlig
+                                        kigge tilbage i tiden. Fordi lyset ikke bev&aelig;ger sig uendelig hurtigt, kigger vi l&aelig;ngere og l&aelig;ngere tilbage i tiden, jo l&aelig;ngere vi
+                                        kigger ud i Universet. P&aring; den m&aring;de kan vi se hvordan Universet statistisk set har udviklet sig gennem tiden, men ikke hvordan en
+                                        givet galakse udvikler sig.
+                                        </p>
+                                        <p>
+                                        <strong>Vi kan regne teoretisk</strong>
+                                        Men det er pissesv&aelig;rt, for Universet er superkompliceret, og matematiske ligninger kan oftest kun l&oslash;ses
+                                        hvis man "idealiserer" sin problemstilling, alts&aring; g&oslash;r en masse simplificerende antagelser. F.eks. antage at en galakse er kuglerund, med
+                                        samme temperatur og t&aelig;thed over det hele. Ikke s&aelig;rlig realistisk, men det kan allivel tit give ret pr&aelig;cise svar, alt efter hvad det
+                                        er man vil vide.
+                                        </p>
+                                        <p>
+                                        <strong>Vi kan bruge en computer</strong>
+                                        En computer kan egentlig ikke mere end et menneske, men den kan g&oslash;re det
+                                        ca. en milliard gange hurtigere. Et regnestykke der ikke kan l&oslash;ses i h&aring;nden, kan ofte s&aring; at sige deles op i en million sm&aring; l&oslash;sbare
+                                        regnestykker, der kan l&oslash;ses hver for sig, og tilsammen give et svar der ligger t&aelig;t nok p&aring; det "rigtige" svar til, at det kan bruges.
+                                        Dem har man ikke tid til at l&oslash;se i h&aring;nden, men p&aring; en computer tager det kun et splitsekund.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/ObsTeoNum_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/ObsTeoNum.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Tre måder at opnå viden om Universet</strong>:
+                                                    Det Nordisk Optiske Teleskop p&aring; La Palma,
+                                                    nogle  udregninger fra min <a href="../stuff/phd_projekt.html">Ph.D.</a>,
+                                                    og Danmark f&oslash;rste computer, DASK, der havde en hukommelse p&aring; over 5000 bytes!
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (SPH) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Smoothed particle hydrodynamics</h3>
+                                        <p>
+                                        En bestemt slags computersimuleringer kaldes "smoothed particle hydrodynamics" (SPH), og bruges ikke kun i astronomi, men ogs&aring; andre
+                                        grene af fysikken, f.eks. i simuleringer af vindm&oslash;ller, flyvemaskiner og havstr&oslash;mme.
+                                        </p>
+                                        <p>
+                                        <i>Dynamik</i> betyder hvordan noget udvikler sig med
+                                        tiden, og hydro betyder egt. vand, men d&aelig;kker generelt over alle v&aelig;ske- og gasarter, ogs&aring; under et kaldet fluider. <i>Smoothed particle</i>
+                                        hentyder til, at man simulerer sit fluidum ved at repr&aelig;sentere sm&aring; dele af den med "partikler" som bev&aelig;ger sig rundt, og som man i
+                                        computeren forestiller sig er "tv&aelig;ret ud" over en del af rummet.
+                                        </p>
+                                        <h6>Eksempel</h6>
+                                        <p>
+                                        Et eksempel er nok bedst: Lad os sige, at jeg vil simulere hvordan vandet i en kasserolle opf&oslash;rer sig n&aring;r jeg t&aelig;nder for gassen.
+                                        I en liter vand er der ca. 10<sup>25</sup> (dvs. et 1-tal med 25 nuller efter) vandmolekyler. Dem der er t&aelig;t p&aring; bunden bliver varmet op, bev&aelig;ger
+                                        sig rundt og overf&oslash;rer varmeenergi til de koldere molekyler. I en computer kan man simulere dette med f.eks 1000 partikler, der s&aring;
+                                        hver is&aelig;r repr&aelig;senterer 1/1000 af vandmolekylerne. Partiklerne er beskrevet i computeren ved deres position i kasserollen, deres
+                                        hastighed, og deres temperatur. Jo flere partikler man bruger, jo mere computerkraft skal man bruge, men jo bedre opl&oslash;sning f&aring;r man,
+                                        og dermed mere pr&aelig;cise resultater. Ligesom med et digitalbillede: Jo flere pixels, jo bedre opl&oslash;sning, men jo flere Mb fylder det.
+                                        </p>
+                                        <p>
+                                        Fordi vi kun har 1000 partikler, vil der v&aelig;re mange steder i vores simulerede kasserolle, hvor der ikke er en partikel til at beskrive
+                                        f.eks. temperaturen. Her kommer "smoothed"-begrebet ind, da man s&aring; forestiller sig temperaturen i et givet punkt som et gennemsnit af
+                                        de omkringliggende partiklers temperaturer, "tv&aelig;ret ud" over den givne punkt (se figuren).
+                                        </p>
+                                        <p>
+                                        Bev&aelig;gelserne rundt i kasserollen findes ved at l&oslash;se ligningerne for de kr&aelig;fter, der p&aring;virker partiklerne. Det vil i dette
+                                        tilf&aelig;lde sige sammenst&oslash;d med andre partikler, og tyngdekraft fra Jorden.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/SPHkasserolle.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/SPHkasserolle.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Illustration af en SPH-simulering af vandmolekylerne i en kasserolle</strong>:
+                                                    Hver partikel repr&aelig;senterer 10<sup>22</sup> molekyler. De bl&aring; pile angiver hastighederne.
+                                                    Vil vi kende temperaturen ved det brune kryds, f&aring;s det som et v&aelig;gtet gennemsnit af de omkringliggende partikler. Partikel 2 bidrager mest
+                                                    til gennemsnittet, partikel 3 lidt mindre, og partikel 6 en ganske lille smule.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (cosmosim) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Anvendelse i kosmologi</h3>
+                                        <p>
+                                        SPH kan ogs&aring; bruges til at simulere selve Universets udvikling i tiden. Fremgangsm&aring;den er f&oslash;lgende:
+                                        </p>
+                                        <p>
+                                        Man kan selvf&oslash;lgelig ikke simulere <i>hele</i> Universet, da det megastort &mdash; måske endda <em>uendeligt</em> stort &mdash; s&aring; i stedet simulerer man et s&aring; stort
+                                        volumen, at man regner med at det er nogenlunde repr&aelig;sentativt for resten af Universet, dvs. helst mindst nogle 10-100 millioner lys&aring;r tv&aelig;rsover.
+                                        </p>
+                                        <p>
+                                        Simuleringen starter ikke ved selve Big Bang (Universets f&oslash;dsel), men "kort" tid efter, f.eks. nogle millioner &aring;r, hvor Universets var en tynd,
+                                        lun suppe af n&aelig;sten j&aelig;vnt fordelt gas. De kr&aelig;fter der p&aring;virker partiklerne, er i starten mest tyngdekraften. S&aring; trykker vi p&aring;
+                                        <span style="font-family:'Courier'; font-weight:bold">start</span>, og ser hvad der sker. Fordi gassen ikke er <em>fuldst&aelig;ndig</em> jævnt fordelt, f&aring;r tyngdekraften de t&aelig;tte omr&aring;der til at tr&aelig;kke mere
+                                        gas til sig og blive endnu t&aelig;ttere. N&aring;r gassen bliver t&aelig;t nok, begynder <i>tryk</i>-kr&aelig;fter at spille ind, som modvirker tyngdekraften.
+                                        </p>
+                                        <p>
+                                        Alt dette er beskrevet ved nogle velfunderede fysiske ligninger, som fort&aelig;ller, hvordan partiklerne bev&aelig;ger sig rundt, tidsskridt efter tidsskridt.
+                                        I hvert tidsskridt beregnes for <i>hver</i> partikel den tyngde- og trykkraft som alle de andre partikler p&aring;virker den med. I de mest moderne simuleringer
+                                        bruges mange milliarder (!) partikler, s&aring; det bliver til en del beregninger.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/cosmosim.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/cosmosim.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Snapshot fra en kosmologisk simulering</strong>:
+                                                    Kosmologisk simulering af et volumen med en diameter paa ca. 20 mio. lys&aring;r.
+                                                    Her kan man se hvordan galakserne, der ikke fylder meget mere i dette billede end en enkelt pixel, ikke er <i>helt</i> j&aelig;vnt fordelt i Universet, men klumper sammen i filamenter.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (Nbodu) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>N-body-simuleringer</h3>
+                                        <p>
+                                        Hydrodynamikken kommer først i spil på relativt lille skala, som stjernedannelse, galaktiske vinde der blæser gas ud af galakserne, galaksesammenstød, og galaksehobe.
+                                        Hvis man er mere interesseret i Universets storskala-struktur, eller de halo'er af mørkt stof som galakserne ligger i, kan man ofte nøjes med at simulere det mørke stof,
+                                        som kun påvirkes af tyngdekraft, ikke af trykkræfter.
+                                        </p>
+                                        <p>
+                                        Sådanne simuleringer kaldes <em>N-body-simuleringer</em>, hvor <em>N</em> står for antallet af partikler der bruges i simuleringen.
+                                        </p>
+                                        <p>
+                                        Hvis du klikker på figuren til højre/nedenfor, kan du se resultatet af en <em>N</em>-body-kode, som jeg har skrevet.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/nbodyPotsdam.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/nbodyPotsdam.mov" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong><em>N</em>-body-simulering</strong>:
+                                                    Denne film viser, hvordan det mørke stof der udgør 90% af alt stof i Universet, udvikler sig som tiden går og kollapser til klumper og filamenter.
+                                                    <br>
+                                                    Fimen starter da Universet var kun 16 millioner år, og ender i dag, 13.8 milliarder år senere.
+                                                    I denne periode udvider Universet sig 100 gange, men da vi samtidig 'zoomer ud' med samme hastighed, ses dette ikke.
+                                                    Boxens endelige størrelse er omtrent 100 millioner lysår på hver led (ca. 1000 gange størrelsen af en typisk galakse).
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row () -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Adaptive mesh refinement</h3>
+                                        <p>
+                                        SPH er ikke den eneste måde at simulere, hvor en en gas bevæger sig.
+                                        En anden populær metode er såkaldt <em>adaptive mesh refinement</em> (AMR).
+                                        </p>
+                                        <p>
+                                        Et "mesh", eller "grid", er et slags net af celler. I stedet for, som i SPH, at dele <em>massen</em> op, deler man i AMR <em>rummet</em> op.
+                                        Cellerne svarer til et billedes pixels, men er bare (normalvis) i 3D i stedet for 2D.
+                                        </p>
+                                        <p>
+                                        Jo højere opløsning &mdash; altså jo flere celler &mdash; jo mere nøjagtig bliver simuleringen. Men oftest er der store områder hvor man <em>ikke</em> behøver høj opløsning, f.eks. mellem galakserne.
+                                        En dødsmart måde at få høj opløsning i de interessante områder (f.eks. galakserne) uden at bruge for meget computerkraft er kun at øge opløsningen i de celler hvor tætheden er høj.
+                                        </p>
+                                        <p>
+                                        Der hvor der er brug for det, deles en celle op i 8, og én eller flere af disse 8 celler kan så deles yderligere op i 8, osv.
+                                        Denne forøgelse af opløsningen kaldes på engelsk <em>refinement</em>, og det at tilpasse forøgelsen til bestemte områder kaldes <em>adaptive</em>.
+                                        </p>
+                                        <p>
+                                        For hver tidskridt i simuleringen beregnes et nyt mesh, og derefter beregnes hvordan de forskellige kræfter får gas (og mørkt stof) til at bevæge sig fra celle til celle.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/AMRkasserolle.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/AMRkasserolle.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Illustration af en AMR-simulering</strong>:
+                                                    I dette 2D-eksempel har vi et "base grid" på 4&times;4 pixel (level 1) og 4 levels af refinement. I alt er der 213 pixels.
+                                                    Hvis man ville have samme opløsning med et <em>regulært</em> grid, ville man være nødt til at bruge 32&times;32 = 1024 pixels.
+                                                    I 3D bliver "besparalsen" endnu bedre.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin third row (space) -->
+                        <!--
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>WALLAHsectionTitle</h3>
+                                        <p>
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#dopplerModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/WALLAHfigure_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/WALLAHfigure.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>WALLAHcaptionTitle</strong>: wallah wallah wallah
+                                                    <br>
+                                                    Kredit: wallah
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        -->
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (time) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (SMBH) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin sixth row (observation) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin seventh row (shadow) -->
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./cosmological_simulation.html"     >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklop&aelig;di</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er r&oslash;dforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >N&oslash;glehulst&aring;gen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">B&oslash;ger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"            >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklop&aelig;di</a></li>
+                                    <li>Kosmologisk simulering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <!-- modals -->
+            <div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="WALLAHModalLabel" class="modal-title">WALLAHmodalTitle</h4>
+                            <div class="modal-body">
+                                <p>
+                                wallah wallah wallah
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
