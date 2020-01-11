@@ -50,27 +50,33 @@
 /*  Colors */
 
 :root {
-    --journalist_bg:#F6E359;    /* _bg : background-color */
-    --journalist_b: #EDB910;    /* _b  : border           */
-    --journalist_c: #B2447B;    /* _c  : color            */
-    --student_bg:   #723C7F;
-    --student_b:    #612b6e;
-    --student_c:    #EDB910;
-    --astronomer_bg:#b24a7d;
-    --astronomer_b: rgb(153, 74, 112);
-    --astronomer_c: #dFb310;
-    --curious_bg:   #f1c40f;
-    --curious_b:    rgb(217, 176, 15);
-    --curious_c:    #7F548E;
-    --fund_bg:      #555555;
-    --fund_b:       #434343;
-    --fund_c:       #d6d6d6;
-    --stalker_bg:   #FC951B;
-    --stalker_b:    #da6005;
-    --stalker_c:    #F5EE48;
-    --lilla:        #7F548E;
     --gul:          #F8DE27;
     --orange:       #FF9900;
+    --lilla:        #7F548E;
+    --journalist_bg: #F8DE27;               /* #F6E359;            */ /* _bg : background-color */
+    --journalist_b:  #FF9900;               /* #EDB910;            */ /* _b  : border           */
+    --journalist_c:  #7F548E;               /* #B2447B;            */ /* _c  : color            */
+    --student_bg:    #F8DE27;               /* #723C7F;            */
+    --student_b:     #FF9900;               /* #612b6e;            */
+    --student_c:     #7F548E;               /* #EDB910;            */
+    --astronomer_bg: #F8DE27;               /* #b24a7d;            */
+    --astronomer_b:  #FF9900;               /* rgb(153, 74, 112);  */
+    --astronomer_c:  #7F548E;               /* #dFb310;            */
+    --curious_bg:    #F8DE27;               /* #f1c40f;            */
+    --curious_b:     #FF9900;               /* rgb(217, 176, 15);  */
+    --curious_c:     #7F548E;               /* #7F548E;            */
+    --fund_bg:       #F8DE27;               /* #555555;            */
+    --fund_b:        #FF9900;               /* #434343;            */
+    --fund_c:        #7F548E;               /* #d6d6d6;            */
+    --stalker_bg:    #F8DE27;               /* #FC951B;            */
+    --stalker_b:     #FF9900;               /* #da6005;            */
+    --stalker_c:     #7F548E;               /* #F5EE48;            */
+    --split_font_before:   #9965AD;  /* lilla  */
+    --split_bg_before:     #F8ED6E;  /* gul    */
+    --split_border_before: #FFC158;  /* orange */
+    --split_font_after:    #7F548E;
+    --split_bg_after:      #F8DE27;
+    --split_border_after:  #FF9900;
 }
 /*
 Later, refer to variable (e.g. color) like this:
@@ -6816,20 +6822,20 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 /* begin my own button colors */
 .btn-skin-logo       {background-color: #F6E359; border-color: rgb(246, 227, 89); color: #fff; }
-.btn-skin-journalist {margin:2px; background-color: var(--journalist_bg); border-color: var(--journalist_b); color: var(--journalist_c); width: 120px}
-.btn-skin-student    {margin:2px; background-color: var(--student_bg   ); border-color: var(--student_b   ); color: var(--student_c   ); width: 120px}
-.btn-skin-astronomer {margin:2px; background-color: var(--astronomer_bg); border-color: var(--astronomer_b); color: var(--astronomer_c); width: 120px}
-.btn-skin-curious    {margin:2px; background-color: var(--curious_bg   ); border-color: var(--curious_b   ); color: var(--curious_c   ); width: 120px}
-.btn-skin-fund       {margin:2px; background-color: var(--fund_bg      ); border-color: var(--fund_b      ); color: var(--fund_c      ); width: 120px}
-.btn-skin-stalker    {margin:2px; background-color: var(--stalker_bg   ); border-color: var(--stalker_b   ); color: var(--stalker_c   ); width: 120px}
+.btn-skin-journalist {margin:2px; background-color: var(--journalist_bg); border-color: var(--journalist_b); color: var(--journalist_c); width: 125px}
+.btn-skin-student    {margin:2px; background-color: var(--student_bg   ); border-color: var(--student_b   ); color: var(--student_c   ); width: 125px}
+.btn-skin-astronomer {margin:2px; background-color: var(--astronomer_bg); border-color: var(--astronomer_b); color: var(--astronomer_c); width: 125px}
+.btn-skin-curious    {margin:2px; background-color: var(--curious_bg   ); border-color: var(--curious_b   ); color: var(--curious_c   ); width: 125px}
+.btn-skin-fund       {margin:2px; background-color: var(--fund_bg      ); border-color: var(--fund_b      ); color: var(--fund_c      ); width: 125px}
+.btn-skin-stalker    {margin:2px; background-color: var(--stalker_bg   ); border-color: var(--stalker_b   ); color: var(--stalker_c   ); width: 125px}
 
 .btn-skin-logo:hover,       .btn-skin-logo:focus       {background-color: rgb(246, 227, 89);   color: #fff;}
-.btn-skin-journalist:hover, .btn-skin-journalist:focus {background-color: var(--journalist_b); color: #A13369;}
-.btn-skin-student:hover,    .btn-skin-student:focus    {background-color: var(--student_b   ); color: #CB9700;}
-.btn-skin-astronomer:hover, .btn-skin-astronomer:focus {background-color: var(--astronomer_b); color: #CFA210;}
-.btn-skin-curious:hover,    .btn-skin-curious:focus    {background-color: var(--curious_b   ); color: #5d326c;}
-.btn-skin-fund:hover,       .btn-skin-fund:focus       {background-color: var(--fund_b      ); color: #a3a3a3;}
-.btn-skin-stalker:hover,    .btn-skin-stalker:focus    {background-color: var(--stalker_b   ); color: #d1bd26;}
+.btn-skin-journalist:hover, .btn-skin-journalist:focus {background-color: #F8EE47; border-color:#F8BE5C; color: #A066D2;}  /* color: #A13369;} */
+.btn-skin-student:hover,    .btn-skin-student:focus    {background-color: #F8EE47; border-color:#F8BE5C; color: #A066D2;}  /* color: #CB9700;} */
+.btn-skin-astronomer:hover, .btn-skin-astronomer:focus {background-color: #F8EE47; border-color:#F8BE5C; color: #A066D2;}  /* color: #CFA210;} */
+.btn-skin-curious:hover,    .btn-skin-curious:focus    {background-color: #F8EE47; border-color:#F8BE5C; color: #A066D2;}  /* color: #5d326c;} */
+.btn-skin-fund:hover,       .btn-skin-fund:focus       {background-color: #F8EE47; border-color:#F8BE5C; color: #A066D2;}  /* color: #a3a3a3;} */
+.btn-skin-stalker:hover,    .btn-skin-stalker:focus    {background-color: #F8EE47; border-color:#F8BE5C; color: #A066D2;}  /* color: #d1bd26;} */
 /* end my own button colors */
 
 /* btn trans*/
@@ -6968,7 +6974,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    border: 2px solid #dedede;
+    border: 2px solid var(--split_border_before);
 }
 .btn-an-split span {
     position: relative;
@@ -6978,9 +6984,9 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     transition: transform 0.3s ease-in-out;
 }
 .btn-an-split:hover, .btn-an-split:focus {
-    background-color: var(--gul);
-    border-color: var(--orange);
-    color: var(--lilla);
+    background-color: var(--split_bg_after);
+    border-color: var(--split_border_after);
+    color: var(--split_font_after);
 }
 .btn-an-split:hover span, .btn-an-split:focus span {
     transform: scale3d(1,1,1);
@@ -6992,8 +6998,8 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     width: 100%;
     height: 50%;
     left: 0;
-    background: #fff;
-    color: #777;
+    background: var(--split_bg_before);
+    color: var(--split_font_before);
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
 }
