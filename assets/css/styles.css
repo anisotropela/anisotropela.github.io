@@ -50,9 +50,11 @@
 /*  Colors */
 
 :root {
-    --gul:          #F8DE27;
-    --orange:       #FF9900;
-    --lilla:        #7F548E;
+    --gul:           #F8DE27;
+    --orange:        #FF9900;
+    --lilla:         #7F548E;
+    --lyslilla:      #a57eb4;
+    --morkorange:    #FC8107;
     --journalist_bg: #F8DE27;               /* #F6E359;            */ /* _bg : background-color */
     --journalist_b:  #FF9900;               /* #EDB910;            */ /* _b  : border           */
     --journalist_c:  #7F548E;               /* #B2447B;            */ /* _c  : color            */
@@ -71,17 +73,33 @@
     --stalker_bg:    #F8DE27;               /* #FC951B;            */
     --stalker_b:     #FF9900;               /* #da6005;            */
     --stalker_c:     #7F548E;               /* #F5EE48;            */
-    --split_font_before:   #9965AD;  /* lilla  */
-    --split_bg_before:     #F8ED6E;  /* gul    */
-    --split_border_before: #FFC158;  /* orange */
-    --split_font_after:    #7F548E;
-    --split_bg_after:      #F8DE27;
-    --split_border_after:  #FF9900;
+    --split_font_before:    #9965AD;  /* lilla  */
+    --split_bg_before:      #F8ED6E;  /* gul    */
+    --split_border_before:  #FFC158;  /* orange */
+    --split_font_after:     #7F548E;
+    --split_bg_after:       #F8DE27;
+    --split_border_after:   #FF9900;
+    --dot_col:              #F8CF13;
+    --number_col:           #A06AB5;
+    --laursen_col:          #FF6A17;
+    --unvisited_links:      #a1b8ff;
+    --visited_links:        #7085cc
 }
 /*
 Later, refer to variable (e.g. color) like this:
    color: var(--var_name);
 */
+
+
+/* begin my own stuff (there are more of my own in other places, e.g. under buttons) */
+
+code {
+  font-family:  courier;
+  color:        #606060;
+  background:   #efefef
+}
+
+/* end my own stuff */
 
 
 /*skin colors*/
@@ -4423,11 +4441,11 @@ p {                         /* Body text */
     margin-bottom: 0;
 }
 a {
-    color: #a1b8ff;   /* Unvisited link; Big Bang */
+    color: var(--unvisited_links);   /* Unvisited link; Big Bang */
     text-decoration: none;
 }
 a:visited {         /* Visited links */
-    color: #7085cc;
+    color: var(--visited_links);
 }
 a:hover, a:focus {   /* Links on hover; MUST come after a:link and a:visited */
     color: #FF3366;
@@ -11266,7 +11284,7 @@ select.form-control {
     left: auto;
 }
 .ol-timeline .item-section.is_stuck:after {
-    background-color: #FF3366;
+    background-color: var(--dot_col);
 }
 .ol-timeline .item-section.is_stuck.is_bottom {}
 .ol-timeline .item-section.is_stuck.is_bottom:after {
