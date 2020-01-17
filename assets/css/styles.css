@@ -83,7 +83,8 @@
     --number_col:           #A06AB5;
     --laursen_col:          #FF6A17;
     --unvisited_links:      #a1b8ff;
-    --visited_links:        #7085cc
+    --visited_links:        #7085cc;
+    --skin_blue:        #76bcfe
 }
 /*
 Later, refer to variable (e.g. color) like this:
@@ -8753,6 +8754,18 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 .modal-header .close { /* cross in upper right corner */
     color: #fff;
     opacity: 1;
+}
+.modal-skin-logocolors {
+    background-color: var(--gul);
+    color: var(--lilla);
+}
+.modal-skin-blue {
+    background-color: var(--skin_blue);
+    color: #ffffff;
+}
+.modal-skin-gray {
+    background-color: #e3e3e3;
+    color: #636363;
 }
 
 /*	List icons
