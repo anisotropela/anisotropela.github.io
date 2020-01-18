@@ -1,0 +1,33 @@
+Dansk                                       ENGELSK                             Keywords                Relaterede I        II              III
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+galakse.html                                galaxy.html                         GALAKSER                galaksedannelse     kvasar
+gammaglimt.html                             gamma_ray_burst.html                STJERNER                supernova           stjerne
+kosmisk_mikrobolgebaggrundsstraaling.html   cosmic_microwave_background.html    KOSMOLOGI               big_bang            kosmologi
+kosmologisk_simulering.html                 cosmological_simulation.html        KOSMOLOGI; METODER      galaksedannelse     kosmologi
+large_hadron_collider_dk.html               large_hadron_collider.html          EKSPERIMENTER           tyngdebolger
+let_stjerne.html                            lowmass_star.html                   STJERNER                supernova           stjerne
+lyman_alpha_dk.html                         lyman_alpha.html                    LYS                     lyman_alpha_skoven  spektrum        galakse
+lyman_alpha_skoven.html                     lyman_alpha_forest.html             LYS                     lyman_alpha_dk      spektrum
+morkt_stof.html                             dark_matter.html                    KOSMOLOGI               mork_energi         galaksedannelse
+neutronstjerne.html                         neutron_star.html                   STJERNER                let_stjerne         supernova
+nova_dk.html                                nova.html                           STJERNER                let_stjerne
+kvasar.html                                 quasar.html                         GALAKSER                galakse             sort_hul
+reionisation.html                           reionization.html                   KOSMOLOGI               big_bang            kosmologi
+rodforskydning.html                         redshift.html                       KOSMOLOGI; FYSIK        spektrum            kosmologi
+sort_hul.html                               black_hole.html                     STJERNER; FYSIK         kvasar              stjerne
+spektrum.html                               spectrum.html                       LYS                     straalingstransport lyman_alpha_dk
+stjernehob.html                             star_cluster.html                   STJERNER                stjerne
+stjernestov.html                            stardust.html                       ASTRONOMI               let_stjerne         stjerne
+straalingstransport.html                    radiative_transfer.html             LYS                     spektrum            lyman_alpha_dk
+supernova_dk.html                           supernova.html                      STJERNER                stjerne             neutronstjerne  sort_hul
+tyngdebolger.html                           gravitational_waves.html            FYSIK                   "LHC"
+
+
+Endnu ikke skrevne
+------------------
+universets_geometri
+big_bang
+mork_energi
+stjerne
+relativitetsteori
+exoplanet
