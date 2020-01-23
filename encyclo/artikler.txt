@@ -1,26 +1,27 @@
-Dansk                                       ENGELSK                             Keywords                Relaterede I        II                  III             IV
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-galakse.html                                galaxy.html                         GALAKSER                galaksedannelse     kvasar
-gammaglimt.html                             gamma_ray_burst.html                STJERNER                supernova           stjerne
-kosmisk_mikrobolgebaggrundsstraaling.html   cosmic_microwave_background.html    KOSMOLOGI               big_bang            kosmologi
-kosmologisk_simulering.html                 cosmological_simulation.html        KOSMOLOGI; METODER      galaksedannelse     kosmologi
-large_hadron_collider_dk.html               large_hadron_collider.html          EKSPERIMENTER           tyngdebolger
-let_stjerne.html                            lowmass_star.html                   STJERNER                supernova           stjerne
-lyman_alpha_dk.html                         lyman_alpha.html                    LYS                     straalingstransport lyman_alpha_skoven  spektrum        galakse
-lyman_alpha_skoven.html                     lyman_alpha_forest.html             LYS                     lyman_alpha_dk      spektrum
-morkt_stof.html                             dark_matter.html                    KOSMOLOGI               mork_energi         galaksedannelse
-neutronstjerne.html                         neutron_star.html                   STJERNER                let_stjerne         supernova
-nova_dk.html                                nova.html                           STJERNER                let_stjerne
-kvasar.html                                 quasar.html                         GALAKSER                galakse             sort_hul
-reionisation.html                           reionization.html                   KOSMOLOGI               big_bang            kosmologi
-rodforskydning.html                         redshift.html                       KOSMOLOGI; FYSIK        spektrum            kosmologi
-sort_hul.html                               black_hole.html                     STJERNER; FYSIK         kvasar              stjerne
-spektrum.html                               spectrum.html                       LYS                     straalingstransport lyman_alpha_dk
-stjernehob.html                             star_cluster.html                   STJERNER                stjerne
-stjernestov.html                            stardust.html                       ASTRONOMI               let_stjerne         stjerne
-straalingstransport.html                    radiative_transfer.html             LYS                     spektrum            lyman_alpha_dk
-supernova_dk.html                           supernova.html                      STJERNER                stjerne             neutronstjerne      sort_hul
-tyngdebolger.html                           gravitational_waves.html            FYSIK                   "LHC"
+Dansk                                  ENGELSK                        Keywords                Relaterede I        II                    III                 IV              Done
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+galakse                                galaxy                         GALAKSER                galaksedannelse     kvasar                                                    X
+gammaglimt                             gamma_ray_burst                STJERNER                supernova           stjerne                                                   X
+kosmisk_mikrobolgebaggrundsstraaling   cosmic_microwave_background    KOSMOLOGI               big_bang            kosmologi                                                 X
+kosmologi                              cosmology                      KOSMOLOGI               universets_geometri relativitetsteori     big_bang            reionisation    X
+kosmologisk_simulering                 cosmological_simulation        KOSMOLOGI; METODER      galaksedannelse     kosmologi                                                 X
+large_hadron_collider_dk               large_hadron_collider          EKSPERIMENTER           kosmologi                                                                     X
+let_stjerne                            lowmass_star                   STJERNER                supernova           stjerne                                                   X
+lyman_alpha_dk                         lyman_alpha                    LYS                     spektrum            straalingstransport   lyman_alpha_skoven  galakse         X
+lyman_alpha_skoven                     lyman_alpha_forest             LYS                     lyman_alpha_dk      spektrum                                                  X
+morkt_stof                             dark_matter                    KOSMOLOGI               mork_energi         galaksedannelse
+neutronstjerne                         neutron_star                   STJERNER                let_stjerne         supernova
+nova_dk                                nova                           STJERNER                let_stjerne
+kvasar                                 quasar                         GALAKSER                galakse             sort_hul
+reionisation                           reionization                   KOSMOLOGI               big_bang            kosmologi
+rodforskydning                         redshift                       KOSMOLOGI; FYSIK        spektrum            kosmologi
+sort_hul                               black_hole                     STJERNER; FYSIK         kvasar              stjerne
+spektrum                               spectrum                       LYS                     straalingstransport lyman_alpha_dk
+stjernehob                             star_cluster                   STJERNER                stjerne
+stjernestov                            stardust                       ASTRONOMI               let_stjerne         stjerne
+straalingstransport                    radiative_transfer             LYS                     spektrum            lyman_alpha_dk
+supernova_dk                           supernova                      STJERNER                stjerne             neutronstjerne        sort_hul
+tyngdebolger                           gravitational_waves            FYSIK                   "LHC"
 
 
 Endnu ikke skrevne
@@ -32,3 +33,258 @@ stjerne
 relativitetsteori
 exoplanet
 galaksedannelse
+
+============================================
+
+
+<div class="post"><a href="./galaksedannelse.html" class="entry-image"><img src="../pics/encyclo/galaxy_formation_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./galaksedannelse.html">Galaksedannelse</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs mere om, hvordan galakserne er opstået.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./kvasar.html" class="entry-image"><img src="../pics/encyclo/quasar_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./kvasar.html">Kvasar</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Ekstreme energistråler fra centrum af nogle galakser.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./stjerne.html" class="entry-image"><img src="../pics/encyclo/star_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./stjerne.html">Stjerne</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs mere om stjerner generelt.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./supernova_dk.html" class="entry-image"><img src="../pics/encyclo/supernova_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./supernova_dk.html">Supernova</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Knap så vild som et gammaglimt, men alligevel vild nok.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./big_bang_dk.html" class="entry-image"><img src="../pics/encyclo/big_bang_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./big_bang_dk.html">Big Bang</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs om Universets opståen.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./kosmologi.html" class="entry-image"><img src="../pics/encyclo/cosmology_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./kosmologi.html">Kosmologi</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Hvad er kosmologi egentlig?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./universets_geometri.html" class="entry-image"><img src="../pics/encyclo/geometry_icon.gif" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./universets_geometri.html">Universets geometri</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Hvad menes egentlig med "Universets globale geometri"?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./relativitetsteori.html" class="entry-image"><img src="../pics/encyclo/relativity_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./relativitetsteori.html">Relativitetsteori</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs om fundamentet for at beskrive rummet geometrisk.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./big_bang_dk.html" class="entry-image"><img src="../pics/encyclo/big_bang_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./big_bang_dk.html">Big Bang</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Hvordan opstod Universet?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./reionisation.html" class="entry-image"><img src="../pics/encyclo/reionization_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./reionisation.html">Reionisation</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs om én af kosmologiske begivenheder: Reionisations-epoken.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./encyclo/galaxy_formation.html" class="entry-image"><img src="../pics/encyclo/galaxy_formation_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./galaxy_formation.html">Galaxy formation</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read more about how the galaxies came into existence.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./encyclo/quasar.html" class="entry-image"><img src="../pics/encyclo/quasar_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./quasar.html">Quasar</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Extreme jets of energy from the nucleus of some galaxies.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./star.html" class="entry-image"><img src="../pics/encyclo/star_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./star.html">Star</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read more about stars in general.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./supernova.html" class="entry-image"><img src="../pics/encyclo/supernova_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./supernova.html">Supernova</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Not quite as mad as a gamma-ray burst, but pretty mad nonetheless.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./big_bang.html" class="entry-image"><img src="../pics/encyclo/big_bang_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./big_bang.html">The Big Bang</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read about the origin of the Universe.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./cosmology.html" class="entry-image"><img src="../pics/encyclo/cosmology_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./cosmology.html">Cosmology</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>What is "cosmology" actually?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./universe_geometry.html" class="entry-image"><img src="../pics/encyclo/geometry_icon.gif" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./universe_geometry.html">Geometry of the Universe</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>What is actually meant by the "geometry of the Universe"?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./relativity_theory.html" class="entry-image"><img src="../pics/encyclo/relativity_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./relativity_theory.html">Theory of relativity</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read about the fundaments of describing space geometrically.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./big_bang.html" class="entry-image"><img src="../pics/encyclo/big_bang_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./big_bang.html">The Big Bang</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read about the origin of the Universe.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./reionization.html" class="entry-image"><img src="../pics/encyclo/reionization_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./reionization.html">Reionization</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read about one of the cosmological events: The epoch of reionization.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./spektrum.html" class="entry-image"><img src="../pics/encyclo/spectrum_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./spektrum.html">Spektrum</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Hvad er et spektrum egentlig?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./straalingstransport.html" class="entry-image"><img src="../pics/encyclo/rt_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./straalingstransport.html">Strålingstransport</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs mere om, hvordan Ly&alpha; og andet lys bevæger sig afsted.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./lyman_alpha_skoven.html" class="entry-image"><img src="../pics/encyclo/laf_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./lyman_alpha_skoven.html">Ly&alpha;-skoven</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Ly&alpha; kan skabe en "skov" af absorption i lyset fra en kvasar.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./galakse.html" class="entry-image"><img src="../pics/encyclo/galaxy_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./galakse.html">Galakse</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs mere om galakser.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./spectrum.html" class="entry-image"><img src="../pics/encyclo/spectrum_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./spectrum.html">Spectrum</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>What is actually a spectrum?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./radiative_transfer.html" class="entry-image"><img src="../pics/encyclo/rt_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./radiative_transfer.html">Radiative transfer</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read more about how Ly&alpha; and other light travels through space.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./lyman_alpha_forest.html" class="entry-image"><img src="../pics/encyclo/laf_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./lyman_alpha_forest.html">Ly&alpha; forest</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Ly&alpha; can create a "forest" of absorption in the light of a quasar.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./galaxy.html" class="entry-image"><img src="../pics/encyclo/galaxy_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./galaxy.html">Galaxy</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read more about galaxies.</li>
+        </ul>
+    </div>
+</div>
