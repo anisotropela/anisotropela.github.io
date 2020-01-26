@@ -1,38 +1,37 @@
-Dansk                                  ENGELSK                        Keywords                Relaterede I        II                    III                 IV              Done
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-galakse                                galaxy                         GALAKSER                galaksedannelse     kvasar                                                    X
-gammaglimt                             gamma_ray_burst                STJERNER                supernova           stjerne                                                   X
-kosmisk_mikrobolgebaggrundsstraaling   cosmic_microwave_background    KOSMOLOGI               big_bang            kosmologi                                                 X
-kosmologi                              cosmology                      KOSMOLOGI               universets_geometri relativitetsteori     big_bang            reionisation    X
-kosmologisk_simulering                 cosmological_simulation        KOSMOLOGI; METODER      galaksedannelse     kosmologi                                                 X
-large_hadron_collider_dk               large_hadron_collider          EKSPERIMENTER           kosmologi                                                                     X
-let_stjerne                            lowmass_star                   STJERNER                supernova           stjerne                                                   X
-lyman_alpha_dk                         lyman_alpha                    LYS                     spektrum            straalingstransport   lyman_alpha_skoven  galakse         X
-lyman_alpha_skoven                     lyman_alpha_forest             LYS                     lyman_alpha_dk      spektrum                                                  X
-morkt_stof                             dark_matter                    KOSMOLOGI               mork_energi         galaksedannelse
-neutronstjerne                         neutron_star                   STJERNER                let_stjerne         supernova
-nova_dk                                nova                           STJERNER                let_stjerne
-kvasar                                 quasar                         GALAKSER                galakse             sort_hul
-reionisation                           reionization                   KOSMOLOGI               big_bang            kosmologi
-rodforskydning                         redshift                       KOSMOLOGI; FYSIK        spektrum            kosmologi
-sort_hul                               black_hole                     STJERNER; FYSIK         kvasar              stjerne
-spektrum                               spectrum                       LYS                     straalingstransport lyman_alpha_dk
-stjernehob                             star_cluster                   STJERNER                stjerne
-stjernestov                            stardust                       ASTRONOMI               let_stjerne         stjerne
-straalingstransport                    radiative_transfer             LYS                     spektrum            lyman_alpha_dk
-supernova_dk                           supernova                      STJERNER                stjerne             neutronstjerne        sort_hul
-tyngdebolger                           gravitational_waves            FYSIK                   "LHC"
+    Dansk                                   ENGELSK                         Keywords                Relaterede I        II                      III                 IV 
+------------------------------------------- ------------------------------- ----------------------------------------------------------------------------------------------------
+ X  galakse                                 galaxy                          GALAKSER                galaksedannelse     kvasar                                                      
+ X  gammaglimt                              gamma_ray_burst                 STJERNER                supernova           stjerne                                                     
+ X  kosmisk_mikrobolgebaggrundsstraaling    cosmic_microwave_background     KOSMOLOGI               big_bang            kosmologi                                                   
+ X  kosmologi                               cosmology                       KOSMOLOGI               universets_geometri relativitetsteori       big_bang            reionisation    
+ X  kosmologisk_simulering                  cosmological_simulation         KOSMOLOGI; METODER      galaksedannelse     kosmologi                                                   
+ X  large_hadron_collider_dk                large_hadron_collider           EKSPERIMENTER           big_bang            sort_hul
+ X  let_stjerne                             lowmass_star                    STJERNER                supernova           stjerne                                                     
+ X  lyman_alpha_dk                          lyman_alpha                     LYS                     spektrum            straalingstransport     lyman_alpha_skoven  galakse         
+ X  lyman_alpha_skoven                      lyman_alpha_forest              LYS                     lyman_alpha_dk      spektrum                                                    
+ X  morkt_stof                              dark_matter                     KOSMOLOGI               mork_energi         galaksedannelse         kosmologi                           
+ X  nova_dk                                 nova                            STJERNER                let_stjerne         supernova                                                   
+ X  kvasar                                  quasar                          GALAKSER                galakse             sort_hul                                                    
+ X  reionisation                            reionization                    KOSMOLOGI               "CMB"               kosmologi               big_bang                            
+ X  rodforskydning                          redshift                        KOSMOLOGI; FYSIK        spektrum            kosmologi                                                   
+ X  sort_hul                                black_hole                      STJERNER; FYSIK         kvasar              universets_geometri     stjerne                             
+ X  spektrum                                spectrum                        LYS                     straalingstransport lyman_alpha_dk
+ X  stjernehob                              star_cluster                    STJERNER                stjerne
+ X  stjernestov                             stardust                        ASTRONOMI               let_stjerne         supernova               stjerne
+ X  straalingstransport                     radiative_transfer              LYS                     spektrum            lyman_alpha_dk
+ X  supernova_dk                            supernova                       STJERNER                stjerne             sort_hul
+ X  tyngdebolger                            gravitational_waves             FYSIK                   relativitetsteori   sort_hul
 
 
 Endnu ikke skrevne
 ------------------
-universets_geometri
-big_bang
-mork_energi
-stjerne
-relativitetsteori
-exoplanet
-galaksedannelse
+    universets_geometri                     geometry_of_space               KOSMOLOGI               relativitetsteori   kosmologi               
+    big_bang                                the_big_bang                    KOSMOLOGI               kosmologi           tyngdebolger            relativitetsteori
+    mork_energi
+    stjerne
+    relativitetsteori
+    exoplanet
+    galaksedannelse
 
 ============================================
 
@@ -163,11 +162,11 @@ galaksedannelse
     </div>
 </div>
 
-<div class="post"><a href="./big_bang.html" class="entry-image"><img src="../pics/encyclo/big_bang_icon.jpg" alt=""></a>
+<div class="post"><a href="./big_bang_dk.html" class="entry-image"><img src="../pics/encyclo/big_bang_icon.jpg" alt=""></a>
     <div class="entry-content">
-        <h4 class="entry-title"><a href="./big_bang.html">The Big Bang</a></h4>
+        <h4 class="entry-title"><a href="./big_bang_dk.html">Big Bang</a></h4>
         <ul class="entry-meta">
-            <li><i class="icon oi-speech-bubble"></i>Read about the origin of the Universe.</li>
+            <li><i class="icon oi-speech-bubble"></i>Hvordan opstod Universet?</li>
         </ul>
     </div>
 </div>
@@ -285,6 +284,96 @@ galaksedannelse
         <h4 class="entry-title"><a href="./galaxy.html">Galaxy</a></h4>
         <ul class="entry-meta">
             <li><i class="icon oi-speech-bubble"></i>Read more about galaxies.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./let_stjerne.html" class="entry-image"><img src="../pics/encyclo/lowmass_star_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./let_stjerne.html">Lette stjerner</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Læs mere om hvide dværge og røde kæmper.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./lowmass_star.html" class="entry-image"><img src="../pics/encyclo/lowmass_star_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./lowmass_star.html">Low-mass stars</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Read more about white dwarfs and red giants.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./sort_hul.html" class="entry-image"><img src="../pics/encyclo/black_hole_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./sort_hul.html">Sort hul</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Mere om de skøre sorte huller.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./black_hole.html" class="entry-image"><img src="../pics/encyclo/black_hole_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./black_hole.html">Black hole</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>More about those crazy black holes.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./kosmisk_mikrobolgebaggrundsstraaling.html" class="entry-image"><img src="../pics/encyclo/cmb_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./kosmisk_mikrobolgebaggrundsstraaling.html">Den kosmiske mikrobølgebaggrundsstråling</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Lyset fra en anden kosmologisk begivenhed, <em>rekombinationen</em>.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./cosmic_microwave_background.html" class="entry-image"><img src="../pics/encyclo/cmb_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./cosmic_microwave_background.html">The cosmic microwave background</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>The light from another cosmological event, the <em>recombination</em>.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./lyman_alpha_dk.html" class="entry-image"><img src="../pics/encyclo/lyman_alpha_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./lyman_alpha_dk.html">Lyman &alpha;-lys</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Min yndlings-del af spektret.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./lyman_alpha.html" class="entry-image"><img src="../pics/encyclo/lyman_alpha_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./lyman_alpha.html">Lyman &alpha; radiation</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>My favorite part of the spectrum.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./large_hadron_collider_dk.html" class="entry-image"><img src="../pics/lhc_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./large_hadron_collider_dk.html">Large Hadron Collider</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Kan partikelacceleratoren "LHC" skabe et nyt Big Bang?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./large_hadron_collider.html" class="entry-image"><img src="../pics/lhc_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./large_hadron_collider.html">Large Hadron Collider</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Can the particle accelerator "LHC" create a new Big Bang?</li>
         </ul>
     </div>
 </div>
