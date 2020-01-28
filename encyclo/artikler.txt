@@ -17,6 +17,7 @@ reionisation                            reionization                    KOSMOLOG
 rodforskydning                          redshift                        KOSMOLOGI; FYSIK        spektrum            kosmologi                                                   
 sort_hul                                black_hole                      STJERNER; FYSIK         kvasar              universets_geometri     stjerne                             
 spektrum                                spectrum                        LYS                     straalingstransport lyman_alpha_dk
+stjerne                                 star                            STJERNER                let_stjerne         tung_stjerne            nova
 stjernehob                              star_cluster                    STJERNER                stjerne
 stjernestov                             stardust                        ASTRONOMI               let_stjerne         supernova               stjerne
 straalingstransport                     radiative_transfer              LYS                     spektrum            lyman_alpha_dk
@@ -37,7 +38,6 @@ Endnu ikke skrevne
 ------------------
 universets_geometri                     geometry_of_space               KOSMOLOGI               relativitetsteori   kosmologi               
 mork_energi
-stjerne
 relativitetsteori
 exoplanet
 galaksedannelse
