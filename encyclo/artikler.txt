@@ -3,7 +3,7 @@ Dansk                                   ENGELSK                         Keywords
 big_bang                                the_big_bang                    KOSMOLOGI               kosmologi           tyngdebolger
 galakse                                 galaxy                          GALAKSER                galaksedannelse     kvasar                                                      
 gammaglimt                              gamma_ray_burst                 STJERNER                supernova           stjerne                                                     
-kosmisk_mikrobolgebaggrundsstraaling    cosmic_microwave_background     KOSMOLOGI               big_bang            kosmologi                                                   
+kosmisk_mikrobolgebaggrundsstraaling    cosmic_microwave_background     KOSMOLOGI               big_bang            kosmologi               universets_geometri
 kosmologi                               cosmology                       KOSMOLOGI               universets_geometri relativitetsteori       big_bang            reionisation    
 kosmologisk_simulering                  cosmological_simulation         KOSMOLOGI; METODER      galaksedannelse     kosmologi                                                   
 kvasar                                  quasar                          GALAKSER                galakse             sort_hul                                                    
@@ -24,6 +24,8 @@ straalingstransport                     radiative_transfer              LYS     
 tung_stjerne                            massive_star                    STJERNER                stjerne             sort_hul
 supernova_dk___TUNGDØD                  supernova___DEATHMASS
 tyngdebolger                            gravitational_waves             FYSIK                   relativitetsteori   sort_hul
+universets_geometri                     geometry_of_space               KOSMOLOGI               relativitetsteori   kosmologi               "CMB"
+::::::::
 damped_lya_absorber___LAF               damped_lya_absorber___LAF
 planetariske_taager___LET               planetary_nebula___LOW
 rød_kæmpe___LET                         red_giant___LOW
@@ -36,7 +38,6 @@ neutronstjerne___TUNGDØD                neutron_star___DEATHMASS
 
 Endnu ikke skrevne
 ------------------
-universets_geometri                     geometry_of_space               KOSMOLOGI               relativitetsteori   kosmologi               
 mork_energi
 relativitetsteori
 exoplanet
