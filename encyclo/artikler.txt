@@ -101,7 +101,7 @@ rumtid___REL                            spacetime___REL
     </div>
 </div>
 
-<div class="post"><a href="./universets_geometri.html" class="entry-image"><img src="../pics/encyclo/geometry_icon.gif" alt=""></a>
+<div class="post"><a href="./universets_geometri.html" class="entry-image"><img src="../pics/encyclo/geometry_icon.jpg" alt=""></a>
     <div class="entry-content">
         <h4 class="entry-title"><a href="./universets_geometri.html">Universets geometri</a></h4>
         <ul class="entry-meta">
@@ -191,7 +191,7 @@ rumtid___REL                            spacetime___REL
     </div>
 </div>
 
-<div class="post"><a href="./universe_geometry.html" class="entry-image"><img src="../pics/encyclo/geometry_icon.gif" alt=""></a>
+<div class="post"><a href="./universe_geometry.html" class="entry-image"><img src="../pics/encyclo/geometry_icon.jpg" alt=""></a>
     <div class="entry-content">
         <h4 class="entry-title"><a href="./universe_geometry.html">Geometry of the Universe</a></h4>
         <ul class="entry-meta">
