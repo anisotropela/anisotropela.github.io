@@ -1,7 +1,7 @@
 Dansk                                   ENGELSK                         Keywords                Relaterede I        II                      III                 IV 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 big_bang                                the_big_bang                    KOSMOLOGI               kosmologi           tyngdebolger
-galakse                                 galaxy                          GALAKSER                morkt_stof          kvasar                                                      
+galakse                                 galaxy                          GALAKSER                morkt_stof          kvasar                  stjerne             galaksedannelse
 gammaglimt                              gamma_ray_burst                 STJERNER                supernova           stjerne                                                     
 kosmisk_mikrobolgebaggrundsstraaling    cosmic_microwave_background     KOSMOLOGI               big_bang            kosmologi               universets_geometri
 kosmologi                               cosmology                       KOSMOLOGI               universets_geometri relativitetsteori       big_bang            reionisation    
@@ -393,6 +393,42 @@ exoplanet
         <h4 class="entry-title"><a href="./morkt_stof.html">Mørkt stof</a></h4>
         <ul class="entry-meta">
             <li><i class="icon oi-speech-bubble"></i>Mørkt stof er nødvendigt for at lave galakser.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./atom_dk.html" class="entry-image"><img src="../pics/encyclo/atom_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./atom_dk.html">Atom</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>De fleste spektrer udsendes af atomer.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./atom.html" class="entry-image"><img src="../pics/encyclo/atom_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./atom.html">Atom</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Most spectra are emitted by atoms.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./galaksedannelse.html" class="entry-image"><img src="../pics/encyclo/galaxy_formation_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./galaksedannelse.html">Galaksedannelse</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>Hvordan galakserne bliver dannet er beskrevet i en seperat artikel.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="post"><a href="./galaxy_formation.html" class="entry-image"><img src="../pics/encyclo/galaxy_formation_icon.jpg" alt=""></a>
+    <div class="entry-content">
+        <h4 class="entry-title"><a href="./galaxy_formation.html">Galaxy formation</a></h4>
+        <ul class="entry-meta">
+            <li><i class="icon oi-speech-bubble"></i>How the galaxies are formed is described in a separate article.</li>
         </ul>
     </div>
 </div>
