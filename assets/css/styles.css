@@ -1,4 +1,18 @@
-/*	Table of contents
+/* zzz */ /*	Table of contents
+
+
+   *----------------------------------------------*
+   |                                              |
+   |  * To fold sections, search for              |
+   |     \<zzz\>\|\/\* \+$\n^\s\+++               |
+   |    - exception: "General css" goes all the   |
+   |     way to the bottom.                       |
+   |  * To fold subsections, search for           |
+   |     \<zzzZ\>                                 |
+   |                                              |
+   *----------------------------------------------*
+
+
  *  v 1.1 -- June 23 2016
  *	===================================================
  *  - Basic styles
@@ -47,7 +61,7 @@
  */
 
 
-/*  Colors */
+/* zzz */ /*  Colors */
 
 :root {
     --gul:           #F8DE27;
@@ -92,7 +106,7 @@ Later, refer to variable (e.g. color) like this:
 */
 
 
-/* begin my own stuff (there are more of my own in other places, e.g. under buttons) */
+/* zzz */ /* begin my own stuff (there are more of my own in other places, e.g. under buttons) */
 
 code {
   font-family:  courier;
@@ -102,7 +116,7 @@ code {
 
 /* end my own stuff */
 
-
+/* zzz */ /* empty headlines */
 /*skin colors*/
 
 
@@ -117,8 +131,7 @@ code {
 
 /* size*/
 
-
-/*	Base
+/* zzz */ /*	Base
  *	===================================================
  *  - Header variations
  */
@@ -4422,7 +4435,7 @@ button, button:active, button:focus, button:hover, .btn, .btn:active, .btn:focus
 }
 
 
-/*	Typography
+/* zzz */ /*	Typography
  *	===================================================
  */
 body {                                   /* Homemade "Read more" button */
@@ -4466,7 +4479,7 @@ a:active {   /* Selected links*/
     color: #4b4b4b !important;
 }
 
-/* begin tooltips */
+/* zzz */ /* begin tooltips */
 /*
 .tooltip {
   position: relative;
@@ -4510,6 +4523,7 @@ a:active {   /* Selected links*/
 */
 /* end tooltips */
 
+/* zzz Headlines*/ 
 h1, h2, h3, h4, h5, h6 {  /* Headlines */
     font-family: "Play",sans-serif;
     font-weight: 700;
@@ -4833,7 +4847,7 @@ p.highlight {
 }
 
 
-/*	Layouts
+/* zzz */ /*	Layouts
  *	===================================================
  *  - varius layouts
  */
@@ -4936,7 +4950,8 @@ p.highlight {
         width: 900px;
     }
 }
-/* Bootstrap multi-same-columns
+
+/* zzz */ /* Bootstrap multi-same-columns
  **************************************************/
 /* clear first in row in ie 8 or lower */
 .multi-columns-row .first-in-row {
@@ -5021,7 +5036,8 @@ p.highlight {
 .multi-columns-row[class*="col-margin-bottom-"] {
     overflow: hidden !important;
 }
-/* Rows with vertical centered columns
+
+/* zzz */ /* Rows with vertical centered columns
  **************************************************/
 .row.tb-vcenter-wrapper {
     margin-left: -15px;
@@ -5283,7 +5299,8 @@ p.highlight {
         margin-bottom: 0;
     }
 }
-/* side-header layout */
+
+/* zzz */ /* side-header layout */
 @media only screen and (min-width : 1200px) {/* layout */
     .side-header #header {
         position: fixed;
@@ -5342,7 +5359,8 @@ p.highlight {
 .dark-wrapper.page-contents, .dark-wrapper .page-contents {
     background-color: #333;
 }
-/*  adjust widths at side-header layout */
+
+/* zzz */ /*  adjust widths at side-header layout */
 @media only screen and (min-width : 1025px) {
     .side-header #contents .container, .side-header #footer .container {
         width: 750px;
@@ -5365,7 +5383,7 @@ p.highlight {
 }
 
 
-/*	Headers
+/* zzz */ /*	Headers
  *	===================================================
  *  - Header variations
  */
@@ -5766,7 +5784,8 @@ p.highlight {
 #header.header-thicker .logo-wrapper img {
     max-height: 50px;
 }
-/* side-header nav */
+
+/* zzz */ /* side-header nav */
 @media only screen and (min-width : 1200px) {
     .side-header #header .logo-wrapper {
         max-width: none;
@@ -5886,7 +5905,7 @@ p.highlight {
 }*/
 
 
-/*	Navigations
+/* zzz */ /*	Navigations
  *	===================================================
  */
 ul#primary-menu {
@@ -5895,6 +5914,7 @@ ul#primary-menu {
     list-style: none;
     margin-right: 15px;
 }
+
 /* General styles */
 ul#primary-menu li {
     position: relative;
@@ -5939,6 +5959,7 @@ ul#primary-menu li.menu-item-has-children >a:after {
     top: 50%;
     transform: translateY(-50%);
 }
+
 /* first level */
 ul#primary-menu >li {
     display: inline-block;
@@ -6136,7 +6157,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 
 
-/*	Header skins
+/* zzz */ /*	Header skins
  *	===================================================
  */
 /* 
@@ -6260,7 +6281,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	Footer
+/* zzz */ /*	Footer
  *	===================================================
  */
 #footer {
@@ -6417,7 +6438,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 
 
-/*	Page Titles
+/* zzz */ /*	Page Titles
  *	===================================================
  *  - Title variations
  */
@@ -6624,7 +6645,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 
 
-/*	Breadcrumbs
+/* zzz */ /*	Breadcrumbs
  *	===================================================
  *  - Title variations
  */
@@ -6684,7 +6705,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 
 
-/*	theme bottons
+/* zzz */ /*	theme bottons
  *	===================================================
  *  - varius layouts
  */
@@ -7135,7 +7156,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 
 
-/*	ui - social icons
+/* zzz */ /*	ui - social icons
  *	===================================================
  */
 .social-icons {
@@ -7449,7 +7470,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	shop
+/* zzz */ /*	shop
  *	===================================================
  */
 .shop-item {
@@ -7518,7 +7539,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 
 
-/*	iconbox
+/* zzz */ /*	iconbox
  *	===================================================
  */
 .icon-box p {
@@ -8046,7 +8067,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 
 
-/*	ui-side-navigations
+/* zzz */ /*	ui-side-navigations
  *	===================================================
  */
 .ol-side-navigation {
@@ -8247,7 +8268,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     background-color: #32cdc7 !important;
 }
 
-/*	ui-Accordions & Toggles & Tabs
+/* zzz */ /*	ui-Accordions & Toggles & Tabs
  *	===================================================
  */
 .ol-accordion a {
@@ -8466,7 +8487,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	numbers
+/* zzz */ /*	numbers
  *	===================================================
  */
 .fact-item {
@@ -8528,7 +8549,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	Callouts
+/* zzz */ /*	Callouts
  *	===================================================
  */
 .call-out {
@@ -8562,7 +8583,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	Testimonials
+/* zzz */ /*	Testimonials
  *	===================================================
  */
 .avatar {
@@ -8653,7 +8674,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	Alerts / Notifications
+/* zzz */ /*	Alerts / Notifications
  *	===================================================
  */
 .alert {
@@ -8727,7 +8748,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 */
 
-/*	Modals
+/* zzz */ /*	Modals
  *	===================================================
  */
 .modal-dialog {
@@ -8769,7 +8790,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     color: #636363;
 }
 
-/*	List icons
+/* zzz */ /*	List icons
  *	===================================================
  */
 .icon-list {
@@ -8824,7 +8845,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     border-radius: 4px;
 }
 
-/*	Progress bars
+/* zzz */ /*	Progress bars
  *	===================================================
  */
 .progress {
@@ -8919,7 +8940,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	People
+/* zzz */ /*	People
  *	===================================================
  */
 .vc-card {
@@ -9203,7 +9224,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     word-break: break-all;
 }
 
-/*	Tables
+/* zzz */ /*	Tables
  *	===================================================
  */
 .chaos-table a {
@@ -9235,7 +9256,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	Grid items
+/* zzz */ /*	Grid items
  *	===================================================
  *  items related to grid
  */
@@ -9857,7 +9878,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 
-/*	Portfolio Grid
+/* zzz */ /*	Portfolio Grid
  *	===================================================
  */
 .ol-grid {
@@ -10181,7 +10202,7 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
     color: #fff;
 }
 
-/*	Partners
+/* zzz */ /*	Partners
  *	===================================================
  */
 .partner-logos .owl-wrapper {
@@ -10209,7 +10230,7 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
 
 
 
-/*	Images
+/* zzz */ /*	Images
  *	===================================================
  */
 .caption {
@@ -10225,7 +10246,7 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
     border-left-color: #4b4b4b;
 }
 
-/*	hovers
+/* zzz */ /*	hovers
  *	===================================================
  */
 .ol-hover {
@@ -10592,7 +10613,7 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
     font-family: 'Sintony',sans-serif;
 }
 
-/*	Videos
+/* zzz */ /*	Videos
  *	===================================================
  */
 .video-container {
@@ -10620,7 +10641,7 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
     height: 100%;
 }
 
-/*	list styles
+/* zzz */ /*	list styles
  *	===================================================
  */
 .pub-item {
@@ -10935,7 +10956,7 @@ ul.np {
     padding: 0;
 }
 
-/*	paginations
+/* zzz */ /*	paginations
  *	===================================================
  */
 .ol-pagination {
@@ -11014,7 +11035,7 @@ ul.np {
 }
 
 
-/*	Form elements
+/* zzz */ /*	Form elements
  *	===================================================
  */
 .form-control {
@@ -11174,7 +11195,7 @@ select.form-control {
     margin: 0 5px;
 }
 
-/*	extend bg
+/* zzz */ /*	extend bg
  *	===================================================
  */
 .extend-bg-wrapper .extend-left, .extend-bg-wrapper .extend-right {
@@ -11202,7 +11223,7 @@ select.form-control {
     transform: none;
 }
 
-/*	Timelines
+/* zzz */ /*	Timelines
  *	===================================================
  */
 .ol-timeline {
@@ -11483,7 +11504,7 @@ select.form-control {
     background-color: #4b4b4b;
 }
 
-/*	News
+/* zzz */ /*	News
  *	===================================================
  */
 .featured-news-box {
@@ -11920,7 +11941,7 @@ ul.comments .comment-body .comment-content p {
 }
 
 
-/*	events
+/* zzz */ /*	events
  *	===================================================
  */
 .events .event-nav .contents {
@@ -12492,7 +12513,7 @@ ul.comments .comment-body .comment-content p {
 }
 
 
-/*	sections
+/* zzz */ /*	sections
  *	===================================================
  */
 .parallax-layer {
@@ -12527,7 +12548,7 @@ ul.comments .comment-body .comment-content p {
 }
 
 
-/*	Courses
+/* zzz */ /*	Courses
  *	===================================================
  */
 .course-el .contents {
@@ -13016,7 +13037,7 @@ ul.comments .comment-body .comment-content p {
     opacity: 0.8;
 }
 
-/*	revolution sliders
+/* zzz */ /*	revolution sliders
  *	===================================================
  */
 .ol-d6-slider {
@@ -13035,7 +13056,7 @@ ul.comments .comment-body .comment-content p {
 }
 
 
-/*	General css
+/* zzz */ /*	General css
  *	===================================================
  *	keep this at the bottom
  */
@@ -13047,7 +13068,8 @@ iframe {
     border: 1px solid #dedede;
     padding: 50px;
 }
-/* newsletters */
+
+/* zzzZ */ /* newsletters */
 .newsletter-form {
     background-color: #e8e8e8;
 }
@@ -13184,7 +13206,8 @@ iframe {
 .newsletter-form.simple .btn:hover, .newsletter-form.simple .btn:focus {
     background-color: #fff;
 }
-/* single icons */
+
+/* zzzZ */ /* single icons */
 .single-icon {}
 .single-icon.skin {}
 .single-icon.skin-blue i {
@@ -13366,7 +13389,8 @@ iframe {
     margin-right: 20px;
     margin-left: 20px;
 }
-/* twitter carousel */
+
+/* zzzZ */ /* twitter carousel */
 .twitter-carousel .tweet p {
     font-size: 13px;
 }
@@ -13384,7 +13408,8 @@ iframe {
 .dark-wrapper .twitter-carousel .tweet p a {
     color: #fff;
 }
-/* background color for elements */
+
+/* zzzZ */ /* background color for elements */
 .bg {}
 .bg-blue {
     background-color: #76bcfe !important;
@@ -13428,7 +13453,8 @@ iframe {
 .bg-transparent {
     background-color: transparent !important;
 }
-/* summary-box */
+
+/* zzzZ */ /* summary-box */
 .summary-box > i {
     font-size: 70px;
     color: #fff;
@@ -13599,7 +13625,8 @@ iframe {
     color: #e8e8e8;
     font-size: 12px;
 }
-/* dark-wrapper */
+
+/* zzzZ */ /* dark-wrapper */
 .dark-wrapper {
     color: #bbb;
 }
@@ -13615,7 +13642,8 @@ iframe {
     font-family: FontAwesome;
     font-size: 50px;
 }
-/* particles */
+
+/* zzzZ */ /* particles */
 .ol-particles {
     position: relative;
     z-index: 1;
@@ -14028,7 +14056,8 @@ iframe {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-/*  Responsive Containers */
+
+/* zzzZ */ /*  Responsive Containers */
 .video-container iframe, .calendar-container iframe, .google-maps-container iframe {
     position: absolute;
     top: 0;
@@ -14697,3 +14726,5 @@ iframe {
         text-align: justify;
     }
 }
+
+/* end general */
