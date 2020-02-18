@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Universets geometri</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Seneste aktiviteter<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Hvad er Universets geometri?</h1>
+                                <h4>Hvad er et fladt Univers?</h4>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./geometry_of_the_universe.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>Universets geometri</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <!--
+                                            <p>
+                                            I relativitetsteorien beskrives tyngdekraften ikke som en <em>kraft</em>, men som ændringer i selve rummets geometri.
+                                            I stedet for at tunge legemer "trækker" i andre legemer med en kraft, ændrer de rummet sådan at at de andre legemer stadig bevæger sig i lige baner, men i et krumt rum, hvilket giver en afbøjet bane.
+                                            </p>
+                                            -->
+                                            <p>
+                                            Alt det stof der ligger i Universet gør, at Universet — overordnet set — kan have en geometri der er anderledes end man måske lige ville tro.
+                                            </p>
+                                            <p>
+                                            Det betyder, at de geometriske regler vi er vant til — f.eks. at en trekant har 180&deg;, og at parallelle linier aldrig møder hinanden — måske ikke gælder præcist.
+                                            </p>
+                                            <p>
+                                            Dét er dødsvært at forestille sig i et tredimensionalt rum, men en god analogi er at tænke på en todimensional overflade som en bordplade; hér gælder de vante regler.
+                                            Men en todimensional overflade kan også være krum, som f.eks. overflade på en bold. Hér har trekanter <em>mere</em> end 180&deg;, og linier der starter med at være parallelle,
+                                            vil på et tidspunkt mødes.
+                                            </p>
+                                            <p>
+                                            Udover at vi bare gerne vil vide, hvilket slags univers vi lever i (ligesom det er rart at vide om Jorden er flad eller rund),
+                                            påvirker Universets geometri astronomiske observationer, så hvis vi vil forstå hvad vi ser, er vi nødt til at kende geometrien.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <br>
+                                            <p>
+                                            <span style="color:#ff0000">Denne artikel er en stub.</span>
+                                            </p>
+                                            <p>
+                                            <span style="color:#ff0000">Encyklopædien er under ombygning; indtil jeg får den fixet må du</span>
+                                            <ol>
+                                                <li style="color:#ff0000">tage til takke med den korte version, eller</li>
+                                                <li style="color:#ff0000">læse en af de artikler som jeg <em>har</em> re-formatteret (dem på <a href="../encyklo.html">forsiden</a> med farvede ikoner), eller</li>
+                                                <li style="color:#ff0000">
+                                                    <a href="mailto:pela@astro.uio.no?subject=Peter%20tag%20dig%20sammen%E2%80%A6&body=%E2%80%A6og skriv artiklen om Universets geometri færdig.%0D%0A%0D%0AKærlig hilsen,%0D%0Aen beundrer">Få mig til</a> at skrive den færdig.
+                                                </li>
+                                            </ol>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="Gå til encyklopædien" class="btn btn-small btn-circle btn-an-split"><span>Gå til encyklopædien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./relativitetsteori.html" class="entry-image"><img src="../pics/encyclo/relativity_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./relativitetsteori.html">Relativitetsteori</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Læs mere om teorien bag det krumme rum.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./kosmologi.html" class="entry-image"><img src="../pics/encyclo/cosmology_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./kosmologi.html">Kosmologi</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Beskrivelsen af Universets geometri hører ind under kosmologien.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin row () -->
+                        <!--
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>WALLAHsectionTitle</h3>
+                                        <p>
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        -->
+                        <!-- end second row -->
+
+                        <!-- begin third row (space) -->
+                        <!--
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>WALLAHsectionTitle</h3>
+                                        <p>
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#dopplerModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/WALLAHfigure_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/WALLAHfigure.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>WALLAHcaptionTitle</strong>: wallah wallah wallah
+                                                    <br>
+                                                    Kredit: wallah
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        -->
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (time) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (SMBH) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin sixth row (observation) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin seventh row (shadow) -->
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./geometry_of_the_universe.html"     >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"            >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>WALLAHtitle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <!-- modals -->
+            <div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="WALLAHModalLabel" class="modal-title">WALLAHmodalTitle</h4>
+                            <div class="modal-body">
+                                <p>
+                                wallah wallah wallah
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

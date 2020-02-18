@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Black hole</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../about.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../index.html"     title="Home"         ><span>Home</span></a> </li>
+                            <li><a href="../news.html"      title="News"         ><span>Recent activities<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../research.html"    title="Research"     ><span>Research</span></a> </li>
+                            <li class="current-menu-item"><a href="../outreach.html"  title="Outreach"     ><span>Outreach</span></a> </li>
+                            <li><a href="../teaching.html"  title="TeachSpv"     ><span>Teaching / supervision</span></a> </li>
+                            <li><a href="../cv.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../contact.html"   title="Contact"      ><span>Contact me</span></a> </li>
+                            <li><a href="../personal.html"  title="Personal"     ><span>Personal</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>What is a black hole?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./sort_hul.html"><img height=20px src="../pics/flagDK1.png" onmouseover="this.src='../pics/flagDK2.png'" onmouseout="this.src='../pics/flagDK1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../index.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../outreach.html">Outreach</a></li>
+                                    <li><a href="../encyclo.html">Encyclopedia</a></li>
+                                    <li>Black hole</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Quick explanation</span></h3>
+                                            <p>
+                                            A black hole is a region in space where gravity is so immense that not even light can escape.
+                                            </p>
+                                            <p>
+                                            And in 2019 astronomers finally succeeded in observing the "shadow" of a black hole!
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyclo.html" data-text="Go to the encyclopedia" class="btn btn-small btn-circle btn-an-split"><span>Go to the encyclopedia</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Related posts</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./quasar.html" class="entry-image"><img src="../pics/encyclo/quasar_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./quasar.html">Quasar</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>The extremely energetic jets from supermassive black holes.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./relativity_theory.html" class="entry-image"><img src="../pics/encyclo/relativity_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./relativity_theory.html">Theory of relativity</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Read about the theory behind black holes.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./massive_star.html" class="entry-image"><img src="../pics/encyclo/supernova_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./massive_star.html">Supernova</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Exploding stars can make black holes.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./large_hadron_collider.html" class="entry-image"><img src="../pics/encyclo/lhc_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./large_hadron_collider.html">Large Hadron Collider</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Can the particle accelerator "LHC" create a black hole?</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (supernova) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>A star collapses</h3>
+                                        <p>
+                                        A black hole is the most fantastic object in the Universe. It is neither matter (like stars, planets, and bicycles), nor radiation (like X-rays, green light, and radio waves).
+                                        It is, in fact, merely a clot of gravity.
+                                        </p>
+                                        <p>
+                                        A black hole is formed when a star more massive than approximately 25 Solar masses ends its life.
+                                        </p>
+                                        <p>
+                                        A star is the result of the equilibrium between two forces:
+                                        Gravity trying to pull everything together, and energy production trying to push everything apart.
+                                        When the star has burned all of its fuel, it will collapse.
+                                        For light stars, this collapse will stop at the state of a
+                                        <a>white dwarf</a>, while a heavier star explodes in a
+                                        <a>supernova</a>, leaving back a
+                                        <a>neutron star</a>.
+                                        </p>
+                                        <p>
+                                        However, if the neutron star is more massive than about 2&ndash;3 Solar masses, nothing is able to prevent the catastrophe:
+                                        The collapse will continue until all that has not been blown away by the supernova explosion has crumpled to a <i>single point</i>!
+                                        <p>
+                                        <!--
+                                            <p>
+                                            <button type="button" data-toggle="modal" data-target="#dopplerModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                            </p>
+                                        -->
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/cas_a_icon.jpg" alt="image hover"/>
+                                                <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/cas_a.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                    <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                                </div>
+                                                <!-- <h3 class="title">Doppler effekt</h3> -->
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Cassiopeia A</strong>: The remnant of a supernova that exploded some 300 years ago (plus the 11,000 years it took the light to reach Earth).
+                                                    This explosion didn't result in a black hole, though, but in a neutron star.
+                                                    <br>
+                                                    Credit: Spitzer/Hubble/Chandra.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (space) -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3> Space is warped</h3>
+                                        <p>
+                                        The final remnant typically weighs a few Solar masses, and all this mass is located not just in a very small volume, but in a single point!
+                                        </p>
+                                        <p>
+                                        Near this point, Einstein's theory of relativity predicts that gravity is so extreme that space itself is "curved".
+                                        That space is curved is a somewhat popular way of saying that if something &mdash; e.g. a beam of light &mdash; is traveling in a straight path through space,
+                                        a far-away observer will see the path of the beam as being deflected.
+                                        </p>
+                                        <p>
+                                        The closer one gets to the point, the stronger the gravity, and thus the more speed is needed to escape.
+                                        Inside the so-called "event horizon", which for a one Solar mass black hole is 3 km from the point, this necessary speed exeeds the speed of light.
+                                        </p>
+                                        <p>
+                                        That means that nothing, not even light, can escape.
+                                        </p>
+                                        <p>
+                                        The definition of the black hole is the sphere inside the event horizon.
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#schwarzschildModal" class="btn btn-circle btn-small btn-skin-blue">Show me the equations</button>
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/curved_space.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/curved_space.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Curved space</strong>:
+                                                    A curved space is difficult to visualize in 3D, but a fine 2D analogy is to imagine space as a flat rubber membrane being deformed by a massive object on top.
+                                                    The more massive the object is, the more the surface is deformed, and in a black hole the curvature is infinite.
+                                                    <br>
+                                                    Credit: sciencenews.org.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (time) -->
+                        <section class="section section-narrow  bg-gray p-top-60 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Time slows down</h3>
+                                        <p>
+                                        Not only space, but also time gets warped in the vicinity of a black hole, in the sense that the closer one gets to the event horizon, the slower time wil run as seen from far away.
+                                        An astronaut falling towards the black hole will feel nothing special at the horizon itself, but will eventually be ripped apart by tidal forces, getting crushed in the central point.
+                                        However, from the point of view of an observer located far away, the astronaut will fall slower and slower, never reaching the horizon.
+                                        </p>
+                                        <p>
+                                        If the falling astronaut has a powerful jetpack so that he can come close to the horizon, hang out there for a while and then return to his friends, he will find that
+                                        while the journey took him, say, an hour, a hundred years has passes in the "outside" world.
+                                        In this way, a black hole can be used as a time machine to travel forward in time (but not backward &mdash; for this you must use other means&hellip;).
+                                        </p>
+                                        <p>
+                                        In the movie "Interstellar" this happens to two of the characters &mdash; they spend a day on a planet orbiting a black hole, and hwne they return to their spaceship,
+                                        their friends are a little bitter because they've waited for 26 years (I don't remember all the details, but I believe it was something like this).
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <!--
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/cas_a_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/cas_a.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>WALLAH</strong>: wallah
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (SMBH) -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Supermassive black holes</h3>
+                                        <p>
+                                        I'LL WRITE SOMETHING ABOUT SUPERMASSIVE BLACK HOLES HERE SOON!
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <!--
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/cas_a_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/cas_a.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>WALLAH</strong>: wallah
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                        <!-- begin sixth row (observation) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Observations of black holes</h3>
+                                        <p>
+                                        Seeing a black hole isn't easy; light cannot escape you know.
+                                        Sometimes you can see the light from gas plummeting into the black hole, being heated till it glows. But that isn't <em>really</em> the black hole.
+                                        </p>
+                                        <p>
+                                        But now, black holes are no longer "just something theoretical". Now, finally we've seen it!
+                                        </p>
+                                        <p>
+                                        In 2019, the "Event Horizon Telescope" collaboration announced that, using a network of various telescopes around the world, they had observed the "shadow" of the
+                                        6.5 billion Solar mass supermassive black hole in the galaxy M87 (see also) <a href="../observations/virgo.html">my own image of M87</a>).
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/m87star.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/m87star.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Genuine image of a black hole</strong>: The "shadow" of the supermassive black hole in the galaxy M87.
+                                                    The white bar is 50 micro-arcseconds long, and one arcsecond is 1/3600 of a degree.
+                                                    The fact that it is so miniscule is the reason that they had to use telescopes distributed all over Earth &mdash;
+                                                    the greater the distance between the telescopes, the better the resolution.
+                                                    <br>
+                                                    Credit: <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ab0ec7">The ETH Collab. (2019, ApJ, 875, L1)</a>.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                        <!-- begin seventh row (shadow) -->
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>The shadow of a black hole</h3>
+                                        <p>
+                                        If you look toward a black hole, all sightlines within the Schwarzschild radius (\(r_s\)) will terminate on the surface of the event horizon.
+                                        Since it is black, you cannot see it, but if there is something bright behind &mdash; e.g. glowing gas swirling around the hole &mdash;
+                                        you can still "see the missing light" as a round disk in front of the luminous background.
+                                        </p>
+                                        <p>
+                                        But because space curves around the black hole, you don't just see a disk with radius \(r_s\):
+                                        sightlines a little farther away from the center will curve around and end on the back of the hole!
+                                        And sightlines even farther away curve all the way around to the front again, or several times around, so you see the front and back several times, all the way out a distance of \(2.6r_s\).
+                                        Further out, the sightlines will curve around multiple times, but end up "next to" the black hole (in any direction).
+                                        </p>
+                                        <p>
+                                        This disk with a radius of \(2.6 r_s\) is called the "shadow" of the black hole.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/BHshadow_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/BHshadow.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>The shadow of a black hole</strong>:
+                                                    Diagram of the sightlines (<em>red lines</em>) from an observer (on the <em>right</em>) toward a black hole.
+                                                    All sightlines within 2.6 times the Schwarzschild radius end on the event horizon, forming the image of the black hole; its so-called <em>shadow</em>.
+                                                    Click on the <i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i> to see details and <a href="../contact.html">write me</a> if you want the figure better explained.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../about.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../index.html"   >Home</a></li>
+                                            <li><a href="../news.html"    >News</a></li>
+                                            <li><a href="../research.html">Research</a></li>
+                                            <li><a href="../outreach.html">Outreach</a></li>
+                                            <li><a href="../teaching.html">Teaching / supervision</a></li>
+                                            <li><a href="../cv.html"      >CV</a></li>
+                                            <li><a href="../contact.html" >Contact me</a></li>
+                                            <li><a href="../personal.html">Personal</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../about.html"       >About this site</a></li>
+                                            <li><a href="../questions.html"   >Q&A column</a></li>
+                                            <li><a href="./sort_hul.html">This page in Danish</a></li>
+                                            <li><a href="../publications.html">Publications</a></li>
+                                            <li><a href="../encyclo.html"     >Encyclopedia</a></li>
+                                            <li><a href="../observations.html">Observations</a></li>
+                                            <li><a href="../notes.html"       >Notes</a></li>
+                                            <li><a href="../teaching/classic_papers.html" >"Classic papers" course</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/redshift.html"        >What is redshift?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">The Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >The Keyhole Nebula</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/butHansDillerIsAlive.html">Books</a> &amp;
+                                                <a href="../stuff/comics.html"            >Comics</a></li>
+                                            <li><a href="../stuff/rum.html"               >Rum</a>   &amp;
+                                                <a href="../stuff/music.html"            >Music</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../index.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../index.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../outreach.html">Outreach</a></li>
+                                    <li><a href="../encyclo.html">Encyclopedia</a></li>
+                                    <li>Black hole</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end #footer-->
+            <!-- modals -->
+            <div id="schwarzschildModal" tabindex="-1" role="dialog" aria-labelledby="schwarzschildModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="schwarzschildModalLabel" class="modal-title">Schwarzschild radius</h4>
+                            <div class="modal-body">
+                                <p>
+                                The distance from the central point to the <em>event horizon</em> (i.e. the smallest distance from which light may escape) is called the <em>Schwarzschild radius</em> (\(r_s\)) of the black hole.
+                                </p>
+                                <p>
+                                If the mass of the black hole is \(M\), the Schwarzschild radius is
+                                $$
+                                r_s = \frac{2 G M}{c^2},
+                                $$
+                                where \(G\) and \(c\) are Newton's gravitational constant and the speed of light, respectively.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Spektrum</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Seneste aktiviteter<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Hvad er et spektrum?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./spectrum.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>Spektrum</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <p>
+                                            Et spektrum er et billede, eller en graf, over <em>fordelingen</em> af bølgelængderne af noget lys.
+                                            </p>
+                                            <p>
+                                            Ved at se på spektret af eksempelvis en stjerne eller en galakse kan man lære helt utrolig meget om f.eks. objektets
+                                            kemiske sammensætning,
+                                            temperatur og
+                                            bevægelse.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="Gå til encyklopædien" class="btn btn-small btn-circle btn-an-split"><span>Gå til encyklopædien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./straalingstransport.html" class="entry-image"><img src="../pics/encyclo/rt_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./straalingstransport.html">Strålingstransport</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Læs mere om, hvordan lyset bevæger sig afsted.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./lyman_alpha_dk.html" class="entry-image"><img src="../pics/encyclo/lyman_alpha_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./lyman_alpha_dk.html">Lyman &alpha;-lys</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Min yndlings-del af spektret.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./atom_dk.html" class="entry-image"><img src="../pics/encyclo/atom_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./atom_dk.html">Atom</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>De fleste spektrer udsendes af atomer.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (E,nu,lambda) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Hvad er lys?</h3>
+                                        <p>
+                                        Det meste information vi får fra Universet kommer til os i form af <em>lys</em><sup>&ast;</sup>.
+                                        Lys er en slags mellemting mellem partikler og bølger. Nogle gange giver det mest mening at tænke på det som partikler — som vi så kalder <em>fotoner</em> —
+                                        og nogle gange giver det mest mening at tænke på det som bølger. Elektromagnetiske bølger, for at være mere specifik.
+                                        </p>
+                                        <p>
+                                        Fotoner er små pakker af energi. På sin vej gennem rummet svinger bølgerne frem og tilbage med en vis frekvens.
+                                        Jo hurtigere de svinger, jo mere energi har fotonen. Alle fotoner bevæger sig med samme fart — "lysets hastighed".
+                                        Det vil sige, at jo hurtigere de svinger, jo kortere afstand er der fra bølgetop til bølgetop.
+                                        Denne afstand kaldes fotonens bølgelængde.
+                                        </p>
+                                        <p>
+                                        Energi kan f.eks. måles i Joule, erg, eller elektronvolt.
+                                        Frekvens måles i Hertz, som betyder én svingning per sekund.
+                                        Normalt svinger lyset ret hurtigt, så man bruger f.eks. millioner Hertz (megahertz; MHz) eller milliarder Hertz (gigahertz; GHz).
+                                        Bølgelængder kan f.eks. måles i meter eller nanometer (nm), som er en milliardtedel af en meter.
+                                        Astronomer bruger tit Ångström (Å), som er 1/10 af en nanometer.
+                                        <hr style="color:#000000">
+                                        <sup>&ast;</sup>
+                                        <span style="font-size:10px">
+                                            Vi får også information fra meteorer, noget <a href="./stjernestov.html">stjernestøv</a> samlet op af satelliter,
+                                            lidt neutrinoer og kosmisk stråling, samt siden 2015, <a href="./tyngdebolger.html">tyngdebølger</a>.
+                                        </span>
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#EnulamcModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#whatModal" class="btn btn-circle btn-small btn-skin-gray">Men er lys så bølger eller partikler?</button>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/foton.gif" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/foton.gif" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>En foton</strong>: Eller, "Et slags forsøg på at vise en foton". Fotonens elektriske og magneteiske felt oscillerer vinkelret på hinanden, og vinkelret på udbredelsesretningen.
+                                                    I dette eksempel er de to felter i <em>fase</em>: de når max på samme tid og 0 på samme tid. Dét gør at fotonen er "lineært polariseret".
+                                                    Hvis ikke de var i fase, ville den blive "circkulært polariseret". Men glem bare dét — det er ligemeget for nu.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (to måder) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>To måder at se på</h3>
+                                        <p>
+                                        Grundliggende findes der to måder at observere lyset fra forskellige objekter på i astronomi:
+                                        </p>
+                                        <p>
+                                        Den ene måde er simpelthen at tage et billede, stort set ligesom med et almindeligt kamera; forskellen er bare et vi sætter kameraet i bunden af et sygt stort teleskop.
+                                        Dette kaldes på engelsk <em>imaging</em>.
+                                        </p>
+                                        <p>
+                                        Den anden måde er <em>spektroskopi</em>. Her bruger man også et teleskop og et kamera, men inden lyset rammer kameraet, sætter man en ting ind, som afbøjer lyset.
+                                        I gamle dage brugte man en prisme, men nu bruger man et slags gitter.
+                                        </p>
+                                        <p>
+                                        Og nu kommer det smarte: Når fotonerne bevæger sig fra ét medium til et andet, ændrer de retning.
+                                        Men retningen er ikke ens for alle fotoner; jo kortere bølgelængde, jo mere afbøjes de.
+                                        </p>
+                                        <p>
+                                        Det vil altså sige, at de spredes ud i forskellige retninger, alt efter hvilken bølgelængde de har.
+                                        Hvis man så tager et billede af lyset, vil man ikke længere kunne se selve objektet, fordi billedet er tværet ud over hele detektoren.
+                                        Til gengæld kan man så se, hvor meget objektet lyser i blåt lys, rødt lys, osv.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/DarkSideOfTheMoon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/DarkSideOfTheMoon.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Spredning af lys</strong>:
+                                                    En "hvid" lysstråle består af fotoner med alle mulige farver.
+                                                    Når de kommer igennem en prisme, spredes de ud efter deres bølgelængde.
+                                                    Blåt lys, som har den korteste bølgelængde, afbøjes mest, men rødt lys afbøjes mindst.
+                                                    For at se, hvor meget lys der komme ved de forskellige bølgelængder, kan man så sætte et kamera i højre side af billedet.
+                                                    <br>
+                                                    Kredit: Harvest Records/Capitol Records/Hipgnosis/George Hardie.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (spektrum) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Det elektromagnetiske spektrum</h3>
+                                        <p>
+                                        Men farver som rød og blå er kun en lille bitte del af hele det elektromagnetiske spektrum.
+                                        Det lys som mennesker kan se er sandsynligvis bestemt af, at det er dét område vores Solen lyser mest i (og som kan slippe gennem vores atmosfære).
+                                        </p>
+                                        <p>
+                                        Den længste bølgelængde vi kan se, er det røde lys. Hvis lysets bølgelængde bliver længere, kalder vi det <strong>infrarødt</strong> lys.
+                                        Din krop gløder faktisk i infrarødt lys.
+                                        I astronomiske sammenhænge udsendes det f.eks. af <a href="./stjernestov.html">stjernestøv</a> og forskellige molekyler.
+                                        </p>
+                                        <p>
+                                        Bliver bølgelængden endnu længere, kommer vi ind i <strong>mikrobølge</strong>-området, som du kan bruge til at varme lasagnen fra i går op med.
+                                        En hel gren af kosmologien er dedikeret til at studere noget meget vigtigt lys kaldet <a href="./kosmisk_mikrobolgebaggrundsstraaling.html">den kosmiske mikrobølgebaggrundsstråling</a>,
+                                        udsendt kort tid efter Big Bang.
+                                        </p>
+                                        <p>
+                                        De allerlængste bølgelængder kaldes <strong>radiobølger</strong>. Gladsaxesenderen sender P3 ved 93.9 MHz, din telefon opererer i GHz-området,
+                                        og <a href="./kvasar.html">kvasarer</a> udsender radio-jets ud fra en galakse, som er lige så store som galaksen selv.
+                                        </p>
+                                        <p>
+                                        Hvis vi går den anden vej, mod det mere energirige lys, ligger det <strong>ultraviolette</strong> lys ude ved de bølgelængder som er kortere end de korteste vi kan se.
+                                        Solens UV-lys gør dig solskoldet, og gigantiske brintskyer i fjerne galakser udsender <a href="./lyman_alpha_dk.html">Lyman &alpha;</a>-lys, som også ligger i dette område.
+                                        </p>
+                                        <p>
+                                        Kortere bølgelængder kaldes <strong>røntgenstråler</strong>, som kan vise om du har brækket kravebenet, og som udsendes af millioner af grader varm gas, som ligger mellem galakserne i galaksehobe.
+                                        </p>
+                                        <p>
+                                        Det allermest energirige lys kaldes <strong>gammastråler</strong>. De kommer f.eks. fra atombomber og de kraftigste eksplosioner i Universet; de såkaldte <a href="./gammaglimt.html">gammaglimt</a>.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/em_spectrum.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/em_spectrum.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Hele det elektromagnetiske spektrum</strong>:
+                                                    Den øverste akse viser bølgelængden, og den nederste frekvensen. De grå kasser viser de forskellige bølgelængdeområder.
+                                                    Synligt lys udgør en forsvindende lille del af det fulde spektrum af lys.
+                                                    <br>
+                                                    Kredit: <a href="https://chem.libretexts.org/Courses/City_College_of_San_Francisco/Chemistry_101A_Laboratory_Manual_(2019)/10%3A_Introduction_to_Spectroscopy">Chemistry Library</a>.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (grafisk) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Grafisk afbildning af spektret</h3>
+                                        <p>
+                                        Et spektrum er altså et billede af et objekts lys, fordelt ikke efter hvor det udsendes fra (sådan som et normalt billede er), men efter hvilken bølgelængde det har.
+                                        Hvis man vil foretage videnskabelig målinger, er det dog ikke nok bare at se på sådan et billede.
+                                        </p>
+                                        <p>
+                                        Vi vil gerne måle, præcis hvor meget lys der er i de forskellige bølgelængdeområder — altså hvilken værdi der er i de enkelte pixels i detektoren.
+                                        Disse værdier kan så plottes som en graf.
+                                        "Hvor meget lys" kaldes mere formelt lysets <em>intensitet</em>.
+                                        Med ordet "spektrum" tænker man normalt på grafen, og ikke selve billedet.
+                                        </p>
+                                        <p>
+                                        En forskel på detektoren i et almindeligt kamera og et teleskops kamera er, at hvor et almindeligt kamera har pixels der er følsomme i tre forskellige
+                                        bølgelængdeområder (rød, grøn og blå), er teleskopets følsomt for <em>alle</em> fotoner (i et bredt interval).
+                                        Det registrerer altså bare "lys vs. mindre lys vs. ingen lys", og billederne bliver derfor sort/hvide.
+                                        Så kan man altid lave det om til farver, hvis man har lyst til dét.
+                                        </p>
+                                        <p>
+                                        På billederne her ses nogle (hjemmelavede) eksempler på, hvordan nogle spektrer ser ud, når de repræsenteres grafisk.
+                                        Selve billederne er altså sort/hvide, men jeg har lavet en lille stribe med de tilsvarende farver, bare for hyggens skyld.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/spectrum_colors2graph_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/spectrum_colors2graph.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Øverst</strong>:
+                                                    Spektrum af en Sol-lignende stjerne. Intensiteten peaker i det grønne område, og fader ud mod både kortere og længere bølgelængder.
+                                                    I den grafiske afbildning ses derfor en linie der stiger fra 0 ved &lambda; &simeq; 350 nm indtil omkring 600 nm, og derefter falder til 0 igen
+                                                    hen imod &lambda; &simeq; 900 nm.<br>
+                                                    <strong>Midten</strong>:
+                                                    Hvis spektret (af et lidt urealistisk objekt) faldt kraftigt hen mod det røde lys, kunne det se sådan her ud.
+                                                    <strong>Nederst</strong>:
+                                                    Hvis hele det grønne område var undertrykt (endnu mere urealistisk), kunne det se sådan her ud.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (abs/em) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Absorption og emission</h3>
+                                        <p>
+                                        Lyset fra et objekt kommer normalt fra atomerne, og de forskellige atomer udsender — eller "emitterer" — lys med helt bestemte bølgelængder.
+                                        Hvert grundstof har så at sige sit eget "fingeraftryk". Ved at studere spektret, kan man derfor se hvad dét man kigger på består af.
+                                        Det gælder uanset om man kigger på en lampe foran én, en stjerne der ligger 10 lysår væk, eller an galakse der ligger ti milliarder lysår væk
+                                        (selvom det godt nok bliver sværere, jo længere væk det er).
+                                        </p>
+                                        <p>
+                                        De samme bølgelængder som atomerne <em>udsender</em> lys ved, kan se også <em>absorbere</em> lys ved.
+                                        Atomer består af en positivt ladet kerne, med negative elektroner omkring. Disse elektroner kan ligge i forskellige <em>energitilstande</em>.
+                                        Det svarer lidt til, at planeterne kan ligge i forskellige afstande fra Solen.
+                                        </p>
+                                        <p>
+                                        Hvis en elektron i atomet falder fra en høj energitilstand, til en lavere, udsendes forskellen i energi mellem de to tilstande som en foton.
+                                        Og omvendt: hvis en foton med en energi der svarer næsten præcist til energiforskellen mellem to tilstande rammer et atomer i den lave energitilstand, kan den blive absorberet
+                                        Så ophører fotonen med at eksistere, og energi går til at sparke elektronen op i den højere tilstand.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/photonAbsEm.jpg" alt="Foton-absorption og -emission"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/photonAbsEm.mov" class="ol-lightbox"><i class="oli oli-start theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Absorption og emission</strong>:
+                                                    Et brintatom ligger og hygger sig i sin laveste energitilstand. Fra venstre kommer en foton med en bølgelængde på 1216 Ångström
+                                                    (en såkaldt <a href="./lyman_alpha_dk">Lyman &alpha;-foton</a>), hvilket betyder at dens energi lige passer til at få elektronen op i sin "1. exciterede tilstand".
+                                                    Den bliver derfor absorberet. Lidt efter falder elektronen dog tilbage, så en ny foton udsendes med samme energi.
+                                                    I dette tilfælde — fordi ind- og ud-fotonen har samme bølgelængde — kaldes processen <em>resonansspredning</em>.<br>
+                                                    Klik på <i class="oli oli-start icon-border circle" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>-ikonet for at se processen.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (planck) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Planck-spektrum</h3>
+                                        <p>
+                                        Hvis man har en samling af en masse atomer — f.eks. en stjerne, en gassky, eller din krop — vil dét at det har en temperatur få atomerne til hele tiden at støde sammen,
+                                        hvorved de exciteres og udsender fotoner. Det samlede spektrum fra et legeme i såkaldt <em>termodynamisk ligevægt</em> viser hvilken temperatur legemet har.
+                                        </p>
+                                        <p>
+                                        Sådan et spektrum, som kun er formet af legemets temperatur, kaldes et "Planck-spektrum", og det ser ens ud ligemeget hvad legemet er lavet af;
+                                        Man kan altså ikke se forskel på spektret af vores Sol, som er ca. 6000 grader varm, og et stykke jern som varmes op til samme temperatur.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/planckspectrum.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/planckspectrum.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Planck-spektrer</strong>: Spektrene af tre legemer med en temperatur på hhv. 3000, 6000, og 7000 Kelvin ("Kelvin" er næsten det samme som ºC ved så høje temperaturer).
+                                                    Jo varmere legemet er, jo kortere bølgelængde peaker spektret ved, og jo mere er den samlede energi der udsendes ("arealet under kurverne").
+                                                    På denne skala ville Planck-spektret af din krop slet ikke kunne ses, men det peaker helt ude i den infrarøde del af spektret.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (linier) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Spektrallinier</h3>
+                                        <p>
+                                        Men ofte foregår der alle mulige processer som gør, at et observeret spektrum ikke bare er et Planck-spektrum.
+                                        Stjerner har et spektrum der er ret tæt på, men hvis der nu ligger en gassky mellem os og stjernen, vil skyen absorbere noget af stjernens "kontinuum" af lys.
+                                        Så kommer der nogle mørke linier i spektret ved nogle helt bestemte bølgelængder. I den grafiske afbildning vil der så være nogle skarpe "dyk" i grafen.
+                                        </p>
+                                        <p>
+                                        Disse linier kaldes <em>absorptionslinier</em>.
+                                        </p>
+                                        <p>
+                                        Når elektronerne henfalder igen, udsendes lys med samme bølgelængde.
+                                        En brøkdel af dem udsendes i samme retning som de havde før de blev absorberet; de fleste udsendes i alle mulige andre retninger.
+                                        Hvis vi, i stedet for at kigger på "kontinuums-kilden" — altså stjernen — kun kigger på gasskyen, vil vi se det modsatte af før, nemlig klare linier ved de bestemte bølgelængde.
+                                        </p>
+                                        <p>
+                                        Disse linier kaldes <em>emissionslinier</em>.
+                                        </p>
+                                        <p>
+                                        Hvis man observerer f.eks. en galakse, vil spektret være en blanding af gas og stjerner med forskellige temperaturer, støv, absorptions- og emissionslinier, samt andre processer som f.eks. "synkrotronstråling".
+                                        </p>
+                                        <p>
+                                        Liniernes præcise form kan desuden afsløre om gassen f.eks. er turbulent, om en galakse roterer eller blæser gas ud i det intergalaktiske medium, osv..
+                                        Linierne kan også være <a href="./rodforskydning.html">rødforskudt</a>, hvilket fortæller os hvordan det vi observerer bevæger sig, hvor langt væk en galakse er, m.m.
+                                        </p>
+                                        <p>
+                                        Ved at studere sådan et spektrum kan man altså lære utrolig meget om galakser og alle mulige andre spændende ting i Universet.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/spectralLines.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/spectralLines.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Spektrallinier</strong>:
+                                                    Hvis man observerer en lyskilde gennem en gassky (<em>midten</em>), vil det observerede spektrum ligne det man ville se hvis man kiggede direkte på kilden (<em>øverst</em>),
+                                                    bortset fra at der mangler lys ved forskellige bølgelængder, afhængig af hvad skyen består af.
+                                                    Hvis man til gengæld kun kigger på skyen (<em>nederst</em>), vil man se se lys ved netop disse bølgelængder.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (wallah) -->
+                        <!--
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>WALLAHtitle</h3>
+                                        <p>
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/WALLAHfigure_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/WALLAHfigure.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>WALLAHcaptionTitle</strong>: wallah wallah wallah
+                                                    <br>
+                                                    Kredit: wallah
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        -->
+                        <!-- end row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./spectrum.html"     >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"            >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>Spektrum</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <!-- modals -->
+            <div id="EnulamcModal" tabindex="-1" role="dialog" aria-labelledby="EnulamcModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="EnulamcModalLabel" class="modal-title modal-skin-blue">Energi, frekvens, bølgelængde og hastighed</h4>
+                            <div class="modal-body">
+                                <p>
+                                En foton kan beskrives ved én af de følgende<br>
+                                - energi (\(E\));<br>
+                                - frekvens (\(\nu\), det græske bogstav "ny");<br>
+                                - bølgelængde (\(\lambda\), det græske bogstav "lambda"),<br>
+                                samt<br>
+                                - lyset hastighed (\(c\)), som er 300.000 km/s (i vaccum).
+                                </p>    
+                                <p>    
+                                Disse størrelser afhænger af hinanden på følgende måde:
+                                $$
+                                \lambda = \frac{c}{\nu},
+                                $$
+                                og
+                                $$
+                                E = h \times \nu,
+                                $$
+                                hvor \(h\) er et meget lille, men konstant tal, kaldet <em>Plancks konstant</em>.
+                                </p>    
+                                <p>    
+                                Altså: Jo højere frekvens, jo mere energi, og jo kortere bølgelængde.
+                                </p>    
+                                <p>    
+                                Hvis lyset bevæger sig i et "medium", f.eks. gas, glas eller vand, bevæger det sig langsommere.
+                                I luft bevæger det sig for eksempel 0.03% langsommere, og i vand bevæger det sig 33% langsommere.
+                                Frekvensen ændrer sig ikke, så til gengæld må bølgelængden blive kortere.
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-blue">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="whatModal" tabindex="-1" role="dialog" aria-labelledby="whatModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="whatModalLabel" class="modal-title modal-skin-gray">Hvad er lys <em>egentlig</em>?</h4>
+                            <div class="modal-body">
+                                <p>
+                                I virkeligheden er lys <em>hverken</em> partikler eller bølger. Begge beskrivelser er en tilnærmelse til en dybereliggende teori kaldet <em>kvante-elektrodynamik</em>,
+                                hvor fotoner beskrives som en excitation af et kvantefelt.
+                                </p>
+                                <p>
+                                Bølgebeskrivelsen er tit god når vi vil vide noget om hvordan lyser bevæger sig,
+                                og partikelbeskrivelsen er god når vi vil vide noget om hvordan lyser vekselvirker med andet stof.
+                                </p>
+                                <p>
+                                Ofte er det sådan, at jo længere bølgelængden er, jo mere "bølget" opfører lyset sig, mens jo kortere bølgelængde, jo mere "partiklet".
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-gray">Ja ja</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

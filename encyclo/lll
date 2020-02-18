@@ -1,10 +1,57 @@
-gammaglimt.html:         
-lyman_alpha.html:        
-lyman_alpha_dk.html:     
-lyman_alpha_forest.html: 
-radiative_transfer.html: 
-reionisation.html:       
-reionization.html:       
-spektrum.html:           
-stjernestov.html:        
-straalingstransport.html:
+atom.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+atom_dk.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+big_bang.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+black_hole.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+cosmic_microwave_background.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+cosmological_simulation.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+cosmology.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+dark_matter.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+galakse.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+galaksedannelse.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+galaxy.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+galaxy_formation.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+gamma_ray_burst.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+gammaglimt.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+geometry_of_the_universe.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+gravitational_waves.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+kosmisk_mikrobolgebaggrundsstraaling.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+kosmologi.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+kosmologisk_simulering.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+kvasar.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+large_hadron_collider.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+large_hadron_collider_dk.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+let_stjerne.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+lowmass_star.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+lyman_alpha.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+lyman_alpha_dk.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+lyman_alpha_forest.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+lyman_alpha_skoven.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+massive_star.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+morkt_stof.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+nova.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+nova_dk.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+quasar.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+radiative_transfer.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+redshift.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+reionisation.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+reionization.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+relativitetsteori.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+relativity_theory.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+rodforskydning.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+sort_hul.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+spectrum.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+spektrum.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+star.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+star_cluster.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+stardust.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+stjerne.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+stjernehob.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+stjernestov.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+straalingstransport.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+template_ca.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+template_dk.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+the_big_bang.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+ttt.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+tung_stjerne.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+tyngdebolger.html:                <div class="page-head lined bg-white shadow-line ol-particles">
+universets_geometri.html:                <div class="page-head lined bg-white shadow-line ol-particles">

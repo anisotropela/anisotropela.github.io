@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Galakse</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Seneste aktiviteter<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Hvad er en galakse?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./galaxy.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>Galakse</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin row (kort+related) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <p>
+                                            En galakse er en klump af stjerner, holdt sammen af tyngdekraften.
+                                            </p>
+                                            <p>
+                                            Små galakser består af millioner af stjerner, men de største har milliarder eller endda billioner af stjerner.
+                                            </p>
+                                            <p>
+                                            Stjerner er dog kun en lille del af en galakse; udover det gas og støv der ligger mellem stjernerne, består galakser også af mørkt stof.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="Gå til encyklopædien" class="btn btn-small btn-circle btn-an-split"><span>Gå til encyklopædien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./morkt_stof.html" class="entry-image"><img src="../pics/encyclo/dark_matter_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./morkt_stof.html">Mørkt stof</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Mørkt stof er afgørende for dannelsen af galakser.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./kvasar.html" class="entry-image"><img src="../pics/encyclo/quasar_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./kvasar.html">Kvasar</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Ekstreme energistråler fra centrum af nogle galakser.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./stjerne.html" class="entry-image"><img src="../pics/encyclo/star_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./stjerne.html">Stjerne</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Stjerner er normalt det der gør, at vi overhovedet kan <em>se</em> galakserne.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./galaksedannelse.html" class="entry-image"><img src="../pics/encyclo/galaxy_formation_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./galaksedannelse.html">Galaksedannelse</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Hvordan galakserne bliver dannet er beskrevet i en seperat artikel.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (intro) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Galakser er klumper af stjerner</h3>
+                                        <p>
+                                        Når man kigger op på nattehimlen, ser <a href="./stjerne.html">stjernerne</a> ud til at være nogenlunde jævnt fordelt.
+                                        Men hvis man var bedre til at se — eller hvis man snyder og bruger et teleskop — kan man se, at det ikke fortsætter sådan længere ude i Universet.
+                                        </p>
+                                        <p>
+                                        Stjernerne er i stedet klumpet sammen i <em>galakser</em>, holdt sammen af tyngdekraften.
+                                        Hvor der typisk er nogle få lysår mellem stjernerne inde i en galakse, måles afstandene mellem galakserne nærmere i <em>millioner</em> lysår.
+                                        </p>
+                                        <p>
+                                        De mindste galakser har nogle millioner stjerner, mens de største har flere billioner.
+                                        Vores egen galakse, Mælkevejen (eller "Galaksen" med stort G), kan betragtes som en typisk galakse, og har nogle hundrede milliarder stjerner.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/milky_way_map.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/milky_way_map.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Kort over Mælkevejen</strong>:
+                                                    Størrelsesforhold omtrent 1 til 20 trilliarder, alt efter din skærmopløsning.
+                                                    <br>
+                                                    Fordi vi sidder <em>inde</em> i Mælkevejen, kan vi ikke tage et "hel"-billede af den, ligesom vi kan med andre galakser,
+                                                    Men ved at måle afstande til stjerner og observere forskellige gasskyers tæthed og hastighed, kan vi alligevel kortlægge den og skabe et kunstigt billede.
+                                                    <br>
+                                                    Kredit: NASA/JPL-Caltech/R. Hurt (SSC/Caltech).
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (ingredienser I) -->            <!-- bemærk bottom -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-0">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Hvad består galakser af?</h3>
+                                        <h5>Stjerner — levende og døde</h5>
+                                        <p>
+                                        Stjerner er der som sagt masser af. Stjerner lever længe, men ikke evigt. Når de løber tør for brændstof og dør, efterlader de
+                                        <a href="./let_stjerne.html">hvide dværge</a>,
+                                        <a href="./tung_stjerne.html">neutronstjerner</a>, eller
+                                        <a href="./sort_hul.html">sorte huller</a>.
+                                        </p>
+                                        <!-- -->
+                                        <h5>Gas</h5>
+                                        <p>
+                                        Men faktisk er stjerner kun en lille del af en galakses samlede masse.
+                                        Stjerner er lavet af gas, dvs. <a href="./atom.html">atomer</a> der svæver frit rundt. Men mellem stjernerne — i det <em>interstellare medium</em> — ligger der også masser af gas.
+                                        For små galakser kan der let være 10 gange så meget gas i det interstellare medium som stjerner; for store galakser er det omvendt.
+                                        </p>
+                                        <p>
+                                        Det interstellare medium er delt op i forskellige faser. Nogle områder er diffuse og ekstremt varme; millioner af grader.
+                                        Her er gassen <em>ioniseret</em>, dvs. de fleste atomer har fået revet én eller flere elektroner af, pga. den høje temperatur.
+                                        Andre områder er tættere og køligere, omkring 8-10.000 grader.
+                                        </p>
+                                        <p>
+                                        Jo varmere gas er, jo højere bliver trykket, og jo mere udvider det sig (det er derfor en varmluftsballon stiger til vejrs).
+                                        Omvendt, hvis gassen køler rigtig meget af (til omkring 100 grader Kelvin, dvs. minus et par hundrede &deg;C), fås tætte og meget kolde <em>molekylskyer</em> — det er dér de nye stjerner dannes.
+                                        </p>
+                                        <!-- -->
+                                        <!--
+                                        <p>
+                                        Disse "kompakte objekter" udgør 
+                                        </p>
+                                        -->
+                                        <!-- -->
+                                        <h5>Støv</h5>
+                                        <p>
+                                        I <a href="./big_bang.html">Big Bang</a> skabtes stort set kun brint og helium.
+                                        Når stjernerne dør, giver de en del af deres gas tilbage til det interstellare medium, men nu forurenet med tungere grundstoffer
+                                        (som astronomer under ét kalder "metaller", selvom det nok skurrer lidt i ørene på en kemiker).
+                                        </p>
+                                        <p>
+                                        Efterhånden er omtrent 2% af gasmassen blev lavet om til metaller, og ca. 1/3 af dette er klumpet sammen til  <a href="./stjernestov.html">støv</a>.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../observations/M16_OIII-Ha-Hd.jpeg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../observations/M16_OIII-Ha-Hd.jpeg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Ørnetågen</strong>: Dette billede (som jeg selv har taget) viser flere af en galakses bestanddele:
+                                                    Mellem stjernerne ligger gas; jeg har brugt et filter som fremhæver dobbelt-ioniseret ilt i blågrønt.
+                                                    Selve "ørnen" er en kold sky af molekyler og støvkorn.
+                                                    Der er også noget mørkt stof, men når gas har fortættet sig så meget, dominerer det stort over det mørke stof, som jo i øvrigt er usynligt, så glem bare at jeg sagde det.
+                                                    <br>
+                                                    Kredit: <a href="../observations/eagle.html">mig selv</a>.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (ingredienser II) -->  <!-- bemærk top -->
+                        <section class="section section-narrow bg-white p-top-20 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h5>Planeter</h5>
+                                        <p>
+                                        Når en stjerne fødes, dannes en skive af gas og støv omkring den.
+                                        Støv kan klumpe samme og danne småsten, som kan danne større sten, som kan danne <a href="./exoplaneter.html">planeter</a>.
+                                        I det samlede massebudget er planeterne en forsvindende lille del af en galakse, men de er nok nødvendige for at der kan opstå liv.
+                                        </p>
+                                        <!-- -->
+                                        <h5>Supertunge sorte huller</h5>
+                                        <p>
+                                        I midten af de fleste galakser ligger et "supertungt" <a href="./sort_hul.html">sort hul</a>. Disse sorte huller kan veje millioner eller milliarder af Solmasser.
+                                        </p>
+                                        <p>
+                                        Tyngdekraft-mæssigt betyder de ikke det store ift. resten af galaksen,
+                                        men i en periode kan det sorte hul skabe en "aktiv galaksekerne", eller en <a href="./kvasasr.html">kvasar</a>,
+                                        som kan blæse en betragtelig del af galaksens stof helt ud af galaksen.
+                                        </p>
+                                        <!-- -->
+                                        <h5>Mørkt stof</h5>
+                                        <p>
+                                        Men alt det ovenstående tilsammen udgør alligevel kun ca. 1/6 af den samlede masse.
+                                        Størstedelen af en galakse er i virkeligheden noget helt andet, nemlig <a href="./morkt_stof">mørkt stof</a>.
+                                        </p>
+                                        <p>
+                                        Det mørke stof adskiller sig fra det "normale" (eller <em>baryoniske</em>) stof ved, at det kun vekselvirker med tyngdekraften.
+                                        Det normale stof kan køle og blive til en tæt galakse, men det mørke stof har sværere ved at klumpe samme, og ligger derfor i en meget større <em>halo</em> rundt om.
+                                        </p>
+                                        <p>
+                                        Det vi ser som en galakse er altså kun en brøkdel af, hvad er en galakse i <em>virkeligheden</em> er.
+                                        Figuren her viser nogenlunde størrelsesforholdet mellem Mælkevejens komponenter.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/model_galaxy_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/model_galaxy.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Mælkevejens komponenter</strong>: De fleste stjerner og gasskyer ligger i en tynd skive (blå).
+                                                    Desuden har Mælkevejen, som 2/3 af alle spiralgalakser, en del af sine stjerner liggende i en tyk skive (cyan).
+                                                    I midten ligger en "bule" (orange), og i en halo omkring skiven (rød) ligger meget varm gas, samt nogle gamle stjerner og omkring 150 <a href="./kuglehobe.html">kuglehobe</a> (gule).
+                                                    Alt dette ligger omgivet af en langt større mørk-stof-halo (grå).
+                                                    <br>
+                                                    Modellen er nogenlunde til skala, men i virkeligheden er de forskellige komponenter slet ikke så skarpt afgrænsede,
+                                                    men aftager i tæthed fra centrum og udefter.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (formation) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Hvordan dannes galakser?</h3>
+                                        <p>
+                                        Dette afsnit greb lidt om sig, så jeg har skrevet en separat artikel om <a href="./galaksedannelse.html">galaksedannelse</a>.
+                                        </p>
+                                        <p>
+                                        Som en lille teaser kan jeg afsløre, at det har noget at gøre med tyngdekraft og hydrodynamik.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (typer I) -->                   <!-- bemærk bottom -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-0">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Hvilke slags galakser findes der?</h3>
+                                        <p>
+                                        Overordnet set kommer galakser i tre varianter: Spiralgalakser, elliptiske galakser, og irregulære galakser.
+                                        Alle slags har dog flere undergrupper, der findes mellemting, og der findes nogle der er sådan lidt uden for nummer.
+                                        </p>
+                                        <p>
+                                        En galakses udseende kaldes dens <em>morfologi</em>.
+                                        Vil man studere galaksers udvikling, er det rart at klassificere dem efter deres type, men somme tider er det lidt subjektivt hvilken morfologi en galakse har.
+                                        Hvis du har lyst til at hjælpe astronomer med at klassificere galakser, kan du gå ind på <a href="https://galaxyzoo.org">galaxyzoo.org</a> og være med til at bestemme.
+                                        </p>
+                                        <h5>Spiralgalakser</h5>
+                                        <p>
+                                        Spiralgalakser er de smukkeste, synes jeg. De er karakteriseret ved at have en rød-orange kerne, eller "bule", og nogle blåhvide spiralarme som ligger i en flad skive.
+                                        Inde i spiralarmene er der kun 2-3 gange så mange stjerner som mellem dem, men fordi her foregår aktiv stjernedannelse, er de meget klarere,
+                                        Og fordi der stadig er de store stjerner tilbage — som lyser blåligt, men brænder hurtigt ud — får armene denne farve.
+                                        </p>
+                                        <p>
+                                        Du kan læse mere om, hvordan armene opstår i artiklen om <a href="./galaksedannelse.html">galaksedannelse</a>.
+                                        </p>
+                                        <p>
+                                        Ca. 2/3 af spiralgalakserne har en bjælkeformet struktur som går ud fra bulen.
+                                        Bjælken er nok en form for tæthedsbølge, ligesom spiralarmene er, og kan "suge" gas ind fra spiralarmene som kan bruges til at skabe nye stjerner.
+                                        Denne gas kan også nære et supertungt sort hul i midten, så den bliver til en <em>aktiv galaksekerne</em> eller en <a href="./kvasar.html">kvasar</a>.
+                                        </p>
+                                        <p>
+                                        Spiralgalakser klassificeres på en skala fra Sa (meget tæt opvundne arme), over Sab, Sb, og Sbc, til Sc (åbne veldefinerede arme).
+                                        Hvis de har en bjælke, kaldes de SBa, SBab, osv.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/spirals_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/spirals.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Fire eksempler på spiralgalakser</strong>:<br>
+                                                    1) "Grand design"-galaksen M74.<br>
+                                                    2) Bjælkegalaksen NGC 1300.<br>
+                                                    3) Den "flokkulente" galakse NGC 4414.<br>
+                                                    4) Spiralgalaksen NGC 891 set fra siden. I dette tilfælde ses direkte ind i skiven, som er fuld af støv som "rødfarver" lyset.
+                                                    <br>
+                                                    Kredit: GMOS/NASA/ESA/STScl/Berentine/NOAO.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (typer II) -->         <!-- bemærk top -->
+                        <section class="section section-narrow bg-white p-top-20 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h5>Elliptiske galakser</h5>
+                                        <p>
+                                        Elliptiske galakser er, tror vi, resultatet af sammensmeltningen af flere mindre galakser.
+                                        Ved disse sammenstød stiger stjernedannelsen først voldsomt, og man får et eller flere "starbursts".
+                                        </p>
+                                        <p>
+                                        Den kraftige stjernedannelse bruger det meste af gassen op på én gang, og selve sammenstødet samt stjerne- og supernovavinde blæser resten ud, så det bliver svært at danne nye stjerner.
+                                        Der er derfor kun de gamle stjerner tilbage, og da gamle stjerner er rød-orange, er det denne farve elliptiske galakser får.
+                                        </p>
+                                        <p>
+                                        Elliptiske galakser klassificeres på en skala fra E0 (næsten sfæriske) til E7 (meget aflange).
+                                        </p>
+                                        <p>
+                                        De største galakser i Universet er elliptiske, og kan blive mere end ti gange så tunge som Mælkevejen. De ligger oftest i midten af store galakse<em>hobe</em>,
+                                        som er samlinger af hundreder eller tusinder af galakser der er bundet sammen af tyngdekraften.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/ellipticals_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/ellipticals.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Fire eksempler på elliptiske galakser</strong>:
+                                                    1) 4C 73.08.<br>
+                                                    2) ESO 325-G004.<br>
+                                                    3) NGC 1132.<br>
+                                                    4) IC 2006.<br>
+                                                    Der er ikke meget sjov at komme efter hér, vel?
+                                                    <br>
+                                                    Kredit: ESA/Hubble/NASA
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (typer III) -->         <!-- bemærk top -->
+                        <section class="section section-narrow bg-white p-top-20 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h5>Alle de andre</h5>
+                                        <p>
+                                        Nogle galakser, især de mindre, er hverken elliptiske eller skiveformede, men har en helt anden form. Disse galakser kaldes <em>irregulære</em>.
+                                        Det skyldes oftest sammenstød, eller nær-sammenstød, med andre galakser. Irregulære galakser er normalt små, da større galakser bedre kan modstå at blive revet rundt af en anden galakse.
+                                        </p>
+                                        <p>
+                                        <em>Linsegalakser</em> er en mellemting mellem elliptiske og spiralgalakser: De har lidt spiralstruktur, men også en tydelig elliptisk halo.
+                                        </p>
+                                        <p>
+                                        Jo større og tungere en galakse er, jo sjældnere er den.
+                                        De fleste galakser er derfor <em>dværggalakser</em>, som så kan deles op i dværgspiraler, dværgellipser, dværg-irregulære, og dværg-sfæroidale galakser.
+                                        </p>
+                                        <p>
+                                        <em>Ringgalakser</em> har en bule som spiralgalakserne, og en noget større ringstruktur af stjerner.
+                                        De er nok skabt af, at en anden galakse har smadret durk igennem midten af en spiralgalakse.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/irr_dw_S0_ring_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/irr_dw_S0_ring.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Fire galakser mere, men så er det også nok</strong>:<br>
+                                                    1) Den irregulære galakse NGC 1427A.<br>
+                                                    2) Dværg-sfæroidalen Fornaxdværgen.<br>
+                                                    3) Linsegalaksen Sombrero-galaksen.<br>
+                                                    4) Ringgalaksen Hoag's Object.
+                                                    <br>
+                                                    Kredit: NASA/ESA/HST/ESO/DSS2/IDA/STScI/AURA.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                        <!-- begin row (obs) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h5>Hvordan finder man galakser?</h5>
+                                        <p>
+                                        Her vil jeg skrive lidt om de forskellige teknikker man bruger for at finde galakser.
+                                        </p>
+                                    </div>
+                                    <!--
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/lyman_break_galaxy_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/lyman_break_galaxy.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Lyman-break-teknikken</strong>:
+                                                    wallah wallah wallah
+                                                    <br>
+                                                    Kredit:
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./galaxy.html"     >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"            >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>Galakse</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

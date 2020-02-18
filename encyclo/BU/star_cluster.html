@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Globular cluster</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../about.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../index.html"     title="Home"         ><span>Home</span></a> </li>
+                            <li><a href="../news.html"      title="News"         ><span>Recent activities<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../research.html"    title="Research"     ><span>Research</span></a> </li>
+                            <li class="current-menu-item"><a href="../outreach.html"  title="Outreach"     ><span>Outreach</span></a> </li>
+                            <li><a href="../teaching.html"  title="TeachSpv"     ><span>Teaching / supervision</span></a> </li>
+                            <li><a href="../cv.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../contact.html"   title="Contact"      ><span>Contact me</span></a> </li>
+                            <li><a href="../personal.html"  title="Personal"     ><span>Personal</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>What is a star cluster?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./stjernehob.html"><img height=20px src="../pics/flagDK1.png" onmouseover="this.src='../pics/flagDK2.png'" onmouseout="this.src='../pics/flagDK1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../index.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../outreach.html">Outreach</a></li>
+                                    <li><a href="../encyclo.html">Encyclopedia</a></li>
+                                    <li>Globular cluster</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Quick explanation</span></h3>
+                                            <p>
+                                            A star cluster is a clump of stars that are formed roughly at the same time.
+                                            </p>
+                                            <p>
+                                            There are basically two different kinds:<br>
+                                            <em>Globular clusters</em> are compact, spherical clumps of old and hence yellow-/reddish stars.<br>
+                                            <em>Open clusters</em> are more diffuse clumps of young and hence more bluish stars.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyclo.html" data-text="Go to the encyclopedia" class="btn btn-small btn-circle btn-an-split"><span>Go to the encyclopedia</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Related posts</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./star.html" class="entry-image"><img src="../pics/encyclo/star_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./star.html">Star</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Read more about stars in general.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin row (GC) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Globular clusters</h3>
+                                        <p>
+                                        A globular cluster is a spherical clump of stars, formed at about the same time.  Most globular clusters are very old, formed in the early age of the galaxy.
+                                        Because they are so old and there is no more gas left to form new stars, all the massive stars — which burn their fuel quickly and with a bluish color — are dead;
+                                        only the light and yellow/reddish stars are left, giving the globular cluster its color.
+                                        </p>
+                                        <p>
+                                        When a spiral galaxy was young, it hadn't yet flattened to form its disk;
+                                        for this reason globular clusters in a spiral galaxy like the Milky Way do not lie in the galaxy's plane, but instead in a more spherical halo around the galaxy.
+                                        </p>
+                                        <p>
+                                        Over time, globular clusters have become gravitationally very tightly bound, giving them their spherical shape.
+                                        Whereas the distance between stars in the Sun's neighborhood is typically around 4 light years, the stars in the centers of globular clusters are 100 to 1000 times closer.
+                                        </p>
+                                        <p>
+                                        There are about 150 known globular clusters in our galaxy, the Milky Way, with perhaps 10-20 pieces yet to be discovered.
+                                        </p>
+                                        <p>
+                                        See my own observations of globular clusters <a href="../observations/gc.html">here</a>.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/m80_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/m80.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>M80</strong>:
+                                                    This globular cluster is almost 33,000 light-years away, but with its several hundred thousand stars it is nevertheless visible in a small amateur telescope.
+                                                    Despite the stars being formed at the same time, billions of years ago, there <em>are</em> a few young and blue stars,
+                                                    known as <em>blue stragglers</em>; the origin of these is a bit of a mystery.
+                                                    <br>
+                                                    Credit: HST/NASA/ESA.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (OC) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Open clusters</h3>
+                                        <p>
+                                        Open star clusters are much smaller than  globular clusters; typically they consist of a few thousand stars.
+                                        Since they are not so tightly bound by gravity, they dissolve after a few tens to hundreds of millions of years.
+                                        </p>
+                                        <p>
+                                        That is, an open cluster still has its massive stars, which shine blue and bright.
+                                        Sometimes, the stars are still in the gas sky they were born in, and this cloud is lit up by the stars.
+                                        Therefore, open clusters are sometimes seen enshrouded in blue, diffuse nebulae.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/pleiades_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/pleiades.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>The Pleiades</strong>:
+                                                    This open cluster, also known as the Seven Sisters, is easily seen with the naked eye as a 7-14 stars (depending on how far out in the countryside you are),
+                                                    but in even a small telescope you can clearly see hundreds of stars.
+                                                    The Pleiades are actually quite old, and the blue reflection nebula is probably not the cluster's natal cloud, but just a random cloud it's passing through at the moment.
+                                                    <br>
+                                                    Credit: NASA/ESA/AURA/Caltech
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (time) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (SMBH) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin sixth row (observation) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin seventh row (shadow) -->
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../about.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../index.html"   >Home</a></li>
+                                            <li><a href="../news.html"    >News</a></li>
+                                            <li><a href="../research.html">Research</a></li>
+                                            <li><a href="../outreach.html">Outreach</a></li>
+                                            <li><a href="../teaching.html">Teaching / supervision</a></li>
+                                            <li><a href="../cv.html"      >CV</a></li>
+                                            <li><a href="../contact.html" >Contact me</a></li>
+                                            <li><a href="../personal.html">Personal</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../about.html"       >About this site</a></li>
+                                            <li><a href="../questions.html"   >Q&A column</a></li>
+                                            <li><a href="./stjernehob.html">This page in Danish</a></li>
+                                            <li><a href="../publications.html">Publications</a></li>
+                                            <li><a href="../encyclo.html"     >Encyclopedia</a></li>
+                                            <li><a href="../observations.html">Observations</a></li>
+                                            <li><a href="../notes.html"       >Notes</a></li>
+                                            <li><a href="../teaching/classic_papers.html" >"Classic papers" course</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/redshift.html"        >What is redshift?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">The Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >The Keyhole Nebula</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/butHansDillerIsAlive.html">Books</a> &amp;
+                                                <a href="../stuff/comics.html"            >Comics</a></li>
+                                            <li><a href="../stuff/rum.html"               >Rum</a>   &amp;
+                                                <a href="../stuff/music.html"            >Music</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../index.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../index.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../outreach.html">Outreach</a></li>
+                                    <li><a href="../encyclo.html">Encyclopedia</a></li>
+                                    <li>Globular cluster</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <!-- modals -->
+            <div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="WALLAHModalLabel" class="modal-title">WALLAHmodalTitle</h4>
+                            <div class="modal-body">
+                                <p>
+                                wallah wallah wallah
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

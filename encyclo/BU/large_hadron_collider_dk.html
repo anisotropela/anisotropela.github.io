@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>LHC</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Seneste aktiviteter<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container">
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Large Hadron Collider<br>&mdash; er det en Jordens undergang?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./large_hadron_collider.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>LHC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <p>
+                                            Large Hadron Collider er verdens største partikelaccelerator. Da den stod færdig i 2008, var der en del debat om, hvorvidt den var i stand til at forårsage Jordens undergang.
+                                            </p>
+                                            <p>
+                                            For et kort svar kan du nøjes med at læse det med
+                                            <b><span style="color:#ff0000">rødt</span></b>.
+                                            </p>
+                                            <p>
+                                            For det ultrakorte svar kan du nøjes med at læse det med
+                                            <b><span style="color:#44cc44">grønt</span></b>:
+                                            <br><br>
+
+                                            <b><span style="color:#44cc44">Nej</span></b>.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="Gå til encyklopædien" class="btn btn-small btn-circle btn-an-split"><span>Gå til encyklopædien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./big_bang.html" class="entry-image"><img src="../pics/encyclo/big_bang_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./big_bang.html">Big Bang</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Læs om det rigtige Big Bang.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="post"><a href="./sort_hul.html" class="entry-image"><img src="../pics/encyclo/black_hole_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./sort_hul.html">Sort hul</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Læs om rigtige sorte huller.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin row () -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p>
+                                        Flere bekymrede venner og familiemedlemmer har på det seneste spurgt mig, om
+                                        den nye partikelaccelerator,
+                                        <a href='http://lhc2008.web.cern.ch/lhc2008/'>LHC</a> (Large Hadron Collider),
+                                        virkelig kan blive Jordens undergang, sådan som man hører om i diverse
+                                        nyheder og aviser. Kort fortalt er LHC'ens formål at accelerere diverse
+                                        partikler op til ekstreme hastigheder, faktisk 99.999999% af lysets hastighed.
+                                        Ved sådanne hastigheder har partiklerne en energi af 7 TeV (tera-elektronvolt;
+                                        dvs. 7000 giga-elektronvolt, eller ca. en milliontedel Joule, svarende til den
+                                        energi der frigøres i et frontalt sammenstød mellem to myg).
+                                        </p>
+                                        <p>
+                                        En gruppe der kalder sig
+                                        "<a href='http://www.lhcdefense.org/'>Citizens Against The Large Hadron Collider</a>"
+                                        har lagt sag an mod CERN og dets samarbejdere pga. flere forhold, som de mener
+                                        udgør en risiko for, at Jorden skulle gå under. Den slags skal man
+                                        naturligvis tage seriøst, så en flok af forskellige fysikere har gennemgået
+                                        de forskellige punkter og fandt, at "der er ingen basis for bekymring."
+                                        </p>
+                                        <p>
+                                        Det er jo nemt nok at påstå, og mange populistiske journalister har da også
+                                        produceret et utal af artikler med overskrifter som f.eks.
+                                        "<a href='http://politiken.dk/videnskab/article564741.ece'>Jorden kan gå under i morgen</a>",
+                                        mens Børnerådet opfordrer voksne til at
+                                        <a href='http://boerneraadet.dk/Nyt%20fra%20B%C3%B8rner%C3%A5det/Vis%20nyhed/?nyhed=1927'>tale med deres børn</a>
+                                        om problemet. På et
+                                        <a href='http://politiken.dk/skriv_til_politiken/article564743.ece'>diskussionsforum</a>
+                                        på <font face=courier size=-1>politiken.dk</font> går en del af folks
+                                        bekymring på, at selv hvis der kun er 0.000001% risiko for, at Jorden skulle
+                                        gå under, er dét for meget.
+                                        </p>
+                                        <p>
+                                        <b><font color=ff0000>Sagen er, at der <i>ikke</i> er hverken 0.000001%, eller
+                                                0.000001% af 0.000001% risiko, eller noget der ligner</font></b>. Jeg vil her i
+                                        så korte træk som muligt forklare hvorfor:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Naturen er vildere end LHC'en</h3>
+                                        <p>
+                                        Fem forskellige dødsscenarier har været bragt frem, af hvilke det første
+                                        dog kun skyldes journalisters misforståelser, nemlig
+                                        <ul>
+                                            <li><a href='#BB'>Død ved Big Bang</a></li>
+                                            <li><a href='#BH'>Død ved sort hul</a></li>
+                                            <li><a href='#VB'>Død ved vakuumboble</a></li>
+                                            <li><a href='#MM'>Død ved magnetisk monopol</a></li>
+                                            <li><a href='#uds'>Død ved strangelets</a></li>
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        Disse vil blive gennemgået nedenfor.
+                                        Det bedste argument i mine øjne er dog det faktum, at der overalt i Universet,
+                                        også på Jorden, altid og til stadighed sker kollisioner af kosmiske partikler
+                                        med energier både tilsvarende og højere end dem, LHC'en kan frembringe.
+                                        Og vi er her endnu.
+                                        </p>
+                                        <p>
+                                        Rundt omkring i Verden står forskellige detektorer, der måler fluxen af
+                                        højenergetiske partikler, såkaldt <i>kosmisk stråling</i>, der kommer fra
+                                        det ydre rum. Partiklerne rammer os (og de andre planeter, og Solen, og
+                                        hinanden, ...) med høje hastigheder, og dermed høje energier. Generelt
+                                        findes, at jo højere energi partiklerne har, jo sjældnere er de.
+                                        </p>
+                                        <p>
+                                        Skal man sammenligne disse partikler med dem i LHC'en er man
+                                        nødt til at tage højde for, at LHC'en sender partikler med høj hastighed
+                                        fra hver sin retning (set fra vores sysnpunkt), mens de kosmiske partikler
+                                        rammer en Jord, der ligger stille (set fra vores synspunkt &mdash; set fra
+                                        f.eks. partiklens synspunkt er det jo den selv der ligger stille, mens
+                                        Jordkloden kommer hamrende med næsten lysets fart). Derfor skal man ikke
+                                        sammenligne med de kosmiske partikler, der har en energi på 7 TeV, men med
+                                        de endnu sjældnere partikler med en energi på 100000 TeV, eller
+                                        10<sup>17</sup> eV, altså et 1-tal med 17 nuller bagefter.
+                                        </p>
+                                        <p>
+                                        Selv så højenergetiske partikler er så almindelige, at
+                                        <b><font color=ff0000>Jorden siden den
+                                                blev skabt for ca. 4.5 milliarder år siden, er blevet ramt mere end
+                                                10<sup>22</sup> gange af partikler med denne eller højere energier, og
+                                                fortsat bliver ramt flere 100000 gange hvert sekund</font></b>.
+                                        </p>
+                                        <p>
+                                        En stjerne som Solen, der har et tværsnitsareal der er 10000 gange større
+                                        end Jordens, rammes 10000 gange oftere. Hverken Jorden eller Solen, eller
+                                        nogen anden stjerne er nogensinde set bare forsvinde ud i det blå.
+                                        Det er svært at forestille sig
+                                        at de skulle gøre det nu, hvor det eneste vi gør altså er at udføre
+                                        nogle forsøg, som Naturen har gjort i hele Universet levetid.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p><a name="BB" id="BB"></a></p>
+                                        <h3>Et nyt Big Bang</h3>
+                                        <p>
+                                        Hele pointen med LHC'en er at lære en masse ny fysik. Fysikerne forventer
+                                        at lære bl.a. om, hvorfor det kan være, at noget vejer noget, hvad det
+                                        <i>mørke stof</i>, der ligger rundt omkring i Universet er, samt hvordan der
+                                        var dengang Universet blev skabt. Det er både for at få bedre
+                                        styr på den fysik, der får vores mobiltelefoner, fjernsyn,
+                                        computere og hospitalsapparater til at virke, men i lige så høj
+                                        grad af ren og skær nysgerrighed! Verden er så fantastisk
+                                        spændende, at vi bare <i>må</i> vide så meget om den som
+                                        muligt.
+                                        </p>
+                                        <p>
+                                        Lige efter det såkaldte Big Bang var der
+                                        så varmt, og stoffet var så tæt, at alle mulige eksotiske partikler må
+                                        have eksisteret. I LHC'en genskabes disse forhold, men altså kun i ganske
+                                        lille målestok, i et ganske lille område. <b><font color=ff0000>Der
+                                                kan aldrig komme mere energi ud af et eksperiment, end vi putter ind i
+                                                det</font></b>. Det har de seriøse kritikere heller aldrig troet.
+                                        Men ordene "Big Bang" har nok sat nogle
+                                        skræmmende tanker i hovedet på nogle ivrige journalister.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p><a name="BH" id="BH"></a></p>
+                                        <h3>Sorte huller</h3>
+                                        <p>
+                                        Dét folk mest har snakket om som risiko, er en mulig dannelse af et
+                                        <a href="./sort_hul.html">sort hul</a>,
+                                        der efterfølgende kunne sluge Jorden. Et sort hul er et meget kompakt objekt,
+                                        der tiltrækker alt. De skabes, hvis tætheden af masse overstiger en vis
+                                        kritisk værdi.
+                                        </p>
+                                        <p>
+                                        De sorte huller man kender til er skabt af stjerner der imploderer, og vejer
+                                        generelt mere end Solen. Men man kunne også forestille sig, at to partikler
+                                        der støder sammen, har så høj energi inden for så lille et område, at de
+                                        kollapser og danner et mikroskopisk sort hul. Det er jo sådan, at energi
+                                        (<i>E</i>) og masse (<i>m</i>) er to sider af samme sag:
+                                        Faktisk er <i>E = m c</i><sup>2</sup>, hvor <i>c</i> er lysets hastighed.
+                                        </p>
+                                        <p>
+                                        Et sort hul skabt af to partikler hver med en energi på 7 TeV vil godt nok
+                                        kun have en masse på 10<sup>-20</sup> gram &mdash; altså 1/100 af en
+                                        milliartedel af en milliartedel af et gram &mdash; men eftersom alt der kommer tæt nok
+                                        på det vil blive slugt, kunne man forestille sig, at det bare ville vokse og
+                                        vokse og til sidst sluge Jorden.
+                                        </p>
+                                        <p>
+                                        Desværre &mdash; eller heldigvis &mdash; er 14 TeV <b><font color=ff0000>slet
+                                                ikke nok energi til at skabe et sort hul; der kræves ca. 10<sup>17</sup> gange
+                                                så høj energi</font></b>. Sammenlignet med elektromagnetiske kræfter og
+                                        kernekræfter er tyngdekraften nemlig absurd lille; mellem 10<sup>25</sup>
+                                        og 10<sup>38</sup> gange mindre.
+                                        </p>
+                                        <h4>Et multidimensionalt Univers?</h4>
+                                        <p>
+                                        Dette ved kritikerne også godt. Men argumentet er, at visse teorier regner
+                                        med, at rummet ikke blot har de fire dimensioner vi kender (tre rumlige plus
+                                        tid), men helt op til 10 eller 11 dimensioner, der bare ikke kan ses i den
+                                        makroskopiske verden vi kender, men så at sige er "krøllet sammen" på meget
+                                        små skalaer. Ingen eksperimenter har endnu peget i retning af, at disse
+                                        såkaldte <i>strengteorier</i> (eller streng-relaterede teorier)
+                                        er sande, men hvis de er kunne man forestille sig, at tyngdekraften virkede
+                                        stærkere på meget små skalaer, og at der så alligevel kunne dannes et
+                                        mikroskopisk sort hul.
+                                        </p>
+                                        <p>
+                                        Okay. Det kunne man godt forestille sig. Men selv hvis der skulle dannes et
+                                        sort hul, ville det sandsynligvis ikke kunne vokse sig stort. Hvorfor? På
+                                        grund af noget der kaldes <i>Hawking</i>-stråling (efter ham den lille fyr i
+                                        rullestolen).
+                                        </p>
+                                        <p>
+                                        Ifølge den almindeligt accepterede kvantemekanik er det nemlig sådan, at
+                                        sorte huller faktisk ikke er helt sorte, men udsender en ganske ganske lille
+                                        smule stråling, og dermed langsomt fordamper. For sorte huller på størrelser
+                                        med stjerner er det så ekstremt lidt, at de opsamler meget mere energi end de
+                                        udsender, men jo mindre de er, jo mere udstråler de. Vejer de omtrent det
+                                        samme som Månen, udstråler de lige så meget som de opsamler, mens
+                                        <b><font color=ff0000>et eventuelt sort hul som vejer de der 10<sup>-20</sup>
+                                                gram, fordamper på et splitsekund</font></b>.
+                                        </p>
+                                        <p>
+                                        Ja, men Hawking-strålingen er heller aldrig observeret i virkeligheden, så
+                                        hvad nu hvis kvantemekanikerne tager fejl og strengteoretikerne har ret?
+                                        Ja, så må vi jo prøve at beregne, hvor hurtigt sådan et lille sort hul
+                                        vokser. Dette er ikke så nemt, da der er flere forskellige modeller for hvor
+                                        hurtigt sorte huller opsamler mere masse. Men i de ekstra-dimensionale
+                                        scenarier, der motiverede dannelsen af sorte huller i første omgang, bliver
+                                        resultatet følgende: <b><font color=ff0000>hvis der er syv eller flere
+                                                dimensioner, vil Jorden overleve i milliarder af år endnu, mens hvis der er
+                                                fem eller seks dimensioner, vokser sorte huller så hurtigt, at deres
+                                                indflydelse ville kunne ses i Universet</font></b>. I så fald ville de
+                                        <a href=./hvid_dvaerg.html>hvide dværge</a>
+                                        og
+                                        <a href="neutronstjerne.html">neutronstjerner</a>,
+                                        vi ser rundt omkring i Universet, nemlig blive ødelagt meget hurtigt af
+                                        sorte huller skabt af de kosmiske stråler, de bliver ramt af.
+                                        </p>
+                                        <p>
+                                        Det vil altså sige, at <b><font color=ff0000>den teori kritikerne bruger som
+                                                argument, selv forudsiger at eventuelle sorte huller ikke er farlige</font></b>.
+                                        </p>
+                                        <p>
+                                        ...
+                                        </p>
+                                        <p>
+                                        Nå jeg får tid, skal jeg nok skrive lidt om nedenstående
+                                        farer også.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p><a name="VB" id="VB"></a></p>
+                                        <h3>Vakuumbobler</h3>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p><a name="MM" id="MM"></a></p>
+                                        <h3>Magnetiske monopoler</h3>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p><a name="uds" id="uds"></a></p>
+                                        <h3>Strangelets</h3>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section-narrow p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Referencer</h3>
+                                        <p>
+                                        <ul>
+                                            <li>Abbasi, R.U. et al. 2008, arXiv:0804.0382, <a href='http://lanl.arxiv.org/abs/0804.0382'>Search for Correlations between HiRes Stereo Events and Active Galactic Nuclei</a></li>
+                                            <li>Bergman, D.R. &amp; Belz, J.W. 2007, J. Phys., G34, R359, <a href='http://cdsads.u-strasbg.fr/abs/2007JPhG...34..359B'>TOPICAL REVIEW: Cosmic rays: the Second Knee and beyond</a></li>
+                                            <li>Ellis, J., Giudice, G., Mangano, M., Tkachev, I, &amp; Wiedemann, U. 2008, J. Phys. G: Nucl. Part. Phys. 35 115004, <a href='http://www.iop.org/EJ/abstract/0954-3899/35/11/115004/'>Review of the Safety of LHC Collisions</a></li>
+                                            <li>Giddings, S.B. &amp; Mangano, M.L. 2008, CERN-PH-TH/2008-025, <a href='http://lanl.arxiv.org/abs/0806.3381'>Astrophysical implications of hypothetical stable TeV-scale black holes</a></li>
+                                            <li>Hawking, S.W. 1975, Commun. Math. Phys. 43, 199, <a href='http://www.springerlink.com/content/c4553033029k5wk6/'>Particle Creation by Black Holes</a></li>
+                                            <li>HiRes Collaboration (Abbasi, R. et al.) 2008, Phys. Rev. Lett. 100, 101101, <a href='http://cdsads.u-strasbg.fr/abs/2008PhRvL.100j1101A'>First Observation of the Greisen-Zatsepin-Kuzmin Suppression</a></li>
+                                            <li>Pierre Auger Collaboration (Abraham, J. et al.) 2007, Science 318, 938, <a href='http://cdsads.u-strasbg.fr/abs/2007Sci...318..938T'>Correlation of the Highest-Energy Cosmic Rays with Nearby Extragalactic Objects</a></li>
+                                            <li>Pierre Auger Collaboration (Watson, A.A. et al.) 2008, Nucl. Instrum. Meth. A588, 221, <a href='http://www.slac.stanford.edu/spires/find/hep/www?irn=7771843'> Recent results from the Pierre Auger Observatory: Including comparisons with data from AGASA and HiRes</a></li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (space) -->
+                        <!--
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>WALLAHsectionTitle</h3>
+                                        <p>
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        wallah wallah wallah
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#dopplerModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningerne</button>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-2"><img src="../pics/encyclo/WALLAHfigure_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/WALLAHfigure.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--student_bg); background-color:var(--journalist_bg)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>WALLAHcaptionTitle</strong>: wallah wallah wallah
+                                                    <br>
+                                                    Kredit: wallah
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        -->
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (time) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (SMBH) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin sixth row (observation) -->
+                        <!-- end fourth row -->
+
+                        <!-- begin seventh row (shadow) -->
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./wallah_ca.html"     >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"            >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>LHC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <!-- modals -->
+            <div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="WALLAHModalLabel" class="modal-title">WALLAHmodalTitle</h4>
+                            <div class="modal-body">
+                                <p>
+                                wallah wallah wallah
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
