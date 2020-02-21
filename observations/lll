@@ -1,15 +1,15 @@
-vim -s BB.vim SN2005at.html
-vim -s BB.vim SN2007gr.html
-vim -s BB.vim ant.html
-vim -s BB.vim butter.html
-vim -s BB.vim cloudfall.html
-vim -s BB.vim eagle.html
-vim -s BB.vim gc.html
-vim -s BB.vim key.html
-vim -s BB.vim key.html
-vim -s BB.vim laser.html
-vim -s BB.vim moon.html
-vim -s BB.vim not.html
-vim -s BB.vim pin.html
-vim -s BB.vim sombrero.html
-vim -s BB.vim virgo.html
+sed -i '' -e 's/style="z-index:-10"//g' SN2007gr.html
+sed -i '' -e 's/style="z-index:-10"//g' ant.html
+sed -i '' -e 's/style="z-index:-10"//g' butter.html
+sed -i '' -e 's/style="z-index:-10"//g' cloudfall.html
+sed -i '' -e 's/style="z-index:-10"//g' eagle.html
+sed -i '' -e 's/style="z-index:-10"//g' gc.html
+sed -i '' -e 's/style="z-index:-10"//g' key.html
+sed -i '' -e 's/style="z-index:-10"//g' laser.html
+sed -i '' -e 's/style="z-index:-10"//g' moon.html
+sed -i '' -e 's/style="z-index:-10"//g' not.html
+sed -i '' -e 's/style="z-index:-10"//g' pin.html
+sed -i '' -e 's/style="z-index:-10"//g' sombrero.html
+sed -i '' -e 's/style="z-index:-10"//g' supernova.html
+sed -i '' -e 's/style="z-index:-10"//g' template.html
+sed -i '' -e 's/style="z-index:-10"//g' virgo.html

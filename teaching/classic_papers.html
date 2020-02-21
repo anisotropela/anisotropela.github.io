@@ -145,7 +145,8 @@
                                         </div>
                                         </p>
                                         <p>
-                                        <a href="mailto:pela@astro.uio.no?subject=Classic%20papers%20sign-up&body=Hells yes count me in!" data-text="Take this course" class="btn btn-small btn-circle btn-an-split"> <span>Take this course</span> </a>
+                                        <!-- <a href="mailto:pela@astro.uio.no?subject=Classic%20papers%20sign-up&body=Hells yes count me in!" data-text="Take this course" class="btn btn-small btn-circle btn-an-split"> <span>Take this course</span> </a> -->
+                                        <button type="button" data-toggle="modal" data-target="#signupModal" data-text="Take this course" class="btn btn-circle btn-extra-small btn-thick-border btn-an-split btn-skin-logo" ><span>Too late!</span></button>
                                         </p>
                                     </div>
                                     <!-- end overview -->
@@ -1029,6 +1030,30 @@
                 </div>
             </footer>
             <!-- #####End footer-->
+
+            <!-- begin modals -->
+            <div id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-cancel" style="color:var(--lilla);"></i></span></button>
+                            <h4 id="signupModalLabel" class="modal-title" style="background-color:var(--gul); color:var(--lilla);">You're too late!</h4>
+                            <div class="modal-body">
+                                <p>
+                                I regret to have to inform you that the deadline for signing up has passed.
+                                </p>
+                                <p>
+                                In fact the <em>course</em> has passed, papers has been read, and exams has been taken.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-logo">Never mind</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
 
         </div>
         <!-- #####Begin scripts-->
