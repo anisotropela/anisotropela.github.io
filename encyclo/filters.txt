@@ -1,0 +1,7 @@
+filtre der ser ok ud, men jeg ikke kan få til at virke:
+    file:///Users/pela/GitHub/anisotropela.github.io/main/academia/events/events-list-1.html
+    file:///Users/pela/GitHub/anisotropela.github.io/main/academia/people/list-7.html
+    file:///Users/pela/GitHub/anisotropela.github.io/main/academia/publications/pub-list-2.html
+
+filter der gør hvad jeg vil, men for små farvede kasser:
+    https://www.w3schools.com/howto/howto_js_filter_elements.asp
