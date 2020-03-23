@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- Facebook meta data -->
+        <meta property="og:image" content="./logos/logoFacebook.png" />
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="assets/js/vendors/jquery.min.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <!-- begin favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./logos/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./logos/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./logos/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./logos/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./logos/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./logos/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./logos/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./logos/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./logos/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./logos/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./logos/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./logos/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./logos/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./logos/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- end favicon -->
+        <title>anisotropela</title>
+        <style>
+#more {display: none;}
+        </style>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="./about.html"><img src="./logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="./pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li class="current-menu-item"><a href="index.html" title="Home"         ><span>Home</span></a> </li>
+                            <li><a href="news.html"     title="News"         ><span>Recent activities<sup><sup><sup><img height=17px src="./pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="research.html" title="Research"     ><span>Research</span></a> </li>
+                            <li><a href="outreach.html" title="Outreach"     ><span>Outreach</span></a> </li>
+                            <li><a href="teaching.html" title="TeachSpv"     ><span>Teaching / supervision</span></a> </li>
+                            <li><a href="cv.html"       title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="contact.html"  title="Contact"      ><span>Contact me</span></a> </li>
+                            <li><a href="personal.html" title="Personal"     ><span>Personal</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="./pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <div class="page-contents">
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin intro -->
+                        <section class="section p-top-0 p-bottom-0">
+                            <div class="ol-particles h-200"></div>
+                            <div class="container pull-up-20">
+                                <!-- Begin left column -->
+                                <!-- <h2>Short bio</h2> -->
+                                <div class="text-right">
+                                    <span style="font-size:8; color:var(--orange)">Klik her for dansk</span><img width=50px src="./pics/arrowleft.png"><a href="./dansk.html"><img height=20px src="./pics/flagDK1.png" onmouseover="this.src='./pics/flagDK2.png'" onmouseout="this.src='./pics/flagDK1.png'" /></a>
+                                </div>
+                                <h1>It isn't exactly rocket science&hellip;</h1>
+                                <h4>(but it's close enough)</h4>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>
+                                        <span class="ol-dropcaps square bordered light">I</span> am an astrophysicist interested in galaxies and the rest of the Universe.
+                                        My work is mainly numerical/theoretical (as opposed to observational/experimental).
+                                        That is, I develop computer programs that simulate the physics of the Universe, and use these programs to interpret and predict real observations.
+                                        </p>
+                                        <p>
+                                        I'm particularly interested in the early Universe, how galaxies formed, and which physical properties governed the galaxies at that time.
+                                        Why? Because galaxies are the magnificent and beautiful building blocks of our Universe. Understanding these guys helps us comprehending the cosmos around us and our place in it.
+                                        </p>
+                                        <p>
+                                        You can read more about my research <a class='btn btn-round btn-extra-small' href="./research.html">here</a>
+                                        </p>
+                                        <p>
+                                        All pages on this site are available in Danish by clicking the flag in the top.
+                                        </p>
+                                        <p> <div class="sp-blank-10 shadow-line"></div> </p>
+                                        <!-- begin shortcuts -->
+                                        <div>
+                                            <h3>Shortcuts</h3>
+                                            <p>
+                                            Click here, if you're a(n)
+                                            </p>
+                                            <p>
+                                            <button type="button" data-toggle="modal" data-target="#journalistModal" class="btn btn-circle btn-extra-small btn-thick-border btn-anim-i btn-skin-journalist" ><span>Journalist   </span></button>
+                                            <button type="button" data-toggle="modal" data-target="#studentModal"    class="btn btn-circle btn-extra-small btn-thick-border btn-anim-i btn-skin-student"    ><span>Student      </span></button>
+                                            <button type="button" data-toggle="modal" data-target="#curiousModal"    class="btn btn-circle btn-extra-small btn-thick-border btn-anim-i btn-skin-curious"    ><span>Astro-curious</span></button>
+                                            <br>
+                                            <button type="button" data-toggle="modal" data-target="#astronomerModal" class="btn btn-circle btn-extra-small btn-thick-border btn-anim-i btn-skin-astronomer" ><span>Astronomer   </span></button>
+                                            <button type="button" data-toggle="modal" data-target="#fundModal"       class="btn btn-circle btn-extra-small btn-thick-border btn-anim-i btn-skin-fund"       ><span>Fund manager </span></button>
+                                            <button type="button" data-toggle="modal" data-target="#stalkerModal"    class="btn btn-circle btn-extra-small btn-thick-border btn-anim-i btn-skin-stalker"    ><span>Stalker      </span></button>
+                                            </p>
+                                            <p>
+                                            and just want to see the pages relevant to <em>you</em>.
+                                            </p>
+                                            <p>
+                                            Or scroll down for more action.
+                                            </p>
+                                        </div>
+                                        <!-- end shortcuts -->
+                                    </div>
+                                    <!-- End left column -->
+
+                                    <!-- Begin right column -->
+                                    <div class="col-md-4">
+                                        <div class="icon-box ib-v2 ib-boxed bg-logo border-3">
+                                            <div class="ol-user-profile"><a href="#" class="avatar"><img src="./pics/mig.jpg"></a></div>
+                                            <p>
+                                            <center>
+                                                <h2 style="color:#7F548E">Peter Laursen</h2>
+                                                <h4 style="color:#7F548E; line-height:0px">Astrophysicist</h4>
+                                            </center>
+                                            </p>
+                                            <hr style="border-top: 1px solid #7F548E; background: transparent;">
+                                            <p>
+                                            <span style="color:#7F548E">
+                                                Postdoctoral fellow at the<br>
+                                                <a href="https://www.mn.uio.no/astro/english/">Institute of Theoretical Astrophysics</a>,<br>
+                                                University of Oslo.
+                                            </span>
+                                            </p>
+                                            <p>
+                                            <span style="color:#7F548E">
+                                                Affiliated with the<br>
+                                                <a href="https://dawn.nbi.ku.dk">Cosmic Dawn Center</a>,<br>
+                                                University of Copenhagen.
+                                            </span>
+                                            </p>
+                                        </div>
+                                        <section class="section p-top-40 p-bottom-30 slim-container">
+                                        </section>
+                                    </div>
+                                    <!-- End right column -->
+
+                                </div>
+                                <p> <div class="sp-blank-10 shadow-line"></div> </p>
+                            </div>
+                        </section>
+                        <!-- end intro -->
+
+                        <!-- begin news -->
+                        <section class="section p-top-30 p-bottom-20 slim-container">
+                            <div class="container p-bottom-20">
+                                <h2>News</h2>
+                                <p>A carousel of my most recent activities.</p>
+                                <!-- #####Begin featured item-->
+                                <!-- #####Begin carousel-->
+                                <div data-cols="3" data-nav="true" data-margin="20" data-cols-md='2' data-loop="true" class="owl-carousel items featured-items owwwlab-theme nav-center m-top-0">
+
+                                    <!-- begin tweets -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h3 class="features-title">Latest tweets</h3></center>
+                                        </p>
+                                        <p>
+                                        <a class="twitter-timeline" data-width="310" data-height="210" data-theme="light" href="https://twitter.com/anisotropela?ref_src=twsrc%5Etfw">Seeing my tweets here requires<br>connection to the internet</a>
+                                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                        </p>
+                                    </div>
+                                    <!-- end tweets -->
+
+                                    <!-- begin paper -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h3 class="features-title">Latest scientific paper</h3></center>
+                                        </p>
+                                        <p>
+                                        <a href="https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..84L" class="featured-item boxed">
+                                            <div class="features-image ov-light-alpha-50">
+                                                <img src="./pics/news_paper.jpg" alt="image">
+                                            </div>
+                                        </a>
+                                        </p>
+                                    </div>
+                                    <!-- begin paper -->
+
+                                    <!-- begin SE -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h4 class="features-title">Latest answers on StackExchange</h4></center>
+                                        </p>
+                                        <hr style="height:3pt; visibility:hidden;"/>
+                                        <div class="icon-box ib-v5 ib-boxed bg-gray border-3" style="height:174px">
+                                            <p>
+                                            <a href="https://stackexchange.com/users/5587898"><img src="https://stackexchange.com/users/flair/5587898.png" alt="My SE profile" title="My SE profile"> </a> <!-- <a href="https://astronomy.stackexchange.com/users/5264/pela"><img src="https://astronomy.stackexchange.com/users/flair/5264.png" alt="My astro.SE profile"   title="My astro.SE profile"></a> <a href="https://physics.stackexchange.com/users/70207/pela"> <img src="https://physics.stackexchange.com/users/flair/70207.png"  alt="My physics.SE profile" title="My physics.SE profile"></a> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- begin SE -->
+
+                                    <!-- begin award -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h3 class="features-title">Latest award</h3></center>
+                                        </p>
+                                        <p>
+                                        <a href="https://titan.uio.no/node/3198" class="featured-item boxed">
+                                            <div class="features-image ov-light-alpha-50">
+                                                <img src="./pics/news_award.jpg" alt="image">
+                                            </div>
+                                        </a>
+                                        </p>
+                                    </div>
+                                    <!-- end award -->
+
+                                    <!-- begin APOD -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h3 class="features-title">Astronomy picture of the day</h3></center>
+                                        </p>
+                                        <p>
+                                        <a href="https://apod.nasa.gov/apod/astropix.html" class="featured-item boxed">
+                                            <div class="features-image ov-light-alpha-50">
+                                                <img height=174 src="http://apod.cidehom.com/pix/2019/190402.jpg" alt="Seeing an image here requires internet">
+                                            </div>
+                                        </a>
+                                        </p>
+                                    </div>
+                                    <!-- end APOD -->
+
+                                    <!-- begin popsci -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h3 class="features-title">Latest popsci article</h3></center>
+                                        </p>
+                                        <p>
+                                        <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312" class="featured-item boxed">
+                                            <div class="features-image ov-light-alpha-50">
+                                                <img src="./pics/news_popsci.jpg" alt="image">
+                                            </div>
+                                        </a>
+                                        </p>
+                                    </div>
+                                    <!-- begin popsci -->
+
+                                    <!-- begin music -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h3 class="features-title">Music I'm currently listening to</h3></center>
+                                        </p>
+                                        <p>
+                                        <a href="https://www.last.fm/user/pelathehun/library/artists?date_preset=LAST_7_DAYS" class="featured-item boxed">
+                                            <div class="features-image ov-light-alpha-50">
+                                                <img src="./pics/news_lastfm.jpg" alt="image">
+                                            </div>
+                                        </a>
+                                        </p>
+                                    </div>
+                                    <!-- end music -->
+
+                                    <!-- begin video -->
+                                    <div class="features-image ov-light-alpha-50">
+                                        <p>
+                                        <center><h3 class="features-title">Latest video</h3></center>
+                                        </p>
+                                        <p>
+                                        <a class="featured-item boxed">
+                                            <div class="features-image ov-light-alpha-50">
+                                                <a href="https://www.youtube.com/watch?v=B6tfw90GFFU" data-type="iframe" title="some title" class="ol-hover hover-5 ol-lightbox">
+                                                    <img src="https://i.ytimg.com/vi/B6tfw90GFFU/maxresdefault.jpg" alt="image hover">
+                                                    <div class="ol-overlay ov-light-alpha-80"></div>
+                                                    <div class="icons"><i class="fa fa-youtube"></i></div>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        </p>
+                                    </div>
+                                    <!-- end video -->
+
+                                    <!-- #####End carousel-->
+                                    <!-- #####End featured item-->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end news -->
+
+                        <!-- begin observations -->
+                        <section data-img-src="./observations/keyhole_banner.jpg" data-parallax-mode="mode-5" class="section ov-grad1-alpha-40 dark-wrapper parallax-layer">
+                            <div class="container">
+                                <!-- #####Begin call to action-->
+                                <div class="row call-out tb-vcenter-wrapper">
+                                    <div class="col-sm-9 vcenter call-out ol-animate fadeInUpBig"> <!-- the "call-out ol-animate fadeInUpBig" was taken from main/pages/shortcodes/animate.html to make text fly up when you scroll down-->
+                                        <h2 class="title">Astronomical observations</h2>
+                                        <h4 class="sub-title">Pretty images I took while observing in Chile, La Palma, and other places.</h4>
+                                    </div>
+                                    <div class="col-sm-3 vcenter text-center"><a href="./observations.html" class="btn btn-medium btn-wide btn-trans btn-skin-white btn-circle"> <span>view</span></a></div>
+                                </div>
+                                <!-- #####End call to action-->
+                            </div>
+                        </section>
+                        <!-- end observations -->
+
+                        <!-- begin publications -->
+                        <section class="section p-top-40 p-bottom-20 bg-gray">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2>Selected Publications</h2>
+                                        <p><span class="ol-dropcaps square bordered light">A</span>s described in the <a href="./research.html">research section</a>, most of my work has been devoted to <a href="./encyclo/lyman_alpha.html">Lyman &alpha;</a> <a href="./encyclo/radiative_transfer.html">radiative transfer</a> in galaxies and the intergalactic medium.</p>
+                                        <a href="./publications.html" class="btn btn-anim-drawer btn-round btn-small">See full list of publications</a>
+                                    </div>
+                                    <div class="col-md-8">
+
+                                        <div class="pub-item with-icon">
+                                            <div class="elem-wrapper"> <!-- icon -->
+                                                <i class="oli oli-literature"></i>
+                                            </div>
+                                            <div class="content-wrapper"> <!-- description -->
+                                                <h3 class="title">Intergalactic transmission and its impact on the Ly&alpha; line</h3>
+                                                <div class="description"> <!-- this makes the description a bit smaller -->
+                                                    <!-- <div class="citation"> this makes space between description and external link -->
+                                                    <li>Assessing how the circum- and intergalactic gas affects the Ly&alpha; spectral line.</li>
+                                                    <li>Awarded <a href="https://www.popularastronomi.se/2011/12/arets-basta-astronomiforskning-2011"><u>Sweden's most cited astrophysical paper 2011</u></a>.</li>
+                                                    <!-- </div> -->
+                                                    <a href="http://ui.adsabs.harvard.edu/#abs/2011ApJ...728...52L" target="_blank" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2011, ApJ, 728, 52</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pub-item with-icon">
+                                            <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+                                            <div class="content-wrapper">
+                                                <h3 class="title">On the (non-)enhancement of the Ly&alpha; equivalent width by a multiphase interstellar medium</h3>
+                                                <div class="description">
+                                                    <!-- <div class="citation"> -->
+                                                    <li>A systematic study of whether or not a clumpy interstellar medium can boost the Ly&alpha;-to-continuum ratio significantly, as has been previously assumed.</li>
+                                                    <li>It can't.</li>
+                                                    <!-- </div> -->
+                                                    <a href="http://ui.adsabs.harvard.edu/#abs/2013ApJ...766..124L" target="_blank" class="link-with-icon"> <i class="fa fa-external-link"></i>Laursen et al. 2013, ApJ, 766, 124</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pub-item with-icon">
+                                            <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+                                            <div class="content-wrapper">
+                                                <h3 class="title">Lyman &alpha;-emitting galaxies in the epoch of <a href="./encyclo/reionization.html">reionization</a></h3>
+                                                <div class="description">
+                                                    <!-- <div class="citation"> -->
+                                                    <li>Predictions of the expected detectability and physical properties of the most distant galaxies.</li>
+                                                    <li>Analytical evaluation of the amount of cooling radiation from <a href="./encyclo/galaxy_formation.html">forming galaxies</a>.</li>
+                                                    <li>A mathematical tool for adding numbers with asymmetrical uncertainties.</li>
+                                                    <!-- </div> -->
+                                                    <a href="https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..84L/abstract" target="_blank" class="link-with-icon"><i class="fa fa-external-link"></i>Laursen et al. 2019, A&amp;A, 627, 84</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end publications -->
+
+                        <!-- non-astronomers -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>For non-astronomers</h2>
+                                    <h5>(also for astronomers, actually)</h5>
+
+                                    <!-- begin left column -->
+                                    <div class="col-md-8">
+                                        <ul class="icon-list icon-border circle">
+                                            <li><i class="oli oli-rocket theme-color" style="color:var(--lilla); border-color:var(--morkorange); background-color:var(--gul)"></i>
+                                                Are you a non-astronomer and want to read a bit about astronomy?
+                                                See my <a href="./encyclo.html">encyclopedia for non-astronomers</a>.
+                                            </li>
+                                            <li><i class="oli oli-question_mark theme-color" style="color:var(--lilla); border-color:var(--morkorange); background-color:var(--gul)"></i>
+                                                Or do you have a question about astrophysics?
+                                                Ask it at my <a href="./questions.html">Q&amp;A column</a>.
+                                            </li>
+                                            <li><i class="oli oli-source_code theme-color" style="color:var(--lilla); border-color:var(--morkorange); background-color:var(--gul)"></i>
+                                                Maybe you're <code>coder</code> and just want to hack away?
+                                                Check out the codes I've published on my <a href="https://github.com/anisotropela/">GitHub repository</a>.
+                                            </li>
+                                            <li><i class="oli oli-notebook theme-color" style="color:var(--lilla); border-color:var(--morkorange); background-color:var(--gul)"></i>
+                                                So you <em>are</em> an astronomer or some other sort of researcher, and don't want to make the same stupid mistakes as I did?
+                                                Have a look at my 100+ <a href="./notes.html">notes</a> on everything from galaxies and extinction laws, to Python cheat sheets and LaTeX tips, and what not.
+                                                <br>
+                                                There's even some non-science stuff like guitar chords and food recipes.
+                                            </li>
+                                            <li><i class="oli oli-treble_clef theme-color" style="color:var(--lilla); border-color:var(--morkorange); background-color:var(--gul)"></i>
+                                                Not interested in astronomy at all?
+                                                No offense taken &mdash; why not just sit back then and listen to my band Ampel on <a href="https://open.spotify.com/artist/34he4uz2dJBN99eBF5yBEX?si=8nQB2wKVTUe1fyaYPKtXrA">Spotify</a> or <a href="https://ampel.bandcamp.com/releases">Bandcamp</a>.
+                                            </li>
+                                            <li><i class="oli oli-telescope theme-color" style="color:var(--lilla); border-color:var(--morkorange); background-color:var(--gul)"></i>
+                                                No way! You like both music <em>and</em> astronomy? Will you marry me?
+                                                While you think about it, listen to my <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">astrosong playlist</a> (or check out my other <a href="https://open.spotify.com/user/117947168?si=JTEkVjHwSTqw2uer41Odyg">Spotify playlists</a>).
+                                            </li>
+                                            <li><i class="oli oli-heart theme-color" style="color:var(--lilla); border-color:var(--morkorange); background-color:var(--gul)"></i>
+                                                Ha ha listen so when I said "Will you marry me?" I was only kidding because I'm married to
+                                                <a href="./pics/RikkeParis.jpg" class="ol-lightbox">this hot mama</a>.</li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end left column -->
+
+                                    <!-- begin right column -->
+                                    <div class="col-md-4">
+                                        <div class="ol-hover hover-2"><img src="./pics/anis.jpg" alt="image hover"/>
+                                            <div class="ol-overlay ov-grad1-alpha-80"></div>
+                                            <div class="icons">
+                                                <a href="./pics/anis.jpg" class="ol-lightbox"><i class="oli oli-search"></i></a>
+                                                <!-- <a href="./pics/anis.jpg"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <h3 class="title">A galaxy</h3>
+                                        </div>
+                                        <div>
+                                            <font size=-2>A <em>simulated</em> galaxy perhaps, but a galaxy nonetheless.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end non-astronomers -->
+
+                        <!-- begin slut -->
+                        <section class="section p-top-20 p-bottom-40 bg-gray">
+                            <div class="container">
+                                <!--
+                                It looks like you've reached the end of the front page. If you want to haphazardly browse around on my website, follow the links to the left 
+                                (or, if you're on a mobile device, tap the <i class="oli oli-menu_filled"></i> in the top of the page).
+                                -->
+                            </div>
+                        </section>
+                        <!-- end slut -->
+
+                    </section>
+                    <!-- #####End main area
+                    -->
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+
+            <!-- Begin footer --> <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).  One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="./about.html" class="img" style="padding:15px"><img src="./logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="./logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./index.html"   ><strong>Home</strong></a></li>
+                                            <li><a href="./news.html"    >News</a></li>
+                                            <li><a href="./research.html">Research</a></li>
+                                            <li><a href="./outreach.html">Outreach</a></li>
+                                            <li><a href="./teaching.html">Teaching / supervision</a></li>
+                                            <li><a href="./cv.html"      >CV</a></li>
+                                            <li><a href="./contact.html" >Contact me</a></li>
+                                            <li><a href="./personal.html">Personal</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./about.html"       >About this site</a></li>
+                                            <li><a href="./questions.html"   >Q&A column</a></li>
+                                            <li><a href="./dansk.html"       >This page in Danish</a></li>
+                                            <li><a href="./publications.html">Publications</a></li>
+                                            <li><a href="./encyclo.html"     >Encyclopedia</a></li>
+                                            <li><a href="./observations.html">Observations</a></li>
+                                            <li><a href="./notes.html"       >Notes</a></li>
+                                            <li><a href="./teaching/classic_papers.html" >"Classic papers" course</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./encyclo/redshift.html"        >What is redshift?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">The Big Bang</a></li>
+                                            <li><a href="./observations/key.html"        >The Keyhole Nebula</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="./stuff/butHansDillerIsAlive.html">Books</a> &amp;
+                                                <a href="./stuff/comics.html"            >Comics</a></li>
+                                            <li><a href="./stuff/rum.html"               >Rum</a>   &amp;
+                                                <a href="./stuff/music.html"            >Music</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+                            <!--
+
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <div class="widget">
+                                    <h4>For journalists</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./contact.html" >Contact me</a></li>
+                                            <li><a href="./outreach.html">Outreach (media)</a></li>
+                                            <li><a href="https://twitter.com/anisotropela">Twitter profile</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <div class="widget">
+                                    <h4>For students</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./questions.html"   >Q&A column</a></li>
+                                            <li><a href="./encyclo.html"     >Encyclopedia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <div class="widget">
+                                    <h4>For the astro-curious</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./observations.html">Observations</a></li>
+                                            <li><a href="./observations/key.html"        >The Keyhole Nebula</a></li>
+                                            <li><a href="./encyclo.html"     >Encyclopedia</a></li>
+                                            <li><a href="./questions.html"   >Q&A column</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang- break here to make outcomment nice
+                                                                                                                                                               -an-eyewitness-account/1457312">The Big Bang</a></li>
+                                            <li><a href="./outreach.html">Outreach</a></li>
+                                            <li><a href="https://twitter.com/anisotropela">Twitter profile</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <div class="widget">
+                                    <h4>For (astro-)physicists</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./research.html">Research</a></li>
+                                            <li><a href="./contact.html" >Contact me</a></li>
+                                            <li><a href="./teaching/classic_papers.html" >"Classic papers" course</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <div class="widget">
+                                    <h4>For fund managers</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./cv.html"      >CV</a></li>
+                                            <li><a href="./publications.html">Publications</a></li>
+                                            <li><a href="./teaching.html">Teaching / supervision</a></li>
+                                            <li><a href="./research.html">Research</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <div class="widget">
+                                    <h4>For stalkers</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="./news.html"    >News</a></li>
+                                            <li><a href="./stuff/rum.html"               >Rum</a>   &amp;
+                                                <a href="./stuff/music.html"            >Music</a></li>
+                                            <li><a href="./stuff/butHansDillerIsAlive.html">Books</a> &amp;
+                                                <a href="./stuff/comics.html"            >Comics</a></li>
+                                            <li><a href="./personal.html">Personal</a></li>
+                                            <li>SoMe: See icons below</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="./index.html" class="img"><img src="./logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="./pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="./pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="./pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-5 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="./index.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <!--  <li>Observations</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End footer -->
+
+            <!-- begin modals -->
+            <div id="journalistModal" tabindex="-1" role="dialog" aria-labelledby="journalistModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-cancel" style="color:var(--journalist_c);"></i></span></button>
+                            <h4 id="journalistModalLabel" class="modal-title" style="background-color:var(--journalist_bg); color:var(--journalist_c);">Are you a journalist?</h4>
+                            <div class="modal-body">
+                                <p>
+                                - Do you need an astrophysicist for a comment in your radio program?<br>
+                                - Are you covering the latest hot astro-news in the press?<br>
+                                - Or writing a background article about astronomy and need to verify a few things?<br>
+                                </p>
+                                <p>
+                                <ul>
+                                    <li><a href="./contact.html">Contact me</a>.</li>
+                                    <li>Take a look at my previous appearances in various media on my <a href="./outreach.html">Outreach</a> overview (under "Media").</li>
+                                    <li>Follow my tweets about astronomy:
+                                        <a class="twitter-follow-button" data-show-count='false'
+                                           href="https://twitter.com/anisotropela"
+                                           data-size="small">
+                                            Follow @anisotropela</a>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-journalist">Okay fine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="studentModal" tabindex="-1" role="dialog" aria-labelledby="studentModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-cancel" style="color:var(--student_c)"></i></span></button>
+                            <h4 id="studentModalLabel" class="modal-title" style="background-color:var(--student_bg); color:var(--student_c)">Are you a school student?</h4>
+                            <div class="modal-body">
+                                <p>
+                                If you're a university (astro)physics student, you might want to click the "Astronomer" button instead.
+                                </p>
+                                <p>
+                                If you're a high school or secondary school student, you may be interested in
+                                </p>
+                                <p>
+                                <ul>
+                                    <li>Reading about astronomy topics in the <a href="./encyclo.html">encyclopedia for non-astronomers</a>.
+                                        <ul>
+                                            <li>In particular, I recommend the article about <a href="./encyclo/redshift.html">redshift</a>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Asking a question about physics or astronomy in the <a href="./questions.html">Q&amp;A column</a> (or reading old answers).</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-student">Okay fine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="astronomerModal" tabindex="-1" role="dialog" aria-labelledby="astronomerModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-cancel" style="color:var(--astronomer_c)"></i></span></button>
+                            <h4 id="astronomerModalLabel" class="modal-title" style="background-color:var(--astronomer_bg); color:var(--astronomer_c)">Are you an astronomer?</h4>
+                            <div class="modal-body">
+                                <p>
+                                Or are you aspiring to be one? You may want to
+                                </p>
+                                <p>
+                                <ul>
+                                    <li>Get an overview of my <a href="./research.html">research</a> topics.</li>
+                                    <li><a href="./contact.html">Contact me</a> and propose a collaboration.</li>
+                                    <li>Browse through my <a href="./notes.html">notes</a> on various topics (astrophysics, cosmology, coding, etc.).</li>
+                                    <li>Read my <a href="./publications.html">papers</a>. Don't forget to cite them, please.</li>
+                                    <li>Check out my <a href="https://github.com/anisotropela/">GitHub repository</a>.</li>
+                                    <li>Follow me on Twitter (I only tweet about astronomy):
+                                        <a class="twitter-follow-button" data-show-count='false'
+                                           href="https://twitter.com/anisotropela"
+                                           data-size="small">
+                                            Follow @anisotropela</a>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-astronomer">Okay fine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="curiousModal" tabindex="-1" role="dialog" aria-labelledby="curiousModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-cancel" style="color:var(--curious_c)"></i></span></button>
+                            <h4 id="curiousModalLabel" class="modal-title" style="background-color:var(--curious_bg); color:var(--curious_c)">Are you a non-astronomer, interested in astronomy?</h4>
+                            <div class="modal-body">
+                                <p>
+                                There's plenty of fun for you on this site (also for astronomers, in fact):
+                                </p>
+                                <p>
+                                <ul>
+                                    <li>Have a look at my beautiful <a href="./observations.html">astronomical observations</a>.
+                                        <ul>
+                                            <li>The <a href="./observations/key.html">Keyhole Nebula</a> is my favorite.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Read about astronomy topics in the <a href="./encyclo.html">encyclopedia for non-astronomers</a>.</li>
+                                    <li>Ask a question about physics or astronomy in the <a href="./questions.html">Q&amp;A column</a> (or browse through old answers).
+                                        <ul>
+                                            <li>You can see more of my physics/astronomy answers on <a href="https://stackexchange.com/users/5587898">Stack Exchange</a>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Read my popsci article "<a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">The Big Bang &mdash; an eyewitness account</a>".</li>
+                                    <li>See/read/listen to my contributions in the media on my <a href="./outreach.html">Outreach</a> page (under "Media").</li>
+                                    <li><a href="./contact.html">Contact me</a> to book a talk about astronomy.</li>
+                                    <li>Read my tweets about astronomy:
+                                        <a class="twitter-follow-button" data-show-count='false'
+                                           href="https://twitter.com/anisotropela"
+                                           data-size="small">
+                                            Follow @anisotropela</a>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-curious">Okay fine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fundModal" tabindex="-1" role="dialog" aria-labelledby="fundModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-cancel" style="color:var(--fund_c)"></i></span></button>
+                            <h4 id="fundModalLabel" class="modal-title" style="background-color:var(--fund_bg); color:var(--fund_c)">Are you a fund manager, or otherwise in charge of a huge amount of money?</h4>
+                            <div class="modal-body">
+                                <p>
+                                Since I'm not permanent, I'm always on the look-out for fundings. Have a look at
+                                </p>
+                                <p>
+                                <ul>
+                                    <li>my <a href="./cv.html">CV</a>,</li>
+                                    <li>my <a href="./publications.html">publication list</a>,</li>
+                                    <li>my <a href="./teaching.html">teaching portfolio</a>, and</li>
+                                    <li>my <a href="./research.html">research topics</a>,</li>
+                                </ul>
+                                to become convinced that you want to finance my work. All I'm asking for is a few hundred thousand &euro;&hellip; maybe half a million&hellip; I mean, just whatever you can spare&hellip;
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-fund">Okay fine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="stalkerModal" tabindex="-1" role="dialog" aria-labelledby="stalkerModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-cancel" style="color:var(--stalker_c)"></i></span></button>
+                            <h4 id="stalkerModalLabel" class="modal-title" style="background-color:var(--stalker_bg); color:var(--stalker_c)">Are you a stalker?</h4>
+                            <div class="modal-body">
+                                <p>
+                                or just interested in my well-being beyond astronomy? You can
+                                </p>
+                                <p>
+                                <ul>
+                                    <li>Follow me on Twitter or other SoMe:
+                                        <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                            <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="https://stackexchange.com/users/5587898"><img src="./pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                            <li><a href="https://github.com/anisotropela"><img src="./pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                            <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="./pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                            <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                            <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>Listen to my indie pop band Ampel on <a href="https://open.spotify.com/artist/34he4uz2dJBN99eBF5yBEX?si=8nQB2wKVTUe1fyaYPKtXrA">Spotify</a> or <a href="https://ampel.bandcamp.com/releases">Bandcamp</a>.</li>
+                                    <li>Check out the <a style="color: #a1b8ff" href="http://www.last.fm/user/pelathehun/library/artists?date_preset=LAST_7_DAYS">music I'm listening to right now</a> (or what kind of <a href="./stuff/music.html">music I like in general</a>).</li>
+                                    <li>See which <a href="./stuff/butHansDillerIsAlive.html">book</a> I'm currently reading.</li>
+                                    <li>See my <a href="./stuff/family.html">family</a>.</li>
+                                    <li>See my <a href="./news.html">recent activities</a> (mostly astronomy-wise, though).</li>
+                                    <li>See what I like at my <a href="./personal.html">personal page</a>.</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-stalker">Okay fine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="assets/js/vendors/vendors.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
