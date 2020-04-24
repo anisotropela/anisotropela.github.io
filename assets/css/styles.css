@@ -9705,10 +9705,10 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     letter-spacing: 2px;
 }
 
-.journal-el .title {
+.journal-el .title {     /* News text size, large screens */
     margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;     /* I decreased this by 4 */
+    line-height: 20px;   /* I decreased this by 4 */
 }
 
 .dark-wrapper .journal-el {
@@ -9811,7 +9811,7 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 .journal-el.set-bg:hover:before, .journal-el.set-bg:focus:before {
-    opacity: 1;
+    opacity: .7;
     background-position: 100% 0;
 }
 
@@ -14272,9 +14272,9 @@ iframe {
         top: 150px;
         padding: 20px 30px 30px 30px;
     }
-    .journal-el .title {
-        font-size: 18px;
-    }
+    .journal-el .title {   /* News text size --- medium screens */
+        font-size: 14px;   /* I decreased this by 4 */
+        line-height: 18px; /* I added this */
     .book-el {
         margin: 0 auto;
         max-width: 260px;
@@ -14465,8 +14465,9 @@ iframe {
         top: 150px;
         padding: 20px 30px 30px 30px;
     }
-    .journal-el .title {
-        font-size: 18px;
+    .journal-el .title {   /* News text size, small screens */
+        font-size: 14px;   /* I decreased this by 4 */
+        line-height: 18px; /* I added this */
     }
     .book-el {
         margin: 0 auto;
