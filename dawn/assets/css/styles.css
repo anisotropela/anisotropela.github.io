@@ -7227,10 +7227,17 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 .social-icons.skin-red li a:hover, .social-icons.skin-red li a:focus {
     opacity: 0.7;
 }
+/* original
 .social-icons.skin-red[class*="shape-"] li a {
     border-color: transparent;
     color: #fff;
     background-color: #FF3366;
+}
+*/
+.social-icons.skin-red[class*="shape-"] li a {
+    border-color: transparent;
+    color: #fff;
+    background-color: #C82C30;
 }
 .social-icons.skin-red[class*="shape-"] li a:hover, .social-icons.skin-red[class*="shape-"] li a:focus {
     opacity: 0.7;
