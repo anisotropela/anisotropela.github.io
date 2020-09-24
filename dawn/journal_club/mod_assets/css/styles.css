@@ -10489,7 +10489,7 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
 }
 .pub-item .description .citation, .pub-item .description .citation a {
     font-style: italic;
-    color: #9d9d9d;
+    color: #666666;
     max-width: 70%;
 }
 .pub-item .description .citation {
