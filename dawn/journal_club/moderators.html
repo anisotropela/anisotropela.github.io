@@ -15,46 +15,51 @@
         <!-- ################################-->
         <!-- #####Begin styles-->
         <!-- stylesheets	-->
-        <link href="mod_assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <link href="./jc_assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
         <!-- Load extra page specific css-->
         <!-- Overwrite vendors-->
-        <link href="mod_assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
-        <link href="mod_assets/css/styles.css" rel="stylesheet" type="text/css">
-        <link href="mod_assets/css/demo4.css" rel="stylesheet" type="text/css">
+        <link href="./jc_assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="./jc_assets/css/styles.css" rel="stylesheet" type="text/css">
         <!-- #####End styles-->
         <!-- #####Begin JS-->
         <!-- add your scripts to the end of the page for sake of page load speed-->
         <!-- scripts that need to be at head section-->
-        <script src="mod_assets/js/vendors/jquery.min.js"></script>
+        <script src="./jc_assets/js/vendors/jquery.min.js"></script>
         <!-- #####End JS-->
         <!-- #####Begin load google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
         <!-- #####End load google fonts-->
-        <title>DAWN journal club moderators</title>
+        <title>Moderators</title>
     </head>
     <!-- #####End head-->
 
     <body class="fullwidth sticky-header">
         <div id="wrapper" class="regular-layout">
             <!-- #####Begin Header-->
-            <header id="header" class=" dark">
+            <header id="header"> 
+                <!-- #####Begin header main area-->
                 <div class="head-main">
                     <div class="container">
-                        <!-- logo-->
                         <!-- #####Begin logo wrapper-->
                         <div class="logo-wrapper">
-                            <!-- standard Logo--><a href="index.html"><img src="mod_assets/img/logo/logo-light.png" alt="DAWN" class="logo-light ol-retina"><img src="../DAWNlogo_red.jpg" alt="DAWN" class="logo-dark ol-retina"></a>
+                            <!-- standard Logo--><a href="https://dawn.nbi.ku.dk"><img src="./DAWNlogo_blue.png" alt="DAWN" class="logo-light ol-retina"><img src="./DAWNlogo_blue.png" alt="DAWN" class="logo-dark ol-retina"></a>
                         </div>
                         <!-- #####End logo wrapper-->
 
-                        <!-- primary navigation-->
+                        <!-- #####Begin primary menu-->
                         <ul id="primary-menu">
                             <li>
-                                <a href="index.html" title="Home"><span>Home</span></a>
+                                <a href="../journal_club.html" title="jc"><span>Home</span></a>
                             </li>
+                            <li>
+                                <a href="./presenters.html" title="pres"><span>Find a presenter</span></a>
+                            </li>
+                            <li>
+                                <a href="./history.html" title="hist"><span>History</span></a>
+                            </li>
+                            <!--
                             <li class="menu-item-has-children"><a href="more.html" title="more"><span>More</span></a>
                                 <ul class="sub-menu">
                                     <li><a href="more.html" title="more"><span>More</span></a>
@@ -63,40 +68,18 @@
                                     </li>
                                 </ul>
                             </li>
-                            <!--
-                            <li class="current-menu-item menu-item-has-children"><a href="publications.html" title="Publications"><span>Publications</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="publications.html" title="Publications list"><span>Publications list</span></a>
-                                    </li>
-                                    <li><a href="pub-periodicals.html" title="Periodicals"><span>Periodicals</span></a>
-                                    </li>
-                                    <li><a href="pub-papers.html" title="Peer reviewed articles"><span>Peer reviewed articles</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="research.html" title="Research"><span>Research</span></a>
-                            </li>
-                            <li>
-                                <a href="news.html" title="News"><span>News</span></a>
-                            </li>
-                            <li class="menu-item-has-children to-left"><a href="events.html" title="Events"><span>Events</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="events.html" title="Events"><span>Events</span></a>
-                                    </li>
-                                    <li><a href="events-single.html" title="Single Event"><span>Single Event</span></a>
-                                    </li>
-                                </ul>
-                            </li>
                             -->
                             <li>
-                                <a href="contact.html" title="Contact"><span>Contact</span></a>
+                                <a href="mailto:pela@nbi.ku.dk" title="admin"><span>Contact admin</span></a>
                             </li>
                         </ul>
-                        <!-- end menu -->
+                        <!-- #####End primary menu-->
 
+
+                        <!-- #####Begin icons beside menu-->
                         <div class="header-icons">
                             <!-- #####Begin trigger for search-->
+                            <!--
                             <div class="search ol-search-trigger simple"><a href="#"><i class="oli oli-search"></i></a>
                                 <div class="search-area">
                                     <div class="search-bar-wrapper">
@@ -106,6 +89,7 @@
                                     </div>
                                 </div>
                             </div>
+                            -->
                             <!-- #####End trigger for search-->
                             <!-- #####Begin mobile menu trigger-->
                             <div class="ol-mobile-trigger hamburger hamburger--elastic">
@@ -115,21 +99,24 @@
                             </div>
                             <!-- #####End mobile menu trigger-->
                         </div>
+                        <!-- #####End icons beside menu-->
                     </div>
                 </div>
+                <!-- #####End header main area-->
             </header>
             <!-- #####End Header-->
             <!-- #####Begin contents-->
             <section id="contents">
                 <!-- #####Begin page head-->
-                <div class="page-head h-500 parallax-layer center-it dark ov-blue-alpha-50" data-img-src="./papers.jpg" data-parallax-mode="mode-title">
+                <div class="page-head pull-up-80 h-400 center-it parallax-layer ov-blue-alpha-50 dark" data-img-src="./journal_club.jpg">
                     <div class="container">
                         <div class="tb-vcenter-wrapper">
-                            <div class="title-wrapper vcenter">
+                            <div class="title-wrapper vcenter parallax-layer" data-parallax-mode="mode-header-content">
                                 <h4 class="head">DAWN journal club</h4>
-                                <h1 class="title">Moderators and key words</h1>
+                                <h1 class="title">List of moderators</h1>
                             </div>
-                            <div class="breadcrumb-wrapper vcenter">
+                            <!--
+                            <div class="breadcrumb-wrapper vcenter parallax-layer" data-parallax-mode="mode-header-content">
                                 <ul class="breadcrumb">
                                     <li><a href="#"><i class="oli oli-home"></i></a></li>
                                     <li><a href="#">publication</a></li>
@@ -137,6 +124,7 @@
                                     <li>learning environment</li>
                                 </ul>
                             </div>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -145,486 +133,138 @@
                 <section class="page-contents">
                     <!-- #####Begin main area-->
                     <section id="main-area">
-                        <section class="p-bottom-100 slim-container">
+                        <section class="slim-container bg-gray section-nopadding">
                             <div class="container">
-                                <div class="search-box inline-filters pull-up-100">
-                                    <div class="row form-inline">
-                                        <div class="col-sm-10 col-xs-8 form-group with-filter">
-                                            <input type="text" placeholder="Search" class="form-control"><a href="#" data-toggle="tooltip" data-placement="top" title="Filter" class="toggle-filter"></a>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-4 form-group">
-                                            <input type="submit" value="Submit" class="btn btn-small btn-skin-red btn-block">
-                                        </div>
-                                    </div>
-                                    <div class="row filters"><a href="#" class="clear-selectize">Clear Filters</a>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Key word</label>
-                                                <select data-placeholder="Select Types..." multiple="multiple" class="selectize">
-                                                    <option value="galMassive">Galaxies: massive</option>
-                                                    <option value="3DHST"                                 >3D HST</option>
-                                                    <option value="AGNs"                                  >AGNs</option>
-                                                    <option value="Attenuation"                           >Attenuation</option>
-                                                    <option value="COSMOScatalogs"                        >COSMOS catalogs</option>
-                                                    <option value="Catalogs"                              >Catalogs</option>
-                                                    <option value="Circumgalacticmedium"                  >Circumgalactic medium</option>
-                                                    <option value="Data-mining"                           >Data-mining</option>
-                                                    <option value="Dust"                                  >Dust</option>
-                                                    <option value="Extinction"                            >Extinction</option>
-                                                    <option value="GOODScatalogs"                         >GOODS catalogs</option>
-                                                    <option value="GalaxiesDistant"                       >Galaxies: Distant</option>
-                                                    <option value="GalaxiesMassive"                       >Galaxies: Massive</option>
-                                                    <option value="GalaxiesPassive"                       >Galaxies: Passive</option>
-                                                    <option value="GalaxiesStar-forming"                  >Galaxies: Star-forming</option>
-                                                    <option value="Galaxieshigh-redshift"                 >Galaxies: high-redshift</option>
-                                                    <option value="Galaxiesmorphology"                    >Galaxies: morphology</option>
-                                                    <option value="Galaxiesquenched"                      >Galaxies: quenched</option>
-                                                    <option value="GalaxySimulations"                     >Galaxy Simulations</option>
-                                                    <option value="Galaxyevolution"                       >Galaxy evolution</option>
-                                                    <option value="Galaxymorphology"                      >Galaxy morphology</option>
-                                                    <option value="Galaxysize"                            >Galaxy size</option>
-                                                    <option value="Galaxystellarmassassembly"             >Galaxy stellar mass assembly</option>
-                                                    <option value="Galaxystructure"                       >Galaxy structure</option>
-                                                    <option value="Galaxy-haloconnection"                 >Galaxy-halo connection</option>
-                                                    <option value="Gravitationallensing"                  >Gravitational lensing</option>
-                                                    <option value="High-redshiftsubmillimetergalaxies"    >High-redshift submillimeter galaxies</option>
-                                                    <option value="Infrared"                              >Infrared</option>
-                                                    <option value="Integralfieldspectroscopy"             >Integral field spectroscopy</option>
-                                                    <option value="Interstellarmedium"                    >Interstellar medium</option>
-                                                    <option value="Interstellarmediumobservations."       >Interstellar medium: observations.</option>
-                                                    <option value="KMOS"                                  >KMOS</option>
-                                                    <option value="Kinematics/dynamics"                   >Kinematics/dynamics</option>
-                                                    <option value="LineEmissionMaps"                      >Line Emission Maps</option>
-                                                    <option value="Low-redshift"                          >Low-redshift</option>
-                                                    <option value="Luminosityfunctions"                   >Luminosity functions</option>
-                                                    <option value="Lymanalphaemitter"                     >Lyman alpha emitter</option>
-                                                    <option value="Lymanalphatheory"                      >Lyman alpha theory</option>
-                                                    <option value="Lyman-breakgalaxies"                   >Lyman-break galaxies</option>
-                                                    <option value="Molecules"                             >Molecules</option>
-                                                    <option value="Numbercounts"                          >Number counts</option>
-                                                    <option value="ObservationsSpatiallyResolved"         >Observations: Spatially Resolved</option>
-                                                    <option value="Post-starburst"                        >Post-starburst</option>
-                                                    <option value="Protoclusters"                         >Protoclusters</option>
-                                                    <option value="Quasars"                               >Quasars</option>
-                                                    <option value="Quenching"                             >Quenching</option>
-                                                    <option value="Radiativetransfer"                     >Radiative transfer</option>
-                                                    <option value="Radioastronomy"                        >Radio astronomy</option>
-                                                    <option value="Reionization"                          >Reionization</option>
-                                                    <option value="Simulations"                           >Simulations</option>
-                                                    <option value="Starformation"                         >Star formation</option>
-                                                    <option value="StarformationDusty,obscured"           >Star formation: Dusty, obscured</option>
-                                                    <option value="Starburstgalaxies"                     >Starburst galaxies</option>
-                                                    <option value="Statisticaltechniques"                 >Statistical techniques</option>
-                                                    <option value="Stellarmassfunction"                   >Stellar mass function</option>
-                                                    <option value="SubmillimeterAstronomy"                >Submillimeter Astronomy</option>
-                                                    <option value="Superstarclusters"                     >Super star clusters</option>
-                                                    <option value="Supermassiveblackholes"                >Supermassive black holes</option>
-                                                </select>
-                                            </div>
-                                            <!--
-                                                <div class="form-group">
-                                                <label>Year:</label>
-                                                <select data-placeholder="Select Year" multiple="multiple" class="selectize">
-                                                <option value=""> </option>
-                                                <option value="2012">2012</option>
-                                                <option value="2013">2013</option>
-                                                <option value="2014">2014</option>
-                                                <option value="2015">2015</option>
-                                                </select>
-                                                </div>
-                                            -->
-                                        </div>
-                                        <!--
-                                            <div class="col-sm-6">
-                                            <div class="form-group">
-                                            <label>Category:</label>
-                                            <select data-placeholder="Select Types..." multiple="multiple" class="selectize">
-                                            <option value=""></option>
-                                            <option value="Physics">Physics</option>
-                                            <option value="Algebra">Algebra</option>
-                                            <option value="Jafarology">Jafarology</option>
-                                            </select>
-                                            </div>
-                                            </div>
-                                        -->
-                                    </div>
-                                </div>
-                                <div class="sp-blank-50"></div>
-                                <div class="pubs-wrapper">
+                                <div class="wrapper bg-white">
+                                    <!-- #####Begin summary box-->
                                     <!--
-                                    <div class="pub-item with-thumb large"> <!- WALLAHname ->
-                                        <div class="elem-wrapper"><a href="WALLAHlink"><img src="./WALLAHimage.png" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="WALLAHlink">WALLAHname</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    WALLAHkeywords
+                                    <div class="summary-box pull-up-130 pull-up-xs-80">
+                                        <div class="two-col-info split-line bg-dawn-blue">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="info-box text-right">
+                                                        <div class="description">
+                                                            <div>Every Monday</div>
+                                                            <div>10:30 – 11:00</div>
+                                                        </div><i class="oli oli-clock"></i>
+                                                    </div>
                                                 </div>
-                                                <a href="mailto:WALLAHmail?subject=Presenting%20at%20journal%20club&body=Dear WALLAHname,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask WALLAHname to present a paper</a>
+                                                <div class="col-sm-6">
+                                                    <div class="info-box"><i class="oli oli-map"></i>
+                                                        <div class="description">
+                                                            <div>Currently via Zoom</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     -->
-
-                                    <div class="pub-item with-thumb large"> <!-- Allan -->
-                                        <div class="elem-wrapper"><a href="https://www.dtu.dk/service/telefonbog/person?id=38273&cpid=45419&tab=2&qt=dtupublicationquery"><img src="https://www.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHBzOi8vd3d3LmR0dWJhc2VuLmR0dS5kay9zaG93aW1hZ2UuYXNweD9pZD0zODI3M19ffHxfXzEwM19ffHxfXzE0MF9ffHxfX1RydWVfX3x8X19GYWxzZV9ffHxfX0ZhbHNlX198fF9fMF9ffHxfX19ffHxfXzA_:_3d" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://www.dtu.dk/service/telefonbog/person?id=38273&cpid=45419&tab=2&qt=dtupublicationquery">Allan</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    TBD…
-                                                </div>
-                                                <a href="mailto:allan@space.dtu.dk?subject=Presenting%20at%20journal%20club&body=Dear Allan,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Allan to present a paper</a>
+                                    <!-- #####End summary box-->
+                                    <div class="row pad-50">
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <h3>Schedule</h3>
+                                            <p>
+                                            Check the list below to see when it's your turn to be a moderator.
+                                            Contact the admin to opt in or out of this this — anyone may join.
+                                            </p>
+                                            <p>
+                                            If you're on a phone, you may have to rotate your device.
+                                            </p>
+                                            <hr>
+                                            <div class="table-responsive">
+                                                <table class="table chaos-table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Journal club<br>(Monday)</th>
+                                                            <th>Moderator</th>
+                                                            <th>Deadline<br>(Wednesday)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!--
+                                                        <tr>
+                                                            <td> <a class="name-avatar">
+                                                                    <div class="avatar avatar-xs"><img src="WALLAHimage"></div>
+                                                                    <span class="name">WALLAHname</span>
+                                                                </a>
+                                                            </td>
+                                                            <td>WALLAHjournalclub</td>
+                                                            <td>WALLAHdeadline</td>
+                                                        </tr>
+                                                        -->
+                                                        <tr> <td>28 Sep</td> <td>Peter L    </td> <td>23 Sep</td> </tr>
+                                                        <tr> <td>05 Oct</td> <td>Seiji      </td> <td>30 Sep</td> </tr>
+                                                        <tr> <td>12 Oct</td> <td>Steven     </td> <td>07 Oct</td> </tr>
+                                                        <tr> <td>19 Oct</td> <td>Sune       </td> <td>14 Oct</td> </tr>
+                                                        <tr> <td>26 Oct</td> <td>Thomas     </td> <td>21 Oct</td> </tr>
+                                                        <tr> <td>02 Nov</td> <td>Vasily     </td> <td>28 Oct</td> </tr>
+                                                        <tr> <td>09 Nov</td> <td>Allan      </td> <td>04 Nov</td> </tr>
+                                                        <tr> <td>16 Nov</td> <td>Bo         </td> <td>11 Nov</td> </tr>
+                                                        <tr> <td>23 Nov</td> <td>Charles    </td> <td>18 Nov</td> </tr>
+                                                        <tr> <td>30 Nov</td> <td>Clara      </td> <td>25 Nov</td> </tr>
+                                                        <tr> <td>07 Dec</td> <td>Darach     </td> <td>02 Dec</td> </tr>
+                                                        <tr> <td>14 Dec</td> <td>Francesco  </td> <td>09 Dec</td> </tr>
+                                                        <tr> <td>11 Jan</td> <td>Gabe       </td> <td>06 Jan</td> </tr>
+                                                        <tr> <td>18 Jan</td> <td>Georgios   </td> <td>13 Jan</td> </tr>
+                                                        <tr> <td>25 Jan</td> <td>Hans Ulrik </td> <td>20 Jan</td> </tr>
+                                                        <tr> <td>01 Feb</td> <td>Iary       </td> <td>27 Jan</td> </tr>
+                                                        <tr> <td>08 Feb</td> <td>Johan      </td> <td>03 Feb</td> </tr>
+                                                        <tr> <td>15 Feb</td> <td>John       </td> <td>10 Feb</td> </tr>
+                                                        <tr> <td>22 Feb</td> <td>Kate       </td> <td>17 Feb</td> </tr>
+                                                        <tr> <td>01 Mar</td> <td>Lijie      </td> <td>24 Feb</td> </tr>
+                                                        <tr> <td>08 Mar</td> <td>Lise       </td> <td>03 Mar</td> </tr>
+                                                        <tr> <td>15 Mar</td> <td>Malte      </td> <td>10 Mar</td> </tr>
+                                                        <tr> <td>22 Mar</td> <td>Meghana    </td> <td>17 Mar</td> </tr>
+                                                        <tr> <td>29 Mar</td> <td>Nina       </td> <td>24 Mar</td> </tr>
+                                                        <tr> <td>05 Apr</td> <td>Peter J    </td> <td>31 Mar</td> </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--
+                                    <hr>
+                                    <div class="row pad-50">
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <h3>Contact</h3>
+                                            <p>
 
-                                    <div class="pub-item with-thumb large"> <!-- Bo -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/8987"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=8987" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/8987">Bo</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    galaxy evolution, high-redshift galaxies, Lyman-alpha emitters, AGN reverberation mapping, transients, galaxy surveys, data analysis techniques, spectroscopy, infrared imaging, instrumentation, X-shooter, VISTA/VIRCAM
-                                                </div>
-                                                <a href="mailto:milvang@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Bo,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Bo to present a paper</a>
-                                            </div>
+                                            John Doe<br>+44 (0)20 3108 2052 | johndoe@cWALLAHhaos.ac.uk
+                                            </p>
                                         </div>
+                                        <div class="sp-blank-20"></div>
                                     </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Charles -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/569546"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=569546" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/569546">Charles</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    TBD…
-                                                </div>
-                                                <a href="mailto:steinhardt@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Charles,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Charles to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Clara -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/624627"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=624627" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/624627">Clara</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Spatially Resolved Observations, Dust, Line Emission Maps, Low-redshift (so far), interstellar medium, Extinction/Attenuation
-                                                </div>
-                                                <a href="mailto:clara.arteaga@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Clara,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Clara to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Darach -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/261024"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=261024" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/261024">Darach</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    TBD…
-                                                </div>
-                                                <a href="mailto:darach@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Darach,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Darach to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Francesco -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/563735"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=563735" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/563735">Francesco</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Galaxies: Massive, Passive, Star-forming, Distant.
-                                                    Interstellar medium: observations.
-                                                    Protoclusters of galaxies
-                                                </div>
-                                                <a href="mailto:francesco.valentino@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Francesco,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Francesco to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Gabe -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/625553"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=625553" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/625553">Gabe</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Galaxies at cosmic dawn, stellar populations, galaxy surveys, data analysis techniques
-                                                </div>
-                                                <a href="mailto:gabriel.brammer@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Gabe,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Gabe to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Georgios -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?id=527467&vis=medarbejder"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=527467" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?id=527467&vis=medarbejder">Georgios</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    galaxy evolution, interstellar medium, star formation,  infrared
-                                                </div>
-                                                <a href="mailto:georgios.magdis@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Georgios,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Georgios to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Hans Ulrik -->
-                                        <div class="elem-wrapper"><a href="https://www.dtu.dk/service/telefonbog/person?id=38286&cpid=45436&tab=2&qt=dtupublicationquery"><img src="https://www.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHBzOi8vd3d3LmR0dWJhc2VuLmR0dS5kay9zaG93aW1hZ2UuYXNweD9pZD0zODI4Nl9ffHxfXzEwM19ffHxfXzE0MF9ffHxfX1RydWVfX3x8X19GYWxzZV9ffHxfX0ZhbHNlX198fF9fMF9ffHxfX19ffHxfXzA_:_3d" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://www.dtu.dk/service/telefonbog/person?id=38286&cpid=45436&tab=2&qt=dtupublicationquery">Hans Ulrik</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    TBD…
-                                                </div>
-                                                <a href="mailto:hunn@space.dtu.dk?subject=Presenting%20at%20journal%20club&body=Dear Hans Ulrik,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Hans Ulrik to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Iary -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/656546"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=656546" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/656546">Iary</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    galaxy stellar mass assembly, star formation quenching, data-mining, galaxy-halo connection, astronomy
-                                                </div>
-                                                <a href="mailto:iary.davidzon@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Iary,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Iary to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Johan -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/212297"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=212297" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/212297">Johan</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    quasars, intergalactic medium, absorption line systems, chemical evolution, gamma-ray bursts, Lyman-alpha emitters, transients, instrumentation
-                                                </div>
-                                                <a href="mailto:jfynbo@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Johan,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Johan to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- John -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/635828"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=635828" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/635828">John</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    quenching, post-starburst, stellar mass function, kinematics/dynamics, quasars, integral field spectroscopy, catalogs, statistical techniques
-                                                </div>
-                                                <a href="mailto:john.weaver@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear John,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask John to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Kate -->
-                                        <!-- <div class="elem-wrapper"><a href="https://www.nbi.ku.dk/ansatte/?pure=da/persons/691706"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=691706" alt="item thumbnail" class="pub-thumbnail"></a></div> -->
-                                        <div class="elem-wrapper"><a href="https://www.nbi.ku.dk/ansatte/?pure=da/persons/691706"><img src="./kate.jpg" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://www.nbi.ku.dk/ansatte/?pure=da/persons/691706">Kate</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Low redshift galaxies, post-starburst galaxies, galaxy morphology measurements
-                                                </div>
-                                                <a href="mailto:katriona.gould@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Kate,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Kate to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Lijie -->
-                                        <div class="elem-wrapper"><a href="https://www.dtu.dk/service/telefonbog/person?id=153184&cpid=284916&tab=0"><img src="https://www.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHBzOi8vd3d3LmR0dWJhc2VuLmR0dS5kay9zaG93aW1hZ2UuYXNweD9pZD0xNTMxODRfX3x8X18xMDNfX3x8X18xNDBfX3x8X19UcnVlX198fF9fRmFsc2VfX3x8X19GYWxzZV9ffHxfXzBfX3x8X19fX3x8X18w" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://www.dtu.dk/service/telefonbog/person?id=153184&cpid=284916&tab=0">Lijie</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Star formation, Molecular clouds, Interstellar medium, Molecular lines and Radiative transfer, Nearby galaxies.
-                                                </div>
-                                                <a href="mailto:lijli@space.dtu.dk?subject=Presenting%20at%20journal%20club&body=Dear Lijie,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Lijie to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Lise -->
-                                        <div class="elem-wrapper"><a href="https://www.nbi.ku.dk/ansatte/?pure=da/persons/73383"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=73383" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://www.nbi.ku.dk/ansatte/?pure=da/persons/73383">Lise</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Galaxy evolution. Chemical evolution in high-redshift galaxies. Connecting galaxies with the circumgalactic/interstellar medium. Quasar absorption lines
-                                                </div>
-                                                <a href="mailto:lichrist@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Lise,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Lise to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Malte -->
-                                        <!-- <div class="elem-wrapper"><a href="https://www.dtu.dk/service/telefonbog/person?id=157892&cpid=292381&tab=3&qt=dtuprojectquery"><img src="https://www.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHBzOi8vd3d3LmR0dS5kay8vLS9tZWRpYS9zdGFuZGFyZGltYWdlcy9zdGFuZGFyZG5vcGhvdG8uYXNoeF9ffHxfXzEwM19ffHxfXzE0MF9ffHxfX1RydWVfX3x8X19GYWxzZV9ffHxfX0ZhbHNlX198fF9fMF9ffHxfX19ffHxfXzA_:_3d" alt="item thumbnail" class="pub-thumbnail"></a></div> -->
-                                        <div class="elem-wrapper"><a href="https://www.dtu.dk/service/telefonbog/person?id=157892&cpid=292381&tab=3&qt=dtuprojectquery"><img src="./malte.jpg" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://www.dtu.dk/service/telefonbog/person?id=157892&cpid=292381&tab=3&qt=dtuprojectquery">Malte</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Galaxy Evolution, Starburst Galaxies, Protoclusters of Galaxies, Submillimeter Astronomy, ISM, Dust, AGN.
-                                                </div>
-                                                <a href="mailto:malbr@space.dtu.dk?subject=Presenting%20at%20journal%20club&body=Dear Malte,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Malte to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Meghana -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/635611"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=635611" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/635611">Meghana</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    High z galaxies, LAEs, LBGs, super star clusters, galaxy morphology, 3D HST, COSMOS &amp; GOODS catalogs, KMOS
-                                                </div>
-                                                <a href="mailto:meghana.killi@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Meghana,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Meghana to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Nina -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/608661"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=608661" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/608661">Nina</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    high-redshift galaxies, LBGs, cluster galaxies, BCGs, star-forming galaxies, quiescent galaxies, massive galaxies, infrared photometry (galaxies), optical line spectroscopy (galaxies), X-ray emission (galaxies); algorithms, statistics;  JWST NIRSpec MOS, JWST galaxy science; astronomical data analysis software and methods.
-                                                </div>
-                                                <a href="mailto:nina.bonaventura@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Nina,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Nina to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Peter J -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?id=28691&vis=medarbejder"><img src="https://dawn.nbi.ku.dk/staff/staff-and-students/peter_jacobsen250.jpg" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?id=28691&vis=medarbejder">Peter J.</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    UV, visible and near-IR space astronomy and instrumentation, spectroscopy, quasar absorption lines, reionization, applications of statistics in astronomy. History of Astronomy.
-                                                </div>
-                                                <a href="mailto:pjakobsen@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Peter,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Peter J. to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Peter L -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?id=255047&vis=medarbejder"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=255047" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?id=255047&vis=medarbejder">Peter L.</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Lyman alpha theory, radiative transfer, simulations, interstellar medium, dust, Lyman alpha emitters, reionization, outreach.
-                                                </div>
-                                                <a href="mailto:pela@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Peter,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Peter L. to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Seiji -->
-                                        <div class="elem-wrapper"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=654007" alt="item thumbnail" class="pub-thumbnail"></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/654007">Seiji</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    high-redshift submillimeter galaxies, massive galaxies, AGNs, quasars, supermassive black holes, protocluster, galaxy size, structure, morphology, interstellar medium, circumgalactic medium, luminosity function, number counts, dusty, obscured star formation, gravitational lensing
-                                                </div>
-                                                <a href="mailto:fujimoto@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Seiji,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Seiji to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Steven -->
-                                        <div class="elem-wrapper"><a href="https://www.dtu.dk/service/telefonbog/person?id=153006&cpid=284623&tab=0"><img src="https://www.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHBzOi8vd3d3LmR0dWJhc2VuLmR0dS5kay9zaG93aW1hZ2UuYXNweD9pZD0xNTMwMDZfX3x8X18xMDNfX3x8X18xNDBfX3x8X19UcnVlX198fF9fRmFsc2VfX3x8X19GYWxzZV9ffHxfXzBfX3x8X19fX3x8X18w" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://www.dtu.dk/service/telefonbog/person?id=153006&cpid=284623&tab=0">Steven</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    High-redshift galaxies, star-forming galaxies, interstellar medium, morphology, metallicity, turbulence, kinematics / dynamics, integral field spectroscopy, KMOS, JWST MIRI
-                                                </div>
-                                                <a href="mailto:srigi@space.dtu.dk?subject=Presenting%20at%20journal%20club&body=Dear Steven,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Steven to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Sune -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/5469"><img src="https://dawn.nbi.ku.dk/staff/staff-and-students/sune250.jpg" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/5469">Sune</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    massive galaxies, quenched galaxies, starburst galaxies
-                                                </div>
-                                                <a href="mailto:sune@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Sune,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Sune to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Thomas -->
-                                        <div class="elem-wrapper"><a href="WALLAHlink"><img src="https://dawn.nbi.ku.dk/staff/staff-and-students/greve250.jpg" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="WALLAHlink">Thomas</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Starburst Galaxies Near and Far, Radio and Submillimeter Astronomy, interstellar medium, dust, molecules and Radiative Transfer, Galaxy Simulations
-                                                </div>
-                                                <a href="mailto:tgreve@space.dtu.dk?subject=Presenting%20at%20journal%20club&body=Dear Thomas,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Thomas to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- Vasily -->
-                                        <div class="elem-wrapper"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/635747"><img src="https://www2.adm.ku.dk/selv/pls/prt_www40.hentindhold_cms?p_personid=635747" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="https://dawn.nbi.ku.dk/staff/?pure=en/persons/635747">Vasily</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    Interstellar medium, Galaxy evolution, Infrared, SED-Fitting techniques.
-                                                </div>
-                                                <a href="mailto:vasilii.kokorev@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Vasily,%0D%0A%0D%0AWould you like to present..." style="color:#77aaff">Ask Vasily to present a paper</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pub-item with-thumb large"> <!-- WALLAHname -->
-                                        <div class="elem-wrapper"><a href="WALLAHlink"><img src="./WALLAHimage.png" alt="item thumbnail" class="pub-thumbnail"></a></div>
-                                        <div class="content-wrapper">
-                                            <h3 class="title"><a href="WALLAHlink">Your name could be here!</a></h3>
-                                            <div class="description">
-                                                <div class="citation">
-                                                    …and your key words could be here
-                                                </div>
-                                                <a href="mailto:pela@nbi.ku.dk?subject=Presenting%20at%20journal%20club&body=Dear Peter,%0D%0A%0D%0AHere are my key words:" style="color:#77aaff">Just send Peter your key words already!</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                    -->
                                 </div>
-                                <div class="sp-blank-70"></div>
-                                <!-- #####Begin pagination links-->
-                                <!--
-                                <nav class="ol-pagination lined-links">
-                                    <ul class="pagination">
-                                        <li><a href="#">&laquo;</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li class="active"><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">&raquo;</a></li>
-                                    </ul>
-                                </nav>
-                                -->
-                                <!-- #####End pagination links-->
+                                <div class="wrapper bg-dawn-blue dark-wrapper with-top-icon pad-60">
+                                    <div class="row">
+                                        <div class="top-icon text-center">
+                                            <div class="circle-icon double skin-dawn-blue size-lg"><i class="fa fa-NONE"><img src="./galaxy_icon.png"></i></div>
+                                        </div>
+                                        <!-- #####Begin widget-->
+                                        <!--
+                                        <div class="widget-heading text-center">
+                                            <h2 class="widget-title">Take your seat!</h2>
+                                            <h6 class="widget-sub-title">Registration is free of charge and it is open to public</h6>
+                                        </div>
+                                        -->
+                                        <!-- #####End widget-->
+                                        <!--
+                                        <div class="sp-blank-20"></div>
+                                        <div class="newsletter-form simple">
+                                            <form class="form-inline text-center">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="Your Email..." class="form-control form-circle">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" value="REGISTER" class="btn btn-medium btn-trans btn-skin-white btn-circle btn-wide">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        -->
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </section>
@@ -634,93 +274,151 @@
                 </section>
             </section>
             <!-- #####End contents-->
+            <!-- #####Begin footer-->
             <!--
-                <footer id="footer" data-img-src="mod_assets/img/bg/002.png" class="set-bg">
-                <div class="container">
-                <div class="sp-shadow-line-0 footer-shadow"></div>
-                </div>
+            <footer id="footer" class="dark-wrapper">
                 <div id="footer-main">
-                <div class="container">
-                <div class="row">
-                <div class="col-md-5 col-sm-12 m-bottom-sm-40"><a href="#" class="img"><img src="../DAWNlogo_red.jpg" alt="DAWN"></a>
-                <div class="sp-blank-30"></div>
-                <p>DAWN DAWN DAWN DAWN DAWN DAWN DAWN</p>
-                <ul class="social-icons shape-circle">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-                </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-6">
-                <div class="widget">
-                <h4>Information for</h4>
-                <div class="links">
-                <ul>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Entrepreneurs</a></li>
-                <li><a href="#">Current students</a></li>
-                <li><a href="#">Faculty and staff</a></li>
-                <li><a href="#">Future students</a></li>
-                <li><a href="#">Fellowship students</a></li>
-                </ul>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                <h4>Usefull links</h4>
-                <div class="links">
-                <ul>
-                <li><a href="#">Admission & Aid</a></li>
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Campus Life</a></li>
-                <li><a href="#">Library</a></li>
-                </ul>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-sm-4"><a href="#" class="img"><img src="./jc_assets/img/logo/logo-dark.png" alt="DAWN logo" class="ol-retina"></a></div>
+                                    <div class="col-sm-8">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="sp-line-50"></div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <!- #####Begin widget->
+                                        <div class="widget">
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a href="#">Alumni</a></li>
+                                                    <li><a href="#">Entrepreneurs</a></li>
+                                                    <li><a href="#">Current students</a></li>
+                                                    <li><a href="#">Faculty and staff</a></li>
+                                                    <li><a href="#">Future students</a></li>
+                                                    <li><a href="#">Fellowship students</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!- #####End widget->
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <!- #####Begin widget->
+                                        <div class="widget">
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a href="#">Admission & Aid</a></li>
+                                                    <li><a href="#">Accessibility</a></li>
+                                                    <li><a href="#">Academics</a></li>
+                                                    <li><a href="#">Research</a></li>
+                                                    <li><a href="#">Campus Life</a></li>
+                                                    <li><a href="#">Library</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!- #####End widget->
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <!- #####Begin widget->
+                                        <div class="widget">
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a href="#">Admission & Aid</a></li>
+                                                    <li><a href="#">Accessibility</a></li>
+                                                    <li><a href="#">Academics</a></li>
+                                                    <li><a href="#">Research</a></li>
+                                                    <li><a href="#">Campus Life</a></li>
+                                                    <li><a href="#">Library</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!- #####End widget->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <!- #####Begin number item->
+                                <div class="fact-item left-alined">
+                                    <div class="fact-icon-wrap left">
+                                        <div class="fact-icon oli oli-literature"></div>
+                                    </div>
+                                    <div class="fact-number-wrap">
+                                        <div class="fact-number">1.2k</div>
+                                    </div>
+                                    <h2 class="fact-title">publications</h2>
+                                </div>
+                                <!- #####End number item->
+                                <div class="sp-blank-10"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet.</p>
+                                <div class="sp-blank-10"></div>
+                                <!- #####Begin number item->
+                                <div class="fact-item left-alined">
+                                    <div class="fact-icon-wrap">
+                                        <div class="fact-icon oli oli-user_male_circle"></div>
+                                    </div>
+                                    <div class="fact-number-wrap">
+                                        <div class="fact-number">715</div>
+                                    </div>
+                                    <h2 class="fact-title">staff members</h2>
+                                </div>
+                                <!- #####End number item->
+                                <div class="sp-blank-10"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="footer-bar">
-                <div class="container">
-                <div class="row tb-vcenter-wrapper bottom-bar">
-                <div class="col-sm-6 vcenter">
-                <div class="copyright">OWWWLAB 2015.</div>
-                <div class="promo">Built with love & care for Academic People</div>
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-8 vcenter">
+                                <ul class="footer-menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Research</a></li>
+                                    <li><a href="#">Admission</a></li>
+                                    <li><a href="#">Staff</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                                <div class="sp-blank-10"></div>
+                                <div class="inline-wrapper">
+                                    <div class="copyright">OWWWLAB 2016.</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 vcenter footer-socials">
+                                <!- #####Begin social icons->
+                                <ul class="social-icons border-circle hover-tb-theme text-right-sm">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                </ul>
+                                <!- #####End social icons->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 vcenter">
-                <ul class="footer-menu text-right-md">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Admission</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Contact</a></li>
-                </ul>
-                </div>
-                </div>
-                </div>
-                </div>
-                </footer>
+            </footer>
             -->
+            <!-- #####End footer-->
         </div>
         <!-- #####Begin scripts-->
-        <script src="mod_assets/js/vendors/vendors.js"></script>
+        <script src="./jc_assets/js/vendors/vendors.js"></script>
         <!-- Local Revolution tools-->
         <!-- Only for local and can be removed on server-->
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="mod_assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="mod_assets/js/custom.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="./jc_assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="./jc_assets/js/custom.js"></script>
         <script src="http://localhost:35729/livereload.js"></script>
         <!-- #####End scripts-->
     </body>
