@@ -1,7 +1,33 @@
-Magdalena Maria Otap <hnp477@alumni.ku.dk>
-Sandra Raimundo <sandra.raimundo@nbi.ku.dk>
-Matthieu Williams <zqp405@alumni.ku.dk>
+# DAWN
+Birgitta Nordström <birgitta@nbi.ku.dk>
+Bo Milvang-Jensen <milvang@nbi.ku.dk>
+Charles Louis Steinhardt <steinhardt@nbi.ku.dk>
+Christian Kragh Jespersen <christian.jespersen@nbi.ku.dk>
+Clara Giménez Arteaga <clara.arteaga@nbi.ku.dk>
+Darach Watson <darach@nbi.ku.dk>
+Francesco Valentino <francesco.valentino@nbi.ku.dk>
+Gabriel Brammer <gabriel.brammer@nbi.ku.dk>
+Georgios Magdis <georgios.magdis@nbi.ku.dk>
+Iary Davidzon <iary.davidzon@nbi.ku.dk>
+Johan Peter Uldall Fynbo <jfynbo@nbi.ku.dk>
+John R. Weaver <john.weaver@nbi.ku.dk>
+Katriona Mai Landau Gould <katriona.gould@nbi.ku.dk>
+Lise Christensen <lichrist@nbi.ku.dk>
+Meghana Killi <meghana.killi@nbi.ku.dk>
+Nina Bonaventura <nina.bonaventura@nbi.ku.dk>
+Peter Jakobsen <pjakobsen@nbi.ku.dk>
+Peter Laursen <pela@nbi.ku.dk>
+Seiji Fujimoto <fujimoto@nbi.ku.dk>
+Simone Vejlgaard Nielsen <fgj787@alumni.ku.dk>
+Sune Toft <sune@nbi.ku.dk>
+Vadim Rusakov <vadim.rusakov@nbi.ku.dk>
+Vasily Kokorev <vasilii.kokorev@nbi.ku.dk>
+
+# DARK
 Adriano Agnello <adriano.agnello@nbi.ku.dk>
+Anne Klitsch <anne.klitsch@nbi.ku.dk>
 Erik Axel Castor Widmark <axel.widmark@nbi.ku.dk>
 Hugo Isabeau Vincent Pfister <hugo.pfister@nbi.ku.dk>
-Anne Klitsch <anne.klitsch@nbi.ku.dk>
+Matthieu Williams <zqp405@alumni.ku.dk>
+Sandra Raimundo <sandra.raimundo@nbi.ku.dk>
+
