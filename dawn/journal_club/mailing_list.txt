@@ -31,3 +31,11 @@ Hugo Isabeau Vincent Pfister <hugo.pfister@nbi.ku.dk>
 Matthieu Williams <zqp405@alumni.ku.dk>
 Sandra Raimundo <sandra.raimundo@nbi.ku.dk>
 
+# DTU
+Allan Hornstrup <allan@space.dtu.dk>
+Georgios Magdis <geoma@space.dtu.dk>
+Hans Ulrik Nørgaard-Nielsen <hunn@space.dtu.dk>
+Lijie Liu <lijli@space.dtu.dk>
+Malte Brinch <malbr@space.dtu.dk>
+Steven Richard Gillman <srigi@space.dtu.dk>
+Thomas Greve <tgreve@space.dtu.dk>
