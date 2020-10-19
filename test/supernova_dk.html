@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- Facebook meta data -->
+        <meta property="og:image" content="../pics/encyclo/crab_nebula_FB.jpg" />
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Supernova</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Seneste aktiviteter<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Hvad er en supernova?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./supernova.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>Supernova</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <p>
+                                            En supernova er den ekstremt voldsomme eksplosion af en stjerne, som har opbrugt sit brændstof og ender sit liv.
+                                            I en kort periode kan den lyse kraftigere end alle de andre hundrede af milliarder af stjerner i resten af galaksen tilsammen.
+                                            </p>
+                                            <p>
+                                            En bestemt type supernovaer kan man bruge til at beregne deres præcise afstande.
+                                            På den måde er vi i stand til at kortlægge Universet og dets udvidelse.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="Gå til encyklopædien" class="btn btn-small btn-circle btn-an-split"><span>Gå til encyklopædien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./stjerne.html" class="entry-image"><img src="../pics/encyclo/star_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./stjerne.html">Stjerne</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Læs mere om stjernernes liv før de eksploderer som supernovaer.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./sort_hul.html" class="entry-image"><img src="../pics/encyclo/black_hole_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./sort_hul.html">Sort hul</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Nogle supernovaer ender med at lave et sort hul.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./nova_dk.html" class="entry-image"><img src="../pics/encyclo/nova_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./nova_dk.html">Nova</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Der er også noget der hedder en nova, men det er noget andet.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin row (death) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!--
+                                        <p>
+                                        Supernovaer kommer i mange forskellige typer, alt afhængig af deres masser, indhold af tunge grundstoffer, og andre faktorer.
+                                        Hvis du virkelig vil dykke ned i deres taxonomi, kan jeg anbefale <a href="https://en.wikipedia.org/wiki/Supernova">den engelske Wikiepedia-artikel</a>.
+                                        </p>
+                                        -->
+                                        <h3>Tunge stjerners død</h3>
+                                        <p>
+                                        <a href="./stjerne.html">Stjerner</a> lyser ved at "forbrænde" — eller rettere sagt <em>fusionere</em> — hydrogen til helium.
+                                        Altså det letteste <a href="./atom_dk.html">grundstof</a> til det næstletteste.
+                                        Den energi der dannes forhindrer stjernen i at kollapse unden sin egen tyngdekraft.
+                                        </p>
+                                        <p>
+                                        Men når brændstoffet begynder at slippe op, kan stjernen ikke længere modstå tyngdekraften, og den begynder at trække sig sammen.
+                                        Sammentrækningen får trykket og temperaturen inde i stjernen til at stige, og dét gør så at stjernen kan begynde at forbrænde tungere grundstoffer.
+                                        </p>
+                                        <p>
+                                        I lang tid kan den skinne ved at forbrænde helium til kul, men når der bliver for lidt helium, trækker stjernen sig mere sammen, og forbrænder tungere og tungere grundstoffer.
+                                        </p>
+                                        <p>
+                                        Efterhånden danner stjernen en række lag af tungere grundstoffer.
+                                        Den præcise sammensætning afhænger til dels af stjernens masse, men er yderst hydrogen (H), helium (He) og kul (C).
+                                        Hvis stjernen er en "tung stjerne" — dvs. hvis den vejer mere en otte Solmasser — bliver den i stand til at fusionere tungere grundstoffer,
+                                        hvorved der dannes lag som typisk består af neon (Ne), ilt (O), magnesium (Mg), silicium (Si) og til sidst jern (Fe).
+                                        </p>
+                                        <p>
+                                        Da man ikke kan få energi ud af at fusionere tungere grundstoffer end jern, kan intet længere forhindre katastrofen.
+                                        Stjernen har nu mindre end et sekund tilbage af sit liv…
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/onion_star_dk_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/onion_star_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>En 20 Solmasse-stjerne, lige før den sprænger i luften</strong>:
+                                                    Skemaet viser opdelingen af de forskellige lag, hvilke forbrændingsprocesser der foregår, og hvor lang tid de varer.
+                                                    Strukturen sammenlignes ofte med lagene i et løg, men er nok i virkeligheden slet ikke så skarpt opdelt.
+                                                    Desuden bliver de mindre og mindre, jo længere man kommer ind mod centrum.
+                                                    <br>
+                                                    Kredit: anisotropela/data fra <a href="http://www.ucolick.org/~woosley/">Stan Woosley</a>.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin row (collapse) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Gravitationelt kollaps</h3>
+                                        <p>
+                                        Hvor <em>lette</em> stjerner ender med en kompakt <a href="./hvid_dvaerg.html">hvid dværg</a> ca. på størrelse med Jordkloden, 
+                                        bliver trykket i den tunge stjernes centrum så stort, at elektroner så at sige <em>presses</em> ind i protonerne, så de laves om til neutroner.
+                                        Dette sker, hvis den hvide dværg vejer mere end 1.4 Solmasser (den såkaldte "Chandrasekhar-grænse").
+                                        Derved lettes trykkes, så kernen kan fortsætte sit kollaps.
+                                        </p>
+                                        <p>
+                                        Nu går det stærkt! Kernen trækker sig sammen med en fjerdedel af lysets hastighed — på mindre end et sekund når den en radius i omegnen af 10 km, men med en masse på flere Solmasser.
+                                        </p>
+                                        <p>
+                                        Derved skabes en <a href="./neutronstjerne.html">neutronstjerne</a>; det tætteste og varmeste objekt i Universet siden <a href="./big_bang.html">Big Bang</a>.
+                                        Tætheden i centrum af en neutronstjerne er op mod en milliard tons per kubikcentimeter — tættere end en atomkerne — og temperaturen er 100 milliarder grader.
+                                        </p>
+                                        <p>
+                                        Hvis neutronstjernen vejer mere end 2–3 Solmasser, kan ikke engang neutrontrykket holde stjernen oppe, og den fortsætter til den et splitsekund senere bliver et <a href="./sort_hul.html">sort hul</a>.
+                                        </p>
+                                    </div>
+                                    <!--
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/WALLAHfigure_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/WALLAHfigure.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>WALLAHcaptionTitle</strong>: wallah wallah wallah
+                                                    <br>
+                                                    Kredit: wallah
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin row (explosion) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Eksplosionen</h3>
+                                        <p>
+                                        Men hvis det lykkes kernen at modstå det ultimative kollaps, dannes en chokbølge når tætheden når over tætheden i en atomkerne;
+                                        hér bliver de kernekræfter, som ellers holder atomkerner sammen, nemlig <em>frastødende</em> i stedet for <em>tiltrækkende</em>.
+                                        </p>
+                                        <p>
+                                        Resten af den oprindelige stjernes masse lander på neutronstjernens kompakte overflade og tilbagekastes i en fantastisk eksplosion — en supernova!
+                                        Energien af chokbølgen i denne eksplosion er omkring 10<sup>44</sup> Joule — lige så meget energi som vores Sol vil producere i hele sit 10 milliarder år lange liv —
+                                        men absorberes i de ydre lag, som også er meget tætte.
+                                        </p>
+                                        <p>
+                                        Den absorberede energi skaber flere tunge grundstoffer ved fusion og det radioaktive henfald af de tunge atomkerner — især nikkel som henfalder til kobolt, før det bliver til jern —
+                                        får supernovaen til at lyse kraftigt op; i flere dage kan supernovaen lyse kraftigere end alle de andre stjerner i galaksen tilsammen.
+                                        </p>
+                                        <p>
+                                        Som om den eksplosion ikke var nok, frigøres ved dannelsen af neutronstjernen en masse bittesmå elementarpartikler kaldet <em>neutrinoer</em>.
+                                        Energien af disse neutrinoer er 100 gange større en energien af selve eksplosionen, og fordi neutrinoer stort set ikke vekselvirker med noget som helst, absorberes de ikke, men flyver lige igennem de ydre lag.
+                                        </p>
+                                        <p>
+                                        De ydre lag selv blæses udad i en radioaktiv sky med 10.000 km/s eller mere.
+                                        Denne sky, der er synlig lang tid efter at selve eksplosionen er overstået, danner en <em>supernovarest</em>.
+                                        </p>
+                                        <!--
+                                        -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/supernova_crab_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/supernova_crab.mp4" class="ol-lightbox"><i class="oli oli-video theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>En stjerne eksploderer</strong>: Animation af en supernova som eksploderer ved kernekollaps (og som ender med at blive til Krabbetågen; se nedenfor).
+                                                    <br>
+                                                    <strong>Klik for at animere</strong>.<br>
+                                                    Kredit: ESA/Hubble.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin row (type ia) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Type Ia-supernovaer</h3>
+                                        <p>
+                                        Den slags supernovaer jeg har beskrevet ovenfor — altså stjerner som imploderer, fordi de ikke længere kan producere energi nok til at modstå tyngdekraften — kaldes "kernekollaps-supernovaer".
+                                        For at kollapse på denne måde, skal den oprindelige stjerne veje mindst otte Solmasser.
+                                        </p>
+                                        <p>
+                                        Men faktisk er det også muligt for en mindre stjerne at eksplodere.
+                                        </p>
+                                        <p>
+                                        De fleste stjerner er ikke "ensomme" som vores Sol, men er en del af et dobbeltstjernesystem, hvor to (eller flere) stjerner kredser om hinanden.
+                                        Hvis de begge er "lette stjerner" (altså under \(8\,M_\odot\)), udvikler de sig først til <a href="./rod_kaempe.html">røde kæmper</a>, og senere til hvide dværge.
+                                        </p>
+                                        <p>
+                                        Den tungeste brænder ud først og bliver til en hvid dværg.
+                                        Hvis stjernerne ikke er for langt fra hinanden, kan den hvide dværg, med sin tyngdekraft, trække gas over til sig fra den anden stjerne (normalt når den anden svulmer op som en rød kæmpe) og dermed langsomt blive tungere og tungere.
+                                        Alternativt — og faktisk viser nyere forskning at dette er mere normalt — kan begge stjerner udvikle sig til hvide dværge og derefter spirallere ind mod hinanden og til sidst smelte sammen.
+                                        </p>
+                                        <p>
+                                        Efterhånden som den hvide dværg bliver tungere, stiger dens tryk og temperatur.
+                                        Genne sit liv kan en "almindelig" stjerne selv regulere sit tryk og temperatur; hvis de stiger, laver den mere energi, som puster stjernen lidt op, så de falder igen.
+                                        Men en hvid dværg i en speciel kvantemekanisk, såkaldt <em>degenereret</em>, tilstand hvor dette ikke er muligt.
+                                        </p>
+                                        <p>
+                                        Hvis den hvide dværg kom over masse-grænsen på 1.4 Solmasser, ville den implodere til en neutronstjerne.
+                                        Men kort forinden (ca. ved 99% af massegrænsen) stiger temperaturen og, især, trykket nok til, at antænde fusion af først kul og dernæst ilt.
+                                        </p>
+                                        <p>
+                                        Dette øger temperaturen, og fordi den ikke svulmer op som almindelige stjerner og "letter trykket", kan hele stjernen på få sekunder fusionere til tungere grundstoffer i en termonuklear kædereaktion.
+                                        Energien skabt i denne process er ca. den samme som i kernekollaps-supernovaerne (dog fraregnet neutrinoerne, da der ikke skabes en neutronstjerne),
+                                        og er nok til at rive hele stjernen i fra hinanden i en gigantisk eksplosion.
+                                        </p>
+                                        <p>
+                                        Denne slags supernovaer kaldes <em>Type Ia</em> (udtales "type ét a").
+                                        Fordi vi ved ret præcist hvad den vejede (\(1.4\,M_\odot\)) da den eksploderede, ved vi også hvor klar den er.
+                                        Og dét er dødpraktisk, for så kan man nemlig regne ud, præcis hvor langt væk den er.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/supernova_type_Ia_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/supernova_type_Ia.mov" class="ol-lightbox"><i class="oli oli-video theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Eksplosionen af en Type Ia-supernova</strong>:
+                                                    En hvid dværg opsamler gas fra sine røde kæmpeven. Når den når omkring 1.4 Solmasser, antændes en termonuklear kædereaktion af fusionering af kul og ilt,
+                                                    så hele stjernen eksploderer som en supernova Type Ia.<br>
+                                                    <strong>Klik for at animere.</strong>
+                                                    <br>
+                                                    Kredit: <a href="https://svs.gsfc.nasa.gov/10532">Walt Feimer, NASA/Goddard Space Flight Center</a>.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <br>
+                                        <h5>Afstandskvadratloven</h5>
+                                        <p>
+                                        Jo længere væk et lysende objekt er — f.eks. en stjerne — jo svagere ser det ud, fordi dets lys bliver spredt ud over et større område.
+                                        Tager man stjernen dobbelt så langt væk, bliver den fire gange svagere; tager man den tre gange så langt væk, bliver den ni gange svagere, osv.
+                                        </p>
+                                        <p>
+                                        Klarheden aftager altså med afstanden i 2. potens (dvs. afstand\(\times\)afstand). Denne sammenhæng kaldes <em>afstandskvadratloven</em>.
+                                        Hvis man ved hvor klart et objekt er, kan man beregne afstanden del til ved måle hvor meget lys der kommer ned til os.
+                                        Men det kræver jo altså, at man ved hvor klart det er. Ellers ved man ikke om objektet er svagt fordi det ikke lyser så meget, eller fordi det er langt væk.
+                                        </p>
+                                        <p>
+                                        At beregne afstande i Universet er meget svært, da man netop ofte ikke ved dette.
+                                        Men det gør man altså med Type Ia-supernovaer (omend det er en smule mere omstændigt end beskrevet her), og fordi de lyser så ekstremt kraftigt, kan man oven i købet se dem på meget store afstande;
+                                        ca. en tredjedel af afstanden til kanten af det observerbare Univers.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/inverse_square_law_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/inverse_square_law.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Afstandskvadratloven</strong>:
+                                                    Fluxen, som er det lys man måler, aftager med afstanden (<span style="color:#138CFF; font-weight:bold">d</span>) fra en lyskilde, fordi den samme mængde lys skal spredes ud over et større område.
+                                                    I afstanden <span style="color:#138CFF; font-weight:bold">2d</span> fra lyskilden spredes lyset ud over et 4 gange større areal end det gør
+                                                    i afstanden <span style="color:#138CFF; font-weight:bold">1d</span>, så fluxen bliver 4 gange mindre.
+                                                    På samme måde bliver den 9 gange mindre i afstanden <span style="color:#138CFF; font-weight:bold">3d</span>.
+                                                    <br>
+                                                    Kredit: anisotropela.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin row (acceleration) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Universets udvidelse accelererer</h3>
+                                        <p>
+                                        Især i én henseende har denne egenskab ved Type Ia-supernovaer været banebrydende i astronomi, nærmere bestemt <a href="./kosmologi.html">kosmologi</a>.
+                                        De har nemlig gjort det muligt at bestemme afstande til fjerne, fjerne galakser, hvor man samtidig kunne måle deres hastighed i forhold til os vha. deres <a href="./rodforskydning.html">kosmologiske rødforskydning</a>.
+                                        </p>
+                                        <p>
+                                        Og hvorfor er dét interessant?
+                                        </p>
+                                        <p>
+                                        Jo, vi ved at Universet udvider sig. Det har vi vidst siden Edwin Hubble og andre i 1920'erne målte afstande og hastigheder af galakser, som ligger tæt på os.
+                                        Med Type Ia-supernovaer kan man undersøge sammenhængen tusinder af gange længere væk end Hubble gjorde.
+                                        Fordi lyset har brugt tid på at nå ned til os, betyder dét samtidig at vi kan se, hvor hurtigt Universet har udvidet sig gennem det meste af dets historie, milliarder af år tilbage i tiden.
+                                        </p>
+                                        <p>
+                                        Og her opdagede astronomer noget <s>forfærdeli</s>… noget vældig interessant i slut-90'erne:
+                                        </p>
+                                        <p>
+                                        I starten af Universets liv udvidede det sig rasende hurtigt, men tyngdekraften fra alt dét der ligger i Universet (primært fra din mor) bremsede efterhånden udvidelsen.
+                                        Om det en dag ville bremse nok op til at begynde at trække sig sammen igen, eller om det havde fået fart nok på fra starten til at udvide sig for evigt, afhænger af hvor meget stof der er i Universet.
+                                        Både almindeligt stof (som stjerner, planeter og cykler), <a href="./morkt_stof.html">mørkt stof</a>, og faktisk også stråling, hjælper til at bremse Universet op.
+                                        </p>
+                                        <p>
+                                        Det som observationerne viste var, at Universet rigtig nok bremsede op i starten.
+                                        Men for relativt nyligt (kosmologisk set — det er ca. 3½ milliard år siden) skete der noget besynderligt: Universet satte farten op igen.
+                                        Og ikke bare satte det farten op, det <em>accelererer</em> i sin udvidelse, så det går hurtigere og hurtigere.
+                                        </p>
+                                        <p>
+                                        Hvad der er årsagen til dette, vides ikke med sikkerhed, men den gængse forklaring er, at det er en egenskab ved selve det tomme rum.
+                                        Forskellige mulige mekanismer går under navnet <a href="./mork_energi.html">mørk energi</a>.
+                                        Jo mere Universet udvider sig, jo mere tomt rum kommer der, og dermed jo mere mørk energi, som så får Universet til at udvide sig endnu hurtigere.
+                                        </p>
+                                        <p>
+                                        Universet ser altså ud til at ville udvide sig for evigt, så der bliver længere og længere mellem alt
+                                        (det kan måske berolige dig lidt, at det kun er på "kosmologiske" skalaer; galakser, stjerner og planeter holdes sammen af tyngdekraften, og du holdes sammen af elektromagnetiske kræfter).
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/universe_expansion_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/universe_expansion_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Universets udvidelse gennem tiden</strong>:
+                                                    Dette diagram viser sammenhængen mellem Universets "skala-faktor", som angiver dets størrelse i forhold til i dag (på <em>y</em>-aksen), og Universets alder (på <em>x</em>-aksen).
+                                                    De første ca. 10 mia. år aftog Universets udvidelseshastighed, hvorefter den begyndte at stige eksponentielt.
+                                                    Den blå prik angiver hvor vi er i dag.
+                                                    <br>
+                                                    Kredit: anisotropela.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin row (history) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Historiske supernovaer</h3>
+                                        <p>
+                                        Den første supernova som vi <em>ved</em> blev observeret var i år 185 e.Kr. af kinesiske astronomer, selvom nogle mener af grækeren Hipparchus så én i 134 f.Kr.
+                                        </p>
+                                        <p>
+                                        I 1054 eksploderede en supernova i Tyrens tegn, som blev registreret af både arabiske, kinesiske og japanske astronomer, og nok også de nordamerikanske Pueblo-indianere, men tilsyneladende ikke af en eneste europæer.
+                                        Den var synlig i dagslys i 23 dage, og kunne ses på nattehimlen i næsten to år (det her var før man havde kikkerter).
+                                        I dag kendes supernovaresten som "Krabbetågen". Den er virkelig smuk, og er let at finde for amatørastronomer med en lille kikkert.
+                                        </p>
+                                        <p>
+                                        Vores egen Tycho Brahe er berømt for at observere en supernova i stjernebilledet Cassiopeia i 1572.
+                                        Han kaldte den <em>stella nova</em> ("ny stjerne") og viste, at stjernehimlen ikke — som de fleste ellers mente — var evig og uforanderlig,
+                                        hvilket var med til at rokke den europæiske forestilling om kosmos.
+                                        </p>
+                                        <p>
+                                        Efter Tycho Brahe kaldte europæiske astronomer i mange år supernovaer for "novaer".
+                                        Nu om dage betyder <a href="./nova_dk.html">nova</a> dog noget andet.
+                                        Kineserne kaldte dem <em>gæstestjerner</em>, og islændingene kalder dem noget så sejt som <em>sprengistjörnur</em>, altså "sprængstjerner".
+                                        </p>
+                                        <p>
+                                        Alle disse supernovaer har ligget i vores egen galakse, Mælkevejen.
+                                        Tycho Brahes assistent Johannes Kepler observerede én 32 år senere, i 1604, og det er faktisk den sidste der er blevet set eksplodere i Mælkevejen, selvom vi forventer at der i gennemsnit burde gå én af hvert 100–200. år.
+                                        </p>
+                                        <p>
+                                        I 1987 eksploderede til gengæld én i en af vores nærmeste nabogalakser "Den Store Magellanske Sky".
+                                        Det var den første i moderne tid, som kunne observeres i detaljer. F.eks. observerede man samtidig nogle (få) neutrinoer fra skabelsen af neutronstjernen.
+                                        </p>
+                                        <p>
+                                        I 2005 observerede jeg selv en supernova. Den eksploderede mens jeg sad på det danske 1.5 m teleskop på La Silla, Chile, og kiggede efter <a href="./gammaglimt.html">gammaglimt</a>.
+                                        Du kan se den <a href="../observations/SN2005at.html">her</a> (altså, det er bare en hvid prik, men det er ret vildt alligevel, og dens værtsgalakse er ret flot).
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/crab_nebula_icon.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/crab_nebula.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Supernovaresten Krabbetågen</strong>:
+                                                    Resterne af en supernova, som eksploderede for næsten 1000 år siden, 6500 lysår væk.
+                                                    De orange filamenter er mestendels hydrogen, mens det blålige lys kommer fra elektroner, som accelereres op til nærlyshastigheder af magnetfeltet fra en hurtigt roterende neutronstjerne i centrum.
+                                                    I de ydre dele kommer de blå og røde farve fra hhv. neutral og ioniseret ilt, mens det grønne viser ioniseret svovl.
+                                                    <br>
+                                                    Kredit: NASA/ESA.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./supernova.html"     >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"            >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>Supernova</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <!-- modals -->
+            <div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="WALLAHModalLabel" class="modal-title">WALLAHmodalTitle</h4>
+                            <div class="modal-body">
+                                <p>
+                                wallah wallah wallah
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
