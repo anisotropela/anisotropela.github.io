@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 import datetime
 from datetime import timedelta
 
@@ -41,3 +42,15 @@ def list_days(day0=datetime.date.today(),ndays=10):
     return dates
 #------------------------------------------------------------------------------
 
+def n_participants():
+    n = np.array([20 ,18 ,18 ,19 ,21 ,17 ,25 ,18 , 0 ,14 ,17 ,17])
+    d = range(len(n))
+    N = 25
+    labels = ['28 Sep' ,'05 Oct' ,'12 Oct' ,'19 Oct' ,'26 Oct' ,'02 Nov' ,'09 Nov' ,'16 Nov' ,'23 Nov' ,'30 Nov' ,'07 Dec' ,'14 Dec']
+
+    plt.clf()
+    plt.bar(d,n/N*100,color='#0089C4')
+    plt.xticks(d,labels,rotation=45,ha='right')
+    plt.xlabel('Date')
+    plt.ylabel('Participant percentage')
+#------------------------------------------------------------------------------
