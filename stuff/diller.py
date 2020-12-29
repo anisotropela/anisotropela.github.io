@@ -1,10 +1,15 @@
 import numpy as np
 
 def dillit():
-    #                       Mi  Mo  Je  Kl  Pe
-    grades = {
+    
+    grades = {  #                                Mi    Mo    Je    Kl    Pe
+        'Salka          ': np.array([3   , 3   , 2   , 3   , 4  ]),
+        'Tristram       ': np.array([2   , 3   , 3   , 3.5 , 2  ]),
+        'Blindhed       ': np.array([4   , 4.5 , 3.5 , 4   , 4.5]),
+        'Hvepse         ': np.array([                        4  ]),
+        'Haren          ': np.array([3.5 , 3   , 5   , 2.5 , 3.5]),
         'Flammende      ': np.array([3.5 , 4.5 , 3   , 4   , 4  ]),
-        'Staalhulerne   ': np.array([1.5 , 1.5 , 2   , 1.5 , 2  ]),
+        'Stålhulerne    ': np.array([1.5 , 1.5 , 2   , 1.5 , 2  ]),
         'Gilgamesh      ': np.array([4   , 5   , 2.5 , 3.5 , 4  ]),
         'Under Nul      ': np.array([2.5 , 3   , 4   , 2.5 , 2  ]),
         'Gatsby         ': np.array([2   , 1.5 , 4.5 , 2.5 , 2.5]),
@@ -22,15 +27,15 @@ def dillit():
         'Til Fyret      ': np.array([2   , 2.5 , 2   , 3   , 3  ]),
         'Flygtning      ': np.array([4.5 , 4.5 , 2   , 4.5 , 4.5]),
         'Planen         ': np.array([4.5 , 4.5 , 4.5 , 3.5 , 4.5]),
-        'Det Hvide Slot ': np.array([3.5 , 3.5 , 0   , 3.5 , 4  ]),
+        'Det Hvide Slot ': np.array([3.5 , 3.5       , 3.5 , 4  ]),
         'Det Dybe Net   ': np.array([0.5 , 0.5 , 0   , 0.5 , 0.5]),
         'Vangede        ': np.array([4   , 3.5 , 4   , 3   , 3.5]),
         'Sangfugl       ': np.array([3   , 3   , 3.5 , 3   , 3.5]),
         'Kortet         ': np.array([4.5 , 5   , 4   , 4.5 , 4.5]),
         'Hjerte         ': np.array([3   , 3   , 2   , 3.5 , 3  ]),
-        'Kaelder        ': np.array([4.5 , 4.5 , 3.5 , 4.5 , 4.5]),
+        'Kælder         ': np.array([4.5 , 4.5 , 3.5 , 4.5 , 4.5]),
         'To byer        ': np.array([3   , 3.5 , 2.5 , 3   , 2.5]),
-        '100 aar        ': np.array([1.5 , 3   , 2   , 3   , 3  ]),
+        '100 år         ': np.array([1.5 , 3   , 2   , 3   , 3  ]),
         'Sult           ': np.array([4.5 , 4.5 , 5   , 4   , 4.5]),
         'Alice          ': np.array([3.5 , 4   , 2.5 , 3.5 , 3.5]),
         'Paradis        ': np.array([4   , 4   , 4   , 4   , 4  ]),
@@ -43,7 +48,7 @@ def dillit():
     Peter  = []
 
     for key, value in grades.items():
-        print(key,'{:.1f} +\- {:.1f}'.format(np.mean(value), np.std(value)))
+        print(key,'{:.1f} ± {:.1f}'.format(np.mean(value), np.std(value)))
         try:
             Mikkel.append(value[0])
         except:
@@ -65,8 +70,9 @@ def dillit():
         except:
             pass
 
-    print('Mikkel: {:.1f} +/- {:.1f}'.format(np.mean(Mikkel), np.std(Mikkel)))
-    print('Morten: {:.1f} +/- {:.1f}'.format(np.mean(Morten), np.std(Morten)))
-    print('Jeff:   {:.1f} +/- {:.1f}'.format(np.mean(Jeff  ), np.std(Jeff  )))
-    print('Klaus:  {:.1f} +/- {:.1f}'.format(np.mean(Klaus ), np.std(Klaus )))
-    print('Peter:  {:.1f} +/- {:.1f}'.format(np.mean(Peter ), np.std(Peter )))
+    print()
+    print('Mikkel: {:.1f} ± {:.1f}'.format(np.mean(Mikkel), np.std(Mikkel)))
+    print('Morten: {:.1f} ± {:.1f}'.format(np.mean(Morten), np.std(Morten)))
+    print('Jeff:   {:.1f} ± {:.1f}'.format(np.mean(Jeff  ), np.std(Jeff  )))
+    print('Klaus:  {:.1f} ± {:.1f}'.format(np.mean(Klaus ), np.std(Klaus )))
+    print('Peter:  {:.1f} ± {:.1f}'.format(np.mean(Peter ), np.std(Peter )))
