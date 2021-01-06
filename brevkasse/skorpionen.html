@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Skorpionen</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Om Skorpionens koordinater</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Skorpionen</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- begin sporgsmal -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Spørgsmålet</h3>
+                                            <p>
+                                            Hej,<br>
+                                            Jeg håber det er okay jeg skriver til dig?<br>
+                                            Jeg har et spørgsmål omkring en stjernekonstellation, som jeg håber du kan svare på.<br>
+                                            Jeg kunne rigtig godt tænke mig, at få lavet en tatovering med min mors stjernetegn (skorpion) som stjernekonstellation.
+                                            </p>
+                                            <p>
+                                            Jeg vil gerne have den lavet i tal, og da jeg tror, at du ved mere om stjerner end jeg gør, håber jeg inderligt du kan hjælpe.<br>
+                                            Når jeg siger i tal, mener jeg en form for længde- og breddegrader der indikerer hvor på himlen den præcis er, ligesom man på fx. maps kan finde længde- og breddegrader på en adresse.<br>
+                                            Jeg har fundet ud af dens right ascension er 16.8875h og declination er -30.7367°, men ved ikke helt, om det er noget man kan bruge til noget?
+                                            </p>
+                                            <p>
+                                            Jeg håber du kan hjælpe mig.
+                                            </p>
+                                            <p>
+                                            Venlig hilsen Sofie Brammer
+                                            </p>
+                                        </div>
+                                        <!-- end sporgsmal -->
+                                        <hr>
+                                        <!-- begin korte svar -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Det korte svar</h3>
+                                            <p>
+                                            De koordinater du har fundet er helt rigtige.
+                                            </p>
+                                        </div>
+                                        <!-- end korte svar -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="Gå til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>Gå til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede spørgsmål</h4>
+                                                    <div class="posts-list">
+                                                        <!-- begin sporgsmal 1 -->
+                                                        <p>
+                                                        </p>
+                                                        <!-- end sporgsmal 1 -->
+                                                        <!-- begin sporgsmal 2 -->
+                                                        <!-- end sporgsmal 2 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                        <!-- begin baggrund -->
+                                        <!--
+                                        <div class="icon-box ib-v1 ib-boxed bg-logoyellow">
+                                            <i class="oli oli-book-open" style="color:#7F548E"></i>
+                                            <h3 class="title" style="color:#7F548E">Baggrundsviden fra encyklopædien</h3>
+                                            <p>
+                                            <span style="color:#7F548E">Her er der heller ingen hjælp at hente.</span>
+                                            </p>
+                                            <p>
+                                            <a href="../encyklo.html" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Tag mig til encyklopædien alligevel</span></a>
+                                            </p>
+                                        </div>
+                                        -->
+                                        <!-- end baggrund -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin row (Skorpionen) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Skorpionen</h3>
+                                        <p>
+                                        Hej Sofie,
+                                        </p>
+                                        <p>
+                                        Fed ide med koordinater i stedet for selve billedet!
+                                        Det er helt rigtigt forstået, at man i astronomi orienterer sig på himlen vha. right ascension (RA) og declination (dec),
+                                        eller på dansk, rektascension (med tryk på første og sidste stavelse) og deklination.
+                                        </p>
+                                        <p>
+                                        Ser man stjernetegnene som billeder er det jo lidt tilfældigt hvor grænserne går, men astronomisk har vi så valgt at inddele himlen med grænser, ligesom landene på Jorden.
+                                        I modsætning til lande, hvor politiske stridigheder har ført til temmelig komplekse grænser, er stjernebilledernes grænser dog simplere, og følger blot RA/dec-linierne (ligesom flere nordamerikanske og nordafrikanske grænser følger længde- og breddegraderne).
+                                        </p>
+                                        <p>
+                                        Koordinaterne for de 88 stjernebilleder er fastsat af den Internationale Astronomiske Union (IAU) i 1928.
+                                        Fordi Jordens omdrejningsakse har flyttet sig lidt i de knap 100 år siden dengang, følger grænserne ikke længere RA/dec-linierne helt.
+                                        Denne langsomme ændring af omdrjningsaksens retning kaldes "præcession", og det kommer jeg tilbage til i sidste afsnit.
+                                        </p>
+                                        <p>
+                                        De koordinater du har fundet er et enkelt koordinatsæt, og er et sted lige midt i Skorpionen.
+                                        Hvis din tatovering ikke skal være for kompleks, synes jeg det er et superfint bud.
+                                        Ellers kunne en mulighed være at give alle koordinatsæt for hjørnerne i det område, der er defineret som Skorpionen.
+                                        Men der er 18 hjørner, så det bliver nok lidt voldsomt.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/skorpionen.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/skorpionen.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Kort over Skorpionen</strong>:
+                                                Grænserne følger (nogenlunde) linier af konstant rektascension og deklination.<br>
+                                                Kredit: <a href="https://www.iau.org/public/themes/constellations/">IAU / Sky &amp; Telescope</a>.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin row (Himlens koordinatsystem) -->
+                        <section class="section section-narrow bg-white p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Himlens koordinatsystem</h3>
+                                        <p>
+                                        Lige lidt mere om stjernehimlens koordinater, hvis du er interesseret (om ikke andet, så fordi der findes en anden skrivemåde som du måske finde æstetisk mere tiltalende):
+                                        </p>
+                                        <p>
+                                        Rektascensionen måles langs med ækvator mod øst, startende fra et bestemt punkt der kaldes <em>forårspunktet</em>.
+                                        Deklinationen måles fra ækvator med positive tal mod Nordpolen og negative tal mod Sydpolen.
+                                        </p>
+                                        <p>
+                                        I princippet kunne man — som med Jordens længde- og breddegrader — måle både RA og dec i grader.
+                                        Men fordi Jorden bruger 24 timer på at dreje rundt om sig selv, har man historisk valgt at måle RA i "timer".
+                                        Én time svarer så til 15&deg;, fordi 360&deg;/24 = 15&deg;.
+                                        </p>
+                                        <p>
+                                        Ligesom med klokkeslet, deles timer (som skrives h, ofte som superskript <sup>h</sup>) op i 60 minutter (skrives <sup>m</sup>), som deles op i 60 sekunder (skrives <sup>s</sup>).
+                                        I samme ånd deles grader op i 60 <em>bueminutter</em> (skrives ′), og ét bueminut deles op i <em>buesekunder</em> (skrives ″).
+                                        </p>
+                                        <p>
+                                        Der er flere måder at skrive koordinaterne på. Én måde er som kommatal, som er de tal du har fundet.
+                                        Men ligesom f.eks. 0.75 timer også kan skrives 45 minutter, kan 16.8875 timer skrives som 16<sup>h</sup> 53<sup>m</sup> 15<sup>s</sup>.
+                                        Ligeledes kan –30.7367&deg; skrives som –30&deg; 44′ 12″.
+                                        </p>
+                                        <p>
+                                        Personligt synes jeg det ser lidt pænere ud :)
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/ra_dec.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/ra_dec.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Himlens koordinatsystem</strong>:
+                                                Rektascensionen (RA) måles mod øst fra forårspunktet (eng.: vernal equinox), som er dér hvor Solen passerer (himlens) ækvator om foråret d. 21. marts.
+                                                Deklination (dec) måles nord og syd fra ækvator.
+                                                Kredit: <a href="https://en.wikipedia.org/wiki/File:Ra_and_dec_on_celestial_sphere.png">Tfr000</a>.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin row (Flere ideer) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Flere ideer</h3>
+                                        <p>
+                                        Så hvis du bare vil have et simpelt koordinatsæt, kunne du enten gå med de tal du har fundet, eller også skrive:<br>
+                                        $$
+                                        \begin{array}
+                                        \,\,\,\,\,\,\,16^\mathrm{h}\, 53^\mathrm{m}\, 15^\mathrm{s}\\
+                                        –30^\circ\, 44'\, 12''
+                                        \end{array}
+                                        $$
+                                        </p>
+                                        <p>
+                                        En anden mulighed er selvfølgelig en tegning.
+                                        Hvis du synes det er for ordinært med enten en regulær skorpion, et kort over selve stjernerne (f.eks. de 18 "hoved"-stjerner), eller streger mellem disse stjerner, kunne du jo gå med en stregtegning af de 18 grænseflader.
+                                        </p>
+                                        <p>
+                                        Ellers kunne du lave noget med et tema over Skorpionens klareste stjerne, <a href="https://en.wikipedia.org/wiki/Antares">Antares</a>, som er himlens 15.-klareste stjerne.
+                                        Den er rød og kaldes også Skorpionens Hjerte.
+                                        I et teleskop kan man se at den i virkeligheden ikke er én stjerne, men et dobbelstjernesystem bestående af den røde superkæmpe α Scorpii A der lyser 75.000 gange så klart som Solen, og den mindre, men varmere, α Scorpii B.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/antares.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/antares.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Antares, Skorpionens Hjerte</strong>:
+                                                Også kaldet "α Scorpii A". Stjernen er en af de få stjerner hvor vi er i stand til at se detaljer på overfladen.<br>
+                                                Kredit: <a href="https://www.eso.org/public/images/eso1726a/">ESO/Ohnaka</a>.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin row (Astrologi) -->
+                        <section class="section section-narrow bg-white p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-6">
+                                        <h3>Astrologi</h3>
+                                        <p>
+                                        Hvis du er lidt astrologisk indstillet, kunne du også bruge Skorpionens astrologiske tegn &#9807;.
+                                        Ellers kunne du bruge koordinaterne for Solens position på din mors præcise fødselstidspunkt.
+                                        Her vil du så opdage, at den slet ikke har stået i Skorpionens Tegn:
+                                        </p>
+                                        <p>
+                                        Dengang for et par tusind år siden, da babylonerne fandt på Dyrekredsen (eng.: zodiac), svarede stjernetegnene til de stjernebilleder som Solen stod i, når man blev født.
+                                        Problemet for astrologer er, at Jordens akse langsomt ændrer retning, idet den roterer som en snurretop med en periode på ca. 26.000 år, og Solens bane henover himlen (ekliptika) ændrer sig på samme måde.
+                                        </p>
+                                        <p>
+                                        På et par tusinde år er vi altså kommet godt 1/13 rundt, svarende cirka til ét stjernebillede.
+                                        Med andre ord: Man er i virkeligheden født <em>omtrent</em> et stjernetegn "før" man egentlig tror.
+                                        </p>
+                                        <p>
+                                        Hvis din mor kalder sig Skorpion, er hun formodentlig født et sted mellem 23. oktober og 22. november.
+                                        Men hvis hun er født i perioden 23.–30. oktober, har Solen <em>i virkeligheden</em> stået i Jomfruens Tegn,
+                                        hvis hun er født 31. oktober til 22. november, har den stået i Vægtens Tegn.
+                                        For at Solen rent faktisk skal have stået i stjernebilledet Skorpionen, skal hun være født 23.–29. november (dvs. Solen bevæger sig kun ind over dette stjernebillede i en uges tid).
+                                        </p>
+                                        <p>
+                                        Her kan du se hvilke stjernetegn Solen står i på forskellige datoer, i vore dage.
+                                        Bemærk især, at hvis du er født mellem 30. november og 17. december, er du i virkeligheden noget så sejt som Slangebærer (Ophiuchus).
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <table class="table chaos-table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Stjernebillede</th>
+                                                        <th>Dato</th>
+                                                        <th>Antal dage</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="bold">Aries</td>
+                                                        <td>19. apr – 13. maj</td>
+                                                        <td>25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Taurus</td>
+                                                        <td>14. maj – 19. jun</td>
+                                                        <td>37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Gemini</td>
+                                                        <td>20. jun – 20. jul</td>
+                                                        <td>31</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Cancer</td>
+                                                        <td>21. jul – . aug9</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Leo</td>
+                                                        <td>10. aug – 15. sep</td>
+                                                        <td>37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Virgo</td>
+                                                        <td>16. sep – 30. okt</td>
+                                                        <td>45</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Libra</td>
+                                                        <td>31. okt – 22. nov</td>
+                                                        <td>23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Scorpius</td>
+                                                        <td>23. nov – 29. nov</td>
+                                                        <td>7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Ophiuchus</td>
+                                                        <td>30. nov – 17. dec</td>
+                                                        <td>18</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Sagittarius</td>
+                                                        <td>18. dec – 18. jan</td>
+                                                        <td>32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Capricornus</td>
+                                                        <td>19. jan – 15. feb</td>
+                                                        <td>28</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Aquarius</td>
+                                                        <td>16. feb – 11. mar</td>
+                                                        <td>24</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bold">Pisces</td>
+                                                        <td>12. mar – 18. apr</td>
+                                                        <td>38</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            Kilde:
+                                            <a href="https://www.ips-planetarium.org/page/a_shapiro1977">International Planetarium Society / Lee T. Shapiro</a>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <!-- <li><a href="./music.html"       >This page in English</a></li> -->
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Skorpionen</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
