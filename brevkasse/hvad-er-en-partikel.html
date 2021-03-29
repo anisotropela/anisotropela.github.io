@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- Facebook meta data -->
+        <meta property="og:image" content="../pics/brevkasse/ants-expansion.png" /> 
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Hvad er en partikel?</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Om partikler</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Hvad er en partikel?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- begin sporgsmal -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Spørgsmålet</h3>
+                                            <p>
+                                            Et atoms byggesten (protoner, elektroner) har ladning, men er disse elektroner og protoner ren energi eller er de fysiske genstande der har en ladning.
+                                            </p>
+                                            <p>
+                                            Vh Morten Frandsen
+                                            </p>
+                                        </div>
+                                        <!-- end sporgsmal -->
+                                        <hr>
+                                        <!-- begin korte svar -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Det korte svar</h3>
+                                            <p>
+                                            Ikke rigtig nogen af delene…
+                                            </p>
+                                        </div>
+                                        <!-- end korte svar -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="Gå til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>Gå til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede spørgsmål</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="https://dark-cosmology.dk/~pela/Encyclo/UniversetsTidIII.html" class="entry-image"><img src="../pics/brevkasse/universeAge_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="https://dark-cosmology.dk/~pela/Encyclo/UniversetsTidIII.html">Om tidens retning</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                        <!-- begin baggrund -->
+                                        <!--
+                                        <div class="icon-box ib-v1 ib-boxed bg-logoyellow">
+                                            <i class="oli oli-book-open" style="color:#7F548E"></i>
+                                            <h3 class="title" style="color:#7F548E">Baggrundsviden fra encyklopædien</h3>
+                                            <p>
+                                            <span style="color:#7F548E">Her er der heller ingen hjælp at hente.</span>
+                                            </p>
+                                            <p>
+                                            <a href="../encyklo.html" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Tag mig til encyklopædien alligevel</span></a>
+                                            </p>
+                                        </div>
+                                        -->
+                                        <!-- end baggrund -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin row (E = mc2) -->
+                        <section class="section section-narrow bg-gray p-bottom-20" id="coords">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <p>
+                                        Hej Morten,
+                                        </p>
+                                        <p>
+                                        Det er faktisk et temmelig dybt spørgsmål du stiller, fordi du spørger ind til, hvad "noget i virkeligheden er".
+                                        Men som jeg vil argumentere for her, afhænger din beskrivelse af virkeligheden af, hvad du skal bruge virkeligheden til.
+                                        </p>
+                                        <h3>Energi er masse (eller er det?)</h3>
+                                        <p>
+                                        Som du sikkert har hørt, fandt Einstein for godt 100 siden ud af, at energien \(E\) af "noget" (f.eks. en partikel) er lig med dens masse \(m\), gange lysets hastighed \(c\) i anden potens, altså \(E = mc^2\).
+                                        Da han samtidig viste, at lysets hastighed (i modsætning til mange andre målbare størrelser) ikke afhænger af observatøren, men er konstant, er det bare et spørgsmål om enheder at sætte \(c = 1\).
+                                        </p>
+                                        <p>
+                                        Det vil sige, at \(E = m\), altså at "energi er masse".
+                                        </p>
+                                        <p>
+                                        Men det er ikke en helt rigtig udlægning af ligningen. Masse og energi <em>er</em> ikke det samme, men masse <em>kan have</em> forskellige former for energi.
+                                        Det svarer lidt til at sige, at du har en vis højde, men du <em>er</em> ikke højde.
+                                        Den energi, jeg lige har beskrevet, er massens "hvileenergi", men en partikel kan også have bevægelsesenergi.
+                                        Hvis partiklen ikke er en elementarpartikel — altså hvis den er bygget op af nogle mere grundliggende partikler — vil den også have bindingsenergi (dvs. den energi det ville kræve at skille partiklen ad).
+                                        Og energi er bare én egenskab ved en partikel, den kan også have andre, f.eks. ladning og spin.
+                                        </p>
+                                        <p>
+                                        Elektroner er — så vidt vi ved — <em>elementarpartikler</em>, dvs. de består ikke af noget mere grundliggende. Protoner og neutroner er bygget op af kvarker, som nok også er elementarpartikler.
+                                        Men kvarkernes masse udgør kun i omegnen af 1% af protonernes og neutronernes hvilemasse; de resterende 99% er bindingsenergi.
+                                        </p>
+                                        <p>
+                                        Så i den forstand er partikler altså ikke "ren energi". Men jeg vil heller ikke sige, at de er "fysiske genstande".
+                                        Måske tænker du på, om en partikel har en "fysisk overflade", som man i princippet kunne stå på, hvis man var virkelig lille.
+                                        Jeg er fristet til at sige "Nej, partikler er ikke fysiske på den måde", men i bund og grund er vi kommet til et sted, hvor vores sprog bare ikke rigtig rækker.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/emc2.jpg" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/emc2.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Energi og masse</strong>:
+                                                Einsteins berømte formel er i virkeligheden en simplificering som kun gælder, når legemet med massen \(m\) ligger stille, sådan at dens <em>impuls</em> \(p\) er nul.
+                                                Mere korrekt siger ligningen, at en partikels energi er summen af dens hvileenergi og dens bevægelsesenergi.<br>
+                                                Fordi ligningens første led involverer lysets hastighed \(c\) i <em>fjerde</em> potens, vil dét dominere ligningen for tunge og/eller langsomme partikler.
+                                                Men for masseløse partikler (f.eks. fotoner, som ikke har nogen hvilemasse) eller meget lette og hurtige partikler (f.eks. neutrinoer med \(v \simeq c\)) dominerer andet led,
+                                                sådan at \(E = pc\).
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin row (hvorfor - hvordan) -->
+                        <section class="section section-narrow bg-white p-bottom-20" id="coords">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Spørg ikke <em>hvorfor</em> — spørg <em>hvordan</em></h3>
+                                        <p>
+                                        I stedet bør man besvare spørgsmålet ud fra, hvordan vi <em>beskriver</em> en partikel.
+                                        I fysik prøver vi på ikke at spørge, <em>hvorfor</em> noget er som det er.
+                                        I stedet spørger vi hvordan noget virker, og hvordan vi kan beskrive det.
+                                        </p>
+                                        <p>
+                                        I folkeskolen og gymnasiet beskriver vi atomerne ud fra "Bohr-modellen", hvor elektronerne kredser i cirkelformede baner om atomkernerne, som planeter omkring Solen.
+                                        Både elektroner, protoner og neutroner er små kugler med hver deres veldefinerede radius.
+                                        Denne model er supergod til at forklare flere af partiklernes egenskaber, men kommer til kort når man går dybere ind i kvantemekanikken.
+                                        </p>
+                                        <p>
+                                        I begyndelsen af universitetet lærer man så, at elektronernes ikke kredser i veldefinerede baner, men i en form for "skyer af sandsynlighed", beskrevet ved deres <em>orbitaler</em>,
+                                        og at elektroner og andre partikler i virkeligheden ikke er ét sted, men må beskrives som værende fordelt ud over rummet, eller i hvert fald at kunne være i hele rummet med en vis sandsynlighed, beskrevet ved partiklens <em>bølgefunktion</em>.
+                                        De er altså heller ikke "fysiske genstande".
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/atom-models.jpg" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/atom-models.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Atommodeller</strong>:
+                                                Øverst ses Bohrs atommodel, hvor elektronerne kredser om atomkernen i baner, og kan hoppe mellem disse baner ved absorption eller emission af en lyspartikel.<br>
+                                                Nederst (kredit: <a href="https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/Chem_1402%3A_General_Chemistry_1_(Belford)/Text/6%3A_The_Structure_of_Atoms/6.6%3A_The_Shapes_of_Atomic_Orbitals">Chemistry LibreTexts</a>) ses tredimensionale repræsentationer af de matematiske funktioner kaldet "orbitaler", som beskriver sandsynligheden for at finde en elektron et givet sted i rummet.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin row (QFT) -->
+                        <section class="section section-narrow bg-gray p-bottom-20" id="coords">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Kvantefeltteori</h3>
+                                        <p>
+                                        Går man dybere ned i denne kvantemekaniske udlægning, må man bruge den såkaldte "kvantefeltteori" (udtales med tryk på <em>felt</em>).
+                                        </p>
+                                        <p>
+                                        I den fremherskende forståelse af partikelfysik må <em>alle</em> partikler — både de klassiske partikler som f.eks. elektroner, men også lyspartikler, dvs. fotoner, og andre bærere af naturkræfter som f.eks. W-bosoner — ses som en "anslået tilstand" af et underliggende <em>felt</em>.
+                                        </p>
+                                        <p>
+                                        Og hvad betyder dét så? Du ved måske, at elektronerne i deres bane (eller hvad vi nu vælger at kalde det) omkring atomkernen helst vil ligge i grundtilstanden, men indimellem kan være "anslået", eller <em>exciteret</em>, til nogle højere energitilstande.
+                                        Noget lignende kan man sige er tilfældet for disse felter, som gennemtrænger hele rummet.
+                                        </p>
+                                        <p>
+                                        Et <em>felt</em> er et temmelig abstrakt begreb, men kan på simpleste vis forstås som en fysisk… ting… eller entitet… eller <em>størrelse</em>, som har en vis værdi tilknyttet ethvert punkt i rummet.
+                                        Eksempler på <em>klassiske</em> (ikke-kvantemekaniske) felter er temperaturen, som har en bestemt værdi beskrevet ved et enkelt tal hvert sted i rummet, eller vindhastigheden, som er beskrevet ved tre tal, nemlig hastigheden i \(x\)-, \(y\)-, og \(z\)-retningen).
+                                        På lignende måde har et kvantemekanisk felt en værdi overalt i rummet (som eventuelt kan være nul).
+                                        </p>
+                                        <p>
+                                        For eksempel beskrives en foton som en excitation af (den kvantemekaniske version af) det elektromagnetiske felt, og en elektron som en excitation af "elektronfeltet" (et Dirac-spinor-felt).
+                                        Disse excitationer er (forholdsvist) <em>lokaliserede</em>, altså de er et bestemt sted i rummet, men kan udbrede sig gennem rummet som bølger.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/quantum-field.jpg" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/quantum-field.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Visualisering af et kvantefelt</strong>:
+                                                Et kvantefelt kan forestilles som et uendeligt stort "array" af små kugler på fjedre, som hver især er forbundet med andre fjedre, eller elastikker. Her ses blot et (2D) udsnit.
+                                                Selvom det selvfølgelig er en simplificering, har sådan et system en del tilfælles med et rigtigt felt.
+                                                Hvis du forstyrrer feltet ved at knipse til en af kuglerne, starter du en bølge af oscillationer, som udbreder sig gennem feltet.
+                                                Denne bølge kan opfattes som en partikel.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin row (svar) -->
+                        <section class="section section-narrow bg-white p-bottom-20" id="coords">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Svaret… agtigt…</h3>
+                                        <p>
+                                        Så svaret på dit spørgsmål — eller i hvert fald det bedste svar indtil videre — er, at partikler er noget, som vores sprog ikke rigtig rækker til at beskrive,
+                                        men alt efter hvad du skal bruge svaret til, kan du opfatte partiklerne som nogle fysiske genstande, som nogle pakker af energi, eller som bølgeudbredelser i et underliggende felt.
+                                        </p>
+                                        <p>
+                                        Den sidste udlægning — altså den kvantefeltteoretiske forklaring — er nok hvad der kommer tættest på hvad en partikel i virkeligheden er,
+                                        men jeg synes det er vigtigt at understrege, at kvantefeltteori er en model af Universet, som forklarer, forudsiger, og er konsistent med vores observationer,
+                                        men som måske en dag må vige for en bedre beskrivelse (f.eks. strengteori).
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <!-- <li><a href="./music.html"       >This page in English</a></li> -->
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://videnskab.dk/naturvidenskab/big-bang-en-oejenvidneberetning">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Universets udvidelse</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
