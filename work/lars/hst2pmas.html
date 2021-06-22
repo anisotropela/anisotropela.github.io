@@ -129,13 +129,33 @@
                         <section class="section p-top-0 p-bottom-20">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-8">
+                                    <div class="col-md-7">
                                         <p id="top">
-                                        Images processed so far (with annotated comments).
+                                        eLARS galaxies gallery showing the alignment of HST H&alpha; images and PMAS IFU observations.
                                         </p>
                                         <p>
-                                        Images with no annotations are perfectly® processed.
+                                        For each image (except the first handful when I didn't think of it), the information needed to reproduce them in ds9 is given below.
+                                        These are the pixel distribution levels min and max values (1 in the figure), contour levels (2), contour smoothness (3),
+                                        and arguments given for the <code>where_is_pmas_in_hst.py</code>.
                                         </p>
+                                        <p>
+                                        In the gallery, I annotated some comments on why I chose to align them like this. Images with no annotations are perfectly® processed.
+                                        </p>
+                                        <p>
+                                        Click here to download contour regions, images, and images with annotations:
+                                        </p>
+                                        <p>
+                                        <a href="./hst2pmas/hst2pmas/regions.tar.gz"      data-text="regions.tar.gz"      class="btn btn-small btn-circle btn-an-split"> <span>Download</span> </a>&nbsp;
+                                        <a href="./hst2pmas/hst2pmas/images.tar.gz"       data-text="images.tar.gz"       class="btn btn-small btn-circle btn-an-split"> <span>Download</span> </a>&nbsp;
+                                        <a href="./hst2pmas/hst2pmas/images_annot.tar.gz" data-text="images_annot.tar.gz" class="btn btn-small btn-circle btn-an-split"> <span>Download</span> </a>&nbsp;
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="./hst2pmas/ds9info.jpg" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="./hst2pmas/ds9info.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +166,7 @@
                             <div class="container">
                                 <div class="row call-out tb-vcenter-wrapper">
                                     <div class="col-sm-8 vcenter text-left">
-                                        <h2 class="title">eLARS galaxies</h2>
+                                        <h2 class="title"></h2>
                                         <h4 class="sub-title"></h4>
                                     </div>
                                     <!-- <div class="col-sm-4 vcenter text-right"><a href="#" class="btn btn-medium btn-skin-yellow btn-circle"> <span>Submit Now</span></a></div> -->
@@ -464,10 +484,10 @@
                                             <h3 class="title">eLARS14</h3>
                                         </div>
                                         <div>
-                                            Pix. distr.:    <code>0 30</code><br>
-                                            Contour levels: <code>1 3 6 10 20 30</code><br>
+                                            Pix. distr.:    <code>0 40</code><br>
+                                            Contour levels: <code>1 3 8 20</code><br>
                                             Smoothness:     <code>5</code><br>
-                                            Arguments:      <code>-x 380 -y 367 --DIMM 1.0 --hstp 99.78</code>
+                                            Arguments:      <code>-x 375 -y 377 --DIMM 1.0 --hstp 99.78</code>
                                         </div>
                                     </div>
                                 </div>
