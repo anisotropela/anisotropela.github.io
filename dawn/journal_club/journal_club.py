@@ -54,3 +54,24 @@ def n_participants():
     plt.xlabel('Date')
     plt.ylabel('Participant percentage')
 #------------------------------------------------------------------------------
+
+def history(date       = '24 December',
+            moderator  = 'DAWNer 0',
+            presenter1 = 'DAWNer 1',
+            arxiv1     = '1111.1111',
+            title1     = 'Galaxies are awesome',
+            author1    = 'Author 1',
+            presenter2 = 'DAWNer 2',
+            arxiv2     = '2222.2222',
+            title2     = 'Lyman α is fun',
+            author2    = 'Author 2'
+            ):
+    print('<h4>' + date + '</h4>')
+    print('<ul>')
+    print(' 	<li><b>' + presenter1 + '</b>: <a href="https://arxiv.org/abs/' + arxiv1 + '" target="_blank" rel="noopener">' + title1 + '</a> (' + author1 + ' et al.' + ')</li>')
+    print(' 	<li><b>' + presenter2 + '</b>: <a href="https://arxiv.org/abs/' + arxiv2 + '" target="_blank" rel="noopener">' + title2 + '</a> (' + author2 + ' et al.' + ')</li>')
+    print(' 	<li>Moderator: ' + moderator + '</li>')
+    print('</ul>')
+    print()
+    print('<hr />')
+#------------------------------------------------------------------------------
