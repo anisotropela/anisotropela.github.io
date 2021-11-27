@@ -87,8 +87,10 @@ def dillit(language      = 'dk',
 
     if language=='dk':
         title = titleDK
+        dillertable = 'dillertableDK.html'
     else:
         title = titleEN
+        dillertable = 'dillertableEN.html'
         author[np.where(author=='Os selv')] = 'Ourselves'
 
     if html:
@@ -105,8 +107,8 @@ def dillit(language      = 'dk',
              + '<td>'                         + str(year[0]).rjust(5)             + '</td>' \
              + '<td>'                         + str(pages[0]).zfill(3)            + '</td>' \
              + '<td colspan=2>'               + curRead                           + '</td>' \
-             + '</tr>'
-        print(row0)
+             + '</tr>\n'
+        with open(dillertable, 'w') as myfile: myfile.write(row0)
 
         for i in range(1,nbooks):
             tit = title[i] if author[i]=='Os selv'   else s0+title[i]+s1
@@ -121,8 +123,8 @@ def dillit(language      = 'dk',
                         + '<td>'                         + str(pages[i]).zfill(3)           + '</td>' \
                         + '<td>'                         + '{:.1f}'.format(stars[i])        + '</td>' \
                         + '<td>'                         + '±' + '{:.1f}'.format(spread[i]) + '</td>' \
-                        + '</tr>'
-            print(current_row)
+                        + '</tr>\n'
+            with open(dillertable, 'a') as myfile: myfile.write(current_row)
 
     if year_hist:
         fig = plt.figure()
