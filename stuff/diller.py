@@ -11,6 +11,8 @@ def dillit(language      = 'dk',
            country_pie   = True,
            all_countries = False,
            gender_pie    = True,
+           title_en_vs_dk= True,
+           agree_vs_time = True,
            correlate     = None,
            cxlim         = None,
            cylim         = None,
@@ -138,11 +140,11 @@ def dillit(language      = 'dk',
         bax.hist(year,bins=decades,color='g',alpha=.25,histtype='stepfilled')
         bax.hist(year,bins=decades,   ec='g',          histtype='step')
         if language=='dk':
-            plt.xlabel('\nÅrstal',size=12)
-            plt.ylabel('Antal bøger\n\n',size=12)
+            plt.xlabel('\nÅrstal',size=14)
+            plt.ylabel('Antal bøger\n\n',size=14)
         else:
-            plt.xlabel('\nYear',size=12)
-            plt.ylabel('Number of books\n\n',size=12)
+            plt.xlabel('\nYear',size=14)
+            plt.ylabel('Number of books\n\n',size=14)
       # fig.tight_layout()
       # fig.subplots_adjust(bottom=0.15)
         xlim = bax.get_xlim()[0][0], bax.get_xlim()[-1][-1]
@@ -174,15 +176,15 @@ def dillit(language      = 'dk',
     if page_hist:
         fig,ax = plt.subplots()
         wm = plt.get_current_fig_manager()
-        wm.window.wm_geometry('600x450+975+25')
+        wm.window.wm_geometry('600x480+975+25')
         ax.hist(pages,color='orange',alpha=.25,bins=range(0,651,50),histtype='stepfilled')
         ax.hist(pages,   ec='orange',          bins=range(0,651,50),histtype='step')
         if language=='dk':
-            ax.set_xlabel('Antal sider')
-            ax.set_ylabel('Antal bøger')
+            ax.set_xlabel('Antal sider',fontsize=14)
+            ax.set_ylabel('Antal bøger',fontsize=14)
         else:
-            ax.set_xlabel('Number of pages')
-            ax.set_ylabel('Number of books')
+            ax.set_xlabel('Number of pages',fontsize=14)
+            ax.set_ylabel('Number of books',fontsize=14)
 
     if gender_pie:
         fig = plt.figure(figsize=(4,4))
@@ -264,7 +266,7 @@ def dillit(language      = 'dk',
 
         fig,ax = plt.subplots()
         wm = plt.get_current_fig_manager()
-        wm.window.wm_geometry('560x440+1+500')
+        wm.window.wm_geometry('560x480+1+500')
         ax.hist(mikkel,  color='c',alpha=.05,label=labmi,bins=np.linspace(-.25,5.25,12),histtype='stepfilled')
         ax.hist(mikkel,     ec='c',                      bins=np.linspace(-.25,5.25,12),histtype='step')
         ax.hist(morten,  color='m',alpha=.05,label=labmo,bins=np.linspace(-.25,5.25,12),histtype='stepfilled')
@@ -287,11 +289,11 @@ def dillit(language      = 'dk',
             lh.set_alpha(.5)
 
         if language=='dk':
-            ax.set_xlabel('Antal stjerner')
-            ax.set_ylabel('Hyppighed')
+            ax.set_xlabel('Antal stjerner', fontsize=14)
+            ax.set_ylabel('Hyppighed', fontsize=14)
         else:
-            ax.set_xlabel('Number of stars')
-            ax.set_ylabel('Frequency')
+            ax.set_xlabel('Number of stars', fontsize=14)
+            ax.set_ylabel('Frequency', fontsize=14)
 
     if False:#correlate is not None:
         """
@@ -347,3 +349,70 @@ def dillit(language      = 'dk',
                 elinewidth=1,capthick=1,ecolor='r',capsize=3)
         ax.scatter(x,y,c='r')
         plt.gcf().autofmt_xdate()
+
+    if title_en_vs_dk:
+        """
+        """
+        fig,ax = plt.subplots()
+        wm = plt.get_current_fig_manager()
+        wm.window.wm_geometry('500x546+750+400')
+
+        x = [len(t) for t in titleDK]
+        y = [len(t) for t in titleEN]
+
+        ax.scatter(x,y,c='r')
+        ax.plot([0,50],[0,50],'k--',alpha=.5)
+        ax.set_xlabel('Dansk titellængde', fontsize=14)
+        ax.set_ylabel('Engelsk titellængde', fontsize=14)
+        ax.set_xlim([0,50])
+        ax.set_ylim([0,50])
+
+    if agree_vs_time:
+        fig,ax = plt.subplots()
+        wm = plt.get_current_fig_manager()
+        wm.window.wm_geometry('600x500+850+500')
+
+        x = range(nbooks)
+        y = stars # med
+
+        ax.errorbar(x,y, yerr=[y-lo,hi-y], fmt='ro',mec='r',alpha=1,
+                elinewidth=1,capthick=1,ecolor='r',capsize=3)
+        ax.scatter(x,y,c='r')
+        ax.set_xlabel('Møde #', fontsize=14)
+        ax.set_ylabel('Antal stjerner', fontsize=14)
+
+    if True:
+        fig,ax = plt.subplots()
+        wm = plt.get_current_fig_manager()
+        wm.window.wm_geometry('600x500+950+600')
+
+      # x = np.array([len(a) for a in author])
+      # y = np.array([len(t) for t in titleDK])
+      # ax.scatter(x,y)
+
+      # x = range(nbooks)
+      # y = spread
+      # ax.scatter(x,y)
+
+        lentit = np.array([len(t) for t in titleDK])
+        lenaut = np.array([len(a) for a in author])
+      # x = lenaut                                  # ret (fald stig)
+      # y = lentit                                  # stig
+      # x = year ; ax.set_xlim([1750,2021])         # fald stig
+      # x = range(nbooks)                           # spred
+      # x = pages                                   # spred
+      # x = year / pages ; ax.set_xlim([0,20])      # 
+      # x = year-1957 ; ax.set_xlim([-100,100])
+        x = year / lenaut
+        klaus   = np.array([book[11] for book in books])
+        y = pages * klaus
+
+      # y = stars # med
+
+      # ax.errorbar(x,y, yerr=[y-lo,hi-y], fmt='ro',mec='r',alpha=1,
+      #         elinewidth=1,capthick=1,ecolor='r',capsize=3)
+        ax.scatter(x,y,c='r')
+        ax.set_xlim([0,250])
+        ax.set_ylim([0,3000])
+        ax.set_xlabel('[Udgivelsesår]  /  [Længden af forfatterens navn]', fontsize=14)
+        ax.set_ylabel('[Antal sider]  ' + r'$\times$' + '  [Klaus\' rating]', fontsize=14)
