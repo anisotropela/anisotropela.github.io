@@ -16,16 +16,20 @@ def dillit(language      = 'dk',
            correlate     = None,
            cxlim         = None,
            cylim         = None,
-           stats         = True):
+           corr_plot     = True,
+           stats         = True,
+           savefig       = False
+           ):
     """
     Landekoder følger FIFA: https://en.wikipedia.org/wiki/List_of_FIFA_country_codes
     """
     plt.close('all')
-    #                0          1                                            2     3       4                                       5                                                  6     7    8     9    10    11    12                                                                                                                                                                                          Mi    Mo    Je    Kl    Pe
-    books = [['2022.01.08', 'Lone Frank'                                 , 'DEN', 'F', 'Størst af alt'                        , 'Størst af alt'                                      , 2020, 292, nan , nan , nan , nan , nan],
+    #                0          1                                            2     3       4                                       5                                                     6     7    8     9    10    11    12
+    #                                                                                                                                                                                             Mi    Mo    Je    Kl    Pe
+    books = [['2022.03.09', 'Hans Kirk'                                  , 'DEN', 'M', 'De ny tider'                          , 'De ny tider'                                        , 1939, 211, nan , nan , nan , nan , nan],
+             ['2022.01.08', 'Lone Frank'                                 , 'DEN', 'F', 'Størst af alt'                        , 'Størst af alt'                                      , 2020, 292, 3.5 , 4   , 2   , 3   , 4  ],
              ['2021.10.29', 'Jack Kerouac'                               , 'USA', 'M', 'Vejene'                               , 'On the Road'                                        , 1957, 285, 2   , 3.5 , 4.5 , 3   , 1.5],
              ['2021.08.14', 'Giuseppe Tomasi di Lampedusa'               , 'ITA', 'M', 'Leoparden'                            , 'The Leopard'                                        , 1958, 247, 2   , 3.5 , 1.5 , 3   , 3.5],
-          #  ['2021.08.14', 'Giuseppe Tomasi di Lampedusa'               , 'ITA', 'M', 'Leoparden'                            , 'The Leopard'                                        , 1958, 247, 2,5 , 3   , 2   , 2.5 , 4  ], # Kareten
              ['2021.06.12', 'William Golding'                            , 'ENG', 'M', 'Fluernes herre'                       , 'Lord of the Flies'                                  , 1954, 196, 3   , 1.5 , 4   , 3.5 , 3.5],
              ['2021.04.03', 'Ray Bradbury'                               , 'USA', 'M', 'Krøniker fra Mars'                    , 'The Martian Chronicles'                             , 1950, 192, nan , 4   , 2   , 3   , 4  ],
              ['2021.04.03', 'Alistair MacLean'                           , 'SCO', 'M', 'Ørneborgen'                           , 'Where Eagles Dare'                                  , 1967, 166, 2.5 , 3.5 , 4   , 2   , 2.5],
@@ -151,6 +155,7 @@ def dillit(language      = 'dk',
         ylim = bax.get_ylim()[0][0], bax.get_ylim()[-1][-1]
         bax.plot([xlim[1],xlim[1]], [ylim[0],ylim[1]],'k')
         bax.plot([xlim[0],xlim[1]], [ylim[1],ylim[1]],'k')
+        if savefig: plt.savefig('year_hist.pdf', dpi=300, bbox_inches='tight')
 
     if country_pie:
         unique_countries = np.unique(country,return_counts=True)
@@ -172,6 +177,7 @@ def dillit(language      = 'dk',
             plt.pie(freq, labels=name,autopct='%1.1i%%')
         else:
             plt.pie(freq_oncesumd, labels=name_oncesumd,autopct='%1.1i%%')
+        if savefig: plt.savefig('country_pie_all'+str(all_countries)+'.pdf', dpi=300, bbox_inches='tight')
 
     if page_hist:
         fig,ax = plt.subplots()
@@ -185,6 +191,7 @@ def dillit(language      = 'dk',
         else:
             ax.set_xlabel('Number of pages',fontsize=14)
             ax.set_ylabel('Number of books',fontsize=14)
+        if savefig: plt.savefig('page_hist.pdf', dpi=300, bbox_inches='tight')
 
     if gender_pie:
         fig = plt.figure(figsize=(4,4))
@@ -195,6 +202,7 @@ def dillit(language      = 'dk',
         name = unique_gender[0]
         freq = unique_gender[1]
         plt.pie(freq, labels=name,autopct='%1.1i%%')
+        if savefig: plt.savefig('gender_pie.pdf', dpi=300, bbox_inches='tight')
 
     if star_hist:
         mikkel  = np.array([book[ 8] for book in books])
@@ -294,6 +302,7 @@ def dillit(language      = 'dk',
         else:
             ax.set_xlabel('Number of stars', fontsize=14)
             ax.set_ylabel('Frequency', fontsize=14)
+        if savefig: plt.savefig('star_hist.pdf', dpi=300, bbox_inches='tight')
 
     if False:#correlate is not None:
         """
@@ -366,6 +375,7 @@ def dillit(language      = 'dk',
         ax.set_ylabel('Engelsk titellængde', fontsize=14)
         ax.set_xlim([0,50])
         ax.set_ylim([0,50])
+        if savefig: plt.savefig('title_en_vs_dk.pdf', dpi=300, bbox_inches='tight')
 
     if agree_vs_time:
         fig,ax = plt.subplots()
@@ -380,8 +390,9 @@ def dillit(language      = 'dk',
         ax.scatter(x,y,c='r')
         ax.set_xlabel('Møde #', fontsize=14)
         ax.set_ylabel('Antal stjerner', fontsize=14)
+        if savefig: plt.savefig('agree_vs_time.pdf', dpi=300, bbox_inches='tight')
 
-    if True:
+    if corr_plot:
         fig,ax = plt.subplots()
         wm = plt.get_current_fig_manager()
         wm.window.wm_geometry('600x500+950+600')
@@ -416,3 +427,4 @@ def dillit(language      = 'dk',
         ax.set_ylim([0,3000])
         ax.set_xlabel('[Udgivelsesår]  /  [Længden af forfatterens navn]', fontsize=14)
         ax.set_ylabel('[Antal sider]  ' + r'$\times$' + '  [Klaus\' rating]', fontsize=14)
+        if savefig: plt.savefig('corr_plot.pdf', dpi=300, bbox_inches='tight')
