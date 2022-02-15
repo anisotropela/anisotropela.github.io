@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <Date>02/21/2022</Date>
+    <Moderator>WALLAH</Moderator>
+    <Presenter Deadline>02/16/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>02/28/2022</Date>
+    <Moderator>BILLAH</Moderator>
+    <Presenter Deadline>02/23/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>03/07/2022</Date>
+    <Moderator>Steven</Moderator>
+    <Presenter Deadline>02/01/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>03/14/2022</Date>
+    <Moderator>Sune</Moderator>
+    <Presenter Deadline>03/16/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>03/21/2022</Date>
+    <Moderator>Peter L</Moderator>
+    <Presenter Deadline>03/16/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>03/28/2022</Date>
+    <Moderator>Thomas</Moderator>
+    <Presenter Deadline>03/23/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>04/04/2022</Date>
+    <Moderator>Vasily</Moderator>
+    <Presenter Deadline>03/30/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>04/11/2022</Date>
+    <Moderator>Clara</Moderator>
+    <Presenter Deadline>04/06/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>04/18/2022</Date>
+    <Moderator>Francesco</Moderator>
+    <Presenter Deadline>04/13/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>04/25/2022</Date>
+    <Moderator>Kate G</Moderator>
+    <Presenter Deadline>04/20/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>05/02/2022</Date>
+    <Moderator>Peter L</Moderator>
+    <Presenter Deadline>04/27/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>05/09/2022</Date>
+    <Moderator>Joonas</Moderator>
+    <Presenter Deadline>04/04/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>05/16/2022</Date>
+    <Moderator>Johan</Moderator>
+    <Presenter Deadline>05/11/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>05/23/2022</Date>
+    <Moderator>Gonzalo</Moderator>
+    <Presenter Deadline>05/18/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>05/30/2022</Date>
+    <Moderator>Charlotte</Moderator>
+    <Presenter Deadline>05/25/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>06/06/2022</Date>
+    <Moderator>Georgios</Moderator>
+    <Presenter Deadline>06/01/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>06/13/2022</Date>
+    <Moderator>John</Moderator>
+    <Presenter Deadline>06/08/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>06/20/2022</Date>
+    <Moderator>Gabe</Moderator>
+    <Presenter Deadline>06/15/2022</Presenter Deadline>
+  </row>
+  <row>
+    <Date>06/27/2022</Date>
+    <Moderator>Lijie</Moderator>
+    <Presenter Deadline>06/22/2022</Presenter Deadline>
+  </row>
+</root>
