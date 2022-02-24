@@ -84,6 +84,7 @@ def dillit(language      = 'dk',
     titleEN = np.array([book[5] for book in books])
     year    = np.array([book[6] for book in books])
     pages   = np.array([book[7] for book in books])
+  # print(np.nanmean(pages),'±',np.nanstd(pages))
 
     stars     = np.array([np.nanmean(book[8:13]) for book in books])
     spread    = np.array([np.nanstd (book[8:13]) for book in books])
