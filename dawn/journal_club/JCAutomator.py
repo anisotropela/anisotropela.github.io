@@ -3,8 +3,8 @@
 # -*- coding: utf-8 -*-
 
 import os
-import pandas
 import datetime as dt
+# import pandas
 
 def next_weekday(weekday, d=dt.date.today()):
     """
@@ -23,32 +23,31 @@ def next_weekday(weekday, d=dt.date.today()):
 
 
 
-# deadline= dt.date.today()+dt.timedelta(days=2)
-# nextDate= dt.date.today()+dt.timedelta(days=7)
-
+# # deadline= dt.date.today()+dt.timedelta(days=2)
+# # nextDate= dt.date.today()+dt.timedelta(days=7)
+# 
 nextDate= next_weekday('Monday')
 deadline = nextDate + dt.timedelta(days=-5)
+# 
+# 
+# # data = pandas.read_xml('https://raw.githubusercontent.com/anisotropela/anisotropela.github.io/master/dawn/journal_club/moderators.xml')
+# data = pandas.read_xml('./moderators.xml')
+# 
+# 
+# theModerator=" "
+# theEmail=" "
+# 
+# for i in range(len(data["Date"])):
+# 	if data["Date"][i]==nextDate.strftime('%m/%d/%Y'):
+# 		theModerator = data["Moderator"][i]
+# 		theEmail = data["Email"][i]
+# 
+# 
+# print(theEmail)
+# print(theModerator)
 
-
-data = pandas.read_xml('https://www.anisotropela.dk/dawn/journal_club/moderators.xml')
-
-
-theModerator=" "
-theEmail=" "
-
-for i in range(len(data["Date"])):
-	if data["Date"][i]==nextDate.strftime('%m/%d/%Y'):
-		theModerator = data["Moderator"][i]
-		theEmail = data["Email"][i]
-
-
-print(theEmail)
-print(theModerator)
-
-theModerator="Peter J"
-theEmail = "peter.johannsen@nbi.ku.dk"
-
-
+theModerator="Gonzalo"
+theEmail = "gonzalo.prieto@nbi.ku.dk"
 
 email = """osascript -e 'tell application "Mail"
 	
@@ -57,7 +56,7 @@ email = """osascript -e 'tell application "Mail"
 		
 		set theSubject to "Journal Club moderator reminder"
 		set theDelay to 1
-		set theContent to \"Dear """ + theModerator +""",\n\nThis is a reminder that it is your turn to moderate the next Journal Club session, i.e. Monday """ + nextDate.strftime('%d.%m') + """. You should let the [resenters know by Wednesday """ + deadline.strftime('%d/%m')+""".\n\n Kind Regards, \n The Journal Club Team\"
+		set theContent to \"Dear """ + theModerator +""",\n\nThis is a reminder that it is your turn to moderate the next Journal Club session, i.e. Monday """ + nextDate.strftime('%d.%m') + """.\n\nThat means that you should\n\t0.  Respond to this message to avoid incessant reminders,\n\t1.  Pick two recent papers from the arXiv.org,\n\t2.  Find two people that are willing to present them, at the latest Wednesday """ + deadline.strftime('%d.%m')+""" and,\n\t3.  Send out a notification to the mailing list.\n\nSee more at cosmicdawn.dk/wikidawn/dawn-activities/journal-club, where you can also find an [Auto-compose email] button, as well as a list of possible presenters for inspiration.\n\nNote: If you are not able to moderate this time, please find someone to swap with from the list on the website, and let me know.\n\n\nCheers,\nPeter.\"
 		set theMessage to make new outgoing message with properties {sender:theFrom, subject:theSubject, content:theContent, visible:false}
 		tell theMessage
 			repeat with theTo in theTos
@@ -71,6 +70,30 @@ email = """osascript -e 'tell application "Mail"
 	end tell
 	
 	display notification "The Journal Club Reminder has been sent to the next moderator" with title "Moderator notified" sound name "Frog"'"""
+
+
+# email = "osascript -e \'tell application \"Mail\"
+# 	
+# 	set theFrom to \"\"
+# 		set theTos to {\" " + theEmail + " \"}
+# 		
+# 		set theSubject to \"Journal Club moderator reminder\"
+# 		set theDelay to 1
+# 		set theContent to \"Dear " + theModerator +",\n\nThis is a reminder that it is your turn to moderate the next Journal Club session, i.e. Monday " + nextDate.strftime('%d.%m') + ".\n\nThat means that you should\n\t0.  Respond to this message to avoid incessant reminders,\n\t1.  Pick two recent papers from the arXiv.org,\n\t2.  Find two people that are willing to present them, at the latest Wednesday " + deadline.strftime('%d.%m')+" and,\n\t3.  Send out a notification to the mailing list.\n\nSee more at cosmicdawn.dk/wikidawn/dawn-activities/journal-club, where you can also find an `auto-compose email` button and a list of possible presenters for inspiration.\n\nNote: If you are not able to moderate this time, please find someone to swap with from the list on the website, and let me know.\n\n\nCheers,\nPeter.\"
+# 		set theMessage to make new outgoing message with properties {sender:theFrom, subject:theSubject, content:theContent, visible:false}
+# 		tell theMessage
+# 			repeat with theTo in theTos
+# 				make new recipient at end of to recipients with properties {address:theTo}
+# 			end repeat
+# 		end tell
+# 		
+# 		
+# 		send theMessage
+# 		
+# 	end tell
+# 	
+# 	display notification \"The Journal Club Reminder has been sent to the next moderator\" with title \"Moderator notified\" sound name \"Frog\"\'"
+# 
 
 print(email)
 
