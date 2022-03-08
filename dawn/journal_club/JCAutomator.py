@@ -46,8 +46,8 @@ deadline = nextDate + dt.timedelta(days=-5)
 # print(theEmail)
 # print(theModerator)
 
-theModerator="Gonzalo"
-theEmail = "gonzalo.prieto@nbi.ku.dk"
+theModerator="Peter L"
+theEmail = "pela@nbi.ku.dk"
 
 email = """osascript -e 'tell application "Mail"
 	
