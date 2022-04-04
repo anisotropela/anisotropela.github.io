@@ -1,6 +1,4 @@
 <root>
-    <jcentry Date="03/28/2022" Moderator="Thomas"    Email="tgreve@space.dtu.dk"/>
-    <jcentry Date="04/04/2022" Moderator="Vasily"    Email="vasilii.kokorev@nbi.ku.dk"/>
     <jcentry Date="04/11/2022" Moderator="Clara"     Email="clara.arteaga@nbi.ku.dk"/>
     <jcentry Date="04/18/2022" Moderator="Francesco" Email="francesco.valentino@nbi.ku.dk"/>
     <jcentry Date="04/25/2022" Moderator="Kate G"    Email="katriona.gould@nbi.ku.dk"/>
@@ -13,6 +11,7 @@
     <jcentry Date="06/13/2022" Moderator="Lijie"     Email="lijli@space.dtu.dk"/>
     <jcentry Date="06/20/2022" Moderator="Lise"      Email="lichrist@nbi.ku.dk"/>
     <jcentry Date="06/27/2022" Moderator="Daniele"   Email="d.malesani@astro.ru.nl"/>
+    <jcentry Date="TBA"        Moderator="Thomas"    Email="tgreve@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Malte"     Email="malbr@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Meghana"   Email="meghana.killi@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Kasper"    Email="keh14@hi.is"/>

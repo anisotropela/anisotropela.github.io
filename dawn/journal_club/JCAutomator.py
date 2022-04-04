@@ -3,6 +3,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
 import datetime as dt
 # import pandas
 
@@ -46,8 +47,17 @@ deadline = nextDate + dt.timedelta(days=-5)
 # print(theEmail)
 # print(theModerator)
 
-theModerator="Peter L"
-theEmail = "pela@nbi.ku.dk"
+filename = 'moderators.xml'
+with open(filename) as file:
+    lines = [line.rstrip().lstrip() for line in file]
+
+line1        = lines[1].split()
+theDate      = re.findall('"([^"]*)"', line1[1])[0]
+theModerator = re.findall('"([^"]*)"', line1[2])[0]
+theEmail     = re.findall('"([^"]*)"', line1[3])[0]
+
+# theModerator="Peter L"
+# theEmail = "pela@nbi.ku.dk"
 
 email = """osascript -e 'tell application "Mail"
 	

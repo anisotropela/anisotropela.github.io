@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- Facebook meta data -->
+        <meta property="og:image" content="../pics/encyclo/james-webb-featured-image.jpg" />
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>James Webb</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Rumteleskopet James Webb</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <div>
+                                    <a href="./james-webb-space-telescope.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>James Webb</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (intro) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="icon-box ib-v4 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title"><span>Kort forklaring</span></h3>
+                                            <p>
+                                            James Webb er et rumteleskop, designet til at observere infrarødt lys fra især exoplaneter og de tidligste galakser.
+                                            Det blev sendt op juledag 2021, og ligger i et kredsløb om Solen, 1.5 millioner kilometer længere ude end Jorden.
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../encyklo.html" data-text="Gå til encyklopædien" class="btn btn-small btn-circle btn-an-split"><span>Gå til encyklopædien</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede artikler</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./galakse.html" class="entry-image"><img src="../pics/encyclo/galaxy_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./galakse.html">Galakse</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>James Webb vil observere alt muligt, men det sejeste er nu engang galakser.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./stjerne.html" class="entry-image"><img src="../pics/encyclo/star_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./stjerne.html">Stjerne</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Læs mere om stjerner.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post"><a href="./reionisation.html" class="entry-image"><img src="../pics/encyclo/reionization_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./reionisation.html">Reionisation</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>James Webb vil bl.a. undersøge en epoke i Universets historie, der kaldes "reionisationen".</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin gray row (Hubble-teleskopets efterfølger) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Hubble-teleskopets efterfølger</h3>
+                                        <p>
+                                        Den indledende planlægning af en form for efterfølger til rumteleskopet Hubble, som har givet os så mange smukke billeder og lært os fantastisk meget om Universet, begyndte allerede før Hubble blev sendt op i 1990.
+                                        Først i 1996 lå en seriøs plan for et større, koldere, og infrarødt-sensitivt teleskop på bordet.
+                                        I starten blev det kaldt "Next Generation Space Telescope" og skulle have været 8 meter i diameter, men i 2002 blev det nedjusteret til 6 meter og omdøbt til James Webb Space Telescope, opkaldt efter NASA's chef fra 1961 til 1968, James E. Webb.
+                                        </p>
+                                        <p>
+                                        Siden da har projektet skiftet retning og karakter nogle gange, gået en del over budgettet, og blevet udskudt pga. reduceret personale, tekniske vanskeligheder, covid-19, flere tekniske vanskeligheder,
+                                        indtil vi endelig den 25. december 2021 kunne sende et teleskop til 10 milliarder dollars i rummet.
+                                        </p>
+                                        <p>
+                                        Til sammenligning kan nævnes, at
+                                        USAs dyreste krigsskib koster $13 mia.,
+                                        deres valg i 2020 kostede $14 mia.,
+                                        og Trumps mur ved Mexicos grænsede nåede at koste $15 mia., før projektet blev afbrudt.
+                                        En anden sammenligning er, at budgettet omtrent svarer til én "Pirates of the Caribbean: On Stranger Tides"-film om året i de 25 år, der gik før det blev sendt op.
+                                        </p>
+                                        <p>
+                                        Men hvorfor sammenligne? Lad os hellere se på, hvad James Webb kan.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/jwst-history-with-legend-linear.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/jwst-history-with-legend-linear.png" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>James Webbs forsinkelse og pris</strong>:
+                                                    Op ad y-aksen ses de <em>planlagte</em> opsendelses-tidspunkter til de forskellige tider på x-aksen.
+                                                    Boblernes størrelse viser, hvordan budgettet steg fra omkring 0.5 mia. til næsten 10 mia. dollars.
+                                                    Det blev altså lidt dyrere, og tog lidt længere tid end planlagt, MEN DET BLIVER DET HELE VÆRD!!!<br>
+                                                    Illustration: Peter Laursen (data fra NASA).
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end gray second row -->
+
+                        <!-- begin white row (James Webb ser (infra-)rødt) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>James Webb ser (infra-)rødt</h3>
+                                        <p>
+                                        Universet er fuld af spektakulære fænomener, og hele pointen med fysik og astronomi er at finde ud, hvordan de forskellige fænomener opstår, og hvordan det hele hænger sammen.
+                                        Det meste information vi får fra Universet, kommer til os i form af lys, med forskellige bølgelængder alt efter hvilke fysiske processer der har udsendt dem.
+                                        Med billeder taget med forskellige filtre, som lukker lys ind til kameraet i et bestemt bølgelængdeområde, og med spektrografer der spreder lyset ud  et <a href="./spektrum.html">spektrum</a> efter deres præcise bølgelængde,
+                                        kan vi så lære om de forskellige fysiske processer, f.eks. hvilke grundstoffer der udsendte lyset, hvordan det bevæger sig, hvor varmt det er, og meget, meget mere.
+                                        </p>
+                                        <p>
+                                        Hvor Hubble er specialiseret til at se på synligt og ultraviolet lys, er James Webb lavet til at kigge på det mere langbølgede infrarøde lys.
+                                        Webb kommer derfor til at se på nogle andre ting, og lære os noget om Universet, som Hubble overhovedet ikke har mulighed for.
+                                        </p>
+                                        <h5>James Webbs instrumenter</h5>
+                                        <p>
+                                        James Webb har fire instrumenter med om bord, kaldet NIRCam, NIRSpec, MIRI og NIRISS.
+                                        Som navnene antyder, er NIRCam og NIRSpec henholdsvis et kamera og en spektrograf for det nær-infrarøde område, ud til ca. 5 mikrometer (µm).
+                                        Til billeder og spektrer af det midt-infrarødes længere bølgelængder, bruges MIRI.
+                                        NIRISS kan tage både billeder og spektrer i det nær-infrarøde, og har desuden en sensor til at tracke stjerner, sådan at vi kan være sikre på at teleskopet bliver ved med at pege i den rigtige retning.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/jwst-vs-hubble-spectrum.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/jwst-vs-hubble-spectrum.png" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Hubble vs. Webb</strong>:
+                                                    Det elektromagnetiske spektrum, fra de kortbølgede og energirige gammastråler, til de langbølgede og energifattige radiobølger.
+                                                    Hvor Hubble er sensitivt i de synlige spektrum, samt i det nær-ultraviolette og nær-infrarøde, kan James Webb se lys fra det rød-orange med en bølgelængde på 600 nanometer, eller 0.6 mikrometer (µm), og helt ud til 28.6 µm i det midt-infrarøde spektrum.
+                                                    Illustration: Peter Laursen.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end white row row -->
+
+                        <!-- begin gray row (James Webb er kold) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>James Webb er kold</h3>
+                                        <p>
+                                        Infrarødt lys er også kendt som "varmestråling".
+                                        Alt, der har en temperatur, stråler med lys i forskellige bølgelængder.
+                                        Jo varmere man er, jo kortere bølgelængde peaker ens spektrum ved.
+                                        F.eks. peaker Solen med sine ca. 6000 grader i den synlige spektrum, mens en menneskekrop og Jordkloden peaker i det infrarøde spektrum.
+                                        </p>
+                                        <p>
+                                        For ikke at Webbs fine billeder skal drukne fuldstændig i Jordens varme, har vi gjort alt hvad vi kan for at gøre det så koldt som muligt.
+                                        </p>
+                                        <h5>James Webbs kredsløb</h5>
+                                        <p>
+                                        For det første har vi sendt James Webb langt, langt væk fra Jorden:
+                                        Hvor Hubble svæver rundt om Jorden kun 540 km over vores hoveder, er James Webb blevet sendt ud til et særligt område kaldet "Lagrange-punkt 2", eller L2, 1.5 millioner km væk fra Jorden.
+                                        Normalt tager det længere at komme rundt om Solen, jo længere væk man er, men i denne bestemte afstand hjælper Jordens tyngdekraft med at trække lidt ekstra i teleskopet.
+                                        Derfor følges Webb og Jorden så at sige ad, hvilket gør det lettere at kommunikere med teleskopet.
+                                        </p>
+                                        <h5>James Webbs solskærm</h5>
+                                        <p>
+                                        For det andet har Webb en gigantisk solskærm, ca. 14 m × 21 m, som består af fem 0.025–0.05 mm tykke lag af et materiale, der hedder "Kapton"; i princippet en form for plastik.
+                                        Lagene er coatet med aluminium, og de to nederste lag er desuden coatet med noget dopet silicium, der giver dem deres karakteristiske lyserøde farve.
+                                        Denne solskærm er altid vendt mod Solen og Jorden, og den er så effektiv, at teleskopet af sig selv er kølet ned til omkring 40 grader Kelvin, dvs. –233 &deg;C.
+                                        </p>
+                                        <h5>Aktiv køling</h5>
+                                        <p>
+                                        Dette er koldt nok til at observere nær-infrarødt lys, men de længere bølgelængder i det midt-infrarøde område, kræver endnu lavere temperaturer.
+                                        Derfor har James Webb også en "cryo cooler", et slags køleskab der kører på helium, som sørger for at holde MIRI helt nede på blot 7 grader over det absolutte nulpunkt, altså –266 &deg;C.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/jwst-orbit.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/jwst-orbit.png" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>James Webbs kredsløb i L2</strong>:
+                                                    Omkring  tunge objekter — her vist for Solen og Jorden — findes fem mere eller mindre stabile områder kaldet "Lagrange-punkter".
+                                                    Et lille legeme som f.eks. et teleskop eller en asteroide vil følge med rundt om Solen, med samme fart som Jorden.
+                                                    Hvor L4 og L5 er stabile, sådan at det lille legeme vil falde på plads igen hvis det får et lille skub, er L1, L2 og L3 ustabile.
+                                                    James Webb er i kredsløb omkring L2, og har derfor nogle små boostere der kan holde den på plads.
+                                                    Vinklerne på figuren her er til skala, men L1 og L2 er i virkeligheden tættere på Jorden; kun 1% tættere på/længere fra Solen end Jorden.
+                                                    Illustration: Peter Laursen.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end gray second row -->
+
+                        <!-- begin white row (Fra en tropisk regskov til selve tidens grænse) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Fra en tropisk regskov til selve tidens grænse</h3>
+                                        <h5>Teleskop-origami</h5>
+                                        <p>
+                                        James Webb er et stort teleskop — så stort, at man var nødt til at folde det sammen, for at det kunne være i næsen på den Ariane 5-raket, som juledag 2021 blev skudt afsted fra Kourou i Fransk Guyana.
+                                        Udfoldningsprocessen bestod af mere end 300 steps, som blev foretaget i løbet af de første to uger af i alt én måned, som det tog James Webb at nå L2.
+                                        </p>
+                                        <p>
+                                        Webbs spejl består af 18 sekskantede segmenter, som dernæst tog et par måneder at justere og få i fokus.
+                                        Spejlene er belagt med guld, da dét er særlig godt til at reflektere infrarødt lys (spejle til synligt lys er normalt belagt med aluminium).
+                                        Faktisk er grunden til, at guld har sin fine farve, at det ikke reflekterer det kortbølgede blå lys.
+                                        </p>
+                                        <h5>Rejsen til L2</h5>
+                                        <p>
+                                        James Webb blev altså sendt afsted, og kun tre gange undervejs måtte det korrigere sin retning en lille smule; to gange lige i starten, og én gang da det nåede frem til L2.
+                                        Dette var planlagt, men korrektionerne var uventet små:
+                                        Da Webb forlod Jorden, var det med omkring 8 km/s, men for at gå i kredsløb om L2 ændrede Webb sin fart med kun 1.6 m/s. Det er gå-hastighed!
+                                        </p>
+                                        <p>
+                                        Fordi James Webb er så langt væk, kommer vi aldrig til at kunne reparere det, ligesom vi har gjort med Hubble.
+                                        Derfor var det så vigtigt, at alt gik godt. Det betyder også, at missionen har en relativt kort levetid.
+                                        Instrumenterne er designet til at holde mindst 5–10 år, og derfor havde Webb også brændstof med til at kunne korrigere sin position i 10 år.
+                                        Men med den præcise opsendelse sparede vi faktisk så meget brændstof, at der er nok til 20 år, så hvis vi er heldige at instrumenter holder længere end forventet, har vi James Webb meget længere end vi kunne håbe på.
+                                        </p>
+                                        <p>
+                                        Jeg skriver dette i starten af april, og de næste knap tre måneder skal gå med at kalibrere teleskopets instrumenter, indtil vi i slutningen af juni kan begynde at bruge det til at kigge tilbage til selve tidens oprindelse (eller tæt på, i hvert fald).
+                                        </p>
+                                        <p>
+                                        Og hvad skal James Webb så observere?
+                                        </p>
+                                        <p>
+                                        Infrarødt lys udsendes fra mange forskellige fysiske processer, og James Webb kommer til at lære os om det hele.
+                                        Webbs "temaer" deles ofte op i fire, med lidt forskellige beskrivelser alt efter hvem du spørger.
+                                        Spørger du mig, deler jeg dem op sådan her:
+                                        <ul style="list-style-type: none;">
+                                            <li>🪐 Exoplaneter — andre verdener</li>
+                                            <li>✨ Stjernedannelse og proto-planeter</li>
+                                            <li>🌌 Universets første stjerner og galakser</li>
+                                            <li>🌀 Tidlig galakseudvikling</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/jwst-launch.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/jwst-launch.jpg" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>"Dècollage… Lift-off… From a tropical rain forest, to the edge of time itself"</strong>:
+                                                    Med disse lidt cheasy, men alligevel rammende, ord sagde NASA kommentator Rob Navias farvel til James Webb.
+                                                    Kredit: ESA/CNES/Arianespace.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end white row row -->
+
+                        <!-- begin gray row (Planeter og stjerner) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Planeter og stjerner</h3>
+                                        <p>
+                                        Da ideen om James Webb blev født, havde vi faktisk først kun lige akkurat opdaget, at der fandtes planeter om andre stjerner end vores egen Sol — de såkaldte <em>exoplaneter</em>.
+                                        Men selvom exoplaneter ikke stod på Webbs ønskeliste fra starten af, er den perfekt egnet til at lære os end masse om disse fremmede verdener.
+                                        </p>
+                                        <p>
+                                        Exoplaneter reflekterer noget af deres "moderstjernes" lys, og gløder også selv svagt med varmestråling.
+                                        I forhold til stjernen er dette lys meget svagt, men NIRCam er faktisk udstyret med en såkaldt <em>coronagraf</em>.
+                                        Dette er en slags lille skive som sættes ind foran kameraet, sådan at det kan skygge for stjernens lys, så den ikke overskinner planetens.
+                                        </p>
+                                        <p>
+                                        Der hvor vi virkelig kommer til at lære noget om exoplaneter er dog med spektroskopi.
+                                        Hvis en exoplanets kredsløb bringer den ind foran stjernen, kan vi ikke se selve planeten.
+                                        Men stjernens lys passerer forbi planeten, og hvis den har en atmosfære, vil molekylerne i atmosfæren absorbere noget af stjernens lys ved nogle helt bestemte bølgelængder, svarende til forskellige elektron-overgange i molekylerne.
+                                        Et spektrum af stjernens lys vil derfor vise nogle tynde absorptionslinjer ved disse bølgelængder.
+                                        </p>
+                                        <h5>Jagten på fremmed liv</h5>
+                                        <p>
+                                        Hvert molekyle har sit helt eget "fingeraftryk", og på den måde kan vi undersøge, hvad de fjerne planeters atmosfærer består.
+                                        Noget der især vil være spændende er at lede efter såkaldte <em>biosignaturer</em>, dvs. molekyler som man ikke kender til andre måder at skabe på, end gennem liv.
+                                        </p>
+                                        <p>
+                                        Planeter skabes (normalt) sammen med deres moderstjerne ved at en gassky kollapser til en skive af støv og gas med stjernen i midten.
+                                        Støvet og gassen klumper så sammen og danner planeter.
+                                        De tidligste faser af denne proces ved vi stadig ikke så meget om, netop fordi sådan nogle proto-stjerner og proto-planeter netop er indhyllet i tætte skyer af støv og gas.
+                                        Men jo længere bølgelængde lys har, jo lettere har det ved at trænge igennem støvet.
+                                        </p>
+                                        <p>
+                                        Med James Webb vil vi kunne kigge dybt ind i proto-stjernernes kokoner og afsløre deres inderste hemmeligheder.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/eagle-nebula-ir-vs-vis.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/eagle-nebula-ir-vs-vis.jpg" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Infrarødt vs. visuelt lys</strong>:
+                                                    Ørnetågen er en ung stjernehob små 7000 lysår fra os.
+                                                    Dette berømte udsnit af Ørnetågen, kaldet Skabelsens Søjler, består af nogle tætte molekylskyer, hvori stjerner er ved at blive skabt.
+                                                    De få stjerner, som kan ses i visuelt lys (til venstre), er alle meget rødfarvede, da de blå og grøne lys ikke slipper gennem støvmasserne.
+                                                    Men ser vi på samme område med infrarøde filtre (til højre), kan vi kigge lige durk igennem skyen.
+                                                    Kredit: NASA/ESA/Hubble.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end gray second row -->
+
+                        <!-- begin white row (De første galakser) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>De første galakser</h3>
+                                        <p>
+                                        Personligt er jeg mest interesseret i <a href="./galakse.html">galakser</a> og deres <a href="./galaksedannelse.html">skabelse</a>.
+                                        Selvom galakser udsender lys henover hele det elektromagnetiske spektrum, er det normalt især stjernernes <em>synlige</em> lys der udsendes mest af, især i deres tidlige liv.
+                                        Så hvordan kan James Webbs infrarøde detektorer hjælpe os med at lære noget om de første galakser?
+                                        </p>
+                                        <h5>Et kig tilbage i tiden</h5>
+                                        <p>
+                                        Fordi lys bevæger sig med en vis hastighed, kigger vi altid tilbage tiden.
+                                        Når du tjekker din telefon, kigger du et nanosekund tilbage i tiden, fordi det er så lang tid det tager lyset at rejse 30 cm.
+                                        Når du kigger på Solen, kigger du 8 minutter tilbage i tiden.
+                                        Og når vi kigger på vores nærmeste store nabogalakse, Andromeda, kigger vi 2½ millioner år tilbage tiden, fordi Andromeda ligger 2½ million lysår væk.
+                                        </p>
+                                        <p>
+                                        Hvis vi vil vide, hvordan galakserne blev dannet, og hvordan de udviklede sig i starten af deres liv, må vi derfor prøve at finde de allerfjerneste galakser, fordi vi så kigger allerlængst tilbage i tiden.
+                                        De første galakser tror vi blev skabt omkring 100-200 millioner efter Big Bang, dvs. for over 13½ milliarder år siden.
+                                        </p>
+                                        <h5>Rødforskydning</h5>
+                                        <p>
+                                        Vores Univers udvider sig. Hele tiden bliver det større og større.
+                                        Og det er sådan, at lys som bevæger sig gennem et rum der udvider sig, selv bliver "udvidet", eller strukket. Dets bølgelængde bliver simpelthen længere.
+                                        Vi siger, at lyset bliver <a href="./rodforskydning.html">rødforskudt</a>.
+                                        </p>
+                                        <p>
+                                        Hvis f.eks. en lysstråle starter ud med at være ultraviolet
+                                        — og det gør den tit især fra helt unge og nydannede stjerner og galakser —
+                                        vil den efter et stykke tid blive violet, dernæst blå, henover grøn, til den bliver rød, og — hvis den rejser rigtig langt — til sidst infrarød.
+                                        </p>
+                                        <p>
+                                        Samtidig vil lyset bliver så svagt, at det kræver et meget stort spejl til at opfange lys nok til at kunne detekteres.
+                                        Og der er her at James Webb kommer ind i billedet:
+                                        James Webb vil simpelthen være en tidsmaskine, der kommer til at revolutionere vores viden omkring,
+                                            hvordan og hvor hurtigt galakserne blev skabt,
+                                            hvilke fysiske processer der dominerede,
+                                            hvordan galakserne påvirkede resten af Universet,
+                                            hvordan de udviklede sig i deres tidlige leveår,
+                                        og meget meget mere.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/cosmological-redshift.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/cosmological-redshift.png" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Kosmologisk rødforskydning</strong>:
+                                                    En nær galakse, som udsender ultraviolet lys, vil blive observeret som ultraviolet (<em>nederst</em>), men lyset fra en fjern galakse vil blive rødforskudt (<em>øverst</em>).
+                                                    Lyset fra de allerfjerneste galakser (<em>midten</em>) vil blive rødforskudt helt ud i det infrarøde bølgelængdeområde.
+                                                </font>
+                                            </div>
+                                        </div>
+                                            <p> <div class="sp-blank-20 shadow-line"></div> </p>
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/gn-z11-zoom.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/gn-z11-zoom.jpg" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Rekord-galaksen GN-z11</strong>:
+                                                    Denne røde klat hedder "GN-z11", og den er vores nuværende rekord for den fjerneste galakse.
+                                                    Lyset fra GN-z11 er rødforskudt så meget, at bølgelængden er blevet 12 gange længere.
+                                                    Da vi kender sammenhængen mellem rødforskydning og Universets udvidelse, kan vi regne ud, at GN-z11 ses så langt tilbage i tiden som 400 millioner år efter Big Bang.
+                                                    Med James Webb kommer vi til at kunne kigge omkring dobbelt så tæt på Big Bang, måske endda tættere, og fange nogle af de allerførste stjerner og galakser.
+                                                    Kredit: NASA/ESA/Oesch et al. (2016).
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end gray second row -->
+
+                        <!-- begin gray row (Et fint billede) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Et fint billede</h3>
+                                        <p>
+                                        Nu fik jeg skrevet en hel artikel om rumteleskopet James Webb uden at vise nogen billeder af det.
+                                        Det må jeg strak råde bod på:
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/rumteleskopet-james-webb.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/rumteleskopet-james-webb.jpg" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Rumteleskopet James Webb</strong>:
+                                                    James Webb inden det blev sendt ud til L2.
+                                                    Teleskopets fem solskærme er foldet ud, men spejlets to vinger, der begge holder tre af de 18 segmenter, er foldet bagud.
+                                                    Lidt til højre for spejlet ses en person på en lift.
+                                                    Kredit: Chris Gunn/NASA.
+                                                </font>
+                                            </div>
+                                        </div>
+                                        <p> <div class="sp-blank-20 shadow-line"></div> </p>
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="../pics/encyclo/james-webb-last-picture.jpg" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="../pics/encyclo/james-webb-last-picture.jpg" class="ol-lightbox">
+                                                        <i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <font size=-2>
+                                                    <strong>Det sidste billede nogensinde af James Webb</strong>:
+                                                    På det øverset trin af Ariane 5-raketten sad et kamera, som filmede James Webb da det rev sig løs fra trinnet og fortsatte på egen hånd til L2.
+                                                    Vi ser altså her bunden af teleskopet.<br>
+                                                    Klik <a href="https://dlmultimedia.esa.int/download/public/videos/2021/12/050/2112_050_AR_EN.mp4">her</a> for at se filmen.
+                                                    Ved 1:25 kan du se først etrin af udfoldningen, da Webbs solpanel bliver foldet ud.
+                                                    Kredit: ESA/Arianespace.
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end white row row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40">
+                <div class="container">
+                </div>
+            </section>
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <li><a href="./james-webb-space-telescope.html"     >This page in English</a></li>
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"            >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">
+                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../encyklo.html">Encyklopædi</a></li>
+                                    <li>James Webb</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <!-- modals -->
+            <div id="WALLAHModal" tabindex="-1" role="dialog" aria-labelledby="WALLAHModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="WALLAHModalLabel" class="modal-title">WALLAHmodalTitle</h4>
+                            <div class="modal-body">
+                                <p>
+                                wallah wallah wallah
+                                </p>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modals -->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
