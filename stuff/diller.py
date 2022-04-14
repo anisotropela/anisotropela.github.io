@@ -26,7 +26,8 @@ def dillit(language      = 'dk',
     plt.close('all')
     #                0          1                                            2     3       4                                       5                                                     6     7    8     9    10    11    12
     #                                                                                                                                                                                             Mi    Mo    Je    Kl    Pe
-    books = [['2022.03.09', 'Hans Kirk'                                  , 'DEN', 'M', 'De ny tider'                          , 'De ny tider'                                        , 1939, 211, nan , nan , nan , nan , nan],
+    books = [['2022.06.02', 'Jennifer Egan'                              , 'USA', 'F', 'Tæskeholdet banker på'                , 'A Visit from the Goon Squad'                        , 2010, 293, nan , nan , nan , nan , nan],
+             ['2022.03.09', 'Hans Kirk'                                  , 'DEN', 'M', 'De ny tider'                          , 'De ny tider'                                        , 1939, 211, 3.0 , 3.5 , 2.5 , 3.0 , 4.0],
              ['2022.01.08', 'Lone Frank'                                 , 'DEN', 'F', 'Størst af alt'                        , 'Størst af alt'                                      , 2020, 292, 3.5 , 4   , 2   , 3   , 4  ],
              ['2021.10.29', 'Jack Kerouac'                               , 'USA', 'M', 'Vejene'                               , 'On the Road'                                        , 1957, 285, 2   , 3.5 , 4.5 , 3   , 1.5],
              ['2021.08.14', 'Giuseppe Tomasi di Lampedusa'               , 'ITA', 'M', 'Leoparden'                            , 'The Leopard'                                        , 1958, 247, 2   , 3.5 , 1.5 , 3   , 3.5],
