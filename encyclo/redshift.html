@@ -504,7 +504,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
-                                <h4 id="dopplerModalLabel" class="modal-title">Doppler effect</h4>
+                                <h4 id="dopplerModalLabel" class="modal-title modal-skin-blue">Doppler effect</h4>
                                 <div class="modal-body">
                                     <p>
                                     If the "rest wavelength" (measured in a lab) is \(\lambda_0\), and the object is moving with velocity \(v\) with respect to you
@@ -531,7 +531,7 @@
                                     </p>    
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-blue">Okay fine</button>
                                 </div>
                             </div>
                         </div>
@@ -543,7 +543,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
-                                <h4 id="kosmoModalLabel" class="modal-title">Cosmological redshift</h4>
+                                <h4 id="kosmoModalLabel" class="modal-title modal-skin-blue">Cosmological redshift</h4>
                                 <div class="modal-body">
                                     <p>
                                     Two galaxies lying at a distance \(d\) from each other, recede from each other at a velocity \(v\) given by Hubble's law:
@@ -567,8 +567,8 @@
                                     </p>    
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" data-toggle="modal" data-target="#kosmoModal2" class="btn btn-circle btn-small btn-skin-blue">I don't care how complicated it is.<br>Just show me those equations already!</button>
-                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                                    <button type="button" data-toggle="modal" data-target="#kosmoModal2" class="btn btn-circle btn-small btn-skin-red">I don't care how complicated it is.<br>Just show me those equations already!</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-blue">Okay fine</button>
                                 </div>
                             </div>
                         </div>
@@ -624,11 +624,11 @@
                                         <span style="font-family: courier">
                                             from astropy.cosmology import Planck15<br>
                                             from astropy import units as u<br>
-                                            z = 6.66 # beregn for denne roedforskydning<br>
+                                            z = 6.66 # calculate for this redshift<br>
                                             d = Planck15.comoving_distance(z)<br>
                                             t = Planck15.age(z)<br>
-                                            print("Galaksens afstand er:", d.to(u.Glyr))<br>
-                                            print("Universets alder var:", t)<br>
+                                            print("The distance to the galaxy is:", d.to(u.Glyr))<br>
+                                            print("The age of the Universe was:", t)<br>
                                         </span>
                                     </div>
                                     </p>    
@@ -646,7 +646,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
-                                <h4 id="graviModalLabel" class="modal-title">Gravitational redshift</h4>
+                                <h4 id="graviModalLabel" class="modal-title modal-skin-blue">Gravitational redshift</h4>
                                 <div class="modal-body">
                                     <p>
                                     If a light ray is emitted at the distance \(r_1\) from the center of a (spherical) body of mass \(M\) with the rest wavelength \(\lambda_0\),
@@ -667,7 +667,7 @@
                                     </p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Okay fine</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-blue">Okay fine</button>
                                 </div>
                             </div>
                         </div>
