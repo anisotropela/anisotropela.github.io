@@ -1,5 +1,4 @@
 <root>
-    <jcentry Date="04/25/2022" Moderator="Kate"      Email="katriona.gould@nbi.ku.dk"/>
     <jcentry Date="05/02/2022" Moderator="Joonas"    Email="joonas.viuho@nbi.ku.dk"/>
     <jcentry Date="05/09/2022" Moderator="Seiji"     Email="fujimoto@nbi.ku.dk"/>
     <jcentry Date="05/16/2022" Moderator="Charlotte" Email="charlotte.mason@nbi.ku.dk"/>
@@ -20,4 +19,5 @@
     <jcentry Date="TBA"        Moderator="Gonzalo"   Email="gonzalo.prieto@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Peter"     Email="pela@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Clara"     Email="clara.arteaga@nbi.ku.dk"/>
+    <jcentry Date="TBA"        Moderator="Kate"      Email="katriona.gould@nbi.ku.dk"/>
 </root>
