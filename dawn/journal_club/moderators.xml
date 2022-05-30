@@ -1,9 +1,8 @@
 <root>
-    <jcentry Date="05/30/2022" Moderator="John"      Email="john.weaver@nbi.ku.dk"/>
-    <jcentry Date="06/06/2022" Moderator="Gabe"      Email="gabriel.brammer@nbi.ku.dk"/>
-    <jcentry Date="06/13/2022" Moderator="Lijie"     Email="lijli@space.dtu.dk"/>
-    <jcentry Date="06/20/2022" Moderator="Lise"      Email="lichrist@nbi.ku.dk"/>
-    <jcentry Date="06/27/2022" Moderator="Daniele"   Email="d.malesani@astro.ru.nl"/>
+    <jcentry Date="06/13/2022" Moderator="Gabe"      Email="gabriel.brammer@nbi.ku.dk"/>
+    <jcentry Date="06/20/2022" Moderator="Lijie"     Email="lijli@space.dtu.dk"/>
+    <jcentry Date="06/27/2022" Moderator="Lise"      Email="lichrist@nbi.ku.dk"/>
+    <jcentry Date="TBA"        Moderator="Daniele"   Email="d.malesani@astro.ru.nl"/>
     <jcentry Date="TBA"        Moderator="Thomas"    Email="tgreve@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Malte"     Email="malbr@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Meghana"   Email="meghana.killi@nbi.ku.dk"/>
@@ -20,4 +19,5 @@
     <jcentry Date="TBA"        Moderator="Seiji"     Email="fujimoto@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Charlotte" Email="charlotte.mason@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Georgios"  Email="geoma@space.dtu.dk"/>
+    <jcentry Date="TBA"        Moderator="John"      Email="john.weaver@nbi.ku.dk"/>
 </root>
