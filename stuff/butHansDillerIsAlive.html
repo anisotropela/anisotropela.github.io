@@ -26,6 +26,9 @@
         <!-- add your scripts to the end of the page for sake of page load speed-->
         <!-- scripts that need to be at head section-->
         <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
         <!-- #####End JS-->
         <!-- #####Begin load google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
@@ -143,11 +146,9 @@
                                         We also rated them on a scale from 0 to 5.
                                         The ratings shows the mean and spread (standard deviation, i.e. how much we agreed/disagreed on the rating).
                                         </p>
-                                        <!--
                                         <p>
                                         Because I like statistics, below the table you'll find a summary of how our readings are distributed according to various parameters.
                                         </p>
-                                        -->
                                     </div>
                                     <!-- end left column -->
 
@@ -168,7 +169,7 @@
                         </section>
                         <!-- end first row -->
 
-                        <!-- begin first row -->
+                        <!-- begin second row -->
                         <section class="section p-top-20 p-bottom-20">
                             <div class="container">
                                 <div class="row">
@@ -189,7 +190,8 @@
                                                         <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(7)')" style="cursor:pointer">Stars                   <i class="fa fa-fw fa-sort"></i></th>
                                                         <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(8)')" style="cursor:pointer">Spread                  <i class="fa fa-fw fa-sort"></i></th>
                                                     </tr>
-                                                    <tr class="item"><td style="font-size:10px;">2022.06.02</td><td>Jennifer Egan                              </td><td>USA</td><td><strong>A Visit from the Goon Squad</strong>                        </td><td> 2010</td><td>293</td><td colspan=2>(currently reading)</td></tr>
+                                                    <tr class="item"><td style="font-size:10px;">2022.26.08</td><td>Margaret Atwood                            </td><td>CAN</td><td><strong>The Handmaid's Tale</strong>                                </td><td> 1985</td><td>311</td><td colspan=2>(currently reading)</td></tr>
+                                                    <tr class="item"><td style="font-size:10px;">2022.06.02</td><td>Jennifer Egan                              </td><td>USA</td><td><strong>A Visit from the Goon Squad</strong>                        </td><td> 2010</td><td>293</td><td>4.0</td><td>±0.0</td></tr>
                                                     <tr class="item"><td style="font-size:10px;">2022.03.09</td><td>Hans Kirk                                  </td><td>DEN</td><td><strong>De ny tider</strong>                                        </td><td> 1939</td><td>211</td><td>3.2</td><td>±0.5</td></tr>
                                                     <tr class="item"><td style="font-size:10px;">2022.01.08</td><td>Lone Frank                                 </td><td>DEN</td><td><strong>Størst af alt</strong>                                      </td><td> 2020</td><td>292</td><td>3.3</td><td>±0.7</td></tr>
                                                     <tr class="item"><td style="font-size:10px;">2021.10.29</td><td>Jack Kerouac                               </td><td>USA</td><td><strong>On the Road</strong>                                        </td><td> 1957</td><td>285</td><td>2.9</td><td>±1.1</td></tr>
@@ -243,18 +245,34 @@
                                         <p>
                                         Our general enthusiasm for the books we've read has been distributed as follows:
                                         <table>
-                                            <tr> <td>Morten:&nbsp;&nbsp;</td> <td>3.4 ±1.1</td> </tr>
-                                            <tr> <td>Mikkel: </td> <td>3.2 ±1.2</td> </tr>
-                                            <tr> <td>Jeff: </td> <td>3.1 ±1.4</td> </tr>
-                                            <tr> <td>Klaus: </td> <td>3.3 ±0.0</td> </tr>
-                                            <tr> <td>Peter: </td> <td>3.5 ±1.0</td> </tr>
+                                            <tr> <td style="padding: 8px">Morten: </td> <td>\(3.4_{-1.0}^{+1.0}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Mikkel: </td> <td>\(3.2_{-1.5}^{+1.0}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Jeff:   </td> <td>\(3.1_{-1.5}^{+1.0}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Klaus:  </td> <td>\(3.3_{-1.0}^{+0.5}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Peter:  </td> <td>\(3.5_{-1.5}^{+0.5}\)</td> </tr>
+                                            <tr> <td style="padding: 8px"><strong>All:</strong> </td> <td>\(\mathbf{3.3_{-1.5}^{+1.0}}\)</td> </tr>
                                         </table>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <!-- end first row -->
+                        <!-- end second row -->
+
+                        <!-- begin third row -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <h4>Diller statistics</h4>
+                                    <p>
+                                    Here follows some statistics of the books we've read, our ratings, etc.
+                                    </p>
+                                    <hr>
+                                    <strong>THE SITE IS CURRENTLY BEING EDITED. PLEASE CHECK <a href="./menHansDillerLever.html">THE DANISH VERSION</a> FOR STATISTICS, OR CHECK BACK IN A FEW DAYS.</strong>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
 
                         <!-- begin gray row -->
                         <!--

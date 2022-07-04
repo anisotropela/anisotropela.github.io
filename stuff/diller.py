@@ -18,15 +18,20 @@ def dillit(language      = 'dk',
            cylim         = None,
            corr_plot     = True,
            stats         = True,
-           savefig       = False
+           savefig       = False,
+           ext           = '.png'
            ):
     """
     Landekoder følger FIFA: https://en.wikipedia.org/wiki/List_of_FIFA_country_codes
     """
+    assert language != 'da', "Brug language='dk' for dansk."
     plt.close('all')
+    xyG = '?' # ' (Gilgamesh)' <- hvis strengen bliver længere, ændres figurens aspect ratio
+    xyJ = '?'
     #                0          1                                            2     3       4                                       5                                                     6     7    8     9    10    11    12
     #                                                                                                                                                                                             Mi    Mo    Je    Kl    Pe
-    books = [['2022.06.02', 'Jennifer Egan'                              , 'USA', 'F', 'Tæskeholdet banker på'                , 'A Visit from the Goon Squad'                        , 2010, 293, nan , nan , nan , nan , nan],
+    books = [['2022.26.08', 'Margaret Atwood'                            , 'CAN', 'F', 'Tjenerindens fortælling'              , 'The Handmaid\'s Tale'                               , 1985, 311, nan , nan , nan , nan , nan],
+             ['2022.06.02', 'Jennifer Egan'                              , 'USA', 'F', 'Tæskeholdet banker på'                , 'A Visit from the Goon Squad'                        , 2010, 293, 4.0 , 4.0 , 4.0 , 4.0 , 4.0],
              ['2022.03.09', 'Hans Kirk'                                  , 'DEN', 'M', 'De ny tider'                          , 'De ny tider'                                        , 1939, 211, 3.0 , 3.5 , 2.5 , 3.0 , 4.0],
              ['2022.01.08', 'Lone Frank'                                 , 'DEN', 'F', 'Størst af alt'                        , 'Størst af alt'                                      , 2020, 292, 3.5 , 4   , 2   , 3   , 4  ],
              ['2021.10.29', 'Jack Kerouac'                               , 'USA', 'M', 'Vejene'                               , 'On the Road'                                        , 1957, 285, 2   , 3.5 , 4.5 , 3   , 1.5],
@@ -42,7 +47,7 @@ def dillit(language      = 'dk',
              ['2020.02.11', 'Arto Paasilinna'                            , 'FIN', 'M', 'Harens år'                            , 'The Year of the Hare'                               , 1975, 183, 3.5 , 3   , 5   , 2.5 , 3.5],
              ['2019.12.27', 'Siri Hustvedt'                              , 'USA', 'F', 'Den flammende verden'                 , 'The Blazing World'                                  , 2014, 434, 3.5 , 4.5 , 3   , 4   , 4  ],
              ['2019.10.26', 'Isaac Asimov'                               , 'USA', 'M', 'Stålhulerne'                          , 'Caves of Steel'                                     , 1953, 214, 1.5 , 1.5 , 2   , 1.5 , 2  ],
-             ['2019.08.09', 'Sophus Helle og Morten Søndergaard (overs.)', 'SUM', 'M', 'Gilgamesh'                            , 'Gilgamesh'                                          ,-2100, 140, 4   , 5   , 2.5 , 3.5 , 4  ],
+             ['2019.08.09', 'Sophus Helle og Morten Søndergaard (overs.)', 'SUM', xyG, 'Gilgamesh'                            , 'Gilgamesh'                                          ,-2100, 140, 4   , 5   , 2.5 , 3.5 , 4  ],
              ['2019.05.11', 'Brett Easton Ellis'                         , 'USA', 'M', 'Under nul'                            , 'Less than zero'                                     , 1985, 163, 2.5 , 3   , 4   , 2.5 , 2  ],
              ['2019.02.08', 'F. Scott Fitzgerald'                        , 'USA', 'M', 'Den store Gatsby'                     , 'The Great Gatsby'                                   , 1925, 171, 2   , 1.5 , 4.5 , 2.5 , 2.5],
              ['2018.11.24', 'Günther Grass'                              , 'GER', 'M', 'Bliktrommen'                          , 'The Tin Drum'                                       , 1959, 555, 1   , 2   , 0   , 2   , 2.5],
@@ -56,7 +61,7 @@ def dillit(language      = 'dk',
              ['2017.04.08', 'Jan Sonnergaard'                            , 'DEN', 'M', 'Radiator og andre noveller'           , 'Radiator and other short stories'                   , 1997, 221, 3.5 , 3   , 5   , 3.5 , 4  ],
              ['2017.02.10', 'H. P. Lovecraft'                            , 'USA', 'M', 'The Call of Cthulhu og andre noveller', 'The Call of Cthulhu and other short stories'        , 1928, 117, 4.5 , 4.5 , 2   , 4.5 , 4.5],
              ['2016.11.19', 'John le Carré'                              , 'ENG', 'M', 'Spionen der kom ind fra kulden'       , 'The Spy Who Came in from the Cold'                  , 1963, 225, 2   , 2   , 2.5 , 2   , 2.5],
-             ['2016.08.26', 'Peter Madsen'                               , 'DEN', 'M', 'Historien om Job'                     , 'The Book of Job (comic book version)'               , -450, 104, 1   , 1.5 , nan , nan , 0.5],
+             ['2016.08.26', 'Peter Madsen'                               , 'DEN', xyJ, 'Historien om Job'                     , 'The Book of Job (comic book version)'               , -450, 104, 1   , 1.5 , nan , nan , 0.5],
              ['2016.08.26', 'Virginia Woolf'                             , 'ENG', 'F', 'Til Fyret'                            , 'To the Lighthouse'                                  , 1927, 210, 2   , 2.5 , 2   , 3   , 3  ],
              ['2016.07.10', 'Aksel Sandemose'                            , 'DEN', 'M', 'En flygtning krydser sit spor'        , 'A Fugitive Crosses his Tracks'                      , 1933, 425, 4.5 , 4.5 , 2   , 4.5 , 4.5],
              ['2016.05.14', 'Morten Pape'                                , 'DEN', 'M', 'Planen'                               , 'Planen'                                             , 2015, 557, 4.5 , 4.5 , 4.5 , 3.5 , 4.5],
@@ -157,7 +162,7 @@ def dillit(language      = 'dk',
         ylim = bax.get_ylim()[0][0], bax.get_ylim()[-1][-1]
         bax.plot([xlim[1],xlim[1]], [ylim[0],ylim[1]],'k')
         bax.plot([xlim[0],xlim[1]], [ylim[1],ylim[1]],'k')
-        if savefig: plt.savefig('year_hist.pdf', dpi=300, bbox_inches='tight')
+        if savefig: plt.savefig('year_hist_'+language+ext, dpi=300, bbox_inches='tight')
 
     if country_pie:
         unique_countries = np.unique(country,return_counts=True)
@@ -179,7 +184,7 @@ def dillit(language      = 'dk',
             plt.pie(freq, labels=name,autopct='%1.1i%%')
         else:
             plt.pie(freq_oncesumd, labels=name_oncesumd,autopct='%1.1i%%')
-        if savefig: plt.savefig('country_pie_all'+str(all_countries)+'.pdf', dpi=300, bbox_inches='tight')
+        if savefig: plt.savefig('country_pie'+'_'+language+ext, dpi=300, bbox_inches='tight')
 
     if page_hist:
         fig,ax = plt.subplots()
@@ -193,7 +198,7 @@ def dillit(language      = 'dk',
         else:
             ax.set_xlabel('Number of pages',fontsize=14)
             ax.set_ylabel('Number of books',fontsize=14)
-        if savefig: plt.savefig('page_hist.pdf', dpi=300, bbox_inches='tight')
+        if savefig: plt.savefig('page_hist_'+language+ext, dpi=300, bbox_inches='tight')
 
     if gender_pie:
         fig = plt.figure(figsize=(4,4))
@@ -204,7 +209,7 @@ def dillit(language      = 'dk',
         name = unique_gender[0]
         freq = unique_gender[1]
         plt.pie(freq, labels=name,autopct='%1.1i%%')
-        if savefig: plt.savefig('gender_pie.pdf', dpi=300, bbox_inches='tight')
+        if savefig: plt.savefig('gender_pie_'+language+ext, dpi=300, bbox_inches='tight')
 
     if star_hist:
         mikkel  = np.array([book[ 8] for book in books])
@@ -267,12 +272,12 @@ def dillit(language      = 'dk',
         labpe  = 'Peter:    '   +r'$'+smupe+'_{-'+ssiglope+'}^{+'+ssighipe+'}$'
         labdi  = r'$\mathbf{Diller:\,'+smudi+'_{-'+ssiglodi+'}^{+'+ssighidi+'}}$'
 
-        print('labmi    =', labmi)
-        print('labmo    =', labmo)
-        print('labje    =', labje)
-        print('labkl    =', labkl)
-        print('labpe    =', labpe)
-        print('labdi    =', labdi)
+      # print('labmi    =', labmi)
+      # print('labmo    =', labmo)
+      # print('labje    =', labje)
+      # print('labkl    =', labkl)
+      # print('labpe    =', labpe)
+      # print('labdi    =', labdi)
 
         fig,ax = plt.subplots()
         wm = plt.get_current_fig_manager()
@@ -302,9 +307,9 @@ def dillit(language      = 'dk',
             ax.set_xlabel('Antal stjerner', fontsize=14)
             ax.set_ylabel('Hyppighed', fontsize=14)
         else:
-            ax.set_xlabel('Number of stars', fontsize=14)
+            ax.set_xlabel('Rating', fontsize=14)
             ax.set_ylabel('Frequency', fontsize=14)
-        if savefig: plt.savefig('star_hist.pdf', dpi=300, bbox_inches='tight')
+        if savefig: plt.savefig('star_hist_'+language+ext, dpi=300, bbox_inches='tight')
 
     if False:#correlate is not None:
         """
@@ -352,7 +357,7 @@ def dillit(language      = 'dk',
       # x = abs(year-1957)
         x = [datetime.strptime(d,'%Y.%m.%d').date() for d in date]
 
-        y = stars # med
+        y = stars # med VEND DENNE AKSE LISSOM I AGREE_VS_TIME
 
         plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d/%m/%Y'))
         plt.gca().xaxis.set_major_locator(mdates.DayLocator())
@@ -373,11 +378,15 @@ def dillit(language      = 'dk',
 
         ax.scatter(x,y,c='r')
         ax.plot([0,50],[0,50],'k--',alpha=.5)
-        ax.set_xlabel('Dansk titellængde', fontsize=14)
-        ax.set_ylabel('Engelsk titellængde', fontsize=14)
+        if language=='dk':
+            ax.set_xlabel('Dansk titellængde', fontsize=14)
+            ax.set_ylabel('Engelsk titellængde', fontsize=14)
+        else:
+            ax.set_xlabel('Length of Danish title', fontsize=14)
+            ax.set_ylabel('Length of English title', fontsize=14)
         ax.set_xlim([0,50])
         ax.set_ylim([0,50])
-        if savefig: plt.savefig('title_en_vs_dk.pdf', dpi=300, bbox_inches='tight')
+        if savefig: plt.savefig('title_en_vs_dk_'+language+ext, dpi=300, bbox_inches='tight')
 
     if agree_vs_time:
         fig,ax = plt.subplots()
@@ -385,14 +394,18 @@ def dillit(language      = 'dk',
         wm.window.wm_geometry('600x500+850+500')
 
         x = range(nbooks)
-        y = stars # med
+        y = stars[::-1] # med
 
-        ax.errorbar(x,y, yerr=[y-lo,hi-y], fmt='ro',mec='r',alpha=1,
+        ax.errorbar(x,y, yerr=[y-lo[::-1],hi[::-1]-y], fmt='ro',mec='r',alpha=1,
                 elinewidth=1,capthick=1,ecolor='r',capsize=3)
         ax.scatter(x,y,c='r')
-        ax.set_xlabel('Møde #', fontsize=14)
-        ax.set_ylabel('Antal stjerner', fontsize=14)
-        if savefig: plt.savefig('agree_vs_time.pdf', dpi=300, bbox_inches='tight')
+        if language=='dk':
+            ax.set_xlabel('Møde #', fontsize=14)
+            ax.set_ylabel('Antal stjerner (error bars viser 1'+r'$\sigma$'+')', fontsize=14)
+        else:
+            ax.set_xlabel('Meeting #', fontsize=14)
+            ax.set_ylabel('Rating (error bars denote 1'+r'$\sigma$'+')', fontsize=14)
+        if savefig: plt.savefig('agree_vs_time_'+language+ext, dpi=300, bbox_inches='tight')
 
     if corr_plot:
         fig,ax = plt.subplots()
@@ -429,4 +442,11 @@ def dillit(language      = 'dk',
         ax.set_ylim([0,3000])
         ax.set_xlabel('[Udgivelsesår]  /  [Længden af forfatterens navn]', fontsize=14)
         ax.set_ylabel('[Antal sider]  ' + r'$\times$' + '  [Klaus\' rating]', fontsize=14)
-        if savefig: plt.savefig('corr_plot.pdf', dpi=300, bbox_inches='tight')
+        if savefig: plt.savefig('corr_plot_'+language+ext, dpi=300, bbox_inches='tight')
+
+        if stats:
+            mu,std    = np.nanmean(pages), np.nanstd(pages)
+            med,lo,hi = np.nanpercentile(pages,[50,15.9,84.1])
+            print('Sider, ave+1sig: ', mu,std)
+            print('Sider, med+perc: ', med,lo,hi)
+            print('        =>       ', med,med-lo,hi-med)

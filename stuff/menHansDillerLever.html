@@ -26,6 +26,9 @@
         <!-- add your scripts to the end of the page for sake of page load speed-->
         <!-- scripts that need to be at head section-->
         <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
         <!-- #####End JS-->
         <!-- #####Begin load google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
@@ -113,7 +116,7 @@
                     <!-- #####Begin main area-->
                     <section id="main-area">
 
-                        <!-- begin first row -->
+                        <!-- begin first row (intro) -->
                         <section class="section p-top-20 p-bottom-20">
                             <div class="container">
                                 <div class="row">
@@ -143,11 +146,9 @@
                                         Vi har også hver især givet dem stjerner på en skala fra 0 til 5.
                                         Her ses gennemsnit og spredning (altså hvor enige eller uenige vi har været om karakteren). 
                                         </p>
-                                        <!--
                                         <p>
                                         Fordi jeg godt kan lide statistik, kan du under tabellen se lidt forskellige oversigter over, hvordan vores læsning fordeler sig på diverse parametre.
                                         </p>
-                                        -->
                                     </div>
                                     <!-- end left column -->
 
@@ -168,7 +169,7 @@
                         </section>
                         <!-- end first row -->
 
-                        <!-- begin first row -->
+                        <!-- begin second row (liste) -->
                         <section class="section p-top-20 p-bottom-20">
                             <div class="container">
                                 <div class="row">
@@ -189,7 +190,8 @@
                                                         <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(7)')" style="cursor:pointer">Stjerner                <i class="fa fa-fw fa-sort"></i></th>
                                                         <th onclick="w3.sortHTML('#usersTable', '.item', 'td:nth-child(8)')" style="cursor:pointer">Spredning               <i class="fa fa-fw fa-sort"></i></th>
                                                     </tr>
-                                                    <tr class="item"><td style="font-size:10px;">2022.06.02</td><td>Jennifer Egan                              </td><td>USA</td><td><strong>Tæskeholdet banker på</strong>                </td><td> 2010</td><td>293</td><td colspan=2>(læser i øjeblikket)</td></tr>
+                                                    <tr class="item"><td style="font-size:10px;">2022.26.08</td><td>Margaret Atwood                            </td><td>CAN</td><td><strong>Tjenerindens fortælling</strong>              </td><td> 1985</td><td>311</td><td colspan=2>(læser i øjeblikket)</td></tr>
+                                                    <tr class="item"><td style="font-size:10px;">2022.06.02</td><td>Jennifer Egan                              </td><td>USA</td><td><strong>Tæskeholdet banker på</strong>                </td><td> 2010</td><td>293</td><td>4.0</td><td>±0.0</td></tr>
                                                     <tr class="item"><td style="font-size:10px;">2022.03.09</td><td>Hans Kirk                                  </td><td>DEN</td><td><strong>De ny tider</strong>                          </td><td> 1939</td><td>211</td><td>3.2</td><td>±0.5</td></tr>
                                                     <tr class="item"><td style="font-size:10px;">2022.01.08</td><td>Lone Frank                                 </td><td>DEN</td><td><strong>Størst af alt</strong>                        </td><td> 2020</td><td>292</td><td>3.3</td><td>±0.7</td></tr>
                                                     <tr class="item"><td style="font-size:10px;">2021.10.29</td><td>Jack Kerouac                               </td><td>USA</td><td><strong>Vejene</strong>                               </td><td> 1957</td><td>285</td><td>2.9</td><td>±1.1</td></tr>
@@ -240,53 +242,192 @@
                                             </div>
                                         </font>
                                         </p>
+                                        <!--
                                         <p>
                                         Vores generelle begejstring ved de bøger vi har læst har fordelt sig således:
                                         <table>
-                                            <tr> <td>Morten:&nbsp;&nbsp;</td> <td>3.4 ±1.1</td> </tr>
-                                            <tr> <td>Mikkel: </td> <td>3.2 ±1.2</td> </tr>
-                                            <tr> <td>Jeff: </td> <td>3.1 ±1.4</td> </tr>
-                                            <tr> <td>Klaus: </td> <td>3.3 ±0.0</td> </tr>
-                                            <tr> <td>Peter: </td> <td>3.5 ±1.0</td> </tr>
+                                            <tr> <td style="padding: 8px">Morten: </td> <td>\(3.4_{-1.0}^{+1.0}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Mikkel: </td> <td>\(3.2_{-1.5}^{+1.0}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Jeff:   </td> <td>\(3.1_{-1.5}^{+1.0}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Klaus:  </td> <td>\(3.3_{-1.0}^{+0.5}\)</td> </tr>
+                                            <tr> <td style="padding: 8px">Peter:  </td> <td>\(3.5_{-1.5}^{+0.5}\)</td> </tr>
+                                            <tr> <td style="padding: 8px"><strong>Samlet:</strong> </td> <td>\(\mathbf{3.3_{-1.5}^{+1.0}}\)</td> </tr>
                                         </table>
                                         </p>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <!-- end first row -->
+                        <!-- end second row -->
 
-                        <!-- begin gray row -->
-                        <!--
-                            <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
-                            <div class="container"> 
-                            <div class="row">
-                            <div class="col-md-8">
-                            <p>
-                            WALLAH WALLAH WALLAH
-                            </p>
+                        <!-- begin third row (stat-intro; gray) -->
+                        <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <h4>Dillerstatistik</h4>
+                                    <p>
+                                    Her følger lidt statistik over de forskellige bøger, vi har læst, vores vurdering af dem, mm.
+                                    </p>
+                                    <p>
+                                    Figurerne og den underliggende analyse er kodet i Python, og opdateres efter hvert møde.
+                                    </p>
+                                </div>
                             </div>
-                            </div>
-                            </div>
-                            </section>
-                        -->
-                        <!-- end gray row -->
+                        </section>
+                        <!-- end third row -->
 
-                        <!-- begin white row -->
-                        <!--
-                            <section class="section section-narrow p-top-20 p-bottom-20">
-                            <div class="container"> 
-                            <div class="row">
-                            <div class="col-md-8">
-                            <p>
-                            WALLAH WALLAH WALLAH
-                            </p>
+                        <!-- begin fourth row (rating; gray!) -->
+                        <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="./star_hist_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="./star_hist_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        Vores generelle begejstring ved de bøger vi har læst har fordelt sig som vist på ovenstående figur.
+                                        Medianværdier vises i boksen, og usikkerhederne er giver ved 16- og 84-percentilerne.
+                                        Selv om vi alle <em>typisk</em> rater omkring de 4 stjerner, er fordelinger asymmetrisk forskudt mod lavere karakterer, hvilket trækker gennemsnittet (og i mindre grad medianen) ned.
+                                        </p>
+                                    </div>
+                                    <!-- end right column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="./agree_vs_time_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="./agree_vs_time_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        Ser vi gennemsnittet og 1&sigma;-standardafvigelserne som funktion af tid, tegner der sig et billede af, at vi med tiden er blevet mere uenige (altså, errorbars'ne er blevet større med tiden),
+                                        omend vi måske på det seneste er blevet bedre til at undgå bøger som vi allesammen synes er dårlige.
+                                        </p>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
                             </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (pages+year; white) -->
+                        <section class="section section-narrow bg-white p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="./page_hist_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="./page_hist_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        De bøger vi har læst, har i snit haft 276&pm;143 sider. Dette gennemsnit trækkes dog noget op af et par (alt for) lange bøger, selvom vores egne noveller trækker det noget ned igen.
+                                        Median og 16/84-percentilerne for antallet er sider er \(229_{-79}^{+209}\), og den fulde fordeling ses på histogrammet ovenfor, hvor jeg har binnet antallet af sider i intervaller på 50 sider.
+                                        </p>
+                                    </div>
+                                    <!-- end right column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="./year_hist_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="./year_hist_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        Her ses et histogram over årstallet for udgivelsen af de bøger, vi har læst.
+                                        Bemærk at x-aksen er trunkeret for at skabe plads til Gilgamesh (sat til 2100 f.Kr.), Jobs Bog (de fleste estimater siger "mellem 7. og 3. århundrede f.Kr."; selvom vi læste Peter Madsens tegneserieversion fra 1999), og Tristram Shandy (1759–1767).
+                                        </p>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
                             </div>
+                        </section>
+                        <!-- end fifth row -->
+
+                        <!-- begin sixth row (rating; gray) -->
+                        <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="./country_pie_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="./country_pie_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        Dette lagkagediagram over fordelingen af forfatternes nationaliter viser (ikke overraskende) en overvægt af danske forfattere, og måske heller ikke så overraskende en del amerikanske og britiske forfattere.
+                                        Cirka 1/3 er dog godt spredt ud over andre nationaliter.
+                                        </p>
+                                        <p>
+                                        Landekoderne følger <a href="https://da.wikipedia.org/wiki/Liste_over_FIFA-landekoder">FIFA's landekoder</a>.
+                                        </p>
+                                    </div>
+                                    <!-- end right column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="./gender_pie_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="./gender_pie_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        Fordelingen af forfatternes køn lader noget tilbage at ønske…
+                                        </p>
+                                        <p>
+                                        Det lille blå stykke skyldes min manglende viden om kønnet på forfatterne til Gilgamesh og Jobs Bog.
+                                        </p>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
                             </div>
-                            </section>
-                        -->
-                        <!-- end white row -->
+                        </section>
+                        <!-- end sixth row -->
+
+                        <!-- begin seventh row (title; white) -->
+                        <section class="section section-narrow bg-white p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div class="ol-hover hover-1"><img src="./title_en_vs_dk_dk.png" alt="image hover"/>
+                                                <div class="icons">
+                                                    <a href="./title_en_vs_dk_dk.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        Den sidste figur viser et korrelationsplot over antallet af bogstaver i bøgernes titler på hhv. dansk og engelsk.
+                                        Den stiplede linje viser x=y-linjen.
+                                        At flest punkter ligger over denne linje betyder altså, at danskere har lidt lettere ved at fatte sig i korthed.
+                                        </p>
+                                    </div>
+                                    <!-- end right column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-6">
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end seventh row -->
 
                     </section>
                     <!-- #####End main area
