@@ -23,6 +23,7 @@ def dillit(language      = 'dk',
            ):
     """
     Landekoder følger FIFA: https://en.wikipedia.org/wiki/List_of_FIFA_country_codes
+    >>> diller.dillit(language='dk',html=True,savefig=True)
     """
     assert language != 'da', "Brug language='dk' for dansk."
     plt.close('all')
@@ -30,7 +31,8 @@ def dillit(language      = 'dk',
     xyJ = '?'
     #                0          1                                            2     3       4                                       5                                                     6     7    8     9    10    11    12
     #                                                                                                                                                                                             Mi    Mo    Je    Kl    Pe
-    books = [['2022.26.08', 'Margaret Atwood'                            , 'CAN', 'F', 'Tjenerindens fortælling'              , 'The Handmaid\'s Tale'                               , 1985, 311, nan , nan , nan , nan , nan],
+    books = [['2022.10.08', 'Luke Rhinehart'                             , 'USA', 'M', 'Terningenmanden'                      , 'The Dice Man'                                       , 1971, 477, nan , nan , nan , nan , nan],
+             ['2022.08.26', 'Margaret Atwood'                            , 'CAN', 'F', 'Tjenerindens fortælling'              , 'The Handmaid\'s Tale'                               , 1985, 311, 2.5 , 3   , 3.5 , 3   , 3.5],
              ['2022.06.02', 'Jennifer Egan'                              , 'USA', 'F', 'Tæskeholdet banker på'                , 'A Visit from the Goon Squad'                        , 2010, 293, 4.0 , 4.0 , 4.0 , 4.0 , 4.0],
              ['2022.03.09', 'Hans Kirk'                                  , 'DEN', 'M', 'De ny tider'                          , 'De ny tider'                                        , 1939, 211, 3.0 , 3.5 , 2.5 , 3.0 , 4.0],
              ['2022.01.08', 'Lone Frank'                                 , 'DEN', 'F', 'Størst af alt'                        , 'Størst af alt'                                      , 2020, 292, 3.5 , 4   , 2   , 3   , 4  ],
