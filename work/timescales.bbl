@@ -1,4 +1,4 @@
-\begin{thebibliography}{63}
+\begin{thebibliography}{74}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Barkana \& Loeb(2001)}]{Barkana2001}
@@ -82,6 +82,23 @@ Efstathiou, G. 2000, MNRAS, 317, 697
 \bibitem[{Eggen {et~al.}(1962)Eggen, Lynden-Bell, \& Sandage}]{Eggen1962}
 Eggen, O.~J., Lynden-Bell, D., \& Sandage, A.~R. 1962, ApJ, 136, 748
 
+\bibitem[{Eisenstein {et~al.}(2005)Eisenstein, Zehavi, Hogg, Scoccimarro,
+  Blanton, Nichol, Scranton, Seo, Tegmark, Zheng, Anderson, Annis, Bahcall,
+  Brinkmann, Burles, Castander, Connolly, Csabai, Doi, Fukugita, Frieman,
+  Glazebrook, Gunn, Hendry, Hennessy, Ivezi{\'{c}}, Kent, Knapp, Lin, Loh,
+  Lupton, Margon, McKay, Meiksin, Munn, Pope, Richmond, Schlegel, Schneider,
+  Shimasaku, Stoughton, Strauss, SubbaRao, Szalay, Szapudi, Tucker, Yanny, \&
+  York}]{Eisenstein2005}
+Eisenstein, D.~J., Zehavi, I., Hogg, D.~W., {et~al.} 2005, ApJ, 633, 560
+
+\bibitem[{Fischer {et~al.}(2000)Fischer, McKay, Sheldon, Connolly, Stebbins,
+  Frieman, Jain, Joffre, Johnston, Bernstein, Annis, Bahcall, Brinkmann, Carr,
+  Csabai, Gunn, Hennessy, Hindsley, Hull, Ivezi{\'{c}}, Knapp, Limmongkol,
+  Lupton, Munn, Nash, Newberg, Owen, Pier, Rockosi, Schneider, Smith,
+  Stoughton, Szalay, Szokoly, Thakar, Vogeley, Waddell, Weinberg, York, \&
+  Collaboration)}]{Fischer2000}
+Fischer, P., McKay, T.~A., Sheldon, E., {et~al.} 2000, AJ, 120, 1198
+
 \bibitem[{Gingold \& Monaghan(1977)}]{Gingold1977}
 Gingold, R.~A. \& Monaghan, J.~J. 1977, MNRAS, 181, 375
 
@@ -95,9 +112,20 @@ Gnedin, N.~Y. 2000, ApJ, 535, 530
   Naab}]{Haid2019}
 Haid, S., Walch, S., Seifried, D., {et~al.} 2019, MNRAS, 482, 4062
 
-\bibitem[{Harikane {et~al.}(2022)Harikane, Ouchi, Oguri, Ono, Nakajima, Isobe,
-  Umeda, Mawatari, \& Zhang}]{Harikane2022}
-Harikane, Y., Ouchi, M., Oguri, M., {et~al.} 2022 [\eprint[arXiv]{2208.01612}]
+\bibitem[{Harikane {et~al.}(2022{\natexlab{a}})Harikane, Inoue, Mawatari,
+  Hashimoto, Yamanaka, Fudamoto, Matsuo, Tamura, Dayal, Yung, Hutter, Pacucci,
+  Sugahara, \& Koekemoer}]{Harikane2022a}
+Harikane, Y., Inoue, A.~K., Mawatari, K., {et~al.} 2022{\natexlab{a}}, ApJ,
+  929, 1
+
+\bibitem[{Harikane {et~al.}(2022{\natexlab{b}})Harikane, Ouchi, Oguri, Ono,
+  Nakajima, Isobe, Umeda, Mawatari, \& Zhang}]{Harikane2022}
+Harikane, Y., Ouchi, M., Oguri, M., {et~al.} 2022{\natexlab{b}}
+  [\eprint[arXiv]{2208.01612}]
+
+\bibitem[{Hoyt(1980)}]{Hoyt1980}
+Hoyt, W.~G. 1980, {Vesto Melvin Slipher in Bibliographical Memoirs}, ed. C.~K.
+  McEuen (Washington D.C.: National Academy of Sciences)
 
 \bibitem[{Hubble(1926)}]{Hubble1926}
 Hubble, E.~P. 1926, ApJ, 64, 321
@@ -115,7 +143,7 @@ Jensen, H., Hayes, M., Iliev, I.~T., {et~al.} 2014, MNRAS, 444, 2114
 Jensen, H., Laursen, P., Mellema, G., {et~al.} 2013, MNRAS, 428, 1366
 
 \bibitem[{Jovi(1990)}]{Jovi1990}
-Jovi, J.~B. 1990, Santa Fe (Blaze of Glory)
+Jovi, J.~B. 1990, St. Fe (Blaze Glory)
 
 \bibitem[{Katz {et~al.}(1996)Katz, Weinberg, \& Hernquist}]{Katz1996}
 Katz, N., Weinberg, D.~H., \& Hernquist, L. 1996, ApJS, 105, 19
@@ -126,6 +154,10 @@ Kauffmann, G., White, S. D.~M., \& Guiderdoni, B. 1993, MNRAS, 264, 201
 
 \bibitem[{Klypin {et~al.}(2011)Klypin, Trujillo-Gomez, \& Primack}]{Klypin2011}
 Klypin, A.~A., Trujillo-Gomez, S., \& Primack, J. 2011, ApJ, 740, 102
+
+\bibitem[{Kovac {et~al.}(2002)Kovac, Leitch, Pryke, Carlstrom, Halverson, \&
+  Holzapfel}]{Kovac2002}
+Kovac, J.~M., Leitch, E.~M., Pryke, C., {et~al.} 2002, Nature, 420, 772
 
 \bibitem[{Lacey \& Cole(1993)}]{Lacey1993}
 Lacey, C. \& Cole, S. 1993, MNRAS, 262, 627
@@ -213,11 +245,20 @@ Rosdahl, J., Blaizot, J., Katz, H., {et~al.} 2022, MNRAS, 515, 2386
 \bibitem[{Schechter(1976)}]{Schechter1976}
 Schechter, P. 1976, ApJ, 203, 297
 
+\bibitem[{Schmidt(1965)}]{Schmidt1965}
+Schmidt, M. 1965, ApJ, 141, 1295
+
+\bibitem[{Schmidt \& Matthews(1964)}]{Schmidt1964}
+Schmidt, M. \& Matthews, T.~A. 1964, ApJ, 139, 781
+
 \bibitem[{Shapley \& Curtis(1921)}]{Shapley1921}
 Shapley, H. \& Curtis, H.~D. 1921, Bull. Natl. Res. Counc., 2, 171
 
 \bibitem[{Sheth \& Tormen(2002)}]{Sheth2002}
 Sheth, R.~K. \& Tormen, G. 2002, MNRAS, 329, 61
+
+\bibitem[{Slipher(1915)}]{Slipher1915}
+Slipher, V.~M. 1915, {Spectrographic Observations of Nebulae}
 
 \bibitem[{Sneppen {et~al.}(2022)Sneppen, Steinhardt, Hensley, Jermyn, Mostafa,
   \& Weaver}]{Sneppen2022}
@@ -234,6 +275,15 @@ Somerville, R.~S. \& Primack, J.~R. 1999, MNRAS, 310, 1087
 \bibitem[{Springel(2010)}]{Springel2010}
 Springel, V. 2010, MNRAS, 401, 791
 
+\bibitem[{Steidel {et~al.}(1996)Steidel, Giavalisco, Pettini, Dickinson, \&
+  Adelberger}]{Steidel1996}
+Steidel, C.~C., Giavalisco, M., Pettini, M., Dickinson, M., \& Adelberger,
+  K.~L. 1996, ApJ, 462, L17
+
+\bibitem[{Steinhardt {et~al.}(2016)Steinhardt, Capak, Masters, \&
+  Speagle}]{Steinhardt2016}
+Steinhardt, C.~L., Capak, P., Masters, D., \& Speagle, J.~S. 2016, ApJ, 824, 21
+
 \bibitem[{Steinhardt {et~al.}(2022)Steinhardt, Kokorev, Rusakov, Garcia, \&
   Sneppen}]{Steinhardt2022}
 Steinhardt, C.~L., Kokorev, V., Rusakov, V., Garcia, E., \& Sneppen, A. 2022
@@ -244,6 +294,17 @@ Str{\"{o}}mgren, B. 1939, ApJ, 89, 526
 
 \bibitem[{Sutherland \& Dopita(1993)}]{Sutherland1993}
 Sutherland, R.~S. \& Dopita, M.~A. 1993, ApJS, 88, 253
+
+\bibitem[{Tanvir {et~al.}(2009)Tanvir, Fox, Levan, Berger, Wiersema, Fynbo,
+  Cucchiara, Kr{\"{u}}hler, Gehrels, Bloom, Greiner, Evans, Rol, Olivares,
+  Hjorth, Jakobsson, Farihi, Willingale, Starling, Cenko, Perley, Maund, Duke,
+  Wijers, Adamson, Allan, Bremer, Burrows, Castro-Tirado, Cavanagh, {de Ugarte
+  Postigo}, Dopita, Fatkhullin, Fruchter, Foley, Gorosabel, Kennea, Kerr,
+  Klose, Krimm, Komarova, Kulkarni, Moskvitin, Mundell, Naylor, Page, Penprase,
+  Perri, Podsiadlowski, Roth, Rutledge, Sakamoto, Schady, Schmidt, Soderberg,
+  Sollerman, Stephens, Stratta, Ukwatta, Watson, Westra, Wold, \&
+  Wolf}]{Tanvir2009}
+Tanvir, N.~R., Fox, D.~B., Levan, A.~J., {et~al.} 2009, Nature, 461, 1254
 
 \bibitem[{Tinker {et~al.}(2008)Tinker, Kravtsov, Klypin, Abazajian, Warren,
   Yepes, Gottlober, \& Holz}]{Tinker2008}

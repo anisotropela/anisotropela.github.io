@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: timescales.aux
+The style file: aa.bst
+Database file #1: timescales.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in Castellano2022
+Warning--empty journal in Donnan2022
+Warning--empty journal in Harikane2022
+Warning--can't use both author and editor fields in Hoyt1980
+Warning--empty journal in Mason2022
+Warning--empty journal in Naidu2022b
+Warning--empty journal in Naidu2022a
+Warning--empty journal in Perez2022
+Warning--empty journal in PlanckCollaboration2018a
+Warning--empty journal in Steinhardt2022
+Warning--empty journal in Yan2022
+You've used 74 entries,
+            3039 wiz_defined-function locations,
+            1193 strings with 26607 characters,
+and the built_in function-call counts, 55261 in all, are:
+= -- 4204
+> -- 6609
+< -- 35
++ -- 2207
+- -- 2131
+* -- 5129
+:= -- 10407
+add.period$ -- 74
+call.type$ -- 74
+change.case$ -- 1008
+chr.to.int$ -- 78
+cite$ -- 85
+duplicate$ -- 1360
+empty$ -- 1920
+format.name$ -- 2334
+if$ -- 10727
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 73
+newline$ -- 226
+num.names$ -- 297
+pop$ -- 1031
+preamble$ -- 1
+purify$ -- 1006
+quote$ -- 0
+skip$ -- 1138
+stack$ -- 0
+substring$ -- 1403
+swap$ -- 15
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 657
+warning$ -- 11
+while$ -- 285
+width$ -- 0
+write$ -- 731
+(There were 11 warnings)
