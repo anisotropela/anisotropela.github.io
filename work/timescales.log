@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  20 OCT 2022 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  20 OCT 2022 00:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,7 +1528,7 @@ Package hyperref Warning: Suppressing link with empty target on input line 493.
 
 
 [6 <./hmf2smf-annotated.pdf>]
-<jwst.pdf, id=483, 803.0pt x 602.25pt>
+<jwst.pdf, id=484, 803.0pt x 602.25pt>
 File: jwst.pdf Graphic file (type pdf)
 <use jwst.pdf>
 Package pdftex.def Info: jwst.pdf  used on input line 501.
@@ -1559,7 +1559,7 @@ Underfull \hbox (badness 2503) in paragraph at lines 184--186
  []
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 248.
+Package hyperref Warning: Suppressing link with empty target on input line 254.
 
 
 [8])
@@ -1581,7 +1581,7 @@ Package rerunfilecheck Info: File `timescales.out' has not changed.
 Here is how much of TeX's memory you used:
  33519 strings out of 492623
  619345 string characters out of 6129553
- 715088 words of memory out of 5000000
+ 714856 words of memory out of 5000000
  36746 multiletter control sequences out of 15000+600000
  637919 words of font info for 199 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1600,10 +1600,10 @@ a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
 /texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on timescales.pdf (9 pages, 591494 bytes).
+Output written on timescales.pdf (9 pages, 591392 bytes).
 PDF statistics:
- 705 PDF objects out of 1000 (max. 8388607)
- 515 compressed objects within 6 object streams
+ 706 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
  117 named destinations out of 1000 (max. 500000)
  227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
