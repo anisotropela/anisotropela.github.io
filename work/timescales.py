@@ -1,6 +1,7 @@
 import numpy as np
 from numpy import pi,exp,sqrt
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 from astropy import units as u
 from astropy.cosmology import Planck18
 from astropy.cosmology import FlatLambdaCDM
@@ -15,6 +16,14 @@ cosmo = Planck18
 mH = cc.m_p + cc.m_e
 kB = cc.k_B
 G  = cc.G
+
+# def schechter(phistar,Lstar,alpha):
+#     """few"""
+#     L_Ls = (L / Lstar).decompose().value
+#     phi = phistar * L_Ls**alpha * exp(-L_Ls) / 
+# 
+
+#------------------------------------------------------------------------------
 
 def redshift_records(cosmo=Planck18):
     """
@@ -533,8 +542,12 @@ def hmf2smf(cosmo=Planck18):
     rhom0 = cosmo.critical_density0 * cosmo.Om0
     fb    = rhob0 / rhom0
 
-    Ms_wr, n_wr, nlo_wr, nhi_wr = np.loadtxt('wright2017_SMF_z0.1.dat',unpack=True)
-    Ms_ba, n_ba, nlo_ba, nhi_ba = np.loadtxt('barnardi2013_SMF_z0.1.dat',unpack=True)
+    Ms_wr, n_wr,nlo_wr,nhi_wr = np.loadtxt('wright2017_SMF_z0.1.dat',unpack=True)
+    Ms_ba, n_ba,nlo_ba,nhi_ba = np.loadtxt('bernardi2013_SMF_z0.1.dat',unpack=True)
+    Ms_go, n_go               = np.loadtxt('gonzalez-perez_2014.dat',unpack=True)
+    Ms_cr, n_cr               = np.loadtxt('croton_2016.dat',unpack=True)
+    Ms_vo, n_vo               = np.loadtxt('vogelsberger_2015.dat',unpack=True)
+    Ms_sc, n_sc               = np.loadtxt('schaye_2014.dat',unpack=True)
   # n_ba,nlo_ba,nhi_ba = ln10*n_ba,ln10*nlo_ba,ln10*nhi_ba
 
     fs = 14
@@ -548,13 +561,52 @@ def hmf2smf(cosmo=Planck18):
     plt.xscale('log')
     plt.yscale('log')
     plt.plot(M,HMF, 'b-',lw=2,label=r'$\mathrm{HMF: } N(M_\mathrm{h})$')
-    plt.plot(M*fb,HMF,'magenta',ls='-',lw=2,label=r'$\mathrm{HMF: } N(M_\mathrm{h} \times f_\mathrm{b})$')
+    plt.plot(M*fb,HMF,'fuchsia',ls='-',lw=2,label=r'$\mathrm{HMF: } N(M_\mathrm{h} \times f_\mathrm{b})$')
 
-    plt.errorbar(Ms_wr,n_wr, yerr=[n_wr-nlo_wr,nhi_wr-n_wr],ecolor='olive',fmt='none',mec='olive', alpha=.5)          #Indiv. gal error bars
-    plt.scatter(Ms_wr,n_wr,color='olive',s=20,zorder=10,label='Wright et al. (2017)')
+    plt.errorbar(Ms_wr,n_wr, yerr=[n_wr-nlo_wr,nhi_wr-n_wr],capsize=2,ecolor='olive',fmt='none',mec='olive', alpha=.5)          #Indiv. gal error bars
+    plt.scatter(Ms_wr,n_wr,color='olive',s=20,zorder=9,label='SMF: Observed (Wright+ 2017)')
+    plt.errorbar(Ms_ba,n_ba, yerr=[n_ba-nlo_ba,nhi_ba-n_ba],capsize=2,ecolor='steelblue',fmt='none',mec='steelblue', alpha=.5)          #Indiv. gal error bars
+    plt.scatter(Ms_ba,n_ba,color='steelblue',s=20,zorder=9,label='SMF: Observed (Bernardi+ 2013)')
 
-    plt.errorbar(Ms_ba,n_ba, yerr=[n_ba-nlo_ba,nhi_ba-n_ba],ecolor='steelblue',fmt='none',mec='steelblue', alpha=.5)          #Indiv. gal error bars
-    plt.scatter(Ms_ba,n_ba,color='steelblue',s=20,zorder=10,label='Bernardi et al. (2013)')
+    plt.plot(Ms_go,n_go,c='saddlebrown',ls='-', lw=1,zorder=10,label='SMF: Semi-analytical (GALFORM)')
+    plt.plot(Ms_cr,n_cr,c='saddlebrown',ls='--',lw=1,zorder=10,label='SMF: Semi-analytical (SAGE)')
+    plt.plot(Ms_vo,n_vo,c='darkturquoise',   ls='-', lw=1,zorder=10,label='SMF: Numerical (Illustris)')
+    plt.plot(Ms_sc,n_sc,c='darkturquoise',   ls='--',lw=1,zorder=10,label='SMF: Numerical (EAGLE)')
 
-    plt.legend()
+    plt.annotate('', xy=(1.4e10,2.36e-2),  # arrowhead coords
+            xytext=(1.2e11,2.36e-2),                 # text coords
+            va='center',
+            ha='center',
+            arrowprops=dict(
+                color='k',
+                alpha=.8,
+                lw=5,
+                capstyle='butt',
+                joinstyle='miter',
+                arrowstyle='->',              # Also '->', '-[', '<|-|>', etc.
+                connectionstyle='arc3'         # 'arc3' is a straight arrow. Other styles are 'angle', 'angle3', 'bar', etc.
+                )
+            )
+
+  # plt.annotate('', xy=(1e7,1e-1),  # arrowhead coords
+  #         xytext=(1e9,1),                 # text coords
+  #         va='center',
+  #         ha='center',
+  #         arrowprops=dict(
+  #             color='lime',
+  #             alpha=.25,
+  #             lw=10,
+  #             capstyle='butt',
+  #             joinstyle='miter',
+  #             arrowstyle='->',              # Also '->', '-[', '<|-|>', etc.
+  #             connectionstyle='arc3,rad=.3'         # 'arc3' is a straight arrow. Other styles are 'angle', 'angle3', 'bar', etc.
+  #             )
+  #         )
+
+  # style = "Simple, tail_width=0.5, head_width=4, head_length=8"
+  # kw = dict(arrowstyle=style, color="k")
+  # patches.FancyArrowPatch((1e9,1), (1e7,1e-1),
+  #         connectionstyle="arc3,rad=.5")#, **kw)
+
+    plt.legend(scatterpoints=1)
 #------------------------------------------------------------------------------

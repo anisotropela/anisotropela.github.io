@@ -1,4 +1,4 @@
-\begin{thebibliography}{74}
+\begin{thebibliography}{80}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Barkana \& Loeb(2001)}]{Barkana2001}
@@ -63,6 +63,10 @@ Cole, S., Arag{\'{o}}n-Salamanca, A., Frenk, C.~S., Navarro, J.~F., \& Zepf,
   Jenkins, Kauffmann, Navarro, \& Yoshida}]{Croton2006}
 Croton, D.~J., Springel, V., White, S.~D., {et~al.} 2006, MNRAS, 365, 11
 
+\bibitem[{Croton {et~al.}(2016)Croton, Stevens, Tonini, Garel, Bernyk, Bibiano,
+  Hodkinson, Mutch, Poole, \& Shattow}]{Croton2016}
+Croton, D.~J., Stevens, A. R.~H., Tonini, C., {et~al.} 2016, ApJS, 222, 22
+
 \bibitem[{Dekel \& Silk(1986)}]{Dekel1986}
 Dekel, A. \& Silk, J. 1986, ApJ, 303, 39
 
@@ -107,6 +111,10 @@ Giri, S.~K., Mellema, G., Dixon, K.~L., \& Iliev, I.~T. 2018, MNRAS, 473, 2949
 
 \bibitem[{Gnedin(2000)}]{Gnedin2000}
 Gnedin, N.~Y. 2000, ApJ, 535, 530
+
+\bibitem[{Gonzalez-perez {et~al.}(2014)Gonzalez-perez, Lacey, Baugh, Lagos,
+  Helly, Campbell, \& Mitchell}]{Gonzalez-perez2014}
+Gonzalez-perez, V., Lacey, C.~G., Baugh, C.~M., {et~al.} 2014, MNRAS, 439, 264
 
 \bibitem[{Haid {et~al.}(2019)Haid, Walch, Seifried, Wunsch, Dinnbier, \&
   Naab}]{Haid2019}
@@ -242,6 +250,11 @@ Rees, M.~J. \& Ostriker, J.~P. 1977, MNRAS, 179, 541
   Keating, Martin-Alvarez, Michel-Dansac, \& Ocvirk}]{Rosdahl2022}
 Rosdahl, J., Blaizot, J., Katz, H., {et~al.} 2022, MNRAS, 515, 2386
 
+\bibitem[{Schaye {et~al.}(2015)Schaye, Crain, Bower, Furlong, Schaller, Theuns,
+  {Dalla Vecchia}, Frenk, Mccarthy, Helly, Jenkins, Rosas-Guevara, White, Baes,
+  Booth, Camps, Navarro, Qu, Rahmati, Sawala, Thomas, \& Trayford}]{Schaye2015}
+Schaye, J., Crain, R.~A., Bower, R.~G., {et~al.} 2015, MNRAS, 446, 521
+
 \bibitem[{Schechter(1976)}]{Schechter1976}
 Schechter, P. 1976, ApJ, 203, 297
 
@@ -264,6 +277,9 @@ Slipher, V.~M. 1915, {Spectrographic Observations of Nebulae}
   \& Weaver}]{Sneppen2022}
 Sneppen, A., Steinhardt, C.~L., Hensley, H., {et~al.} 2022, ApJ, 931, 57
 
+\bibitem[{Somerville \& Dav{\'{e}}(2015)}]{Somerville2015a}
+Somerville, R.~S. \& Dav{\'{e}}, R. 2015, ARAA, 53, 51
+
 \bibitem[{Somerville {et~al.}(2008)Somerville, Hopkins, Cox, Robertson, \&
   Hernquist}]{Somerville2008}
 Somerville, R.~S., Hopkins, P.~F., Cox, T.~J., Robertson, B.~E., \& Hernquist,
@@ -271,6 +287,11 @@ Somerville, R.~S., Hopkins, P.~F., Cox, T.~J., Robertson, B.~E., \& Hernquist,
 
 \bibitem[{Somerville \& Primack(1999)}]{Somerville1999}
 Somerville, R.~S. \& Primack, J.~R. 1999, MNRAS, 310, 1087
+
+\bibitem[{Song {et~al.}(2016)Song, Finkelstein, Ashby, Grazian, Lu, Papovich,
+  Salmon, Somerville, Dickinson, Duncan, Faber, Fazio, Ferguson, Fontana, Guo,
+  Hathi, Lee, Merlin, \& Willner}]{Song2016}
+Song, M., Finkelstein, S.~L., Ashby, M. L.~N., {et~al.} 2016, ApJ, 825, 5
 
 \bibitem[{Springel(2010)}]{Springel2010}
 Springel, V. 2010, MNRAS, 401, 791
@@ -309,6 +330,10 @@ Tanvir, N.~R., Fox, D.~B., Levan, A.~J., {et~al.} 2009, Nature, 461, 1254
 \bibitem[{Tinker {et~al.}(2008)Tinker, Kravtsov, Klypin, Abazajian, Warren,
   Yepes, Gottlober, \& Holz}]{Tinker2008}
 Tinker, J.~L., Kravtsov, A.~V., Klypin, A., {et~al.} 2008, ApJ, 688, 709
+
+\bibitem[{Vogelsberger {et~al.}(2014)Vogelsberger, Genel, Springel, Torrey,
+  Sijacki, Xu, Snyder, Bird, Nelson, \& Hernquist}]{Vogelsberger2014}
+Vogelsberger, M., Genel, S., Springel, V., {et~al.} 2014, Nature, 509, 177
 
 \bibitem[{White \& Frenk(1991)}]{White1991}
 White, S. D.~M. \& Frenk, C.~S. 1991, ApJ, 379, 52

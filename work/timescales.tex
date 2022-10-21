@@ -175,7 +175,9 @@ All structure in the Universe is, ultimately, born out ouf primordial (quantum) 
 Observations of the cosmic microwave background (CMB) show that apparently these fluctuations can be described by an almost scale-free power spectrum \citep{PlanckCollaboration2018a}.
 In other words, the Universe does not have a preferred scale, and neither does gravity (there are no characteristic masses in the Einstein equations).
 We might therefore expect structure to form in a self-similar way: If the ratio between the number of structures with masses $M$ and $10M$ is $f$, then the ratio between the number of structures with masses $\frac{1}{10}M$ and $M$ is also $f$.
-And if all halos contain the same baryonic fraction and are equally effective in converting gas to stars, we might expect the LF, or equivalently the stellar mass function, to resemble the distribution of masses in the Universe.
+%Stars are born with a distribution of masses, and hence with a distribution of luminosities.
+%Assuming a given distribution at their birth, the so-called \emph{initial mass function} (IMF), allows us to convert the luminosity at a given wavelength (e.g.~``the UV region'' or ``the H$alpha$ line'') to a stellar mass.
+And if all halos contain the same baryonic fraction and are equally effective at converting gas to stars, we might expect the LF to reflect the distribution of masses in the Universe.
 
 The Universe, it turns out, is more complex than this, as will be elucidated further down.
 Observationally, we do however see a LF that is remarkably universal --- that is, it can be rather accurately parametrized by same functional form for all galaxy types, and all redshifts:
@@ -190,6 +192,7 @@ Observed luminosities are therefore often fitted with a so-called Schechter func
     \includegraphics [width=0.48\textwidth] {bouwens2021.pdf}
     \caption{The evolving luminosity function of galaxies from the Universe was $\sim500\,\mathrm{Myr}$ ($z\sim10$; purple) till it was $3.3\,\mathrm{Gyr}$ old ($z\sim2$; gray).
     Along the $y$ axis is differential number density, while the luminosity along the $x$ axis is expressed as \emph{magnitudes}; astronomers' notorious units for brightness, where a more negative number means a brighter galaxy.
+    The top $x$ axis shows the corresponding luminosity expressed in Solar luminosities.
     The lines show the best-fit Schechter functions.
     The figure is a slightly modified version of Fig.~5 in \citep{Bouwens2021}.
     \red{I have asked Rychard (the first-author) for permission to reproduce which I assume I will get.}
@@ -319,10 +322,15 @@ In the green domain, the gas collapses more or less freely with negligible therm
 
 The shape of the $t_\mathrm{ff} = t_\mathrm{cool}$ locus (black) resembles the cooling function, with $n\propto (T/\Lambda)^{1/2}$, and is calculated assuming a metal-free gas. For a Solar metallicity cloud (i.e.~characterestic of the present-day Universe), cooling is more efficient by more than an order of magnitude in the $T \sim 10^{4.5\text{--}6.5}\,\mathrm{K}$ regime, but the low-density trough of the locus still lies at $M\sim10^{12}\,M_\odot$.
 The slanted lines show densities and temperatures of halos of constant mass. We see that clouds of $M\sim10^{12}\,M_\odot$ can cool even at low densities while at higher and lower masses, cooling is less efficient.
-In other words, the stellar mass function should be suppressed on either side of $M\sim10^{12}\,M_\odot$; the mass of the Milky Way halo.
+In other words, the distribution of the galaxies' stellar masses --- the stellar mass function (SMF) --- should be suppressed on either side of $M\sim10^{12}\,M_\odot$; the mass of the Milky Way halo.
 %At lower (higher) masses, the slope is shallower (steeper), resulting in a knee in the mass function where galaxies are most efficient at forming 
 
-This differential cooling explains why we should not expect the stellar mass function, and hence the LF, to simply mirror the HMF, shifted by the baryon fraction $f_\mathrm{b}$.
+Converting from an observed LF to an inferred SMF is not straightforward, because the amount of light detected from a given amount of stars depends on many factors such the age of the stellar population, the metallicity, and interstellar dust.
+In particular the short wavelengths are susceptible to dust, but also to age because the most massive and blue stars die out fast.
+Therefore SMFs in infrared wavelengths are typically more robust than in the UV.
+A discussion of the conversion from LFs to SMFs is beyond the scope of the current text, but can be found e.g.~in \citet{Song2016}.
+
+The differential cooling explains why we should not expect the stellar mass function to simply mirror the HMF, shifted by the baryon fraction $f_\mathrm{b}$.
 In the calculations of the region of efficient cooling in Fig.~\ref{fig:cooling} we assumed a halo overdensity of $\Delta=180$.
 But this is the average overdensity inside the virial radius;
 in reality the halo will have a decreasing density profile with much higher densities in the center, so at least some of the gas should be able to cool.
@@ -424,42 +432,34 @@ Various mechanisms were proposed to solve this problem of too many massive galax
 Arguably the most promising mechanism to prevent too many massive galaxies is feedback from active galactic nuclei --- that is, gas accreting onto supermassive black holes in the center of galaxies, radiating excess energy away at extreme energies.
 This effect has been successful at matching LFs at low and high redshifts \citep[e.g.][]{Croton2006,Bower2006,Somerville2008,Mccarthy2011}.
 
-\subsection{From halo mass functions to luminosity functions}
+\subsection{From halo mass to stellar mass}
 \label{sec:hmf2smf}
 
 The physical processes described in Secs.~\ref{sec:LF}--\ref{sec:feedback} are shown in Fig.~\ref{fig:hmf2smf}.
-The blue line shows the HMF at $z=0.1$ (``almost today'');
-a \citet{Sheth2002} HMF with a $z$-dependent correction factor which brings the analytical prediction very close to results from a large-scale, $\sim8$ billion particle, cosmological simulation \citep{Klypin2011};
+The blue line shows the HMF at $z=0.1$ (``almost today'').
+It is a \citet{Sheth2002} HMF with a $z$-dependent correction factor which brings the analytical prediction very close to results from a large-scale, $\sim8$ billion particle, cosmological simulation \citep{Klypin2011};
 its functional form is described in \citet{Laursen2019}.
-Multiplying the mass by the cosmic baryon fraction $f_\mathrm{b}$ shifts the HMF to the left, shown by the magenta line.
-That is, if galaxies at all masses were able to cool and convert all their gas to stars, this line is what we would observe.
-Reality is quite different: Observed stellar mass functions at $z\sim0.1$ at the low-mass end \citep{Wright2017} and the high-mass end \citep{Bernardi2013} are shown with olive green and steel blue points, respectively.
-The physical mechanisms responsible for this drastic suppression are indicated by the green and orange arrows.
+Multiplying the mass by the cosmic baryon fraction $f_\mathrm{b}$ shifts the HMF to the left, shown by the black arrow.
+If galaxies at all masses were able to cool and convert all their gas to stars, observed SMFs would look like the magenta line.
+Reality is quite different: Observed SMFs at $z\sim0.1$ at the low-mass end \citep{Wright2017} and the high-mass end \citep{Bernardi2013} are shown with olive green and steel blue points, respectively.
 
-Thus we have seen how simple timescale arguments may both be helpful and provide insight into complex physical problems, but also have short-comings. In the final section, we will have a look at a contemporary problem in the context of galaxies where we are currently witnessing an apparent problem with the timescales of structure formation.
+The physical mechanisms thought to be responsible for this drastic suppression are indicated by the green and orange arrows.
+The observations are compared to four different models that include these mechanisms: 
+The brown lines show two semi-analytical models, GALFORM (\citealt{Gonzalez-perez2014}, but taken from \citealt{Somerville2015a}) and SAGE \citep{Croton2016}, while the cyan lines show results from numerical, hydrodynamical simulations, Illustris \citep{Vogelsberger2014} and EAGLE \citep{Schaye2015}.
+While they are not perfect fits, all models are seen to capture rather well the shape of the SMFs.
+
+The preceding discussion has illucidated how simple timescale arguments may both be helpful and provide insight into complex physical problems, but also have short-comings. In the final section, we will have a look at a contemporary problem in the context of galaxies where we are currently witnessing an apparent problem with the timescales of structure formation.
 
 \begin{figure}[!t]
     \centering
     \includegraphics [width=0.48\textwidth] {hmf2smf-annotated.pdf}
     \caption{Number density of halo masses and stellar masses as a function of mass.
-    Theoretical predictions from a HMF are shown in blue and magenta for total halo masses and baryon masses, respectively.
-    They are compared to observed stellar mass functions at the low-mass end (olive) and high-mass end (steel-blue).
-    Photoionization and stellar feedback is believed to suppress the mass function at the low-mass end (green arrow), while AGN activity suppresses the high-mass end (orange arrow).}
+    Theoretical predictions from a HMF are shown in blue and magenta for total halo masses and corresponding baryon masses, respectively.
+    Observed stellar mass functions at the low-mass end (olive) and high-mass end (steel-blue).
+    Photoionization and stellar feedback is believed to suppress the mass function at the low-mass end (green arrow), while AGN activity suppresses the high-mass end (orange arrow).
+    These mechanisms are incorporated in semi-analytical (brown) and numerical (cyan) models, which are seen to provide a reasonable match to the observations.}
     \label{fig:hmf2smf}
 \end{figure}
-
-% \subsection{Galaxy quenching}
-
-% \red{Not sure if I'll include a section on this}
-%But although techniques such a gravitational lensing \citep[e.g.][]{Reference1234} gives us clues to the masses of dark matter halos, they are not directly observable.
-%Now dark matter is, as its name implies, invisible. What we observe is not the dark matter halos, but the luminous galaxies residing in the centers, acting as biased\footnote{``Biased'' in the sense that they cannot trace the dark matter 1:1; their clustering properties properties must be different, as first recognized by \citet{Kaiser1984}.} tracers of the underlying density field.
-%Now dark matter is, as its name implies, invisible. What we observe is not the dark matter halos, but the luminous galaxies residing in the centers, tracing the underlying density field.
-
-% \textit{When and how do galaxies die?} Perhaps one of the biggest unsolved questions in galaxy formation is what causes the ?quenching? of star formation and what are the mechanisms that keep galaxies ?red and dead?? This cosmic conundrum is further amplified by the surprising discovery of dead, massive galaxies within the first 10\% of cosmic history, challenging current theoretical models that fail to accommodate their existence at these early times. The difficulty of reconciling observations with theory is that quenching involves many different processes (star formation, gas inflow, feedback, black hole activity) that act at different physical scales, environments (from clusters and dark matter haloes to stellar disks and central nuclei) and timescales. By capturing the first generation of dead galaxies, we can study them close to the episode that paved the way to their quiescence, and eventually identify the dominant process responsible for quenching. The search of the first dead galaxies in our Universe and of the first QSOs that are likely their forebears, is an objective of our center and, for the first time, within our reach.
-
-% \textbf{{Methodology:}} Following the remarkable realization that massive dead galaxies are already present 1.5 Gyr after the Big Bang \{twentyfour\}, the JWST imaging surveys and later the deep \textit{Euclid} observations will chart their demographics and provide robust samples for spectroscopic follow-up with NIRSpec. With spatially resolved spectroscopic observations we will determine the dynamical state and star formation histories of these galaxies, and shed light on the universality of the initial mass function. Pivotal to understanding the nature of early dead galaxies is the properties of the ISM and in particular the gas mass reservoir, as recently demonstrated by our team \{twentyfive,twentysix\}. ALMA observations of larger and less biased samples will reconcile the current observational tension between gas retention and gas depletion \{twentyfive,twentysix\}. With our JWST GTO imaging surveys and spectroscopic programs, we will efficiently produce mass-complete samples to trace the sequence from active star formation to quenching, and shed light on the recently discovered population of optically-invisible, dust obscured starbursts \{twentyseven\} and of distant red quasars \{twentyeight\}, that trace intermediate phases in galaxy evolution and are likely progenitors of early dead galaxies. 
-
-% \textbf{{Impact and Future Direction:}} Understanding how and when galaxies cease their growth is a cornerstone of understanding galaxy evolution. The first JWST results have already pushed back the existence of massive passive galaxies by 0.5 Myr \{twentynine\}, and our upcoming JWST imaging surveys (as detailed below) will measure their demographics within the first 10\% of cosmic history, with far-reaching implications for our concordance cosmological model. Finally, there is evidence that galaxies that quenched earlier in the history of the Universe tend to be characterized by more compact morphologies \{thirty\} that could pose a challenge even for the resolving power of JWST. An even sharper view of the internal structure, the dynamics, and the interstellar medium of early dead galaxies will be offered by the sensitivity and spatial resolution of future ELT instruments, as well as the SKA and ngVLA.
 
 \section{The first galaxies}
 \label{sec:jwst}
@@ -474,7 +474,7 @@ Figure~\ref{fig:zrecord} shows how our ``explored'' Universe has expanded, in te
 \begin{figure}[!t]
     \centering
     \includegraphics [width=0.48\textwidth] {zrecord.pdf}
-    \caption{Earliest epoch with a known object, and the redshift of these objects, vs.~the year of discovery.
+    \caption{Earliest epoch at which an object in known (and the redshift of these objects on the right $y$ axis) vs.~the year of discovery.
     Most objects are galaxies (red), but from the mid-1960s to the mid-1990s, quasars (blue) were more easily found. The cyan point indicates the gamma-ray burst GRB 090423 \citep{Tanvir2009}.
     The still tentative $z=13.3$ galaxy HD1 \citep{Harikane2022a} has not been included, so the current record is set by GN-z11 at $z=11.09$.
     The gray extension indicates that this record is currently being challenged by reports of galaxies at $z=13\text{--}20$, approaching closely the epoch of advent of the very first luminous sources at $z\lesssim20$.}
