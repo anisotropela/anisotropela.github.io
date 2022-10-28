@@ -1,5 +1,5 @@
 import numpy as np
-from numpy import pi,exp,sqrt
+from numpy import pi,exp,sqrt,log,log10
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from astropy import units as u
@@ -17,12 +17,47 @@ mH = cc.m_p + cc.m_e
 kB = cc.k_B
 G  = cc.G
 
-# def schechter(phistar,Lstar,alpha):
-#     """few"""
-#     L_Ls = (L / Lstar).decompose().value
-#     phi = phistar * L_Ls**alpha * exp(-L_Ls) / 
-# 
 
+def flum_from_dmag(dmag):
+    """few"""
+    return 10**(-dmag/2.5)
+#------------------------------------------------------------------------------
+
+def dmag_from_flum(flum):
+    """few"""
+    return -2.5 * log10(flum)
+#------------------------------------------------------------------------------
+# def schechter_lum(L,phistar,Lstar,alpha):
+#     """few"""
+#     L_Ls = L / Lstar
+#     phi  = phistar     \
+#          * L_Ls**alpha \
+#          * exp(-L_Ls)  \
+#          / Lstar
+#     return phi
+# #------------------------------------------------------------------------------
+
+def schechter_Llum(L,phistar,Lstar,alpha):
+    """few"""
+    L_Ls = L / Lstar
+  # print('L    =', L)
+  # print('Lstar    =', Lstar)
+  # print('L_Ls =', L_Ls)
+  # print()
+    phi  = log(10) * phistar \
+         * L_Ls**(alpha+1)   \
+         * exp(-L_Ls)
+    return phi
+#------------------------------------------------------------------------------
+
+def schechter_mag(M,phistar,Mstar,alpha):
+    """wallah"""
+    dM = Mstar - M
+    tendM25 = 10**(dM/2.5)
+    phi = log(10)/2.5 * phistar \
+        * tendM25**(alpha+1)    \
+        * exp(-tendM25) 
+    return phi
 #------------------------------------------------------------------------------
 
 def redshift_records(cosmo=Planck18):
@@ -557,16 +592,41 @@ def hmf2smf(cosmo=Planck18):
   # plt.xlabel(r'$M_{\mathrm{h}}/h^{-1}M_\odot$',fontsize=fs)
   # plt.ylabel(r'$dN/d\ln M\,\,/\,\,h^3\mathrm{Mpc}^{-3}$',fontsize=fs)
     plt.xlabel(r'$M \, / \, M_\odot$',fontsize=fs)
-    plt.ylabel(r'$dN/d\log M\,\,/\,\,\mathrm{Mpc}^{-3}$',fontsize=fs)
+    plt.ylabel(r'$dN/d\log M\,\,/\,\,\mathrm{dex}^{-1}\,\mathrm{Mpc}^{-3}$',fontsize=fs)
     plt.xscale('log')
     plt.yscale('log')
     plt.plot(M,HMF, 'b-',lw=2,label=r'$\mathrm{HMF: } N(M_\mathrm{h})$')
     plt.plot(M*fb,HMF,'fuchsia',ls='-',lw=2,label=r'$\mathrm{HMF: } N(M_\mathrm{h} \times f_\mathrm{b})$')
 
-    plt.errorbar(Ms_wr,n_wr, yerr=[n_wr-nlo_wr,nhi_wr-n_wr],capsize=2,ecolor='olive',fmt='none',mec='olive', alpha=.5)          #Indiv. gal error bars
-    plt.scatter(Ms_wr,n_wr,color='olive',s=20,zorder=9,label='SMF: Observed (Wright+ 2017)')
-    plt.errorbar(Ms_ba,n_ba, yerr=[n_ba-nlo_ba,nhi_ba-n_ba],capsize=2,ecolor='steelblue',fmt='none',mec='steelblue', alpha=.5)          #Indiv. gal error bars
-    plt.scatter(Ms_ba,n_ba,color='steelblue',s=20,zorder=9,label='SMF: Observed (Bernardi+ 2013)')
+
+  # plt.errorbar(Ms_wr,n_wr, yerr=[n_wr-nlo_wr,nhi_wr-n_wr],capsize=2,ecolor='olive',fmt='none',mec='olive', alpha=.5)          #Indiv. gal error bars
+  # plt.scatter(Ms_wr,n_wr,color='olive',s=20,zorder=9,label='SMF: Observed (Wright+ 2017)')
+  # plt.errorbar(Ms_ba,n_ba, yerr=[n_ba-nlo_ba,nhi_ba-n_ba],capsize=2,ecolor='steelblue',fmt='none',mec='steelblue', alpha=.5)          #Indiv. gal error bars
+  # plt.scatter(Ms_ba,n_ba,color='steelblue',s=20,zorder=9,label='SMF: Observed (Bernardi+ 2013)')
+    plt.errorbar(Ms_wr,n_wr, yerr=[n_wr-nlo_wr,nhi_wr-n_wr],
+            capsize=2,
+            markersize=4,
+            marker='o',
+            ls='none',
+            color='olive',
+            ecolor='olive',
+            mfc='olive',
+            mec='olive',
+            alpha=.9,
+            zorder=9,
+            label='SMF: Observed (Wright+ 2017)')
+    plt.errorbar(Ms_ba,n_ba, yerr=[n_ba-nlo_ba,nhi_ba-n_ba],
+            capsize=2,
+            markersize=4,
+            marker='o',
+            ls='none',
+            color='steelblue',
+            ecolor='steelblue',
+            mfc='steelblue',
+            mec='steelblue',
+            alpha=.9,
+            zorder=9,
+            label='SMF: Observed (Bernardi+ 2013)')          #Indiv. gal error bars
 
     plt.plot(Ms_go,n_go,c='saddlebrown',ls='-', lw=1,zorder=10,label='SMF: Semi-analytical (GALFORM)')
     plt.plot(Ms_cr,n_cr,c='saddlebrown',ls='--',lw=1,zorder=10,label='SMF: Semi-analytical (SAGE)')
@@ -608,5 +668,150 @@ def hmf2smf(cosmo=Planck18):
   # patches.FancyArrowPatch((1e9,1), (1e7,1e-1),
   #         connectionstyle="arc3,rad=.5")#, **kw)
 
-    plt.legend(scatterpoints=1)
+    handles, labels = plt.gca().get_legend_handles_labels()
+    order = [0,1,6,7,2,3,4,5] # Since for some reason obs. SMFs are put before mod. SMFs
+    plt.legend([handles[idx] for idx in order],[labels[idx] for idx in order],numpoints=2)
+#------------------------------------------------------------------------------
+
+def uvlf(plotvs='lum'):
+    # Bouwens+ 21, Tab. 4: ---------------------------------------
+    m02,n02,s02 = np.loadtxt('bouwens_UVLF_z2.dat',unpack=True) # |
+    m03,n03,s03 = np.loadtxt('bouwens_UVLF_z3.dat',unpack=True) # |
+    m04,n04,s04 = np.loadtxt('bouwens_UVLF_z4.dat',unpack=True) # |
+    m05,n05,s05 = np.loadtxt('bouwens_UVLF_z5.dat',unpack=True) # |
+    m06,n06,s06 = np.loadtxt('bouwens_UVLF_z6.dat',unpack=True) # |
+    m07,n07,s07 = np.loadtxt('bouwens_UVLF_z7.dat',unpack=True) # |
+    m08,n08,s08 = np.loadtxt('bouwens_UVLF_z8.dat',unpack=True) # |
+    m09,n09,s09 = np.loadtxt('bouwens_UVLF_z9.dat',unpack=True) # |
+    m10,n10,s10 = np.loadtxt('oesch_UVLF_z10.dat',unpack=True)  # |
+    # ------------------------------------------------------------
+
+    # Bouwens +21, Tab. 5: --------------------
+    ms02,ps02,a02 = -20.28, 4.0000e-3, -1.52 # |
+    ms03,ps03,a03 = -20.87, 2.1000e-3, -1.61 # |
+    ms04,ps04,a04 = -20.93, 1.6900e-3, -1.69 # |
+    ms05,ps05,a05 = -21.10, 0.7900e-3, -1.74 # |
+    ms06,ps06,a06 = -20.93, 0.5100e-3, -1.93 # |
+    ms07,ps07,a07 = -21.15, 0.1900e-3, -2.06 # |
+    ms08,ps08,a08 = -20.93, 0.0900e-3, -2.23 # |
+    ms09,ps09,a09 = -21.15, 0.0210e-3, -2.33 # |
+    ms10,ps10,a10 = -21.19, 0.0042e-3, -2.38 # |
+    # -----------------------------------------
+
+    # Magnitude and luminosity axes for fits
+    Msun   = 6.33
+    mag2lum = False
+    if mag2lum:
+        Mlim   = np.array([-23.5,-15])
+        philim = np.array([3e-8,.1])
+        Max    = np.linspace(Mlim[0],Mlim[1],100)
+        Llim   = flum_from_dmag(Mlim-Msun)[::-1] # Reverse axis
+        Lax    = np.geomspace(Llim[0],Llim[1],100)
+    else:
+        Llim   = np.array([6e8,1e12])
+        philim = np.array([3e-7,.1])
+        Lax    = np.geomspace(Llim[0],Llim[1],100)
+        Mlim   = dmag_from_flum(Llim)[::-1] + Msun # Reverse axis
+        Max    = np.linspace(Mlim[0],Mlim[1],100)
+
+    # Make Schechter fits
+    phi02 = schechter_mag(Max,ps02,ms02,a02)
+    phi03 = schechter_mag(Max,ps03,ms03,a03)
+    phi04 = schechter_mag(Max,ps04,ms04,a04)
+    phi05 = schechter_mag(Max,ps05,ms05,a05)
+    phi06 = schechter_mag(Max,ps06,ms06,a06)
+    phi07 = schechter_mag(Max,ps07,ms07,a07)
+    phi08 = schechter_mag(Max,ps08,ms08,a08)
+    phi09 = schechter_mag(Max,ps09,ms09,a09)
+    phi10 = schechter_mag(Max,ps10,ms10,a10)
+
+                       #  Rychard's colors
+    c02 = 'darkviolet' # '#DCDCDC'
+    c03 = 'violet'     # '#0500FF'
+    c04 = 'dodgerblue' # '#FF00FF'
+    c05 = '#00efeb'    # '#00C801'
+    c06 = '#00eb00'    # '#009696'
+    c07 = '#ffe000'    # '#000000'
+    c08 = 'orange'     # '#FF0000'
+    c09 = 'red'        # '#FF6E13'
+    c10 = 'sienna'     # '#7900FF'
+
+    mag2dex = 10/2.512
+    plt.clf()
+    plt.yscale('log')
+    fs = 14
+    if plotvs == 'mag':
+        plt.xlim(Mlim)
+        plt.ylim(philim)
+        plt.xlabel(r'$M_{\mathrm{AB,1600}}$',fontsize=fs)
+        plt.ylabel(r'$dN/d\log M\,\,/\,\,\mathrm{mag}^{-1}\,\mathrm{Mpc}^{-3}$',fontsize=fs)
+      # plt.xscale('log')
+
+        plt.plot(Max,phi02,c02)
+        plt.plot(Max,phi03,c03)
+        plt.plot(Max,phi04,c04)
+        plt.plot(Max,phi05,c05)
+        plt.plot(Max,phi06,c06)
+        plt.plot(Max,phi07,c07)
+        plt.plot(Max,phi08,c08)
+        plt.plot(Max,phi09,c09)
+        plt.plot(Max,phi10,c10)
+
+        plt.errorbar(m02,n02,yerr=s02, capsize=2, markersize=4, marker='o', ls='none', color=c02, ecolor=c02, mfc=c02, mec=c02, zorder=2, label='z ~ 2')
+        plt.errorbar(m03,n03,yerr=s03, capsize=2, markersize=4, marker='o', ls='none', color=c03, ecolor=c03, mfc=c03, mec=c03, zorder=2, label='z ~ 3')
+        plt.errorbar(m04,n04,yerr=s04, capsize=2, markersize=4, marker='o', ls='none', color=c04, ecolor=c04, mfc=c04, mec=c04, zorder=2, label='z ~ 4')
+        plt.errorbar(m05,n05,yerr=s05, capsize=2, markersize=4, marker='o', ls='none', color=c05, ecolor=c05, mfc=c05, mec=c05, zorder=2, label='z ~ 5')
+        plt.errorbar(m06,n06,yerr=s06, capsize=2, markersize=4, marker='o', ls='none', color=c06, ecolor=c06, mfc=c06, mec=c06, zorder=2, label='z ~ 6')
+        plt.errorbar(m07,n07,yerr=s07, capsize=2, markersize=4, marker='o', ls='none', color=c07, ecolor=c07, mfc=c07, mec=c07, zorder=2, label='z ~ 7')
+        plt.errorbar(m08,n08,yerr=s08, capsize=2, markersize=4, marker='o', ls='none', color=c08, ecolor=c08, mfc=c08, mec=c08, zorder=2, label='z ~ 8')
+        plt.errorbar(m09,n09,yerr=s09, capsize=2, markersize=4, marker='o', ls='none', color=c09, ecolor=c09, mfc=c09, mec=c09, zorder=2, label='z ~ 9')
+        plt.errorbar(m10,n10,yerr=s10, capsize=2, markersize=4, marker='o', ls='none', color=c10, ecolor=c10, mfc=c10, mec=c10, zorder=2, label='z ~ 10')
+    else:
+        plt.xlim(Llim)
+        plt.ylim(philim*mag2dex)
+        plt.xlabel(r'$L_\mathrm{UV}\,\,/\,\,L_\odot$',fontsize=fs)
+        plt.ylabel(r'$dN/d\log(L_\mathrm{UV}/L_\odot)\,\,/\,\,\mathrm{dex}^{-1}\,\mathrm{Mpc}^{-3}$',fontsize=fs)
+        plt.xscale('log')
+
+        plt.plot(Lax,phi02[::-1]*mag2dex,c02)
+        plt.plot(Lax,phi03[::-1]*mag2dex,c03)
+        plt.plot(Lax,phi04[::-1]*mag2dex,c04)
+        plt.plot(Lax,phi05[::-1]*mag2dex,c05)
+        plt.plot(Lax,phi06[::-1]*mag2dex,c06)
+        plt.plot(Lax,phi07[::-1]*mag2dex,c07)
+        plt.plot(Lax,phi08[::-1]*mag2dex,c08)
+        plt.plot(Lax,phi09[::-1]*mag2dex,c09)
+        plt.plot(Lax,phi10[::-1]*mag2dex,c10)
+
+        L_Lsun02 = flum_from_dmag(m02-Msun)
+        L_Lsun03 = flum_from_dmag(m03-Msun)
+        L_Lsun04 = flum_from_dmag(m04-Msun)
+        L_Lsun05 = flum_from_dmag(m05-Msun)
+        L_Lsun06 = flum_from_dmag(m06-Msun)
+        L_Lsun07 = flum_from_dmag(m07-Msun)
+        L_Lsun08 = flum_from_dmag(m08-Msun)
+        L_Lsun09 = flum_from_dmag(m09-Msun)
+        L_Lsun10 = flum_from_dmag(m10-Msun)
+
+        plt.errorbar(L_Lsun02,n02*mag2dex,yerr=s02*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c02, ecolor=c02, mfc=c02, mec=c02)
+        plt.errorbar(L_Lsun03,n03*mag2dex,yerr=s03*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c03, ecolor=c03, mfc=c03, mec=c03)
+        plt.errorbar(L_Lsun04,n04*mag2dex,yerr=s04*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c04, ecolor=c04, mfc=c04, mec=c04)
+        plt.errorbar(L_Lsun05,n05*mag2dex,yerr=s05*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c05, ecolor=c05, mfc=c05, mec=c05)
+        plt.errorbar(L_Lsun06,n06*mag2dex,yerr=s06*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c06, ecolor=c06, mfc=c06, mec=c06)
+        plt.errorbar(L_Lsun07,n07*mag2dex,yerr=s07*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c07, ecolor=c07, mfc=c07, mec=c07)
+        plt.errorbar(L_Lsun08,n08*mag2dex,yerr=s08*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c08, ecolor=c08, mfc=c08, mec=c08)
+        plt.errorbar(L_Lsun09,n09*mag2dex,yerr=s09*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c09, ecolor=c09, mfc=c09, mec=c09)
+        plt.errorbar(L_Lsun10,n10*mag2dex,yerr=s10*mag2dex, capsize=2, markersize=4, marker='o', ls='none', color=c10, ecolor=c10, mfc=c10, mec=c10)
+
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c02, ecolor=c02, mfc=c02, mec=c02, zorder=2, label=r'$z \sim 2$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c03, ecolor=c03, mfc=c03, mec=c03, zorder=2, label=r'$z \sim 3$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c04, ecolor=c04, mfc=c04, mec=c04, zorder=2, label=r'$z \sim 4$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c05, ecolor=c05, mfc=c05, mec=c05, zorder=2, label=r'$z \sim 5$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c06, ecolor=c06, mfc=c06, mec=c06, zorder=2, label=r'$z \sim 6$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c07, ecolor=c07, mfc=c07, mec=c07, zorder=2, label=r'$z \sim 7$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c08, ecolor=c08, mfc=c08, mec=c08, zorder=2, label=r'$z \sim 8$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c09, ecolor=c09, mfc=c09, mec=c09, zorder=2, label=r'$z \sim 9$')
+        plt.errorbar([666],[666],yerr=[666], capsize=2, markersize=5, marker='o', color=c10, ecolor=c10, mfc=c10, mec=c10, zorder=2, label=r'$z \sim 10$')
+
+    plt.legend(numpoints=1,fontsize=12,loc='lower left')
 #------------------------------------------------------------------------------

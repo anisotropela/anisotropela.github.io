@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{82}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Barkana \& Loeb(2001)}]{Barkana2001}
@@ -151,7 +151,12 @@ Jensen, H., Hayes, M., Iliev, I.~T., {et~al.} 2014, MNRAS, 444, 2114
 Jensen, H., Laursen, P., Mellema, G., {et~al.} 2013, MNRAS, 428, 1366
 
 \bibitem[{Jovi(1990)}]{Jovi1990}
-Jovi, J.~B. 1990, Santa Fe (Blaze of Glory)
+Jovi, J.~B. 1990, St. Fe (Blaze Glory)
+
+\bibitem[{Kannan {et~al.}(2022)Kannan, Springel, Hernquist, Pakmor, Delgado,
+  Hadzhiyska, Hern{\'{a}}ndez-Aguayo, Barrera, Ferlito, Bose, White, Frenk,
+  Smith, \& Garaldi}]{Kannan2022}
+Kannan, R., Springel, V., Hernquist, L., {et~al.} 2022, 11, 1
 
 \bibitem[{Katz {et~al.}(1996)Katz, Weinberg, \& Hernquist}]{Katz1996}
 Katz, N., Weinberg, D.~H., \& Hernquist, L. 1996, ApJS, 105, 19
@@ -201,6 +206,11 @@ Naidu, R.~P., Oesch, P.~A., van Dokkum, P., {et~al.} 2022{\natexlab{b}}
 
 \bibitem[{Natarajan(1999)}]{Natarajan1999}
 Natarajan, P. 1999, ApJ, 512, L105
+
+\bibitem[{Oesch {et~al.}(2018)Oesch, Bouwens, Illingworth, Labb{\'{e}}, \&
+  Stefanon}]{Oesch2018}
+Oesch, P.~A., Bouwens, R.~J., Illingworth, G.~D., Labb{\'{e}}, I., \& Stefanon,
+  M. 2018, ApJ, 855, 105
 
 \bibitem[{Oesch {et~al.}(2016)Oesch, Brammer, van Dokkum, Illingworth, Bouwens,
   Labb{\'{e}}, Franx, Momcheva, Ashby, Fazio, Gonzalez, Holden, Magee, Skelton,
