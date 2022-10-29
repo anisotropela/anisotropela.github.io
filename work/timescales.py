@@ -355,10 +355,10 @@ def redshift_lookback(cosmo=Planck18):
     plt.savefig('redshift.pdf',dpi=300, box_inches='tight')
 #------------------------------------------------------------------------------
 
-def cooling_function_from_file(file='cooling_function_Z0.dat',plot=True,ret=False,fit=False):
+def cooling_function_from_file(file='cooling_function_Z0_tho95.dat',plot=True,ret=False,fit=False):
     """
     Plot and/or return cooling function.
-    The 'cooling_function_Z0.dat' is read off Mo et al. (2010)'s Fig. 8.1,
+    The 'cooling_function_Z0_tho95.dat' is read off Thoul & Weinberg (1995)'s Fig. 1,
     which is based on data from Sutherland & Dopita (1993).
     """
     T,L = np.loadtxt(file,unpack=True)
@@ -367,13 +367,14 @@ def cooling_function_from_file(file='cooling_function_Z0.dat',plot=True,ret=Fals
 
     if plot:
         plt.clf()
-        plt.xlim([1e4,1e8])
+        plt.xlim([1e3,1e8])
         plt.ylim([.2e-23,200e-23])
         plt.xlabel(r'$T \,/\, \mathrm{K}$',fontsize=14)
         plt.ylabel(r'$\Lambda \,/\, \mathrm{erg}\,\mathrm{cm}^3\,\mathrm{s}^{-1}$',fontsize=14)
         plt.xscale('log')
         plt.yscale('log')
         plt.plot(T,L,'-r',lw=2)
+      # plt.scatter(T,L,color='r',lw=2,s=1)
 
     if ret:
         return T,L
@@ -442,7 +443,7 @@ def cooling_time(n,T):
     return (num/den).to(u.Gyr)
 #------------------------------------------------------------------------------
 
-def halo_cooling(file='cooling_function_Z0.dat',fit=None,Delta=200):
+def halo_cooling(file='cooling_function_Z0_tho95.dat',fit=None,Delta=200):
     """
     Compare t_cool with t_dyn in a density vs. temperature plot.
     """
@@ -500,8 +501,8 @@ def halo_cooling(file='cooling_function_Z0.dat',fit=None,Delta=200):
     nz10 = (cosmo.critical_density(10) * cosmo.Ob(10) / (mu*mH)).to(u.cm**-3).value * Delta
 
     plt.clf()
-    plt.xlim([1e4,3e7])
-    plt.ylim([1e-10,10])
+    plt.xlim([8e3,2e7])
+    plt.ylim([1e-9,3])
     plt.xlabel(r'$T_\mathrm{vir} \,/\, \mathrm{K}$',fontsize=14)
     plt.ylabel(r'$n \,/\, \mathrm{cm}^{-3}$',fontsize=14)
     plt.xscale('log')
