@@ -23,8 +23,8 @@ def list_days(day0=datetime.date.today(),ndays=10):
     List every 7th day, starting with `day0`
 
     >>> list_days(datetime.date(2020,9,28))
-    >>> next_moday = next_weekday(datetime.date.today(), 0)
-    >>> list_days(next_moday)
+    >>> next_monday = next_weekday(datetime.date.today(), 0)
+    >>> list_days(next_monday)
     """
     if type(day0) == str:
         from dateutil import parser
