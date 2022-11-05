@@ -31,7 +31,8 @@ def dillit(language      = 'dk',
     xyJ = '?'
     #                0          1                                            2     3       4                                       5                                                     6     7    8     9    10    11    12
     #                                                                                                                                                                                             Mi    Mo    Je    Kl    Pe
-    books = [['2022.10.08', 'Luke Rhinehart'                             , 'USA', 'M', 'Terningenmanden'                      , 'The Dice Man'                                       , 1971, 477, nan , nan , nan , nan , nan],
+    books = [['2023.14.01', 'Gustave Flaubert'                           , 'FRA', 'M', 'Madame Bovary'                        , 'Madame Bovary'                                      , 1857, 432, nan , nan , nan , nan , nan],
+             ['2022.11.04', 'Luke Rhinehart'                             , 'USA', 'M', 'Terningemanden'                       , 'The Dice Man'                                       , 1971, 477, 1.0 , 0.0 , 1.5 , 1.0 , 3.0],
              ['2022.08.26', 'Margaret Atwood'                            , 'CAN', 'F', 'Tjenerindens fortælling'              , 'The Handmaid\'s Tale'                               , 1985, 311, 2.5 , 3   , 3.5 , 3   , 3.5],
              ['2022.06.02', 'Jennifer Egan'                              , 'USA', 'F', 'Tæskeholdet banker på'                , 'A Visit from the Goon Squad'                        , 2010, 293, 4.0 , 4.0 , 4.0 , 4.0 , 4.0],
              ['2022.03.09', 'Hans Kirk'                                  , 'DEN', 'M', 'De ny tider'                          , 'De ny tider'                                        , 1939, 211, 3.0 , 3.5 , 2.5 , 3.0 , 4.0],
