@@ -37,6 +37,16 @@
     </head>
     <!-- #####End head-->
     <body class="fullwidth side-header slim-container">
+        <script type="text/javascript">
+            (function(window, document, dataLayerName, id) {
+                            window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+                            function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+                            var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+                            var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+                            tags.async=!0,tags.src="https://anisotropela.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+                            !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+                        })(window, document, 'dataLayer', 'a8556bd7-f6df-497f-a091-d5bd1ed45f5d');
+        </script>
         <div id="wrapper" class="regular-layout">
 
             <!-- begin header (side menu) -->
@@ -125,6 +135,7 @@
                                                 <div class="item-body open">
                                                     <h5>Radio &amp; podcast</h5>
                                                     <ul>
+                                                        <li><a href="https://www.radio4.dk/program/aftenradio/?gid=42734&title=aftenradio-d-19-oktober&time=4503">Rekordfjerne galakser med James Webb?</a> (Nicolai Dupont/Radio4; ved 01:15:03)</li>
                                                         <li><a href="https://www.dr.dk/lyd/p1/vildt-naturligt/vildt-naturligt-2022-10-03">Magiske billeder fra verdensrummet</a> (Johan Olsen &amp; Vicky Knudsen/P1)</li>
                                                         <li><a href="https://open.spotify.com/episode/3W3L3GdsgTiV8bYF5uco4g?si=a3d09c87ae7f41a0">Jagten på Universets begyndelse (om James Webbs første galakser)</a> (Kaare Svejstrup/Pilestræde @ Berlingske)</li>
                                                         <li><a href="https://www.radio4.dk/program/aftenradio/?gid=38456&title=aftenradio-d-12-juli&time=3653">James Webb første billeder</a> (Nicolai Dupont/Radio4; ved 01:00:53)</li>
@@ -354,7 +365,7 @@
                                                                     Samlet op nationalt og internationalt af f.eks.
                                                                     <a href="https://sciencereport.dk/andre-skriver/ku-astronomer-har-fundet-6-fjerne-galakser-som-er-doede-paa-mystisk-vis/" target="_blank">ScienceReport</a>,
                                                                     <a href="https://videnskab.dk/naturvidenskab/astronomer-finder-6-doede-galakser-fra-det-tidlige-univers-med-hjaelp-fra-kaempe" target="_blank">videnskab.dk</a>, og
-                                                                    <a href="https://jyllands-posten.dk/nyviden/ECE13306935/astronomer-har-fundet-seks-doede-galakser-fra-det-tidlige-univers/" target="_blank">jyllands-Posten</a>.
+                                                                    <a href="https://jyllands-posten.dk/nyviden/ECE13306935/astronomer-har-fundet-seks-doede-galakser-fra-det-tidlige-univers/" target="_blank">Jyllands-Posten</a>.
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -417,7 +428,11 @@
                                                             <ul>
                                                                 <li>En 15-minutters artikel om James Webbs observationer af galakser så fjerne og store, at de ser ud til at modstride fysikken.</li>
                                                                 <li>Også tilgængelig i dette 2-minutters overblik: <a href="https://cosmicdawn.dk/news-in-danish/james-webb-udfordrer-det-kosmiske-daggry/">James Webb udfordrer det kosmiske daggry</a>.</li>
-                                                                <li>Samlet op af bl.a. <a href="https://videnskab.dk/teknologi-innovation/kosmisk-mysterie-galakser-fra-universets-barndom-ser-langt-stoerre-ud-end-de" target="_blank">videnskab.dk</a>.</li>
+                                                                <li>Samlet op af bl.a.
+                                                                    <a href="https://videnskab.dk/teknologi-innovation/kosmisk-mysterie-galakser-fra-universets-barndom-ser-langt-stoerre-ud-end-de" target="_blank">videnskab.dk</a>,
+                                                                    <a href="https://www.dr.dk/lyd/p1/vildt-naturligt/vildt-naturligt-2022-10-03" target="_blank">P1</a> og
+                                                                    <a href="https://www.radio4.dk/program/aftenradio/?gid=42734&title=aftenradio-d-19-oktober&time=4503" target="_blank">Radio4</a>.
+                                                                </li>
                                                             </ul>
                                                         </li>
                                                         <li><a href="https://cosmicdawn.dk/news/first-images-from-the-james-webb-space-telescope/" target="_blank">Første billeder fra rumteleskopet James Webb — pressekonference på DAWN</a></li>
