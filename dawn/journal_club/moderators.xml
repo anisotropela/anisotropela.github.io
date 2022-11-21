@@ -1,5 +1,4 @@
 <root>
-    <jcentry Date="2022/11/21" Moderator="Lise"      Email="lichrist@nbi.ku.dk"/>
     <jcentry Date="2022/11/28" Moderator="Daniele"   Email="d.malesani@astro.ru.nl"/>
     <jcentry Date="2022/12/05" Moderator="Thomas"    Email="tgreve@space.dtu.dk"/>
     <jcentry Date="2022/12/12" Moderator="Malte"     Email="malbr@space.dtu.dk"/>
@@ -39,4 +38,5 @@
     <jcentry Date="TBA"        Moderator="Guozhen"   Email="guozhen.ma@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Sune"      Email="sune@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Lijie"     Email="lijli@space.dtu.dk"/>
+    <jcentry Date="TBA"        Moderator="Lise"      Email="lichrist@nbi.ku.dk"/>
 </root>
