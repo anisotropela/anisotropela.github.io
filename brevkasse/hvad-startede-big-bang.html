@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <meta property="og:image" content="../pics/brevkasse/conformal-cyclic-cosmology.jpg" />
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Før Big Bang</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <script type="text/javascript">
+            (function(window, document, dataLayerName, id) {
+                            window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+                            function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+                            var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+                            var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+                            tags.async=!0,tags.src="https://anisotropela.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+                            !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+                        })(window, document, 'dataLayer', 'a8556bd7-f6df-497f-a091-d5bd1ed45f5d');
+        </script>
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Hvad startede Big Bang</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Før Big Bang</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- begin sporgsmal -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Spørgsmålet</h3>
+                                            <p>
+                                            Hej!<br>
+                                            Mig og min veninde er skal til at skrive projektopgave i næste uge, omkring starten på universet. Jeg har læst en del om det, og kan derfor forstå at man jo godt ved hvad der er sket til at starte med. Altså at det hele startede i en singularitet, og det derefter udvidede o.s.v.<br>
+                                            Men jeg kan derfor også forstå at man ikke ved hvad der er sket helt til at starte med. Altså hvad der “satte det hele igang”<br>
+                                            Jeg ved godt at det ikke er noget man ved, men har man som fysiker et bud på det? Altså et bud på hvad det var der satte det hele igang?<br>
+                                            Håber at jeg hører fra jer.<br>
+                                            Mvh Eva
+                                            </p>
+                                        </div>
+                                        <!-- end sporgsmal -->
+                                        <hr>
+                                        <!-- begin korte svar -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Det korte svar</h3>
+                                            <p>
+                                            Man har flere bud, men vi er stadig langt fra at have en egentlig teori.<br>
+                                            Enten har tiden, og måske også rummet, eksisteret altid, eller også opstod det af sig selv.
+                                            Begge dele er lige foruroligende, synes jeg.
+                                            </p>
+                                        </div>
+                                        <!-- end korte svar -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="Gå til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>Gå til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede spørgsmål</h4>
+                                                    <div class="posts-list">
+                                                        <!-- begin sporgsmal 1 -->
+                                                        <div class="post"><a href="./universets_geometri_og_uendelighed.html" class="entry-image"><img src="../pics/brevkasse/krumning_icon.gif" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./universets_geometri_og_uendelighed.html">Om Universets uendelighed</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end sporgsmal 1 -->
+                                                        <!-- begin sporgsmal 2 -->
+                                                        <!-- end sporgsmal 2 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                        <!-- begin baggrund -->
+                                        <!--
+                                        <div class="icon-box ib-v1 ib-boxed bg-logoyellow">
+                                            <i class="oli oli-book-open" style="color:#7F548E"></i>
+                                            <h3 class="title" style="color:#7F548E">Baggrundsviden fra encyklopædien</h3>
+                                            <p>
+                                            <span style="color:#7F548E">Hvis du ikke kender til begrebet "WALLAHencyklo", kan du læse om det i encyklopædien her:</span>
+                                            </p>
+                                            <p>
+                                            <a href="../encyclo/WALLAHencyklo_url" data-text="WALLAHencyklo_text" class="btn btn-round btn-skin-yellow btn-extra-small"><span>WALLAHencyklo_text</span></a>
+                                            </p>
+                                        -->
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                        <!-- end baggrund -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (big bang) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <h1>Det lange svar</h1>
+                                <hr>
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Big Bang</h3>
+                                        <p>
+                                        Det er et fantastisk godt spørgsmål, og hvis jeg kunne give dig svaret, havde jeg helt sikkert en Nobelpris hjemme.
+                                        </p>
+                                        <p>
+                                        Som du måske ved, er begrebet "Big Bang" navnet på den teori (eller familie af forskellige varianter af teorier), som beskriver det meget tidlige Univers, og hvordan det udviklede sig.
+                                        Altså, hvordan de fysiske forhold var (f.eks. temperatur, tæthed og tryk), hvor hurtigt det udvidede sig, hvilke partikler der eksisterede, og hvordan de opstod og ændrede sig.
+                                        </p>
+                                        <p>
+                                        Der er ikke nogen præcis definition af, hvor længe Big Bang varede, men efter omtrent 15-20 minutter var temperatur og tæthed faldet så meget, at der ikke blev skabt nogle nye partikler i nævneværdig grad,
+                                        og derefter skete der ikke "noget særligt" i ca. 50.000 år (dette tidspunkt markerer overgangen fra at Universets udvikling var domineret af stråling, til det var domineret af stof, men det er en anden historie).
+                                        </p>
+                                        <p>
+                                        Man kan "regne baglæns" og finde ud af, hvordan Universet var 1 minut efter "start", eller 1 sekund efter, eller et nanosekund, og så videre.
+                                        Tilbage til et picosekund (1/1000 nanosekund) efter start var forholdene sådan at vi faktisk kan genskabe dem i partikelacceleratorer og dermed teste vores teorier.
+                                        Tidligere end dette har vi en masse gode ideer, men det bliver mere og mere gætværk, jo tættere vi komme på "0".
+                                        </p>
+                                        <p>
+                                        Og på et tidspunkt bliver forholdende så ekstreme, at de fysiske love vi kender, ikke længere kan bruges.
+                                        Begrebet "singularitet" hentyder til dette.
+                                        Du skal ikke nødvendigvis forestille dig, at "alt" var presset sammen i et punkt uden udstrækning, men det var presset rigtig meget sammen.
+                                        </p>
+                                        <p>
+                                        Vi har gode grunde til at tro, at noget af det allerførste der skete var en ekstrem udvidelse, som vi kalder <em>inflation</em>.
+                                        Denne teori regnes normalt ikke med i Big Bang-teorien, så man kan sige at "Big Bang" dækker tidsrummet fra inflationen sluttede, et sted mellem 10<sup>–33</sup> og 10<sup>–32</sup> sekunder efter "start", til skabelsen af nye partikler ("nukleosyntesen") sluttede 15–20 minutter efter start.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/color-of-big-bang.png" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/color-of-big-bang.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2>
+                                                <strong>Farven af Big Bang</strong>:
+                                                Den stråling, som et objekt udsender pga. dets temperatur, kaldes "Planck-stråling".
+                                                Farven af Planck-stråling afhænger af det menneskelige øjes lysfølsomme celler, og går fra
+                                                rød for kølige (dvs. op til et par tusinde grader) objekter, til hvid for objekter på omkring 6000 grader (som f.eks. vores Sol), til blå for meget varme objekter (over 10.000 grader).<br>
+                                                Ved Big Bang var der meget varmt, og farven var derfor denne safirblå nuance, som kan beskrives omtrent med farvekoden
+                                                RGB = (63.1, 71.2, 100) i procent, eller (161, 182, 256) i 8-bit (dvs. værdier fra 0–255), eller hex: #A1B6FF.<br>
+                                                Kredit: <a href="https://videnskab.dk/naturvidenskab/big-bang-en-oejenvidneberetning">Peter Laursen: "Big Bang — en øjenvidneberetning"</a>.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (evigt univers) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Hvad kom før Big Bang?</h3>
+                                        <p>
+                                        Men hvad er så "start"?
+                                        </p>
+                                        <p>
+                                        Vi aner det ikke, og vi er ikke engang sikre på, at der er en start.
+                                        </p>
+                                        <p>
+                                        Én teori, som kaldes <a href="https://en.wikipedia.org/wiki/Eternal_inflation">eternal inflation</a>, er at inflation faktisk ikke startede på et bestemt tidspunkt.
+                                        Inflationen var karakteriseret ved eksponentiel udvidelse.
+                                        Dvs., at hvis vi går tilbage i tiden, bliver Universet mindre og mindre.
+                                        Men som du måske ved, når en eksponentialfunktion aldrig helt ned til nul, selvom den kommer vilkårligt tæt på.
+                                        Med andre ord: Uanset hvor langt vi går tilbage i tiden, var der stadig et Univers, som bare bliver mindre og mindre.
+                                        Universet har dermed altid eksisteret, og der er derfor ikke noget der "satte det i gang".
+                                        På et tidspunkt "henfaldt" det, hvorved rummets energi blev konverteret til en form for partikler, og herefter begyndte Big Bang og Universets som vi kender det.
+                                        </p>
+                                        <p>
+                                        Teorien giver mulighed for, at rummet kan deles op i "bobler" som udvider sig forskelligt, og har forskellige fysiske forhold (og måske fysiske love?).
+                                        Man kan betragte dem som forskellige universer, hvoraf vores Univers blot er ét af mange; den såkaldte <a href="https://en.wikipedia.org/wiki/Multiverse">multivers-teori</a>.
+                                        </p>
+                                        <p>
+                                        En anden teori, kaldet <a href="https://en.wikipedia.org/wiki/Conformal_cyclic_cosmology">conformal cyclic cosmology</a> er lidt i samme boldgade:
+                                        Vores Univers er fuldt af stof (atomer) og mørkt stof, som bremser udvidelsen.
+                                        Men det er endnu mere fuldt af noget der hedder mørk energi, som accelererer udvidelsen.
+                                        I fremtiden kommer den mørke energi til at dominere mere og mere, og på et tidspunkt, når al stof er blevet til stråling
+                                        — enten ved at henfalde, eller ved at blive slugt af sorte huller, som fordamper efter milliarder af år —
+                                        og når al stråling er blevet rødforskudt til så lange bølgelængder, at de praktisk taget har mistet al energi, så har vi et Univers som ikke er til at skelne fra det oprindelig Univers, dengang der var inflation.
+                                        Herefter kan vi så begynde forfra. Så det er altså en uendelig udvikling fra et univers til det næste.
+                                        </p>
+                                        <p>
+                                        Uendelighed er et mærkeligt begreb, og mens man måske godt kan forestille sig noget, som aldrig vil ophøre med at eksistere, er det sværere at forestille sig noget, der altid har eksisteret.
+                                        Men vi er nok nødt til at vælge mellem to lige utænkelige ideer:
+                                        </p>
+                                        <p>
+                                        Enten har Universet eksisteret altid, eller også startede det pludseligt — uden grund — med at eksistere.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/conformal-cyclic-cosmology.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/conformal-cyclic-cosmology.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2>
+                                                <strong>Conformal cyclic cosmology</strong>, eller "CCC", er en kosmologisk model fremsat af fysikeren Roger Penrose.
+                                                Et univers' bestanddele dannes ved et Big Bang, hvorefter det udvikler og udvider sig.
+                                                Efter et meget langt tidsrum (mere end 10<sup>100</sup> år) er alle partiklers energi stort set forsvundet, og vi har bare et tomt, ekspanderende univers, som bortset fra størrelsen er identisk med et nyt univers som undergår inflation.
+                                                Men hvis vi ikke har nogen absolut målestok, er størrelser vilkårlige, og vi kan opfatte det som et reelt nyt univers.<br>
+                                                Hvert univers' levetid kaldes en "æon".
+                                                På figurens venstre side ses en række todimensionale udgaver af disse æoner, med tiden gående fra neden og op.
+                                                Hvert univers starter meget lille, og går mod uendeligt stort.
+                                                På højre side er denne udvidelse ved et matematisk trick kaldet en <em>konform afbildning</em> så at sige "fjernet", sådan at tiden fra én æon fortsætter direkte over i en anden.<br>
+                                                Illustration: Roger Penrose.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (opstået selv) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Startede Big Bang af sig selv?</h3>
+                                        <p>
+                                        Eller… måske er det sidste ikke så utænkeligt endda:
+                                        </p>
+                                        <p>
+                                        Fra kvantemekanikken ved vi, at et vakuum — altså rum, som er fuldstændig tomt — ikke rigtig er muligt.
+                                        Kvantemekanikkens love fortæller os, at der hele tiden popper partikler ind og ud af eksistens.
+                                        </p>
+                                        <p>
+                                        Energi kan jo ikke sådan opstå ud af ingenting, men partiklerne "låner" så at sige energi fra vakuummet, et faktum som er eksperimentelt verificeret.
+                                        En partikel og et univers er jo ikke ligefrem det samme, men hvis en partikel kan opstå ud af ingenting — selv om det kun er midlertidigt — kan et univers måske også?
+                                        </p>
+                                        <p>
+                                        Forskellen er godt nok, at en kvantepartikel opstår ud af et tomrum.
+                                        Så vi er jo nødt til at have et rum først.
+                                        Vi er meget langt fra en have en rigtig teori om dette, bl.a. fordi vi vil først være nødt til at forene de to grundpiller i fysik,
+                                        kvanteteori som beskriver partiklerne (eller rettere felterne) på mikroskopiske skalaer,
+                                        og generel relativitetsteori som beskriver tyngdekraft på makroskopisk skala.
+                                        Og sådan en <a href="https://en.wikipedia.org/wiki/Grand_Unified_Theory">grand unified theory</a> har vi ikke, desværre.
+                                        </p>
+                                        <p>
+                                        Én teori, som måske kunne forklare en sådan opståen ud af vitterlig ingenting — ikke engang tomrum — er James Hartles og Stephen Hawkings <a href="https://en.wikipedia.org/wiki/Hartle–Hawking_state">no-boundary theorem</a>.
+                                        Ifølge denne teori er de fysiske forhold helt tilbage ved dét tidspunkt, som vi ville kunne kalde "starten", sådan, at tid bliver til rum, og der dermed ikke <em>var</em> nogen tid, men bare rum.
+                                        Tiden splittede sig så at sige ud fra rummet.
+                                        </p>
+                                        <p>
+                                        Det løser problemet med spørgsmålet "Hvad var der før Big Bang?", for hvis der ikke var nogen tid, var der simpelthen ikke noget "før".
+                                        Man kan sammenligne det med spørgsmålet "Hvad ligger der syd for Sydpolen?": Svaret er u-defineret, eller måske rettere "Intet".
+                                        </p>
+                                        <p>
+                                        Men hvad så med rummet?
+                                        </p>
+                                        <p>
+                                        Kvantemekanik er normalt noget man forbinder med små partikler.
+                                        Her er en partikels tilstand beskrevet ved en såkaldt "bølgefunktion", som beskriver partiklens sandsynlighed for at eksistere et bestemt sted.
+                                        Men Hartle og Hawking beregnede en bølgefunktion for hele Universet, og så vidt jeg forstår — men jeg er ikke rigtig fysiker, bare astrofysiker, og jeg kan ikke påstå at forstå denne teori —
+                                        viser det sig så at Universets bølgefunktion siger, at Universet har en sandsynlighed for at eksistere, som er større end nul.
+                                        Så på den måde er det altså i stand til at opstå ud af ingenting.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/big-bang-from-a-loop.png" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/big-bang-from-a-loop.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Universer fra en tidsløkke</strong>:
+                                                Spekulativ måde at have et eller flere universer til at eksistere uden et begyndelsestidspunkt, men også uden at det har eksisteret for evigt.
+                                                Går man langt nok tilbage i tiden, ender man i denne abstrakte og muligvis også fuldstændig grundløse formodning i en løkke uden start, men af endelig størrelse,
+                                                hvorfra universerne udspringer.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <!-- <li><a href="./music.html"       >This page in English</a></li> -->
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Rumskrot</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
