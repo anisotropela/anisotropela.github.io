@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <meta property="og:image" content="../pics/brevkasse/conformal-cyclic-cosmology.jpg" />
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Universets udvidelse II</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <script type="text/javascript">
+            (function(window, document, dataLayerName, id) {
+                            window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+                            function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+                            var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+                            var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+                            tags.async=!0,tags.src="https://anisotropela.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+                            !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+                        })(window, document, 'dataLayer', 'a8556bd7-f6df-497f-a091-d5bd1ed45f5d');
+        </script>
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Universets udvidelse II</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Universets udvidelse II</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (spørgsmål) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- begin spørgsmål -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Spørgsmålet</h3>
+                                            <p>
+                                            Hej,
+                                            </p>
+                                            <p>
+                                            Hvis vi forstiller os 2 stjerner, en 1 lysår fra jorden og en 1.000.000 lysår fra jorden. Så vil lyset fra stjerne nr. 2 være red-shiftet mere end nr. 1.
+                                            Det vil sige at stjerne nr. 2 bevæger sig hurtigere væk, end stjerne nr. 1 gør.
+                                            </p>
+                                            <p>
+                                            Lyset fra stjerne nr. 2 er 1.000.000 år gammelt, det havde altså den hastighed for 1.000.000 år siden.
+                                            </p>
+                                            <p>
+                                            Det betyder at for 1.000.000 siden udvidede universet sig hurtigere, end det gør i dag, altså at udvidelsen bliver langsommere og langsommere..!?
+                                            </p>
+                                            <p>
+                                            Mvh. Lars
+                                            </p>
+                                        </div>
+                                        <!-- end spørgsmål -->
+                                        <hr>
+                                        <!-- begin korte svar -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Det korte svar</h3>
+                                            <p>
+                                            Jeg forestiller mig, at grunden til at du spørger, er fordi du har hørt at Universet skulle udvidede sig hurtigere og hurtigere.
+                                            </p>
+                                            <p>
+                                            Men for det første udvidede Universet sig faktisk gradvist langsommere i starten, og begyndte først for relativt nyligt at udvidede sig hurtigere igen.
+                                            </p>
+                                            <p>
+                                            Og for det andet måler vi ikke den hastighed, stjernen havde da lyset blev udsendt.
+                                            Vi måler rødforskydningen, og vores teoretiske model af Universet fortæller os så, hvilken hastighed den har, både nu og tidligere.
+                                            </p>
+                                        </div>
+                                        <!-- end korte svar -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="Gå til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>Gå til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede spørgsmål</h4>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./traet_lys.html" class="entry-image"><img src="../pics/brevkasse/tiredLight_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./traet_lys.html">Træt lys</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Alternativ (men forkert) forklaring på rødforskydning</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./kan-man-vaere-sikker-paa-hvad-rodforskydning-skyldes.html" class="entry-image"><img src="../pics/brevkasse/den-videnskabelige-metode_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./kan-man-vaere-sikker-paa-hvad-rodforskydning-skyldes.html">Hvordan ved vi, hvad rødforskydning skyldes?</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Mere videnskabsteori</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="posts-list">
+                                                        <div class="post"><a href="./universets-udvidelse.html" class="entry-image"><img src="../pics/brevkasse/ants-expansion-icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./universets-udvidelse.html">Udvider Universet sig hurtigere end lyset?</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i>Ja. Ja, det gør det.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                        <!-- begin baggrund -->
+                                        <div class="icon-box ib-v1 ib-boxed bg-logoyellow">
+                                            <i class="oli oli-book-open" style="color:#7F548E"></i>
+                                            <h3 class="title" style="color:#7F548E">Baggrundsviden fra encyklopædien</h3>
+                                            <p>
+                                            <span style="color:#7F548E">Få evt. lidt baggrundsviden om rødforskydning i encyklopædien her:</span>
+                                            </p>
+                                            <p>
+                                            <a href="../encyclo/rodforskydning.html" data-text="Rødforskydning" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Rødforskydning</span></a>
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                        <!-- end baggrund -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (ændring) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <h1>Det lange svar</h1>
+                                <hr>
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>En lille ændring af dit spørgsmål</h3>
+                                        <p>
+                                        De første tre afsnit er tænkt som en baggrund for at besvare dit spørgsmål.
+                                        Hvis du er utålmodig, kan du skippe dem og gå direkte til svaret i <a href="#svaret">sidste afsnit</a>.
+                                        </p>
+                                        <p>
+                                        Selvom det ikke har betydning for spørgsmålets "idé", vil jeg allerførst lige ændre lidt på eksemplet.
+                                        Det er nemlig sådan, at selvom Universet på store skalaer udvider sig, holder tyngdekraften på "lille" skala sammen på det.
+                                        </p>
+                                        <p>
+                                        Det vil sige at Jordkloden ikke udvider sig, at galaksernes egne stjerner ikke fjerner sig fra hinanden, og at vi endda ikke fjerner os fra vores nærmeste nabogalakser.
+                                        Andromeda, for eksempel, ligger 2½ million lysår væk, men er alligevel på vej imod os.
+                                        På endnu mindre skalaer end Jorden holder elektromagnetismen sammen på f.eks. din krop, så du heller ikke udvider dig (hvis du altså har holdt lidt igen med juleanden).
+                                        </p>
+                                        <p>
+                                        Så tillad mig at ændre spørgsmålet til at betragte to galakser som er hhv. 1 og 2 milliarder lysår væk. Lad os kalde dem G<sub>1</sub> og G<sub>2</sub>.
+                                        </p>
+                                        <p>
+                                        Pga. Universets udvidelse har galakserne fjernet sig fra os i den tid, der er gået siden de udsendte dét lys vi ser.
+                                        Så lyset har ikke helt brugt 1 og 2 mia. år på at nå os, fordi de var tættere på os i fortiden.
+                                        Det har brugt lidt mindre tid, men i mellemtiden er galakserne rykket længere væk og ligger i dag hhv. 1 og 2 mia. lysår væk.
+                                        </p>
+                                        <p>
+                                        Men det er vigtigt at forstår, at det <em>ikke</em> er noget man bare kan se ud af deres "redshift", eller <em>rødforskydning</em>, som vi kalder det på dansk.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/hubble-diagram-annotated.jpg" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/hubble-diagram-annotated.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2>
+                                                <strong>Hubbles diagram</strong>:
+                                                At Universet udvider gik op for astronomerne for omkring 100 år siden.
+                                                Opdagelsens skyldtes mange menneskers målinger og teorier, men Edwin Hubble var den første der præsenterede dette diagram, hvor hvert punkt viser en observeret galakses afstand (på <em>x</em>-aksen) og hastighed ift. os (på <em>y</em>-aksen).
+                                                For eksempel ligger galaksen <a href="../observations/virgo.html">M87</a> (ifølge Hubbles målinger) 2 mio. parcsec — eller ca. 6½ mio. lysår — væk, og fjerner sig med 800 km/s.
+                                                <br>
+                                                Man kan se, at der er stor spredning i hastighed, og nogle af de nærmeste galakser bevæger sig endda hen imod os (dvs. de ligger nedenunder <em>x</em>-aksen, altså med negative hastigheder).
+                                                Men generelt er mønstret, at jo længere væk, jo hurtigere fjerner de sig.
+                                                Edwin Hubble under-estimere dog de fleste afstande, og over-estimerede derfor udvidelseshastigheden med mere end en faktor 7.<br>
+                                                Kredit: <a href="https://ui.adsabs.harvard.edu/abs/1929PNAS...15..168H/abstract">Edwin Hubble (1929)</a>, med mine annoteringer med navne på nogle af galakserne.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (ΛCDM) -->
+                        <section class="section section-narrow bg-white p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>En model af Universet</h3>
+                                        <p>
+                                        Det vi måler, er hverken en udvidelse, eller en hastighed, eller en alder, men slet og ret rødforskydningen.
+                                        At koble denne observerede rødforskydning til de andre størrelser kræver først en <em>fysisk model</em> af Universet og dets dynamik.
+                                        En "model" er i fysik en teoretisk repræsentation af et system, som kan forklare og eventuelt forudsige forskellige fænomener relateret til systemet.
+                                        </p>
+                                        <p>
+                                        Du er måske bekendt med rødforskydning fra dét scenarie, at et lysende objekt bevæger sig ift. dig.
+                                        Når du måler, hvor meget objektets lys er rød- (eller blå-)forskudt, kan du regne ud, hvor hurtigt objektet bevægede sig dengang, det udsendte lyset.
+                                        Dette kaldes også <em>Doppler-forskydning</em>, og dét måler vi også for nære stjerner (og kan f.eks. bruge til at se, om de har planeter omkring sig, som hiver dem lidt frem og tilbage).
+                                        </p>
+                                        <p>
+                                        Effekten er en forudsigelse af den teori vi kalder "den specielle relativitetsteori" (eller "SR").
+                                        Men det er <em>ikke</em> det vi tror der sker med galakser, som ligger så langt væk, at de tager del i Universets udvidelse.
+                                        </p>
+                                        <p>
+                                        Den bredest accepterede model af Universet er den såkalde &Lambda;CDM-model (udtales Lambda-CDM), som bygger på den <em>generelle</em> relativitetsteori (eller "GR"), nogle få og rimelige antagelser, og et antal observerede fysiske parametre.
+                                        </p>
+                                        <p>
+                                        I korte træk siger GR, at selve rummet kan udvide sig, trække sig sammen, og forme sig vilkårligt, alt efter hvor og hvor meget det indeholder af forskellige former for energi.
+                                        </p>
+                                        <p>
+                                        Præcis hvordan vores Univers opfører sig, afhænger dermed af forskellige ting, som vi kan observere.
+                                        </p>
+                                        <p>
+                                        Når vi så måler, at galaksernes lys er rødforskudt, og at rødforskydningen er større, jo længere væk de ligger, passer det ind i en model der siger, at Universet er i gang med at udvide sig.
+                                        </p>
+                                        <p>
+                                        <strong>
+                                        I denne model skyldes galaksernes rødforskydning derfor <em>ikke</em> at de bevæger sig væk fra os, men derimod at selve rummet udvider sig.
+                                        Det er altså ikke helt det samme, som når man måler bølgelængden af lys, der bliver udsendt fra en objekt, som bevæger sig ift. os.
+                                        Galakserne ligger (forholdsvis) stille i rummet, men selve rummet udvider sig, og derfor øges afstanden mellem galakserne.
+                                        Derfor fortæller rødforskydningen os ikke bare, hvilken hastighed galakserne havde, dengang de udsendte lyset.
+                                        </strong>
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/kosmologisk-rødforskydning.png" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/kosmologisk-rødforskydning.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2>
+                                                <strong>Kosmologisk Rødforskydning</strong>:
+                                                To galakser, kaldet A og B, starter ud med at være tæt på hinanden (<em>øverst</em>), da A udsender en lyspartikel som f.eks. er blå.
+                                                Som tiden går (<em>nedad på tegningen</em>), fjerner de to galakser sig fra hinanden.
+                                                Mens fotonen rejser, "strækkes" den proportionalt med Universets udvidelse, forstået på den måde at dens bølgelængde bliver længere.
+                                                Efterhånden bliver den derfor grøn, gul, orange, og til sidst — når A's foton når ned til B — er den blevet rød.
+                                                B-astronomerne måler <em>hvor</em> rød den er blevet, men kun med en model af Universets udvidelse kan de "oversætte" det til, hvor langt væk A er, og hvor hurtigt den bevæger sig.
+                                                For de allerfjerneste galakser er lyset blevet så rødforskudt, at det er blevet infrarødt, selvom det startede med at være ultraviolet.
+                                                Illustration: Peter Laursen.
+                                            </font>
+                                        </div>
+                                        <br><br>
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/xkcd-hubbles-car.png" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/xkcd-hubbles-car.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2>
+                                                Kredit: <a href="https://xkcd.com/1125/">xkcd</a>.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (andre modeller) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Andre modeller</h3>
+                                        <p>
+                                        Det lyder måske lidt vilkårligt.
+                                        Altså, der kunne vel også være andre modeller, som ville gøre at galaksernes lys var rødforskudt.
+                                        Og jo, det kan der.
+                                        Men rødforskydningen er bestemt ikke den eneste grund til, at vi tror at &Lambda;CDM er en god beskrivelse af Universet.
+                                        En lang, lang række af forskellige observationer passer rigtig, rigtig godt ind i de forskellige teoretiske aspekter af &Lambda;CDM.
+                                        Mange andre modeller har været fremsat gennem de sidste hundrede år, men de fleste er endt med at blive modbevist, og de resterende kræver mere og mere fintuning, efterhånden som vi får flere og bedre data.
+                                        </p>
+                                        <p>
+                                        For eksempel har den hypotese været fremsat, at galakserne ikke fjerner sig fra hinanden, men at lyset af en eller anden grund bliver "træt" undervejs og mister energi.
+                                        Men man har ikke kunne finde nogen plausibel grund til, at det skulle miste energi, og da der er andre fænomener, som det ekspanderende Univers kan forklare, men som træt-lys-hypotesen ikke kan, er man gået væk fra dén.
+                                        </p>
+                                        <p>
+                                        Og den simplere antagelse, nemlig at rummet ikke udvider sig, men at galakserne fjerner sig fra hinanden ved at bevæge sig gennem rummet, og dermed have en helt almindelig Doppler-forskydning, har selvfølgelig også været betragtet.
+                                        Men for det første er sådan et statisk univers simpelthen ikke kompatibelt med GR, og vi ville derfor være nødt til at finde en ny forklaring på alle de fænomener, som GR kan forklare.
+                                        For det andet passer vores målinger af sammenhængen mellem galaksernes rødforskydning og deres afstande meget, <em>meget</em> bedre med GR end med SR.
+                                        </p>
+                                        <p>
+                                        Se selv figuren her.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/davis-2004.png" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/davis-2004.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2>
+                                                <strong>Generel vs. speciel relativitetsteori</strong>:
+                                                Hvert datapunkt viser sammenhængen mellem en galakses observerede rødforskydning (<em>x</em>-aksen) og dens afstand (<em>y</em>-aksen) eller mere nøjagtigt: klarheden af en supernova i galaksen, som aftager med afstanden,
+                                                og dermed er en indikation for afstanden.<br>
+                                                Hvis denne sammenhæng skyldtes at de bevægede sig gennem rummet, forudsiger speciel relativitetsteori, at de burde ligge omkring den <span style="color:#ff0000; font-weight: bold;">røde</span> linje.
+                                                Hvis sammenhængen derimod skyldtes at lyset bevægede sig gennem et ekspanderende rum, forudsiger generel relativitetsteori, at de burde ligge omkring
+                                                den <span style="color:#0000ff; font-weight: bold;" >blå</span> linje (hvis Universet kun indeholdt stof),
+                                                den <span style="color:#06D205; font-weight: bold;" >grønne</span> linje (hvis Universet kun indeholdt mørk energi), og
+                                                den <span style="color:#C600FF; font-weight: bold;" >lilla</span> linje (hvis Universet indeholder et mix af ca. 30% stof og 70% mørk energi).<br>
+                                                Den lilla linje giver det bedste fit, og selvom man kan diskutere det præcise forhold mellem stof og mørk energi, er det tydeligt, at denne beskrivelse passer langt, langt bedre end SR's Doppler-forskydning.
+                                                Med flere og flere data, samt andre måder at måle på, har vi efterhånden ret godt styr på, hvad og hvor meget Universet indeholder.
+                                                Kredit: <a href="https://ui.adsabs.harvard.edu/abs/2004PASA...21...97D/abstract">Davis &amp; Lineweaver (2004)</a>.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                        <!-- begin fifth row (svaret) -->
+                        <section id="svaret" class="section section-narrow bg-white p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Svaret</h3>
+                                        <p>
+                                        Og nu er jeg så klar til at besvare dit spørgsmål:
+                                        </p>
+                                        <p>
+                                        Præcis hvordan, og hvor hurtigt, Universet udvider sig nu og i fortiden og i fremtiden er én af de fornemste opgaver at løse indenfor kosmologi.
+                                        Vi er efterhånden kommet så langt, at vi kan beskrive denne udvidelse temmelig nøjagtigt gennem hele Universets historie.
+                                        Når vi kigger på en galakse og måler rødforskydningen af dens lys, ved vi derfor
+                                        </p>
+                                        <p>
+                                        <ul>
+                                            <li>Hvor hurtigt den bevæger sig væk fra os <em>nu</em>;</li>
+                                            <li>Hvor hurtigt den bevægede sig væk fra os, dengang den udsendte dét lys, vi ser i dag;</li>
+                                            <li>Hvor langt væk den er i dag, og dengang den udsendte lyset;</li>
+                                            <li>Hvor lang tid, lyset har været undervejs (dvs. hvor mange år vi kigger tilbage i tiden);</li>
+                                            <li>Hvor gammelt Universet var dengang;</li>
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        og hvordan forskellige andre fysiske forhold var dengang, f.eks. Universets tæthed og temperatur dengang dengang.
+                                        </p>
+                                        <p>
+                                        Universets udvidelse er beskrevet matematisk ved "Hubbles lov" (som også er en del af &Lambda;CDM-modellen).
+                                        Denne lov siger, at hastigheden (\(v\)) hvormed en galakse fjerner sig fra en anden galakse er proportional med afstanden (\(d\)) mellem dem.
+                                        Sådan her:
+                                        $$
+                                        v = H \, \times \, d.
+                                        $$
+                                        Hvis G<sub>2</sub> er dobbelt så langt væk som  G<sub>1</sub> betyder det altså, at G<sub>2</sub> bevæger sig dobbelt så hurtigt væk fra os som G<sub>1</sub>.
+                                        Og dét er uanset hvilken retning de galakser ligger i.
+                                        Proportionalitets-faktoren \(H\) kaldes "Hubble-konstanten", og måles i "hastighed per afstand".
+                                        Den er konstant i hele Universet; altså Universet udvider sig på samme måde over det hele (så vidt vi kan se, men det behøver ret beset ikke være sådan).
+                                        <!-- Men den er ikke konstant <em>i tid</em> -->
+                                        </p>
+                                        <p>
+                                        Normalt angiver vi \(H\) i kilometer i sekundet, per "Mega-parsec".
+                                        Én parsec er ca. 3.3 lysår, så en Mega-parsec (eller "Mpc") er altså 3.3 millioner lysår.
+                                        \(H\)'s værdi <em>i dag</em> kalder vi \(H_0\) (H-nul), og dens værdi er ca. 70 km/s/Mpc, eller ca. 21.5 km/s per mega-lysår.
+                                        </p>
+                                        <p>
+                                        Med andre ord:
+                                        De to galakser G<sub>1</sub> og G<sub>2</sub> ligger hhv. 1 og 2 mia. lysår (eller 1000 og 2000 mega-lysår) væk, og vi ved derfor, at de — netop <em>nu</em> — bevæger sig væk fra os med med hhv. 21.500 og 43.000 km/s.
+                                        </p>
+                                        <p>
+                                        Vores model fortæller os også, at dengang de to galakser udsendte dét lys vi ser i dag, fjernede de sig med hhv. 20.700 km/s og 40.200 km/s.
+                                        De bevæger sig altså lidt hurtigere væk i dag, men hvordan deres hastighed har ændret sig gennem tiden, er ikke helt trivielt at beregne.
+                                        Det kræver, at man integrerer den såkaldte "Friedmann-ligning", som er en af de ligninger, som &Lambda;CDM-modellen hviler på.
+                                        </p>
+                                        <p>
+                                        Som en lille service har jeg løst ligningen for dig.
+                                        På figuren her kan du se, hvordan galaksen G1's hastighed har været gennem tiden.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/galakse-hastighed.png" alt="image hover"/>
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/galakse-hastighed.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <font size=-2>
+                                                <strong>En galakses hastighed gennem Universets historie</strong>:
+                                                Den røde linje viser galaksen G1's hastighed væk fra os, gennem hele Universets historie, og endda ud i fremtiden (som jeg har farvet grå).
+                                                Tidligt i tiden bevægede G1 sig ekstremt hurtigt væk fra os.
+                                                Efterhånden som tiden gik, bremsedes Universets udvidelse op pga. tyngdekraften af alt det stof det indeholder, og derfor falder den røde linje.
+                                                Men på et tidspunkt begyndte hastigheden at stige igen, og det ser ud som om dens hastighed nu øges eksponentielt med tiden.
+                                                Vi tror at denne acceleration skyldes noget, som vi ikke aner hvad er, men som vi kalder "mørk energi".
+                                                Figuren er lavet i Python vha. kosmologiske parametre fra <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract">Planck Collaboration (2018)</a>.
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fifth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <!-- <li><a href="./music.html"       >This page in English</a></li> -->
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Universets udvidelse II</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

@@ -115,6 +115,10 @@ code {
   background:   #efefef
 }
 
+html {
+  scroll-behavior: smooth; /* to go smoothly to anchor links (i.e. links on same page, created with #tag and id="tag") */
+}
+
 /* end my own stuff */
 
 /* zzz */ /* empty headlines */
