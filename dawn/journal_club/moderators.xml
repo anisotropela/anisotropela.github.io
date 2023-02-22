@@ -1,5 +1,5 @@
 <root>
-    <jcentry Date="2023/02/27" Moderator="Joonas"    Email="joonas.viuho@nbi.ku.dk"/>
+    <jcentry Date="2023/02/27" Moderator="Marko"     Email="marko.shuntov@nbi.ku.dk"/>
     <jcentry Date="2023/03/06" Moderator="Charlotte" Email="charlotte.mason@nbi.ku.dk"/>
     <jcentry Date="2023/03/13" Moderator="David"     Email="dblse@space.dtu.dk"/>
     <jcentry Date="2023/03/20" Moderator="Iris"      Email="irisj@space.dtu.dk"/>
@@ -12,7 +12,6 @@
     <jcentry Date="2023/05/22" Moderator="Natalie"   Email="natalie.allen@nbi.ku.dk"/>
     <jcentry Date="2023/06/12" Moderator="Kasper"    Email="keheintz@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Kate"      Email="katriona.gould@nbi.ku.dk"/>
-    <jcentry Date="TBA"        Moderator="Marko"     Email="marko.shuntov@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Georgios"  Email="geoma@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Gabe"      Email="gabriel.brammer@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Ting-Yi"   Email="tingyi-lu@nbi.ku.dk"/>
@@ -39,4 +38,5 @@
     <jcentry Date="TBA"        Moderator="Gonzalo"   Email="gonzalo.prieto@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Clara"     Email="clara.arteaga@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Malte"     Email="malbr@space.dtu.dk"/>
+    <jcentry Date="TBA"        Moderator="Joonas"    Email="joonas.viuho@nbi.ku.dk"/>
 </root>
