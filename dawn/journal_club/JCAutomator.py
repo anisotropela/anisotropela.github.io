@@ -22,18 +22,16 @@ def next_weekday(weekday, d=dt.date.today()):
     return d + dt.timedelta(days_ahead)
 #------------------------------------------------------------------------------
 
+# Works only if sent on a Monday:
+# deadline= dt.date.today()+dt.timedelta(days=2)
+# nextDate= dt.date.today()+dt.timedelta(days=7)
 
+# Works only if JC is *next* Monday:
+# nextDate= next_weekday('Monday')
+# deadline = nextDate + dt.timedelta(days=-5)
 
-# # deadline= dt.date.today()+dt.timedelta(days=2)
-# # nextDate= dt.date.today()+dt.timedelta(days=7)
-# 
-nextDate= next_weekday('Monday')
-deadline = nextDate + dt.timedelta(days=-5)
-# 
-# 
-# # data = pandas.read_xml('https://raw.githubusercontent.com/anisotropela/anisotropela.github.io/master/dawn/journal_club/moderators.xml')
+# data = pandas.read_xml('https://raw.githubusercontent.com/anisotropela/anisotropela.github.io/master/dawn/journal_club/moderators.xml')
 # data = pandas.read_xml('./moderators.xml')
-# 
 # 
 # theModerator=" "
 # theEmail=" "
@@ -42,11 +40,8 @@ deadline = nextDate + dt.timedelta(days=-5)
 # 	if data["Date"][i]==nextDate.strftime('%m/%d/%Y'):
 # 		theModerator = data["Moderator"][i]
 # 		theEmail = data["Email"][i]
-# 
-# 
-# print(theEmail)
-# print(theModerator)
 
+# Works if the date is correct in the moderators.xml file:
 filename = 'moderators.xml'
 with open(filename) as file:
     lines = [line.rstrip().lstrip() for line in file]
@@ -56,6 +51,10 @@ theDate      = re.findall('"([^"]*)"', line1[1])[0]
 theModerator = re.findall('"([^"]*)"', line1[2])[0]
 theEmail     = re.findall('"([^"]*)"', line1[3])[0]
 
+nextDate = dt.datetime.strptime(theDate, '%Y/%m/%d')
+deadline = nextDate + dt.timedelta(days=-5)
+
+# override for testing purposes:
 # theModerator="Peter L"
 # theEmail = "pela@nbi.ku.dk"
 
