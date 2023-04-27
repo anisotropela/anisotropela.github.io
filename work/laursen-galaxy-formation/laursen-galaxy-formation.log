@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  29 OCT 2022 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 APR 2023 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**timescales.tex
-(./timescales.tex
+**laursen-galaxy-formation.tex
+(./laursen-galaxy-formation.tex
 LaTeX2e <2018-12-01>
 (./aa.cls
 Document Class: aa 2016/09/01{} v9.1{} Class for AA journal
@@ -221,6 +221,13 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \c@LT@chunks=\count112
 \LT@p@ftn=\toks25
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip68
+\bibsep=\skip69
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count113
+)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
@@ -235,11 +242,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/04/03 3.29 Babel common definitions
-\babel@savecnt=\count113
+\babel@savecnt=\count114
 \U@D=\dimen125
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count114
+\bbl@dirlevel=\count115
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -271,74 +278,74 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count115
-\rotFPtop=\skip68
-\rotFPbot=\skip69
+\c@r@tfl@t=\count116
+\rotFPtop=\skip70
+\rotFPbot=\skip71
 \rot@float@box=\box38
 \rot@mess@toks=\toks26
 )
-\aa@cnta=\count116
-\aa@cntb=\count117
-\aa@nbwords=\count118
-\aa@nbauthors=\count119
-\aa@nbinstitutes=\count120
-\c@aa@institutecnt=\count121
-\aa@savecounter=\count122
-\aa@dima=\skip70
-\aa@dimb=\skip71
-\aa@dimc=\skip72
-\VSpaceBeforeTheorem=\skip73
-\VSpaceAfterTheorem=\skip74
-\HSpaceIndentTheorem=\skip75
-\HVSpaceSepTheorem=\skip76
-\aa@securityheadmargin=\skip77
-\aa@bleedmargin=\skip78
-\aa@voffsetlettername=\skip79
-\aa@hoffsetlettername=\skip80
-\aa@hoffsetgray=\skip81
-\aa@aftercontentsnameskip=\skip82
-\aa@aftercontentsAutnameskip=\skip83
-\aa@beforeheadboxskip=\skip84
-\aa@afterheadboxskip=\skip85
-\aa@beforetopicsskip=\skip86
-\aa@aftertopicsskip=\skip87
-\aa@afterletternameskip=\skip88
-\aa@beforeletternameskip=\skip89
-\aa@beforeheadnoteskip=\skip90
-\aa@afterheadnoteskip=\skip91
-\aa@aftertitleskip=\skip92
-\aa@beforesubtitleskip=\skip93
-\aa@aftersubtitleskip=\skip94
-\aa@afterauthorskip=\skip95
-\aa@beforedefaultheadnoteskip=\skip96
-\aa@headingleftmargin=\skip97
-\aa@headingrightmargin=\skip98
-\aa@afterinstituteskip=\skip99
-\aa@instituteindent=\skip100
-\aa@afterdateskip=\skip101
-\aa@afterdedicationskip=\skip102
-\aa@afterabstractnameskip=\skip103
-\aa@afterabstractskip=\skip104
-\aa@aftersubabstractskip=\skip105
-\aa@afterkeywordsskip=\skip106
-\aa@beforeacknowledgementsskip=\skip107
-\aa@afteracknowledgementsskip=\skip108
-\aa@figgap=\skip109
-\aa@sidecaptionminwidth=\skip110
-\aa@sidecaptionwidth=\skip111
-\VSpaceBeforeFigCaption=\skip112
-\VSpaceAfterTabCaption=\skip113
-\VSpaceBeforeTabBib=\skip114
-\VSpaceBeforeTabFoot=\skip115
-\aftertext=\skip116
-\aa@entryboxwidth=\skip117
-\betweenumberspace=\skip118
+\aa@cnta=\count117
+\aa@cntb=\count118
+\aa@nbwords=\count119
+\aa@nbauthors=\count120
+\aa@nbinstitutes=\count121
+\c@aa@institutecnt=\count122
+\aa@savecounter=\count123
+\aa@dima=\skip72
+\aa@dimb=\skip73
+\aa@dimc=\skip74
+\VSpaceBeforeTheorem=\skip75
+\VSpaceAfterTheorem=\skip76
+\HSpaceIndentTheorem=\skip77
+\HVSpaceSepTheorem=\skip78
+\aa@securityheadmargin=\skip79
+\aa@bleedmargin=\skip80
+\aa@voffsetlettername=\skip81
+\aa@hoffsetlettername=\skip82
+\aa@hoffsetgray=\skip83
+\aa@aftercontentsnameskip=\skip84
+\aa@aftercontentsAutnameskip=\skip85
+\aa@beforeheadboxskip=\skip86
+\aa@afterheadboxskip=\skip87
+\aa@beforetopicsskip=\skip88
+\aa@aftertopicsskip=\skip89
+\aa@afterletternameskip=\skip90
+\aa@beforeletternameskip=\skip91
+\aa@beforeheadnoteskip=\skip92
+\aa@afterheadnoteskip=\skip93
+\aa@aftertitleskip=\skip94
+\aa@beforesubtitleskip=\skip95
+\aa@aftersubtitleskip=\skip96
+\aa@afterauthorskip=\skip97
+\aa@beforedefaultheadnoteskip=\skip98
+\aa@headingleftmargin=\skip99
+\aa@headingrightmargin=\skip100
+\aa@afterinstituteskip=\skip101
+\aa@instituteindent=\skip102
+\aa@afterdateskip=\skip103
+\aa@afterdedicationskip=\skip104
+\aa@afterabstractnameskip=\skip105
+\aa@afterabstractskip=\skip106
+\aa@aftersubabstractskip=\skip107
+\aa@afterkeywordsskip=\skip108
+\aa@beforeacknowledgementsskip=\skip109
+\aa@afteracknowledgementsskip=\skip110
+\aa@figgap=\skip111
+\aa@sidecaptionminwidth=\skip112
+\aa@sidecaptionwidth=\skip113
+\VSpaceBeforeFigCaption=\skip114
+\VSpaceAfterTabCaption=\skip115
+\VSpaceBeforeTabBib=\skip116
+\VSpaceBeforeTabFoot=\skip117
+\aftertext=\skip118
+\aa@entryboxwidth=\skip119
+\betweenumberspace=\skip120
 \authorlink=\toks27
 \yearCop=\toks28
 \aa@stripbox=\box39
 \aa@outputbox=\box40
-\c@AAproof=\count123
-\c@AAtheorem=\count124
+\c@AAproof=\count124
+\c@AAtheorem=\count125
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
@@ -433,13 +440,6 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup10
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip119
-\bibsep=\skip120
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count125
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -592,6 +592,15 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/units/units.sty
+Package: units 1998/08/04 v0.9b Typesetting units
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip122
+\L@UnitsRaiseTextstyle=\skip123
+\L@UnitsRaiseScriptstyle=\skip124
+))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -885,10 +894,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@depth=\count156
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\bc@invboxh=\skip122
-\bc@invboxd=\skip123
-\bc@titleLength=\skip124
-\logowidth=\skip125
+\bc@invboxh=\skip125
+\bc@invboxd=\skip126
+\bc@titleLength=\skip127
+\logowidth=\skip128
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
@@ -917,12 +926,12 @@ Package: expl3 2019-04-06 L3 programming layer (code)
 \l_tmpb_dim=\dimen183
 \g_tmpa_dim=\dimen184
 \g_tmpb_dim=\dimen185
-\c_zero_skip=\skip126
-\c_max_skip=\skip127
-\l_tmpa_skip=\skip128
-\l_tmpb_skip=\skip129
-\g_tmpa_skip=\skip130
-\g_tmpb_skip=\skip131
+\c_zero_skip=\skip129
+\c_max_skip=\skip130
+\l_tmpa_skip=\skip131
+\l_tmpb_skip=\skip132
+\g_tmpa_skip=\skip133
+\g_tmpb_skip=\skip134
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
@@ -1080,47 +1089,47 @@ Package zref Info: New property: abspage on input line 62.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip132
+\mdf@templength=\skip135
 \c@mdf@globalstyle@cnt=\count327
-\mdf@skipabove@length=\skip133
-\mdf@skipbelow@length=\skip134
-\mdf@leftmargin@length=\skip135
-\mdf@rightmargin@length=\skip136
-\mdf@innerleftmargin@length=\skip137
-\mdf@innerrightmargin@length=\skip138
-\mdf@innertopmargin@length=\skip139
-\mdf@innerbottommargin@length=\skip140
-\mdf@splittopskip@length=\skip141
-\mdf@splitbottomskip@length=\skip142
-\mdf@outermargin@length=\skip143
-\mdf@innermargin@length=\skip144
-\mdf@linewidth@length=\skip145
-\mdf@innerlinewidth@length=\skip146
-\mdf@middlelinewidth@length=\skip147
-\mdf@outerlinewidth@length=\skip148
-\mdf@roundcorner@length=\skip149
-\mdf@footenotedistance@length=\skip150
-\mdf@userdefinedwidth@length=\skip151
-\mdf@needspace@length=\skip152
-\mdf@frametitleaboveskip@length=\skip153
-\mdf@frametitlebelowskip@length=\skip154
-\mdf@frametitlerulewidth@length=\skip155
-\mdf@frametitleleftmargin@length=\skip156
-\mdf@frametitlerightmargin@length=\skip157
-\mdf@shadowsize@length=\skip158
-\mdf@extratopheight@length=\skip159
-\mdf@subtitleabovelinewidth@length=\skip160
-\mdf@subtitlebelowlinewidth@length=\skip161
-\mdf@subtitleaboveskip@length=\skip162
-\mdf@subtitlebelowskip@length=\skip163
-\mdf@subtitleinneraboveskip@length=\skip164
-\mdf@subtitleinnerbelowskip@length=\skip165
-\mdf@subsubtitleabovelinewidth@length=\skip166
-\mdf@subsubtitlebelowlinewidth@length=\skip167
-\mdf@subsubtitleaboveskip@length=\skip168
-\mdf@subsubtitlebelowskip@length=\skip169
-\mdf@subsubtitleinneraboveskip@length=\skip170
-\mdf@subsubtitleinnerbelowskip@length=\skip171
+\mdf@skipabove@length=\skip136
+\mdf@skipbelow@length=\skip137
+\mdf@leftmargin@length=\skip138
+\mdf@rightmargin@length=\skip139
+\mdf@innerleftmargin@length=\skip140
+\mdf@innerrightmargin@length=\skip141
+\mdf@innertopmargin@length=\skip142
+\mdf@innerbottommargin@length=\skip143
+\mdf@splittopskip@length=\skip144
+\mdf@splitbottomskip@length=\skip145
+\mdf@outermargin@length=\skip146
+\mdf@innermargin@length=\skip147
+\mdf@linewidth@length=\skip148
+\mdf@innerlinewidth@length=\skip149
+\mdf@middlelinewidth@length=\skip150
+\mdf@outerlinewidth@length=\skip151
+\mdf@roundcorner@length=\skip152
+\mdf@footenotedistance@length=\skip153
+\mdf@userdefinedwidth@length=\skip154
+\mdf@needspace@length=\skip155
+\mdf@frametitleaboveskip@length=\skip156
+\mdf@frametitlebelowskip@length=\skip157
+\mdf@frametitlerulewidth@length=\skip158
+\mdf@frametitleleftmargin@length=\skip159
+\mdf@frametitlerightmargin@length=\skip160
+\mdf@shadowsize@length=\skip161
+\mdf@extratopheight@length=\skip162
+\mdf@subtitleabovelinewidth@length=\skip163
+\mdf@subtitlebelowlinewidth@length=\skip164
+\mdf@subtitleaboveskip@length=\skip165
+\mdf@subtitlebelowskip@length=\skip166
+\mdf@subtitleinneraboveskip@length=\skip167
+\mdf@subtitleinnerbelowskip@length=\skip168
+\mdf@subsubtitleabovelinewidth@length=\skip169
+\mdf@subsubtitlebelowlinewidth@length=\skip170
+\mdf@subsubtitleaboveskip@length=\skip171
+\mdf@subsubtitlebelowskip@length=\skip172
+\mdf@subsubtitleinneraboveskip@length=\skip173
+\mdf@subsubtitleinnerbelowskip@length=\skip174
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
@@ -1130,33 +1139,34 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@splitbox@one=\box72
 \mdf@splitbox@two=\box73
 \mdf@splitbox@save=\box74
-\mdfsplitboxwidth=\skip172
-\mdfsplitboxtotalwidth=\skip173
-\mdfsplitboxheight=\skip174
-\mdfsplitboxdepth=\skip175
-\mdfsplitboxtotalheight=\skip176
-\mdfframetitleboxwidth=\skip177
-\mdfframetitleboxtotalwidth=\skip178
-\mdfframetitleboxheight=\skip179
-\mdfframetitleboxdepth=\skip180
-\mdfframetitleboxtotalheight=\skip181
-\mdffootnoteboxwidth=\skip182
-\mdffootnoteboxtotalwidth=\skip183
-\mdffootnoteboxheight=\skip184
-\mdffootnoteboxdepth=\skip185
-\mdffootnoteboxtotalheight=\skip186
-\mdftotallinewidth=\skip187
-\mdfboundingboxwidth=\skip188
-\mdfboundingboxtotalwidth=\skip189
-\mdfboundingboxheight=\skip190
-\mdfboundingboxdepth=\skip191
-\mdfboundingboxtotalheight=\skip192
-\mdf@freevspace@length=\skip193
-\mdf@horizontalwidthofbox@length=\skip194
-\mdf@verticalmarginwhole@length=\skip195
-\mdf@horizontalspaceofbox=\skip196
-\mdfsubtitleheight=\skip197
-\mdfsubsubtitleheight=\skip198
+\mdfsplitboxwidth=\skip175
+\mdfsplitboxtotalwidth=\skip176
+\mdfsplitboxheight=\skip177
+\mdfsplitboxdepth=\skip178
+\mdfsplitboxtotalheight=\skip179
+\mdfframetitleboxwidth=\skip180
+\mdfframetitleboxtotalwidth=\skip181
+\mdfframetitleboxheight=\skip182
+\mdfframetitleboxdepth=\skip183
+\mdfframetitleboxtotalheight=\skip184
+\mdffootnoteboxwidth=\skip185
+\mdffootnoteboxtotalwidth=\skip186
+\mdffootnoteboxheight=\skip187
+\mdffootnoteboxdepth=\skip188
+\mdffootnoteboxtotalheight=\skip189
+\mdftotallinewidth=\skip190
+\mdfboundingboxwidth=\skip191
+\mdfboundingboxtotalwidth=\skip192
+\mdfboundingboxheight=\skip193
+\mdfboundingboxdepth=\skip194
+\mdfboundingboxtotalheight=\skip195
+\mdf@freevspace@length=\skip196
+\mdf@horizontalwidthofbox@length=\skip197
+\mdf@verticalmarginwhole@length=\skip198
+\mdf@horizontalspaceofbox=\skip199
+Normal \skip register pool exhausted, switching to extended pool.
+\mdfsubtitleheight=\skip256
+\mdfsubsubtitleheight=\skip257
 \c@mdfcountframes=\count328
 
 ****** mdframed patching \endmdf@trivlist
@@ -1201,13 +1211,12 @@ s.code.tex
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathmorphing.code.tex))
 \c@bclogocompteur=\count334
-\bcval@epBarre=\skip199
-Normal \skip register pool exhausted, switching to extended pool.
-\bcval@framesep=\skip256
-\bcval@tailleOndu=\skip257
-\bcval@borderWidth=\skip258
-\bcval@margeG=\skip259
-\bcval@margeD=\skip260
+\bcval@epBarre=\skip258
+\bcval@framesep=\skip259
+\bcval@tailleOndu=\skip260
+\bcval@borderWidth=\skip261
+\bcval@margeG=\skip262
+\bcval@margeD=\skip263
 \bc@envbox=\box76
 )
 \c@infobox=\count335
@@ -1225,10 +1234,10 @@ Package: pgfornament 2016/03/05 v0.21 vector ornaments
 ode.tex))
 
 LaTeX Warning: Unused global option(s):
-    [useAMS,usenatbib].
+    [useAMS].
 
-(./timescales.aux)
-\openout1 = `timescales.aux'.
+(./laursen-galaxy-formation.aux)
+\openout1 = `laursen-galaxy-formation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 58.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 58.
@@ -1350,73 +1359,74 @@ LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
 LaTeX Info: Redefining \nameref on input line 58.
 
-(./timescales.out) (./timescales.out)
+(./laursen-galaxy-formation.out) (./laursen-galaxy-formation.out)
 \@outlinefile=\write4
-\openout4 = `timescales.out'.
+\openout4 = `laursen-galaxy-formation.out'.
 
- ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 76.
+
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 76.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 76.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 76.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 76.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 76.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 76.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 76.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for T1+txss on input line 76.
+LaTeX Font Info:    Try loading font information for T1+txss on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 76.
+(Font)              scaled to size 16.41594pt on input line 79.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 16.41594pt on input line 76.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 76.
+(Font)              scaled to size 16.41594pt on input line 79.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 76.
+(Font)              scaled to size 8.54997pt on input line 79.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 8.54997pt on input line 76.
+(Font)              scaled to size 8.54997pt on input line 79.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 77.
+(Font)              scaled to size 10.40245pt on input line 80.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 10.40245pt on input line 77.
+(Font)              scaled to size 10.40245pt on input line 80.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 120.
+Package hyperref Warning: Suppressing link with empty target on input line 116.
 
 
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -1424,181 +1434,377 @@ Package hyperref Warning: Suppressing link with empty target on input line 120.
 
 ]
 Package hyperref Info: bookmark level for unknown bclogo defaults to 0 on input
- line 139.
+ line 140.
 File: bc-info.mps Graphic file (type mps)
 
 [MP to PDF] (/usr/local/texlive/2019/texmf-dist/tex/latex/bclogo/bc-info.mps)
-Package mdframed Info: mdframed works in twoside mode on input line 139.
+Package mdframed Info: mdframed works in twoside mode on input line 140.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <9> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 150.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 151.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 150.
+(Font)              scaled to size 8.54997pt on input line 151.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 152.
+ mdframed uses option nobreak mdframed on input line 153.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 152.
-<redshift.pdf, id=103, 462.52798pt x 346.89601pt>
+ mdframed uses option nobreak mdframed on input line 153.
+<redshift.pdf, id=111, 534.79799pt x 469.755pt>
 File: redshift.pdf Graphic file (type pdf)
 <use redshift.pdf>
-Package pdftex.def Info: redshift.pdf  used on input line 159.
-(pdftex.def)             Requested size: 250.9522pt x 188.21559pt.
+Package pdftex.def Info: redshift.pdf  used on input line 160.
+(pdftex.def)             Requested size: 250.9522pt x 220.43365pt.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 167.
+(Font)              scaled to size 9.49997pt on input line 172.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <10> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 167.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 172.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 167.
-
-Underfull \vbox (badness 1874) has occurred while \output is active []
-
-<bouwens2021.pdf, id=111, 472.6458pt x 421.3341pt>
-File: bouwens2021.pdf Graphic file (type pdf)
-<use bouwens2021.pdf>
-Package pdftex.def Info: bouwens2021.pdf  used on input line 191.
-(pdftex.def)             Requested size: 251.2925pt x 224.0132pt.
+(Font)              scaled to size 9.49997pt on input line 172.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 202.
+Package hyperref Warning: Suppressing link with empty target on input line 199.
 
 
-[2 <./redshift.pdf>]
+[2]
+<uvlf.pdf, id=134, 473.3685pt x 450.2421pt>
+File: uvlf.pdf Graphic file (type pdf)
+<use uvlf.pdf>
+Package pdftex.def Info: uvlf.pdf  used on input line 205.
+(pdftex.def)             Requested size: 251.2925pt x 239.01877pt.
+
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 241.
+
+
+[3 <./redshift.pdf> <./uvlf.pdf>]
 File: bc-info.mps Graphic file (type mps)
  [MP to PDF]
 (/usr/local/texlive/2019/texmf-dist/tex/latex/bclogo/bc-info.mps)
-Package mdframed Info: mdframed works in twoside mode on input line 253.
+Package mdframed Info: mdframed works in twoside mode on input line 258.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 266.
+ mdframed uses option nobreak mdframed on input line 270.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 266.
+ mdframed uses option nobreak mdframed on input line 270.
+File: bc-info.mps Graphic file (type mps)
+ [MP to PDF]
+(/usr/local/texlive/2019/texmf-dist/tex/latex/bclogo/bc-info.mps)
+Package mdframed Info: mdframed works in twoside mode on input line 311.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 324.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 324.
+
+Underfull \vbox (badness 4556) has occurred while \output is active []
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 294.
+
+Package hyperref Warning: Suppressing link with empty target on input line 337.
 
 
-[3 <./bouwens2021.pdf>]
-<cooling.pdf, id=287, 467.5869pt x 431.45189pt>
+[4]
+Overfull \hbox (10.28845pt too wide) in alignment at lines 362--370
+[][][] []
+ []
+
+<cooling.pdf, id=330, 516.73048pt x 477.70471pt>
 File: cooling.pdf Graphic file (type pdf)
 <use cooling.pdf>
-Package pdftex.def Info: cooling.pdf  used on input line 311.
-(pdftex.def)             Requested size: 251.2925pt x 231.87453pt.
+Package pdftex.def Info: cooling.pdf  used on input line 377.
+(pdftex.def)             Requested size: 392.64803pt x 362.99374pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--408
+[]\T1/txr/m/n/10 The do-mains are col-ored ac-cord-ing to dom-i-nat-ing
+ []
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 332.
+Underfull \hbox (badness 1515) in paragraph at lines 400--408
+\T1/txr/m/n/10 timescales: In the green do-main, the cool-ing timescale is
+ []
 
 
-[4 <./cooling.pdf>]
-
-LaTeX Warning: Command \r invalid in math mode on input line 343.
-
-File: bc-info.mps Graphic file (type mps)
-[MP to PDF] (/usr/local/texlive/2019/texmf-dist/tex/latex/bclogo/bc-info.mps)
-Package mdframed Info: mdframed works in twoside mode on input line 372.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 389.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 389.
-
-Underfull \vbox (badness 4479) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 403.
+Package hyperref Warning: Suppressing link with empty target on input line 437.
 
 
 [5]
-Underfull \hbox (badness 3780) in paragraph at lines 445--446
+
+LaTeX Warning: Command \r invalid in math mode on input line 448.
+
+
+Underfull \vbox (badness 5832) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 455.
+
+
+[6 <./cooling.pdf>]
+File: bc-info.mps Graphic file (type mps)
+ [MP to PDF]
+(/usr/local/texlive/2019/texmf-dist/tex/latex/bclogo/bc-info.mps)
+Package mdframed Info: mdframed works in twoside mode on input line 477.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 494.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 494.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 532.
+
+
+[7]
+Underfull \hbox (badness 3780) in paragraph at lines 564--565
 []\T1/txr/m/n/10 The pre-ced-ing dis-cus-sion has il-lu-ci-dated how sim-ple
  []
 
-<hmf2smf-annotated.pdf, id=459, 1027.84pt x 971.63pt>
-File: hmf2smf-annotated.pdf Graphic file (type pdf)
-<use hmf2smf-annotated.pdf>
-Package pdftex.def Info: hmf2smf-annotated.pdf  used on input line 449.
-(pdftex.def)             Requested size: 251.2925pt x 237.53995pt.
-<zrecord.pdf, id=463, 462.52798pt x 346.89601pt>
+<hmf2smf.pdf, id=565, 461.08258pt x 432.8973pt>
+File: hmf2smf.pdf Graphic file (type pdf)
+<use hmf2smf.pdf>
+Package pdftex.def Info: hmf2smf.pdf  used on input line 568.
+(pdftex.def)             Requested size: 392.64803pt x 368.65802pt.
+File: bc-info.mps Graphic file (type mps)
+[MP to PDF] (/usr/local/texlive/2019/texmf-dist/tex/latex/bclogo/bc-info.mps)
+Package mdframed Info: mdframed works in twoside mode on input line 594.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 627.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 627.
+<zrecord.pdf, id=596, 510.22621pt x 454.57831pt>
 File: zrecord.pdf Graphic file (type pdf)
 <use zrecord.pdf>
-Package pdftex.def Info: zrecord.pdf  used on input line 470.
-(pdftex.def)             Requested size: 251.2925pt x 188.46967pt.
-
-Package hyperref Warning: Suppressing link with empty target on input line 480.
+Package pdftex.def Info: zrecord.pdf  used on input line 641.
+(pdftex.def)             Requested size: 251.2925pt x 223.88287pt.
 
 
-[6 <./hmf2smf-annotated.pdf>]
-<jwst.pdf, id=541, 803.0pt x 602.25pt>
-File: jwst.pdf Graphic file (type pdf)
-<use jwst.pdf>
-Package pdftex.def Info: jwst.pdf  used on input line 495.
-(pdftex.def)             Requested size: 251.2925pt x 188.46915pt.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 507.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 512.
-
-
-[7 <./zrecord.pdf> <./jwst.pdf>]
-(/usr/local/texlive/2019/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-89.pgf) (./timescales.bbl
-Underfull \hbox (badness 2103) in paragraph at lines 48--50
-[]\T1/txr/m/n/10 Castellano, M., Fontana, A., Treu, T., et al. 2022, 1324
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-[]\T1/txr/m/n/10 Harikane, Y., Ouchi, M., Oguri, M., et al. 2022b
- []
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 153.
+Package hyperref Warning: Suppressing link with empty target on input line 664.
 
 
 [8]
-Underfull \hbox (badness 2503) in paragraph at lines 197--199
-[]\T1/txr/m/n/10 Naidu, R. P., Oesch, P. A., Set-ton, D. J., et al. 2022a
+<jwst-stellar-mass-vs-redshift.pdf, id=683, 485.6544pt x 434.3427pt>
+File: jwst-stellar-mass-vs-redshift.pdf Graphic file (type pdf)
+<use jwst-stellar-mass-vs-redshift.pdf>
+Package pdftex.def Info: jwst-stellar-mass-vs-redshift.pdf  used on input line 
+679.
+(pdftex.def)             Requested size: 251.2925pt x 224.74608pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 711.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 711.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 716.
+
+
+[9 <./hmf2smf.pdf>]
+File: bc-info.mps Graphic file (type mps)
+ [MP to PDF]
+(/usr/local/texlive/2019/texmf-dist/tex/latex/bclogo/bc-info.mps)
+Package mdframed Info: mdframed works in twoside mode on input line 729.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 742.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 742.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 762.
+
+
+[10]
+Underfull \vbox (badness 5446) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 783.
+
+
+[11 <./zrecord.pdf> <./jwst-stellar-mass-vs-redshift.pdf>]
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+89.pgf) (./laursen-galaxy-formation.bbl
+Underfull \hbox (badness 1354) in paragraph at lines 6--7
+\T1/txr/m/n/8 Monthly No-tices of the Royal As-tro-nom-i-cal So-ci-ety, 519, 12
+01-1220,
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 32--33
+\T1/txr/m/n/8 Monthly No-tices of the Royal As-tro-nom-i-cal So-ci-ety, 345, 34
+9-364,
+ []
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 43.
+
+[12]
+Underfull \hbox (badness 1348) in paragraph at lines 72--73
+[]\T1/txr/m/n/8 Efstathiou, G. (2000), \T1/txr/m/it/8 A model of su-per-nova fe
+ed-back in galaxy for-ma-
+ []
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 93.
+
+[13]
+Underfull \hbox (badness 1540) in paragraph at lines 104--105
+[]\T1/txr/m/n/8 Horvath, I. (2020), \T1/txr/m/it/8 The Great De-bate\T1/txr/m/n
+/8 , arXiv e-prints, arXiv:2001.00159,
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 108--109
+[]\T1/txr/m/n/8 Hoskin, M. A. (1980), \T1/txr/m/it/8 Vesto Melvin Slipher\T1/tx
+r/m/n/8 , Bib-li-o-graph-i-cal Mem-oirs
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 122--123
+[]\T1/txr/m/n/8 Kannan, Rahul, Springel, Volker, Hern-quist, Lars, Pak-mor, Rüd
+i-ger, Del-
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 122--123
+\T1/txr/m/it/8 The galaxy pop-u-la-tion at $\OML/txmi/m/it/8 z \OMS/txsy/m/n/8 
+^^U \OT1/txr/m/n/8 8$\T1/txr/m/n/8 , arXiv e-prints, arXiv:2210.10066,
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 132--133
+\T1/txr/m/it/8 Mat-ter Ha-los in the Stan-dard Cos-mo-log-i-cal Model: Re-sults
+ from the
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 146--147
+[]\T1/txr/m/n/8 Laursen, Pe-ter, Ra-zoumov, Alexei O., & Sommer-Larsen, Jes-per
+ (2009),
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 146--147
+\T1/txr/m/it/8 Ly$\OML/txmi/m/it/8 $ \T1/txr/m/it/8 Ra-dia-tive Trans-fer in C
+os-mo-log-i-cal Sim-u-la-tions Us-ing Adap-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+[]\T1/txr/m/n/8 Leavitt, Hen-ri-etta S. (1908), \T1/txr/m/it/8 1777 vari-ables 
+in the Mag-el-lanic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\T1/txr/m/it/8 Clouds\T1/txr/m/n/8 , An-nals of Har-vard Col-lege Ob-ser-va-tor
+y, 60, 87-108.3,
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 168--169
+[]\T1/txr/m/n/8 Moutard, Thibaud, Saw-icki, Marcin, Arnouts, Stéphane, Golob, A
+n-neya,
+ []
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 169.
+
+
+[14]
+Underfull \hbox (badness 3872) in paragraph at lines 198--199
+[]\T1/txr/m/n/8 Shapley, Har-low & Cur-tis, Heber D. (1921), \T1/txr/m/it/8 The
+ Scale of the Uni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+\T1/txr/m/it/8 verse\T1/txr/m/n/8 , Bul-letin of the Na-tional Re-search Coun-c
+il, 2, 171-217,
+ []
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 232.
+
+
+[15]
+Underfull \hbox (badness 1533) in paragraph at lines 242--243
+[]\T1/txr/m/n/8 van Maa-nen, A. (1916), \T1/txr/m/it/8 Pre-lim-i-nary ev-i-denc
+e of in-ter-nal mo-tion in the
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 242--243
+\T1/txr/m/it/8 spi-ral neb-ula Messier 101.\T1/txr/m/n/8 , The As-tro-phys-i-ca
+l Jour-nal, 44, 210-228,
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 254--255
+[]\T1/txr/m/n/8 Wyder, Ted K., Treyer, Marie A., Mil-liard, Bruno, Schimi-novic
+h, David,
  []
 
 )
 
-Package hyperref Warning: Suppressing link with empty target on input line 549.
+Package hyperref Warning: Suppressing link with empty target on input line 802.
 
 
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
- (./timescales.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
-Package rerunfilecheck Info: File `timescales.out' has not changed.
-(rerunfilecheck)             Checksum: EC85EE828C23130FA1D4270CE0556AA2;699.
+[16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 802.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 802.
+ (./laursen-galaxy-formation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 802.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 802.
+Package rerunfilecheck Info: File `laursen-galaxy-formation.out' has not change
+d.
+(rerunfilecheck)             Checksum: 711749E7B99FF5DE163B741A2D40BFA9;836.
  ) 
 Here is how much of TeX's memory you used:
- 33549 strings out of 492623
- 619944 string characters out of 6129553
- 711467 words of memory out of 5000000
- 36769 multiletter control sequences out of 15000+600000
- 635966 words of font info for 197 fonts, out of 8000000 for 9000
+ 33821 strings out of 492623
+ 625207 string characters out of 6129553
+ 729377 words of memory out of 5000000
+ 36960 multiletter control sequences out of 15000+600000
+ 640926 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,17n,81p,1959b,1451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,81p,3037b,1456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/t
+exlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/t
 exmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2019/texmf-dist/fon
-ts/type1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
-1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
-c/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helveti
-c/uhvb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvr8
-a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-
-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on timescales.pdf (9 pages, 376385 bytes).
+st/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/font
+s/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
+1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
+c/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfon
+ts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txs
+yb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on laursen-galaxy-formation.pdf (16 pages, 424666 bytes).
 PDF statistics:
- 775 PDF objects out of 1000 (max. 8388607)
- 542 compressed objects within 6 object streams
- 125 named destinations out of 1000 (max. 500000)
- 227 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1295 PDF objects out of 1440 (max. 8388607)
+ 889 compressed objects within 9 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
