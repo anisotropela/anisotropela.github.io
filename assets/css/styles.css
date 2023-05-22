@@ -119,6 +119,45 @@ html {
   scroll-behavior: smooth; /* to go smoothly to anchor links (i.e. links on same page, created with #tag and id="tag") */
 }
 
+/* Tooltip Styling */
+.hoverdict {
+  position: relative;
+  color: #448800;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.hoverdict::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -25px; /* Adjust this value to control the tooltip's distance from the word */
+  left: 0;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #448800;
+  box-shadow: 5px 5px 5px lightgray;
+  background-color: #88ff00;
+  font-weight: normal;
+  color: #000000;
+  font-size: 12px;
+  white-space: normal; /* Allow line breaks within the tooltip */
+  display: inline-block; /* Set display to inline-block or block */
+  min-width: 200px; /* Set a specific width for the tooltip */
+  max-width: 100%; /* Ensure the tooltip doesn't exceed the screen width */
+  word-wrap: break-word; /* Enable word wrapping within the tooltip */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hoverdict:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* end my own stuff */
 
 /* zzz */ /* empty headlines */
@@ -4486,6 +4525,12 @@ a:active {   /* Selected links*/
 
 /* zzz */ /* begin tooltips */
 /*
+ *
+ *
+ * This is an example from w3schools that I have apparently abandoned at some point.
+ * See instead in the top under "my own stuff"
+ *
+ *
 .tooltip {
   position: relative;
   display: inline-block;
@@ -4525,7 +4570,7 @@ a:active {   /* Selected links*/
   visibility: visible;
   opacity: 1;
 }
-*/
+
 /* end tooltips */
 
 /* zzz Headlines*/ 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 APR 2023 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  19 MAY 2023 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1780,7 +1780,7 @@ d.
 Here is how much of TeX's memory you used:
  33821 strings out of 492623
  625207 string characters out of 6129553
- 729377 words of memory out of 5000000
+ 729353 words of memory out of 5000000
  36960 multiletter control sequences out of 15000+600000
  640926 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1801,10 +1801,10 @@ xlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on laursen-galaxy-formation.pdf (16 pages, 424666 bytes).
+Output written on laursen-galaxy-formation.pdf (16 pages, 424585 bytes).
 PDF statistics:
- 1295 PDF objects out of 1440 (max. 8388607)
- 889 compressed objects within 9 object streams
+ 1294 PDF objects out of 1440 (max. 8388607)
+ 888 compressed objects within 9 object streams
  191 named destinations out of 1000 (max. 500000)
  243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
