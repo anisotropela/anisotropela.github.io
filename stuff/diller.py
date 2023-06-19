@@ -31,8 +31,9 @@ def dillit(language      = 'dk',
     xyJ = '?'
     #                0          1                                            2     3       4                                       5                                                     6     7    8     9    10    11    12
     #                                                                                                                                                                                             Mi    Mo    Je    Kl    Pe
-    books = [['2023.06.17', 'John Fante'                                 , 'USA', 'M', 'I støvet'                             , 'Ask the Dust'                                       , 1939, 202, nan , nan , nan , nan , nan],
-             ['2023.04.06', 'Göran Tunström'                             , 'SWE', 'M', 'Juleoratoriet'                        , 'The Christmas Oratorio'                             , 1983, 326, 4.0 , 2.5 , 4.0 , 3.5 , 4.0],
+    books = [['2023.08.11', 'Tove Ditlevsen'                             , 'DAN', 'F', 'Man gjorde et barn fortræd'           , 'A Child was hurt'                                   , 1941, 168, nan , nan , nan , nan , nan],
+             ['2023.06.17', 'John Fante'                                 , 'USA', 'M', 'I støvet'                             , 'Ask the Dust'                                       , 1939, 202, 3.5 , 3.5 , 4.0 , 3.5 , 3.5],
+             ['2023.04.06', 'Göran Tunström'                             , 'SWE', 'M', 'Juleoratoriet'                        , 'The Christmas Oratorio'                             , 1983, 326, 2.0 , 2.5 , 4.0 , 3.5 , 4.0],
              ['2023.10.02', 'Édouard Louis'                              , 'FRA', 'M', 'Færdig med Eddy Bellegueule'          , 'The End of Eddy'                                    , 2014, 220, 4.5 , 4.5 , 4   , 4   , 4  ],
              ['2023.14.01', 'Gustave Flaubert'                           , 'FRA', 'M', 'Madame Bovary'                        , 'Madame Bovary'                                      , 1857, 432, 1   , 2   , 3   , 2   , 1.5],
              ['2022.11.04', 'Luke Rhinehart'                             , 'USA', 'M', 'Terningemanden'                       , 'The Dice Man'                                       , 1971, 477, 1.0 , 0.0 , 1.5 , 1.0 , 3.0],
