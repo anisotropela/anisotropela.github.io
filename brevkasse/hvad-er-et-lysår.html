@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Hvad er et lysår?</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <script type="text/javascript">
+            (function(window, document, dataLayerName, id) {
+                            window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+                            function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+                            var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+                            var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+                            tags.async=!0,tags.src="https://anisotropela.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+                            !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+                        })(window, document, 'dataLayer', 'a8556bd7-f6df-497f-a091-d5bd1ed45f5d');
+        </script>
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Hvad er et lysår?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Hvad er et lysår?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- begin sporgsmal -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Spørgsmålet</h3>
+                                            <p>
+                                            Kan du forklare mig, hvad et lysår er og hvorfor det hedder det?<br>
+                                            Kh Anders
+                                            </p>
+                                        </div>
+                                        <!-- end sporgsmal -->
+                                        <hr>
+                                        <!-- begin korte svar -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Det korte svar</h3>
+                                            <p>
+                                            Et lysår er så langt, som en lysstråle bevæger sig på et år.
+                                            </p>
+                                        </div>
+                                        <!-- end korte svar -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="Gå til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>Gå til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede spørgsmål</h4>
+                                                    <div class="posts-list">
+                                                        <!-- begin sporgsmal 1 -->
+                                                        <div class="post"><a href="./hvad-er-en-partikel.html" class="entry-image"><img src="../pics/brevkasse/quantum-field-icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./hvad-er-en-partikel.html">Hvad er en partikel?</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end sporgsmal 1 -->
+                                                        <!-- begin sporgsmal 2 -->
+                                                        <!-- end sporgsmal 2 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                        <!-- begin baggrund -->
+                                        <div class="icon-box ib-v1 ib-boxed bg-logoyellow">
+                                            <i class="oli oli-book-open" style="color:#7F548E"></i>
+                                            <h3 class="title" style="color:#7F548E">Baggrundsviden fra encyklopædien</h3>
+                                            <p>
+                                            <span style="color:#7F548E">Du kan læse mere lys her i encyklopædien:</span>
+                                            </p>
+                                            <p>
+                                            <a href="../encyclo/spektrum.html" data-text="Spektrum" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Lys &amp; spektrer</span></a>
+                                            <a href="../encyclo/rodforskydning.html" data-text="Rødforskydning" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Rødforskydning</span></a>
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                        <!-- end baggrund -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin third row (længere) -->
+                        <section class="section section-narrow bg-gray p-top-20  p-bottom-20">
+                            <div class="container"> 
+                                <h1>Det lidt længere svar</h1>
+                                <hr>
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>(men ikke superlangt, for Anders er lige blevet far, og har ikke tid til de lange udredninger)</h3>
+                                        <p>
+                                        Lys bevæger sig skidehurtigt, men ikke uendeligt hurtigt. Det fandt danskeren Ole Rømer ud af i 1676. Lyset bevæger sig altid med 300.000 km/s.
+                                        </p>
+                                        <p>
+                                        Hvis man lader en lysstråle rejse et helt år, kommer det derfor virkelig langt. Lige knap 10 billioner kilometer. Denne afstand kaldes et lysår.
+                                        </p>
+                                        <p>
+                                        Man (eller astronomer) bruger også udtrykket "lyssekund", som tilsvarende er den afstand lyset bevæger sig på et sekund, hvilket så er 300.000 km.
+                                        Nogle gange bruger man også "lysdag" og "lysminutter".
+                                        </p>
+                                        <p>
+                                        Så altså: Et lysår er en <em>afstand</em>. Det er ikke et tidsrum, selvom order "år" indgår.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/ole-rømer.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/ole-rømer.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Ole Rømer</strong>: Selvom man havde haft på fornemmelsen, at lys ikke bevægede sig uendelig hurtigt, var det simpelthen for hurtigt til at måle.
+                                                Men i 1676 lykkedes det den danske astronom Ole Rømer at måle hastigheden ved at kigge på Jupiters måner og se, at de efter at have gemt sig bag Jupiter kom til syne lidt senere, end de burde.
+                                                Han beregnede hastigheden til 230.000 km/s, hvilket er ret flot, synes jeg.
+                                                I dag er hastigheden <em>defineret</em> til at være præcis 299.792,458 km/s, og tid og afstande defineres så ud fra dette tal (så det er sådan lidt omvendt).
+                                                Kredit: <a href="https://en.wikipedia.org/wiki/Ole_Rømer#/media/File:Rømer,_Ole_(ur_Berømte_danske_maend).jpg">Wiki/public domain</a>.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (eksempler) -->
+                        <section class="section section-narrow bg-white p-top-20 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Eksempler på afstande i Universet</h3>
+                                        <p>
+                                        For eksempel ligger Månen cirka 1.3 lyssekunder væk.
+                                        Afstanden til Solen er 8 lysminutter.
+                                        Afstanden til vores nærmeste nabostjerne, α Centauri, er 4,2 lysår.
+                                        De stjerner du kan se med det blotte øje ligger typisk 10 eller 100 eller endda nogle 1000'er lysår væk.
+                                        <!-- https://physics.stackexchange.com/questions/45759/what-is-the-farthest-away-star-visible-to-the-naked-eye -->
+                                        </p>
+                                        <p>
+                                        Vores <a href="./galakse.html">galakse</a>, Mælkevejen, er ca. 100.000 lysår på tværs, mens afstanden til vores nærmeste store nabogalakse, Andromeda, er 2½ million lysår.
+                                        </p>
+                                        <p>
+                                        Det betyder, at når vi kigger på Månen, kigger vi godt et sekund tilbage i tiden, og når vi kigger på Solen (hvilket vi ikke gør!!!), kigger vi 8 minutter tilbage i tiden.
+                                        Andromeda kan du godt se med det blotte øje, hvis det er mørkt nok og du ved hvilken retning du skal kigge.
+                                        Her ser du så 2½ millioner år tilbage i tiden.
+                                        </p>
+                                        <p>
+                                        Og omvendt: Hvis der sidder en Andromedenser med en kraftig kikkert og kigger på Jordkloden lige nu, vil de ikke se mennesker (Homo sapiens),
+                                        men vil i stedet se vores forfædre, Australopithecus, prøve at stå på to ben.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/Andromeda_Nebula_-_Isaac_Roberts,_29_December_1888.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/Andromeda_Nebula_-_Isaac_Roberts,_29_December_1888.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Andromeda</strong>: Vores egen galakse hedder Mælkevejen, og den er omgivet af 59 små "satellitgalakser" (plus sikkert nogle stykker, som vi ikke har opdaget).
+                                                Men 2½ million lysår væk ligger denne smukke spiralgalakse, Andromeda, som er cirka dobbbelt så stor som Mælkevejen.
+                                                Dette billede er det første der blev taget af Andromeda, Isaac Roberts i 1888.
+                                                Kredit: <a href="https://en.wikipedia.org/wiki/Andromeda_Galaxy#/media/File:Andromeda_Nebula_-_Isaac_Roberts,_29_December_1888.jpg">Wiki/public domain</a>.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (mere) -->
+                        <section class="section section-narrow bg-gray p-top-20 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Hvor mange lysår kan vi kigge ud i Universet?</h3>
+                                        <p>
+                                        Intet kan overhale lyset. Det er simpelthen fysisk umuligt at bevæge sig gennem rummet hurtigere end lyset.
+                                        Universet er 13,8 milliarder år gammelt, så man skulle måske tro, at vi kunne kigge 13,8 milliarder lysår i alle retninger.
+                                        Altså fordi at lyset fra det stof, der ligger længere væk, ikke har nået os endnu.
+                                        </p>
+                                        <p>
+                                        Men <em>selve</em> rummet kan udvide sig, og det er faktisk dét vores Univers gør.
+                                        Derfor ligger det fjerneste vi kan se noget længere væk i dag.
+                                        Faktisk har Universet udvidet sig så meget, at "kanten" af <em>det observerbare Univers</em> i dag ligger godt 46 mia. lysår væk.
+                                        Vi har dog ikke set så langt, både fordi
+                                        1) det er svært, og fordi
+                                        2) vi kigger tilbage i tiden til et tidspunkt, hvor der ikke var nogle stjerner og galakser, og fordi
+                                        3) de første 380.000 år af Universets historie var det "tåget", så lys kunne ikke rigtig slippe igennem
+                                        (det er en længere historie, som involverer noget der kaldes "<a href="./kosmisk_mikrobolgebaggrundsstraaling.html">den kosmiske mikrobølgebaggrundstråling</a>").
+                                        </p>
+                                        <p>
+                                        Den fjerneste galakse vi har fundet indtil videre, ligger ca. 33 mia. lysår væk.
+                                        Her ser vi 13.5 mia. år tilbage i tiden, altså dengang Universet blot var 300 millioner år gammelt.
+                                        </p>
+                                        <p>
+                                        Astronomer bruger faktisk ikke så tit "lysår" som afstandsmål, men bruger i stedet noget der hedder "parsec".
+                                        En parsec er ca. 3.26 lysår, så det er ikke den store forskel.
+                                        Jeg kan godt skrive lidt mere om, hvad det er og hvorfor vi bruger det, men det bliver en anden gang :)
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-2"><img src="../pics/brevkasse/jades-galaxies.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/jades-galaxies.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>De fjerneste galakser</strong>: Med opsendelsen af <a href="./james-webb-rumteleskop.html">rumteleskopet James Webb</a> har vi for nylig slået rekorden for den fjernest kendte galakse.
+                                                Den fjerneste, "JADES-GS-z13-0" (c), er måske lidt tvivlsom, men hvis man tror på den, er den 33,3 mia. lysår.
+                                                Men den der hedder "JADES-GS-z11-0" (a) er god nok, og ligger 32.4 mia. lysår væk.
+                                                Kredit: <a href="https://arxiv.org/abs/2212.04480">Robertson et al. (2022)</a>.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <!-- <li><a href="./music.html"       >This page in English</a></li> -->
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Hvad er et lysår?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
