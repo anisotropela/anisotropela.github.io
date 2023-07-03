@@ -1,6 +1,5 @@
 <root>
-    <jcentry Date="2023/06/05" Moderator="Kasper"    Email="keheintz@nbi.ku.dk"/>
-    <jcentry Date="2023/06/12" Moderator="David"     Email="dblse@space.dtu.dk"/>
+    <jcentry Date="2023/08/21" Moderator="David"     Email="dblse@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Kate"      Email="katriona.gould@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Georgios"  Email="geoma@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Gabe"      Email="gabriel.brammer@nbi.ku.dk"/>
@@ -38,4 +37,5 @@
     <jcentry Date="TBA"        Moderator="Minju"     Email="minju@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Natalie"   Email="natalie.allen@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Aswin"     Email="apavi@space.dtu.dk"/>
+    <jcentry Date="TBA"        Moderator="Kasper"    Email="keheintz@nbi.ku.dk"/>
 </root>
