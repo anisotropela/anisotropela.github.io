@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <meta property="og:image" content="../pics/brevkasse/lightyear.jpg" />
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Hvordan ved vi hvor gammelt Universet er?</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <script type="text/javascript">
+            (function(window, document, dataLayerName, id) {
+                            window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+                            function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+                            var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+                            var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+                            tags.async=!0,tags.src="https://anisotropela.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+                            !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+                        })(window, document, 'dataLayer', 'a8556bd7-f6df-497f-a091-d5bd1ed45f5d');
+        </script>
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Hvordan ved vi hvor gammelt Universet er?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Hvordan ved vi hvor gammelt Universet er?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- begin sporgsmal -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Spørgsmålet</h3>
+                                            <p>
+                                            Universet blev skabt for 13.8 milliarder år siden. Hvad var der før, og hvordan kan man vide hvor længe siden?<br>
+                                            Finn S.
+                                            </p>
+                                        </div>
+                                        <!-- end sporgsmal -->
+                                        <hr>
+                                        <!-- begin korte svar -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Det korte svar</h3>
+                                            <p>
+                                            Ved at se hvor hurtigt Universet udvider sig i dag, kan vi "regne baglæns" og finde ud af, hvor længe siden det er, at alting var samlet på samme sted.
+                                            </p>
+                                            <p>
+                                            Vi ved dog ikke, om dette rent faktisk var begyndelsen på det hele.
+                                            </p>
+                                        </div>
+                                        <!-- end korte svar -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="Gå til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>Gå til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede spørgsmål</h4>
+                                                    <div class="posts-list">
+                                                        <!-- begin sporgsmal 1 -->
+                                                        <div class="post"><a href="./universets-udvidelse-2.html" class="entry-image"><img src="../pics/brevkasse/kosmologisk-rødforskydning-icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./universets-udvidelse-2.html">Universets udvidelse II</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end sporgsmal 1 -->
+                                                        <!-- begin sporgsmal 2 -->
+                                                        <div class="post"><a href="./hvad-startede-big-bang.html" class="entry-image"><img src="../pics/brevkasse/conformal-cyclic-cosmology-icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./hvad-startede-big-bang.html">Hvad startede Big Bang</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end sporgsmal 2 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                        <!-- begin baggrund -->
+                                        <!--
+                                        <div class="icon-box ib-v1 ib-boxed bg-logoyellow">
+                                            <i class="oli oli-book-open" style="color:#7F548E"></i>
+                                            <h3 class="title" style="color:#7F548E">Baggrundsviden fra encyklopædien</h3>
+                                            <p>
+                                            <span style="color:#7F548E">Du kan læse mere om lys her i encyklopædien:</span>
+                                            </p>
+                                            <p>
+                                            <a href="../encyclo/spektrum.html" data-text="Spektrum" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Lys &amp; spektrer</span></a>
+                                            <a href="../encyclo/rodforskydning.html" data-text="Rødforskydning" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Rødforskydning</span></a>
+                                            </p>
+                                        </div>
+                                        -->
+                                        <!-- end baggrund -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin second row (længere) -->
+                        <section class="section section-narrow bg-gray p-top-20  p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Det lange svar</h3>
+                                        <p>
+                                        Historisk set har mennesket forestilling on Universets alder skiftet lidt mellem at være endeligt og uendeligt.
+                                        I antikken var det dominerende synspunkt — fremsat af bl.a. Aristoteles — at kosmos havde eksisteret altid
+                                        (selvom der var nogle, der argumenterede for en skaber, f.eks. Platon der talte on "demiurgen", en slags skabende bygmester).
+                                        </p>
+                                        <p>
+                                        I middelalderen gik den ikke rigtig, da man kunne regne ud fra Biblens passager, at Gud skabte Jorden og Universet for ca. 6000 år siden.
+                                        I løbet af 1600-1700-tallet begyndte opdagelser af fossiler og jordlag dog at indikere, at Jorden var langt ældre end dette,
+                                        og da man efterhånden fik en forståelse af geologiske processer og udviklingen af stjerner, gik det op for os, at Universet måtte være mindst mange milliarder år gammelt.
+                                        </p>
+                                        <p>
+                                        Kan man f.eks. måle en stjernes alder til at være 13 milliarder år gammelt, må Universet nødvendigvis være mindst lige så gammelt.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/olbers-paradox.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/olbers-paradox.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Olbers' paradoks</strong>:
+                                                I renæssancen mente flere, at Universet var uendeligt stort, med stjerner jævnt fordelt ud over det hele.
+                                                Men hvis det er tilfældet, sagde Thomas Digges (og flere efter ham, bl.a. Heinrich Olbers som så fik æren), burde vi se overfladen af en stjerne, lige meget hvilken retning vi kigger.
+                                                Derfor burde nattehimlen ikke være mørk, men lige så lys som en stjernes overflade.
+                                                Den primære løsning til paradokset et, at Universet ikke er uendeligt gammelt, så lyset fra de fjerneste stjerner har ikke nået os endnu.
+                                                Illustration: Peter Laursen.
+                                                </font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end second row -->
+
+                        <!-- begin third row (udvidelse) -->
+                        <section class="section section-narrow bg-white p-top-20  p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Universet udvider sig</h3>
+                                        <p>
+                                        I 1916 gav Einstein os sin berømte "generelle relativitetsteori" (eller "GR"), der beskriver sammenhængen mellem rum, tid, masse, energi, og flere andre fysiske egenskaber.
+                                        GR bygger på nogle få antagelser, en del observationer, og en hulens masse matematik.
+                                        Fordi det ene eksperiment efter det andet bliver ved med at bekræfte GR, tror de fleste forskere på, at teorien giver en god beskrivelse af Universet, og derfor er GR fundamentet for moderne kosmologi.
+                                        </p>
+                                        <p>
+                                        Einstein og de fleste andre antog på dette tidspunkt, at Universet var statisk.
+                                        Altså, godt nok bevære stjerner og galakser sig lidt rundt om hinanden, men "i gennemsnit" skulle de ligge stille, troede man.
+                                        Men i løbet af 1920'erne gik det op for forskerne, at Universet faktisk er i gang med at udvide sig.
+                                        Det betyder, at alle galakserne i fortiden lå tættere på hinanden, og med Einsteins ligninger — eller mere præcist: en version af hans ligning der kaldes "Friedmann-ligningen" — kan vi så regne ud, hvor langt vi skal gå tilbage i tiden, før alt lå samme sted.
+                                        </p>
+                                        <p>
+                                        Resultatet: 13.8 mia. år.
+                                        </p>
+                                        <p>
+                                        Dette er altså Universets alder.
+                                        I Friedmann-ligningen indgår nogle tal, som ikke kan regnes ud, men som skal måles, nemlig Universets udvidelseshastighed, og tætheden af alle former for stof i Universe, dvs. atomer, mørkt stof, mørk energi, stråling, og neutrinoer.
+                                        Med disse ligninger kan vi også regne ud, hvordan de fysiske forhold var i fortiden, og derfor kan vi også udtale os om, hvordan Universet har opført sig gennem tiden, altså hvor varmt og hvor tæt det var tidligere, hvornår galakserne blev dannet, hvornår grundstofferne blev dannet, og hvad der mere præcist skete i de første minutter efter den skabelse, som vi kalder Big Bang.
+                                        </p>
+                                        <p>
+                                        <button type="button" data-toggle="modal" data-target="#friedmannModal" class="btn btn-circle btn-small btn-skin-blue">Vis mig ligningen</button>
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/universets-udvidelse.png" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/universets-udvidelse.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Universets udvidelse</strong>:
+                                                Et tomt univers (<span style="color:#E5984B;">orange</span>) vil udvide sig lineært med tiden.
+                                                Hvis det indeholder <em>lidt</em> masse (<span style="color:#76C650;">grøn</span>), vil det bremses op, men stadig udvide sig for evigt.
+                                                Hvis det indeholder over en vis grænse (<span style="color:#D94DE7;">magenta</span>), vil det en dag kollapse.
+                                                Vores Univers (<span style="color:#DB4532;">rød</span>) har dog tilsyneladende den skøre egenskab, at det indeholder en form for energi, som får udvidelsen til at øges.
+                                                I starten dominerede det "almindelige" stof, og bremsede det derfor op, men på et tidspunkt (et par milliarder år siden) begyndte denne "mørke energi" at dominere,
+                                                og ser nu ud til at have fået sit tag i os.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end third row -->
+
+                        <!-- begin fourth row (begyndelse?) -->
+                        <section class="section section-narrow bg-gray p-top-20  p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Er det virkelig begyndelsen?</h3>
+                                        <p>
+                                        Oprindeligt var tanken, at denne skabelse simpelthen var det første øjeblik.
+                                        Altså, der var simpelthen intet før Big Bang.
+                                        Så du skulle ikke forestille dig et tomt rum, hvori alting pludselig opstår og begynder at fjerne sig fra hinanden, men nærmere at selve rummet og selve tiden opstod, for derefter at udvikle sig.
+                                        Derfor gav spørgsmålet "før Big Bang" slet ikke mening, ligesom det heller ikke giver mening at spørge "Hvad ligger der syd for Sydpolen?"
+                                        </p>
+                                        <p>
+                                        Men i dag er vi ikke længere så sikre.
+                                        Det eneste vi ved er, at Universet for 13.8 mia. år siden var ekstremt tæt og ekstremt varmt, og at alt hvad det indeholder nok blev skabt her.
+                                        Men rummet og tiden kan i princippet godt have eksisteret før, og faktisk er der intet i fysikken der forbyder rumtiden at have eksisteret uendeligt langt tilbage.
+                                        Du kan forestille dig et meget, meget sammenpresset rum for 13.8 mia. år siden, som ét sekund tidligere var halvt så stort, to sekunder tidligere var en fjerdedel så stort, tre sekunder tidligere var en ottendedel, og så videre i det uendelige.
+                                        </p>
+                                        <p>
+                                        En anden mulighed er, at Universet efter æoner af millarder af år udvider sig så meget, at det til sidst bliver stort set tomt for energi, og dermed er uskelneligt fra en lille tomt univers, som derefter kan starte påny med et nyt Big Bang.
+                                        Dette kan gentages uendeligt i fremtiden, og kan derfor også være en gentagelse af en uendelig gammel fortid.
+                                        Endnu en anden mulighed er, at Universet en dag begynder at trække sig sammen, kollapser i et Big Crunch, og starter forfra, i al uendelighed i et såkaldt cyklisk univers.
+                                        Der er flere andre muligheder, både for endeligt og uendeligt gamle universer.
+                                        Nogle af disse muligheder har vi mulighed for at teste eksperimentelt, hvilket der derfor arbejdes på, andre har vi ikke, hvilket gør det mere metafysisk og mindre interessant for fysikken (efter min mening).
+                                        </p>
+                                        <p>
+                                        Så svaret er: Vi ved ikke, om Universet er endeligt eller uendeligt gammel.
+                                        Men vi ved, at alt det vi ser, når vi kigger ud i Universet, var presset absurd meget sammen for 13.8 mia. år siden, og alt alle de forskellige former for partikler blev skabt enten dengang eller i forskellige processer sidenhen.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/arthur-c-clarke.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/arthur-c-clarke.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Equally terrifying</strong>: Den britiske forfatter Arthur C. Clarke — som bl.a. skrev Rumrejsen år 2001 — har sagt
+                                                "<em>Der er to muligheder: Enten er vi alene i Universet, eller også er vi ikke. Begge er lige skræmmende</em>".
+                                                På samme måde kan man sige "Der er to muligheder: Enten er Universet uendeligt gammelt, eller også opstod det på et tidspunkt. Begge dele er lige skræmmende."
+                                                Billede fra <a href="https://commons.wikimedia.org/wiki/File:Arthur_C._Clarke_1965.jpg">Wikimedia</a>.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end fourth row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <!-- <li><a href="./music.html"       >This page in English</a></li> -->
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Hvordan ved vi hvor gammelt Universet er?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+            <div id="friedmannModal" tabindex="-1" role="dialog" aria-labelledby="friedmannModalLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+                            <h4 id="friedmannModalLabel" class="modal-title modal-skin-blue">Universets alder fra Friedmann-ligningen</h4>
+                            <div class="modal-body">
+                                <p>
+                                Universetss alder er
+                                $$
+                                t = \frac{1}{H_0}\int_0^1
+                                \frac{da}{a}
+                                \frac{1}{
+                                \sqrt{
+                                \Omega_r a^{-4} +
+                                \Omega_m a^{-3} +
+                                \Omega_k a^{-2} +
+                                \Omega_\Lambda
+                                }},
+                                $$
+                                hvor \(H_0 \simeq 70\) km/s/Mpc er Hubble-konstanten, altså hvor hurtigt Universet udvider sig <em>i dag</em>, og
+                                \(\{\Omega_r,\Omega_m,\Omega_k,\Omega_\Lambda\}\) \(\simeq\) \(\{\lt 10^{-4},0.3,0,0.7\}\) er tæthedsparametrene for hhv. stråling (fotoner+neutrinoer), stof (almindeligt+mørkt), krumning (som er 1 minus alle de andre), og mørk energi.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-blue">Fint nok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>
