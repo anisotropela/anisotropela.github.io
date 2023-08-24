@@ -34,7 +34,7 @@ def list_days(day0=datetime.date.today(),ndays=10):
     date  = day0
     dates = []
 
-    dates.append(date.strftime('%Y/%m/%d'))
+    dates.append(date.strftime('%Y/%m/%d')) # '%d %b' => 25 Oct; '%Y/%m/%d' => 2023/10/25
     for nday in range(ndays):
         date = date + dt
         dates.append(date.strftime('%Y/%m/%d'))
