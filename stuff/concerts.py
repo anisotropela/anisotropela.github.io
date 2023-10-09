@@ -5,7 +5,9 @@ def yearhist():
     """
     TODO: Læs direkte fra concerts.html
     """
-    yr = np.array([2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022,
+    yr = np.array([2024,
+                   2023, 2023, 2023, 2023, 2023, 2023,
+                   2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022,
                  # 2021,
                  # 2020, # 2020, # 2020,
                    2019, 2019,
@@ -14,6 +16,7 @@ def yearhist():
                    2015, 2015,
                    2014, 2014, 2014, 2014, 2014, 2014,
                    2013, 2013, 2013,
+                #
                    2011, 2011, 2011,
                    2010, 2010,
                    2009, 2009, 2009, 2009,
@@ -38,5 +41,5 @@ def yearhist():
     plt.clf()
     plt.hist(yr,bins=yrbins,color='g',alpha=.25,histtype='stepfilled')
     plt.hist(yr,bins=yrbins,   ec='g',          histtype='step')
-
-
+    plt.xlabel('Year')
+    plt.ylabel('# of concerts')
