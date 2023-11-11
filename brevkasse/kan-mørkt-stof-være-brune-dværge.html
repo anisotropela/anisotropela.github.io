@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+    <!-- #####Begin head-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- globalise scripting and styling content language-->
+        <meta name="Content-Type-Script" content="text/javascript">
+        <meta name="Content-Type-Style" content="text/css">
+        <!-- author of this doc-->
+        <meta name="author" content="owwwlab.com">
+        <meta property="og:image" content="../pics/brevkasse/brown-dwarf.jpg" />
+        <!-- ################################-->
+        <!-- #### add SEO metadata here-->
+        <!-- ################################-->
+        <!-- #####Begin styles-->
+        <!-- stylesheets	-->
+        <link href="../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+        <!-- Load extra page specific css-->
+        <!-- Overwrite vendors-->
+        <link href="../assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/demo3.css" rel="stylesheet" type="text/css">
+        <!-- #####End styles-->
+        <!-- #####Begin JS-->
+        <!-- add your scripts to the end of the page for sake of page load speed-->
+        <!-- scripts that need to be at head section-->
+        <script src="../assets/js/vendors/jquery.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../scripts/showEq.js"></script>
+        <!-- #####End JS-->
+        <!-- #####Begin load google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+        <!-- #####End load google fonts-->
+        <title>Kan mørkt stof være brune dværge?</title>
+    </head>
+    <!-- #####End head-->
+    <body class="fullwidth side-header slim-container">
+        <script type="text/javascript">
+            (function(window, document, dataLayerName, id) {
+                            window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+                            function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+                            var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+                            var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+                            tags.async=!0,tags.src="https://anisotropela.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+                            !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+                        })(window, document, 'dataLayer', 'a8556bd7-f6df-497f-a091-d5bd1ed45f5d');
+        </script>
+        <div id="wrapper" class="regular-layout">
+
+            <!-- begin header (side menu) -->
+            <header id="header" class=" dark">
+                <div class="head-main">
+                    <div class="container pull-up-15"> <!-- pull up 15 to avoid black stripe above logo (I think only multiple of 5 are allowed) -->
+                        <!-- begin logo -->
+                        <div class="featured-item text-right"> <!-- what about `logo-wrapper`? -->
+                            <div class="features-image">
+                                <a href="../om.html"><img src="../logos/logo.png" alt="anisotropela"></a>
+                            </div>
+                            <!--
+                                <div class="logo-wrapper ">
+                                <div class="ol-user-profile"><a href="#" class="avatar"><img src="../pics/mig.jpg"></a>
+                                <h1 class="title">Peter&nbsp;Laursen</h1>
+                                <h3 class="subtitle">Astrophysicist</h3>
+                                </div>
+                                </div>
+                            -->
+                        </div>
+                        <!-- end logo -->
+                        <ul id="primary-menu">
+                            <li><a href="../dansk.html" title="Home"         ><span>Hjem</span></a> </li>
+                            <li><a href="../nyheder.html"      title="News"         ><span>Nyheder<sup><sup><sup><img height=17px src="../pics/notification.png"></sup></sup></sup></span></a> </li>
+                            <li><a href="../forskning.html"    title="Research"     ><span>Forskning</span></a> </li>
+                            <li class="current-menu-item"><a href="../formidling.html"   title="Outreach"     ><span>Formidling</span></a> </li>
+                            <li><a href="../undervisning.html" title="TeachSpv"     ><span>Undervisning/vejledning</span></a> </li>
+                            <li><a href="../cv_dk.html"        title="CV"           ><span>CV</span></a> </li>
+                            <li><a href="../kontakt.html"      title="Contact"      ><span>Kontakt mig</span></a> </li>
+                            <li><a href="../personligt.html"   title="Personal"     ><span>Personligt</span></a> </li>
+                        </ul>
+                        <div class="header-icons">
+                            <!-- #####Begin mobile menu trigger-->
+                            <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                            <!-- #####End mobile menu trigger-->
+                        </div>
+                    </div>
+                </div>
+                <div data-img-src="../pics/backgroundMenu.jpg" class="header-bg set-bg ov-dark-alpha-70"></div>
+            </header>
+            <!-- #end header (side menu) -->
+
+            <section id="contents">
+                <!-- #####Begin page head-->
+                <div class="page-head lined bg-white shadow-line ol-particles">
+                    <div class="container" >
+                        <div class="tb-vcenter-wrapper">
+                            <div class="title-wrapper vcenter">
+                                <!-- <h1 class="title">About anisotropela</h1> -->
+                                <h1>Kan mørkt stof være brune dværge?</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper vcenter">
+                                <!--
+                                <div>
+                                    <a href="./redshift.html"><img height=20px src="../pics/flagCA1.png" onmouseover="this.src='../pics/flagCA2.png'" onmouseout="this.src='../pics/flagCA1.png'" /></a>
+                                </div>
+                                -->
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Kan mørkt stof være brune dværge?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #####End page head
+                -->
+                <div class="page-contents">
+
+                    <!-- #####Begin main area-->
+                    <section id="main-area">
+
+                        <!-- begin first row (sporgsmal) -->
+                        <section class="section p-top-20 p-bottom-20">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- begin sporgsmal -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-rocket"></i>
+                                            <h3 class="title">Spørgsmålet</h3>
+                                            <p>
+                                            Jeg har forstået at mørkt stof er blevet postuleret fordi der mangler masse i universets regnskab.
+                                            Og som jeg tror jeg har forstået, så hælder mange forskere til at det er WIMPs, og forsøger at påvise dem.
+                                            </p>
+                                            <p>
+                                            Er der gode grunde til (NB: jeg forventer at det er tilfældet) at det mørke stof ikke kan være brune dværge, som vel må være under-observerede?
+                                            Gas samles i mange størrelser, så rigtigt mange af gasforsamlingerne ender vel med at blive for små til fusion.
+                                            </p>
+                                            <p>
+                                            Jeg tænker at WIMPs må koncentrere sig om galakser men at de vel ikke behøver at følge det synlige stof helt præcist ved fx galaksesammenstød,
+                                            og man måske kan se effekter fra tyngdekraft i den sammenhæng som lettere lader sig forklare ved WIMPs end "rigtigt" stof.
+                                            </p>
+                                            <p>
+                                            Mvh<br>
+                                            Kristian
+                                            </p>
+                                        </div>
+                                        <!-- end sporgsmal -->
+                                        <hr>
+                                        <!-- begin korte svar -->
+                                        <div class="icon-box ib-v1 ib-boxed">
+                                            <i class="oli oli-hourglass"></i>
+                                            <h3 class="title">Det korte svar</h3>
+                                            <p>
+                                            I princippet kunne mørkt stof godt være brune dværge, men flere observationer viser, at de højst kan udgøre en fuldstændig ubetydelig andel af det mørke stof.
+                                            </p>
+                                        </div>
+                                        <!-- end korte svar -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>
+                                        <a href="../brevkasse.html" data-text="Gå til brevkassen" class="btn btn-small btn-circle btn-an-split"><span>Gå til brevkassen</span></a>
+                                        </p>
+                                        <div class="sidebar right">
+                                            <!-- #####Begin widget-->
+                                            <div class="widgets-wrapper">
+                                                <div class="widget">
+                                                    <h4>Relaterede spørgsmål</h4>
+                                                    <div class="posts-list">
+                                                        <!-- begin sporgsmal 1 -->
+                                                        <div class="post"><a href="./NegativMasseII.html" class="entry-image"><img src="../pics/brevkasse/negativeMass_icon.jpg" alt=""></a>
+                                                            <div class="entry-content">
+                                                                <h4 class="entry-title"><a href="./NegativMasseII.html">Om negativ masse og mørkt stof</a></h4>
+                                                                <ul class="entry-meta">
+                                                                    <li><i class="icon oi-speech-bubble"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end sporgsmal 1 -->
+                                                        <!-- begin sporgsmal 2 -->
+                                                        <!-- end sporgsmal 2 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #####End widget-->
+                                        </div>
+                                        <!-- begin baggrund -->
+                                        <div class="icon-box ib-v1 ib-boxed bg-logoyellow">
+                                            <i class="oli oli-book-open" style="color:#7F548E"></i>
+                                            <h3 class="title" style="color:#7F548E">Baggrundsviden fra encyklopædien</h3>
+                                            <p>
+                                            <span style="color:#7F548E">Hvis du ikke kender til mørkt stof, kan du læse lidt om det i encyklopædien her (<em>lidt</em>, fordi jeg faktisk ikke rigtig har fået skrevet artiklen):</span>
+                                            </p>
+                                            <p>
+                                            <a href="../encyclo/morkt_stof.html" data-text="Mørkt stof" class="btn btn-round btn-skin-yellow btn-extra-small"><span>Mørkt stof</span></a>
+                                            </p>
+                                            <!-- <a href="#" class="btn btn-extra-small btn-circle btn-skin-dark">read more</a> -->
+                                        </div>
+                                        <!-- end baggrund -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end first row -->
+
+                        <!-- begin gray row (Der mangler noget) -->
+                        <section class="section section-narrow bg-gray p-bottom-20">
+                            <div class="container"> 
+                                <h1>Det lange svar</h1>
+                                <hr>
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Der mangler noget</h3>
+                                        <p>
+                                        Det er sandt, at eksistensen af mørkt stof oprindeligt (i 1970'erne) blev postuleret som en forklaring på, at det synlige stof ikke var tilstrækkeligt til at forklare
+                                        stjernernes bevægelsesmønstre (både rotation og hastighedsfordeling) i galakserne (og faktisk også helt tilbage i 1933, for at forklare galaksernes bevægelse i en galaksehob).
+                                        </p>
+                                        <p>
+                                        Senere kom flere andre indicier på dets eksistens til, som f.eks.
+                                        <ul>
+                                            <li>masserne af galaksehobe målt vha. "gravitational linsning", dvs. massens evne til at krumme rummet og dermed afbøje lys,</li>
+                                            <li>fordelingen af "klumper" i den såkaldte <a href="./encyclo/kosmisk_mikrobolgebaggrundsstraaling.html">kosmiske mikrobølgebaggrundsstråling</a>,</li>
+                                            <li>det faktum, at vi overhovedet har struktur i Universet, hvilket ikke umiddelbart ville være muligt hvis der kun var dét stof vi kan se,</li>
+                                            <li>fordelingen af Universets storskalastruktur, inkl. de såkaldte "baryoniske oscillationer", og</li>
+                                            <li>målte afstande i Universet.
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        Der er, og har været, mange kandidater til, hvad mørkt stof <em>egentlig</em> er.
+                                        Udover de forklaringer der ikke involverer noget mørkt stof, men i stedet involverer andre teorier for tyngdekraften, kan man groft dele kandidaterne op i 
+                                        1) bittesmå partikler eller felter, og
+                                        2) store objekter.
+                                        Hvor WIMPs hører til den første kategori, hører brune dværge til den sidste.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/brown-dwarf.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/brown-dwarf.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Brun dværg</strong>: Brune dværge kaldes somme tider "fejlslagne stjerner", fordi de er store kugler af gas, som dog ikke er store nok til at starte den kernefusion,
+                                                der skal til for at få dem til at skinne som stjerner.
+                                                De gløder dog alligevel svagt i infrarødt lys, fordi tyngdekraftens sammenpresning varmer dem op.
+                                                Illustration: <a href="https://exoplanets.nasa.gov/resources/114/forecast-for-exotic-weather/">NASA/JPL-Caltech</a>.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end gray row -->
+
+                        <!-- begin white row (Der er slet ikke nok brune dværge) -->
+                        <section class="section section-narrow bg-white p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Der er slet ikke nok brune dværge</h3>
+                                        <p>
+                                        Som du gætter er der ganske rigtigt gode grunde til at tro, at mørkt stof ikke kan udgøres af brune dværge
+                                        (eller rettere sagt at <em>størstedelen</em> af det mørke stof ikke kan, for man kan sagtens forestille sig, at der kan være mere end én komponent).
+                                        Faktisk kan jeg komme i tanke om fire gode grunde:<br>
+                                        <ol>
+                                            <li>
+                                                Alle de ovennævnte observationelle indikationer giver det konsistente resultat, at det mørke stof udgør omkring 1/4 af alt stof/energi i Universet.
+                                                Samtidig ved vi (fra visse af de ovenstående observationer, men også fra f.eks. estimater af, hvor mange af de forskellige grundstoffer der blev skabt ved Big Bang),
+                                                at det normale, "lyse" stof (de såkaldte baryoner), kun udgør 5% af stoffet.
+                                                Selv hvis <em>alt</em> almindeligt stof var lavet af brune dværge (hvilket det jo tydeligvis ikke er), ville der aldrig kunne være nok til at forklare observationerne.
+                                            </li>
+                                            <li>
+                                                Brune dværge lyser ikke meget ved synlige bølgelængder, men kan ses ved deres infrarøde lys, og også f.eks. vha. radiobølger.
+                                                De lyser ikke kraftigt, og kan derfor ikke ses på store afstande, men i vores lokale nabolag, hvor vi <em>kan</em> se dem, har vi et ret godt overblik over,
+                                                hvor mange der er ift. hvor mange stjerner der er, nemlig cirka 1 brun dværg for hver 4 tungere stjerne.
+                                                Hvis man så tæller den samlede masse op, kan man se, at selvom der er mange, udgør de en forsvindende lille del af den samlede masse.
+                                            </li>
+                                            <li>
+                                                Selv om brune dværge er små, kan de med deres tyngdekraft godt afbøje, fokusere og forstærke lyset fra bagvedliggende stjerner, som de måtte kredse om.
+                                                Det er ikke meget, men alligevel målbart gennem en teknik der hedder "mikro-linsning".
+                                                Observationer viser dog, at der slet ikke er nok til at udgøre en signifikant mængde mørkt stof.
+                                            </li>
+                                            <li>
+                                                Mørkt stof findes ikke kun inde i galakserne, men også <em>mellem</em> galakserne.
+                                                Eftersom brune dværge skabes ved de samme processer som stjerner — dvs. ved gravitationelt kollaps af de tætteste områder inde i de store gasskyer —
+                                                burde der altså også være fuld af almindelig stjerner mellem galakserne (med mindre du kan finde på en mekanisme, der filtrerer de brune dværge fra og spytter dem ud af galakserne).
+                                            </li>
+                                        </ol>
+                                        </p>
+                                        <p>
+                                        Derfor tror vi ikke, at mørkt stof kan være lavet af brune dværge, i hvert fald ikke i nævneværdig grad.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/initial-mass-function.png" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/initial-mass-function.png" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!--
+                                                https://physics.stackexchange.com/questions/149560/according-to-the-initial-mass-function-should-there-be-more-brown-dwarfs-than-r
+                                            -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Fordeling af stjerner og brune dværges masser</strong>:
+                                                Den grønne linje viser, hvor mange stjerner med en givet masse, der dannes, for hver stjerne som Solen (dvs. linjen skærer punktet [1,1]).
+                                                Kun hvis massen er over knap 0.08 Solmasser, bliver det til en egentlig stjerne; lettere objekter kan ikke starte kerneproceesser, og bliver derfor til brune dværge.
+                                                Kurven er beregnet med en såkaldt "initial mass function" fra <a href="https://ui.adsabs.harvard.edu/abs/2005ASSL..327...41C/abstract">Chabrier (2005)</a>.
+                                                Kredit: Peter Laursen.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end white row -->
+
+                        <!-- begin gray row (Kan man skille mørkt og almindeligt stof ad?) -->
+                        <section class="section section-narrow bg-gray p-top-60 p-bottom-20">
+                            <div class="container"> 
+                                <div class="row">
+                                    <!-- begin left column -->
+                                    <div class="col-md-7">
+                                        <h3>Kan man skille mørkt og almindeligt stof ad?</h3>
+                                        <p>
+                                        Nærmere end at sige, at "WIMPs koncentrerer sig om galakser", ville jeg hellere sige, at det er omvendt.
+                                        Galakserne, eller den del af dem vi kan se, er lavet af gas (baryoner) som er samlet vha. tyngdekraften,
+                                        men fordi der er 5-6 gange så meget mørkt stof som baryoner, er dynamikken domineret af det mørke stof.
+                                        Det er det mørke stof — uanset om det er WIMPs eller noget andet — der vha. sin tyngdekraft overvandt Universets udvidelse kort efter Big Bang, og baryonerne der fulgte med.
+                                        </p>
+                                        <p>
+                                        Men det er rigtigt, at mørkt stof og baryoner ikke behøves at følges <em>helt</em> præcist, og netop dette forhold hjælper os faktisk med at observere og forstå det mørke stof.
+                                        Et prominent eksempel på dette er den såkaldte Bullet Cluster, som ses på billedet her.
+                                        </p>
+                                        <p>
+                                        Et andet eksempel er, at galaksernes gas og stjerner har en udbredelse, som typisk er mindre end 1/10 af den halo af mørkt stof, som de ligger i.
+                                        For eksempel er Mælkevejens lysende skive ca. 100.000 lysår tværsover, mens de mørke stof har en diameter på noget i retning af 1,3 millioner lysår.
+                                        Grunden er, at baryoner kan støde sammen og fortættes, mens mørkt stof har svært ved at samle sig i samme grad.
+                                        </p>
+                                        <p>
+                                        Denne adskillelse er ikke noget argument mod brune dværge, og fortæller os ikke, at det mørke stof nødvendigvis er WIMPs.
+                                        Men det fortæller os, at det mørke stof må udgøres af noget, der ikke støder sammen med sig selv eller med almindeligt stof.
+                                        </p>
+                                    </div>
+                                    <!-- end left column -->
+                                    <!-- begin right column -->
+                                    <div class="col-md-5">
+                                        <div class="ol-hover hover-1"><img src="../pics/brevkasse/bullet-cluster.jpg" alt="image hover"/>
+                                            <!-- <div class="ol-overlay ov-grad1-alpha-10"></div> -->
+                                            <div class="icons">
+                                                <a href="../pics/brevkasse/bullet-cluster.jpg" class="ol-lightbox"><i class="oli oli-search theme-color" style="color:var(--lilla); border-color:var(--lilla); background-color:var(--gul)"></i></a>
+                                                <!-- <a href="#"><i class="oli oli-right"></i></a> -->
+                                            </div>
+                                            <!-- <h3 class="title">Doppler effekt</h3> -->
+                                        </div>
+                                        <div>
+                                            <font size=-2><strong>Bullet Cluster</strong> består af to galaksehobe, der hver vejer flere hundrede <em>billioner</em> gange så meget som vores Sol.
+                                                For omkring 150 millioner år siden (plus den tid det tog lyset at nå ned til os) smadrede de sammen i et gigantisk kolission med over 1000 km/s!<br>
+                                                I sådan et sammenstød tørner gassen indeni og mellem galakserne sammen, bremses op og opvarmes til 100 millioner grader, hvilket får det til at udsende røntgenstråler, vist her med <span style="color:#ff0000">rødt</span>.
+                                                Stjernerne, derimod, og de fleste af galakserne passerer lige forbi hinanden og fortsætter på den anden side.
+                                                Det kan man se ved de primært <span style="color:#ddb000" >gul-orange</span> farver.
+                                                Med <span style="color:#0000ff" >blå</span> vises — vha. teknikken "gravitationel linsning" — hvor massen er koncentreret, hvilket er cirka samme sted som galakserne.<br>
+                                                Billedet viset, hvordan det mørke stof (og stjernerne) er blevet separeret fra gassen.
+                                                Dette er svært at forklare med alternative teorier for tyngdekraft, og passer i stedet bedre med, at der bare er noget stof vi ikke kan se.
+                                                Kredit: <a href="https://www.esa.int/ESA_Multimedia/Images/2007/07/The_Bullet_Cluster2">NASA/CXC/CfA/M.Markevitch/STScI/Magellan/U.Arizona/D.Clowe/ESO WFI</a>.</font>
+                                        </div>
+                                    </div>
+                                    <!-- end right column -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end gray row -->
+
+                    </section>
+                    <!-- #####End main area -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <!-- end #contents-->
+            <!-- #####Begin footer-->
+            <section class="section p-top-20 p-bottom-40 bg-gray">
+                <div class="container">
+                </div>
+            </section>
+            <!-- I can't seem to figure out how to set a darker color "globally" (i.e. within footer environment).
+                One way would be to embed each line in <span style="color:#808080" >...</span>. -->
+            <!-- #####Begin footer-->
+            <footer id="footer" class="dark-wrapper">
+                <div id="footer-main">
+                    <div class="container">
+                        <div class="center-logo text-center"><a href="../om.html" class="img" style="padding:15px"><img src="../logos/logoonlyBH.png" alt="About"></a></div>
+                        <div class="sp-blank-10"></div>
+                        <div class="row">
+
+                            <!-- begin first col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget--> <!-- <a href="#" class="img"><img src="../logos/logotextBH.png" alt="CHAOS HTML Template" class="ol-retina"></a>-->
+                                <div class="widget">
+                                    <h4>Main pages</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../dansk.html"       >Hjem</a></li>
+                                            <li><a href="../nyheder.html"     >Nyheder</a></li>
+                                            <li><a href="../forskning.html"   >Forskning</a></li>
+                                            <li><a href="../formidling.html"  >Formidling</a></li>
+                                            <li><a href="../undervisning.html">Undervisning/vejledning</a></li>
+                                            <li><a href="../cv_dk.html"       >CV</a></li>
+                                            <li><a href="../kontakt.html"     >Kontakt mig</a></li>
+                                            <li><a href="../personligt.html"  >Personligt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end first col -->
+
+                            <!-- begin middle col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Shortcuts</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../om.html"           >Om hjemmesiden</a></li>
+                                            <li><a href="../brevkasse.html"    >Brevkasse</a></li>
+                                            <!-- <li><a href="./music.html"       >This page in English</a></li> -->
+                                            <li><a href="../publikationer.html">Publikationer</a></li>
+                                            <li><a href="../encyklo.html"      >Encyklopædi</a></li>
+                                            <li><a href="../observationer.html">Observationer</a></li>
+                                            <li><a href="../noter.html"        >Noter</a></li>
+                                            <li><a href="../teaching/classic_papers.html">"Classic papers"-kursus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end middle col -->
+
+                            <!-- begin left col -->
+                            <div class="col-md-3 col-md-offset-1 col-sm-6">
+                                <!-- #####Begin widget-->
+                                <div class="widget">
+                                    <h4>Random links</h4>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a href="../encyclo/rodforskydning.html"        >Hvad er rødforskydning?</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://sciencenordic.com/big-bang-cosmology-denmark/the-big-bang--an-eyewitness-account/1457312">Big Bang</a></li>
+                                            <li><a href="../observations/key.html"        >Nøglehulstågen</a></li>
+                                            <li><i class="fa fa-external-link"></i> <a href="https://open.spotify.com/user/117947168/playlist/7q4d6DR94d7VsJUtQU4MOA?si=ipyQaGPoSfSXWs1E1WTLqQ">Astrosongs</a></li>
+                                            <li><a href="../stuff/menHansDillerLever.html">Bøger</a> &amp;
+                                                <a href="../stuff/tegneserier.html"       >tegneserier</a></li>
+                                            <li><a href="../stuff/rom.html"               >Rom</a>   &amp;
+                                                <a href="../stuff/musik.html"            >Musik</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #####End widget-->
+                            </div>
+                            <!-- end left col -->
+
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-bar">                    <div class="container">
+                        <div class="row tb-vcenter-wrapper bottom-bar">
+                            <div class="col-sm-4 vcenter">
+                                <a href="../dansk.html" class="img"><img src="../logos/logotextBH.png" alt="Galaxies &amp; more&hellip;" class="ol-retina" style="height:40px"></a>
+                            </div>
+                            <div class="col-sm-4 vcenter">
+                                <!-- #####Begin social icons-->
+                                <ul class="social-icons border-circle hover-tb-theme skin-blue">
+                                    <li><a href="https://twitter.com/anisotropela"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://stackexchange.com/users/5587898"><img src="../pics/SE.png"  alt="StackExchange"  class="ol-retina" width=10></a></li>
+                                    <li><a href="https://github.com/anisotropela"><img src="../pics/github.png"  alt="GitHub"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://open.spotify.com/user/117947168?si=DRkjU2HzQL6nIXfSdwX7sQ"><img src="../pics/spotify.png"  alt="Spotify"  class="ol-retina" width=12></a></li>
+                                    <li><a href="https://www.facebook.com/anisotropela"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anisotropela"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="skype:anisotropela?userinfo"><i class="fa fa-skype"></i></a></li>
+                                    <li><a href="https://www.instagram.com/anisotropela"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- #####End social icons-->
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <ul class="breadcrumb">
+                                    <li><a href="../dansk.html"><i class="oli oli-home" style="color:#bababa"></i></a></li>
+                                    <li><a href="../formidling.html">Formidling</a></li>
+                                    <li><a href="../brevkasse.html">Brevkasse</a></li>
+                                    <li>Kan mørkt stof være brune dværge?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #####End footer-->
+
+        </div>
+        <!-- #####Begin scripts-->
+        <script src="../assets/js/vendors/vendors.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <!-- #####End scripts-->
+    </body>
+</html>

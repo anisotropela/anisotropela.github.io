@@ -10986,7 +10986,7 @@ ol.ol-upper-roman {
     list-style-type: upper-roman;
 }
 ul {
-    line-height: 1.5;
+    line-height: 1.7; /* this value controls the distance between lines in unordred list. The previous value was 1.5, but setting it to 1.7 makes it look like the main text */
 }
 ul.arrows {
     list-style: none;
