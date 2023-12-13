@@ -152,10 +152,10 @@ def dillit(language      = 'dk',
         fig = plt.figure()
         wm = plt.get_current_fig_manager()
         wm.window.wm_geometry('600x475+570+500')
-        bax = brokenaxes(xlims=((-2120,-2085),(-460,-435),(1740,1765),(1840,2030)),
+        bax = brokenaxes(xlims=((-2120,-2085),(-460,-435),(1740,2030)),
                          ylims=None,
                          wspace=.05)
-        bax.set_ylim([0,10])
+        bax.set_ylim([0,11])
         decades = np.arange(-2200,2050,10)
         bax.hist(year,bins=decades,color='g',alpha=.25,histtype='stepfilled')
         bax.hist(year,bins=decades,   ec='g',          histtype='step')
