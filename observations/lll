@@ -1,15 +1,57 @@
-sed -i '' -e 's/style="z-index:-10"//g' SN2007gr.html
-sed -i '' -e 's/style="z-index:-10"//g' ant.html
-sed -i '' -e 's/style="z-index:-10"//g' butter.html
-sed -i '' -e 's/style="z-index:-10"//g' cloudfall.html
-sed -i '' -e 's/style="z-index:-10"//g' eagle.html
-sed -i '' -e 's/style="z-index:-10"//g' gc.html
-sed -i '' -e 's/style="z-index:-10"//g' key.html
-sed -i '' -e 's/style="z-index:-10"//g' laser.html
-sed -i '' -e 's/style="z-index:-10"//g' moon.html
-sed -i '' -e 's/style="z-index:-10"//g' not.html
-sed -i '' -e 's/style="z-index:-10"//g' pin.html
-sed -i '' -e 's/style="z-index:-10"//g' sombrero.html
-sed -i '' -e 's/style="z-index:-10"//g' supernova.html
-sed -i '' -e 's/style="z-index:-10"//g' template.html
-sed -i '' -e 's/style="z-index:-10"//g' virgo.html
+vim -s ../piwik_begone4ever.vim GC_DK.html
+vim -s ../piwik_begone4ever.vim Moon_DK.html
+vim -s ../piwik_begone4ever.vim Moon_old.html
+vim -s ../piwik_begone4ever.vim Observations.html
+vim -s ../piwik_begone4ever.vim Observations_DK.html
+vim -s ../piwik_begone4ever.vim P2007.html
+vim -s ../piwik_begone4ever.vim P2007_DK.html
+vim -s ../piwik_begone4ever.vim P2007_old.html
+vim -s ../piwik_begone4ever.vim SN2005at.html
+vim -s ../piwik_begone4ever.vim SN2005at_DK.html
+vim -s ../piwik_begone4ever.vim SN2005at_old.html
+vim -s ../piwik_begone4ever.vim SN2007gr.html
+vim -s ../piwik_begone4ever.vim SN2007gr_DK.html
+vim -s ../piwik_begone4ever.vim SN2007gr_old.html
+vim -s ../piwik_begone4ever.vim ant.html
+vim -s ../piwik_begone4ever.vim ant_DK.html
+vim -s ../piwik_begone4ever.vim ant_old.html
+vim -s ../piwik_begone4ever.vim butter.html
+vim -s ../piwik_begone4ever.vim butter_DK.html
+vim -s ../piwik_begone4ever.vim butter_old.html
+vim -s ../piwik_begone4ever.vim cloudfall.html
+vim -s ../piwik_begone4ever.vim eagle.html
+vim -s ../piwik_begone4ever.vim eagle_DK.html
+vim -s ../piwik_begone4ever.vim eagle_old.html
+vim -s ../piwik_begone4ever.vim gc.html
+vim -s ../piwik_begone4ever.vim gc_old.html
+vim -s ../piwik_begone4ever.vim key.html
+vim -s ../piwik_begone4ever.vim key_DK.html
+vim -s ../piwik_begone4ever.vim key_old.html
+vim -s ../piwik_begone4ever.vim laser.html
+vim -s ../piwik_begone4ever.vim laser_DK.html
+vim -s ../piwik_begone4ever.vim laser_old.html
+vim -s ../piwik_begone4ever.vim m14.html
+vim -s ../piwik_begone4ever.vim m14_DK.html
+vim -s ../piwik_begone4ever.vim m53.html
+vim -s ../piwik_begone4ever.vim m53_DK.html
+vim -s ../piwik_begone4ever.vim m9.html
+vim -s ../piwik_begone4ever.vim m9_DK.html
+vim -s ../piwik_begone4ever.vim moon.html
+vim -s ../piwik_begone4ever.vim neowise.html
+vim -s ../piwik_begone4ever.vim ngc4833.html
+vim -s ../piwik_begone4ever.vim ngc4833_DK.html
+vim -s ../piwik_begone4ever.vim not.html
+vim -s ../piwik_begone4ever.vim not_1stAttemptFrom_main_pages_layouts_layout-regular-leftsidebar.html.html
+vim -s ../piwik_begone4ever.vim pin.html
+vim -s ../piwik_begone4ever.vim pin_DK.html
+vim -s ../piwik_begone4ever.vim pin_old.html
+vim -s ../piwik_begone4ever.vim sombrero.html
+vim -s ../piwik_begone4ever.vim sombrero_DK.html
+vim -s ../piwik_begone4ever.vim sombrero_old.html
+vim -s ../piwik_begone4ever.vim supernova.html
+vim -s ../piwik_begone4ever.vim supernova_DK.html
+vim -s ../piwik_begone4ever.vim supernova_old.html
+vim -s ../piwik_begone4ever.vim template.html
+vim -s ../piwik_begone4ever.vim virgo.html
+vim -s ../piwik_begone4ever.vim virgo_DK.html
+vim -s ../piwik_begone4ever.vim virgo_old.html
