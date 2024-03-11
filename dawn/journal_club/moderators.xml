@@ -1,6 +1,4 @@
 <root>
-    <jcentry Date="2024/03/11" Moderator="Cecilia"   Email="cecilia.bacchini92@gmail.com"/>
-    <jcentry Date="2024/03/11" Moderator="Iris"      Email="irisj@space.dtu.dk"/>
     <jcentry Date="2024/03/18" Moderator="Marko"     Email="marko.shuntov@nbi.ku.dk"/>
     <jcentry Date="2024/03/18" Moderator="Charlotte" Email="charlotte.mason@nbi.ku.dk"/>
     <jcentry Date="2024/03/25" Moderator="Joonas"    Email="joonas.viuho@nbi.ku.dk"/>
@@ -31,4 +29,6 @@
     <jcentry Date="TBA"        Moderator="Tom"       Email="thomas.reynolds@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Daniele"   Email="daniele.malesani@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Malte"     Email="malbr@space.dtu.dk"/>
+    <jcentry Date="TBA"        Moderator="Cecilia"   Email="cecilia.bacchini92@gmail.com"/>
+    <jcentry Date="TBA"        Moderator="Iris"      Email="irisj@space.dtu.dk"/>
 </root>
