@@ -1,6 +1,4 @@
 <root>
-    <jcentry Date="2024/04/22" Moderator="Nikolaj"   Email="sillassennikolajb@gmail.com"/>
-    <jcentry Date="2024/04/22" Moderator="Natalie"   Email="natalie.allen@nbi.ku.dk"/>
     <jcentry Date="2024/04/29" Moderator="Danial"    Email="danial.langeroodi@nbi.ku.dk"/>
     <jcentry Date="2024/04/29" Moderator="Aswin"     Email="apavi@space.dtu.dk"/>
     <jcentry Date="2024/05/06" Moderator="Kate"      Email="katriona.gould@nbi.ku.dk"/>
@@ -31,4 +29,6 @@
     <jcentry Date="TBA"        Moderator="Jasleen"   Email="jasleen.matharu@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Shuowen"   Email="shuji@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Minju"     Email="minju@space.dtu.dk"/>
+    <jcentry Date="TBA"        Moderator="Nikolaj"   Email="sillassennikolajb@gmail.com"/>
+    <jcentry Date="TBA"        Moderator="Natalie"   Email="natalie.allen@nbi.ku.dk"/>
 </root>
