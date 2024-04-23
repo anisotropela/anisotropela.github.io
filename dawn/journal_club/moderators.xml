@@ -1,19 +1,18 @@
 <root>
-    <jcentry Date="2024/04/29" Moderator="Danial"    Email="danial.langeroodi@nbi.ku.dk"/>
     <jcentry Date="2024/04/29" Moderator="Aswin"     Email="apavi@space.dtu.dk"/>
-    <jcentry Date="2024/05/06" Moderator="Kate"      Email="katriona.gould@nbi.ku.dk"/>
-    <jcentry Date="2024/05/06" Moderator="David"     Email="dblse@space.dtu.dk"/>
-    <jcentry Date="2024/05/13" Moderator="Kasper"    Email="keheintz@nbi.ku.dk"/>
+    <jcentry Date="2024/04/29" Moderator="David"     Email="dblse@space.dtu.dk"/>
+    <jcentry Date="2024/05/06" Moderator="Danial"    Email="danial.langeroodi@nbi.ku.dk"/>
+    <jcentry Date="2024/05/06" Moderator="Kasper"    Email="keheintz@nbi.ku.dk"/>
     <jcentry Date="2024/05/13" Moderator="Georgios"  Email="geoma@space.dtu.dk"/>
-    <jcentry Date="2024/05/27" Moderator="Gabe"      Email="gabriel.brammer@nbi.ku.dk"/>
+    <jcentry Date="2024/05/13" Moderator="Gabe"      Email="gabriel.brammer@nbi.ku.dk"/>
     <jcentry Date="2024/05/27" Moderator="Ting-Yi"   Email="tingyi-lu@nbi.ku.dk"/>
-    <jcentry Date="2024/06/03" Moderator="Conor"     Email="conor.mcpartland@nbi.ku.dk"/>
+    <jcentry Date="2024/05/27" Moderator="Conor"     Email="conor.mcpartland@nbi.ku.dk"/>
     <jcentry Date="2024/06/03" Moderator="Anne"      Email="anne.hutter@nbi.ku.dk"/>
-    <jcentry Date="2024/06/10" Moderator="Bitten"    Email="bgullberg@space.dtu.dk"/>
+    <jcentry Date="2024/06/03" Moderator="Bitten"    Email="bgullberg@space.dtu.dk"/>
     <jcentry Date="2024/06/10" Moderator="Albert"    Email="albert.sneppen@nbi.ku.dk"/>
-    <jcentry Date="2024/06/17" Moderator="Johan"     Email="jfynbo@nbi.ku.dk"/>
+    <jcentry Date="2024/06/10" Moderator="Johan"     Email="jfynbo@nbi.ku.dk"/>
     <jcentry Date="2024/06/17" Moderator="Guozhen"   Email="guozhen.ma@nbi.ku.dk"/>
-    <jcentry Date="TBA"        Moderator="Thomas"    Email="tgreve@space.dtu.dk"/>
+    <jcentry Date="2024/06/17" Moderator="Thomas"    Email="tgreve@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Charlotte" Email="charlotte.mason@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Lise"      Email="lichrist@nbi.ku.dk"/>
     <jcentry Date="TBA"        Moderator="Francesca" Email="francesca.rizzo@nbi.ku.dk"/>
@@ -31,4 +30,5 @@
     <jcentry Date="TBA"        Moderator="Minju"     Email="minju@space.dtu.dk"/>
     <jcentry Date="TBA"        Moderator="Nikolaj"   Email="sillassennikolajb@gmail.com"/>
     <jcentry Date="TBA"        Moderator="Natalie"   Email="natalie.allen@nbi.ku.dk"/>
+    <jcentry Date="TBA"        
 </root>
