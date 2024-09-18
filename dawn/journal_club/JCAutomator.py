@@ -22,87 +22,107 @@ def next_weekday(weekday, d=dt.date.today()):
     return d + dt.timedelta(days_ahead)
 #------------------------------------------------------------------------------
 
-# Works only if sent on a Monday:
-# deadline= dt.date.today()+dt.timedelta(days=2)
-# nextDate= dt.date.today()+dt.timedelta(days=7)
-
-# Works only if JC is *next* Monday:
-# nextDate= next_weekday('Monday')
-# deadline = nextDate + dt.timedelta(days=-5)
-
-# data = pandas.read_xml('https://raw.githubusercontent.com/anisotropela/anisotropela.github.io/master/dawn/journal_club/moderators.xml')
-# data = pandas.read_xml('./moderators.xml')
-# 
-# theModerator=" "
-# theEmail=" "
-# 
-# for i in range(len(data["Date"])):
-# 	if data["Date"][i]==nextDate.strftime('%m/%d/%Y'):
-# 		theModerator = data["Moderator"][i]
-# 		theEmail = data["Email"][i]
-
-# Works if the date is correct in the moderators.xml file:
-filename = 'moderators.xml'
+filename = 'moderators.xml' # used to be *moderators*, but now it's actually *presenters*
 with open(filename) as file:
     lines = [line.rstrip().lstrip() for line in file]
 
-line1        = lines[1].split()
-theDate      = re.findall('"([^"]*)"', line1[1])[0]
-theModerator = re.findall('"([^"]*)"', line1[2])[0]
-theEmail     = re.findall('"([^"]*)"', line1[3])[0]
+line1        = lines[1].split() #\
+line2        = lines[2].split() # \_ first four lines, containing the first four people (because line 0 is "<root>"
+line3        = lines[3].split() # /
+line4        = lines[4].split() #/
 
-nextDate = dt.datetime.strptime(theDate, '%Y/%m/%d')
-deadline = nextDate + dt.timedelta(days=-5)
+date1        = re.findall('"([^"]*)"', line1[1])[0] # Next Monday
+date2        = re.findall('"([^"]*)"', line2[1])[0] # Next Monday
+date3        = re.findall('"([^"]*)"', line3[1])[0] # The Monday after the next
+date4        = re.findall('"([^"]*)"', line4[1])[0] # The Monday after the next
 
-# override for testing purposes:
-# theModerator="Peter L"
-# theEmail = "pela@nbi.ku.dk"
+assert date1==date2, "The dates of presenters 1 and 2 are not the same " + "('" + date1 + "' and '" + date2 + "')."
+assert date3==date4, "The dates of presenters 3 and 4 are not the same " + "('" + date3 + "' and '" + date4 + "')."
 
-email = """osascript -e 'tell application "Mail"
-	
-	set theFrom to ""
-		set theTos to {" """ + theEmail + """ "}
-		
-		set theSubject to "Journal Club moderator reminder"
-		set theDelay to 1
-		set theContent to \"Dear """ + theModerator +""",\n\nThis is a reminder that it is your turn to moderate the next Journal Club session, i.e. Monday """ + nextDate.strftime('%d.%m') + """.\n\nThat means that you should\n\t0.  Respond to this message to avoid incessant reminders;\n\t1.  Pick two recent papers from the arXiv.org (you can find inspiration at benty-fields.com → Journal Club, if enough people have cast their votes);\n\t2.  Find two people that are willing to present them, preferably at the latest Wednesday """ + deadline.strftime('%d.%m')+""" and make them click the [Volunteer] button at Benty Fields; and\n\t3.  Send out a notification to the mailing list at Benty Fields (Journal Club  →  Members  →  ✉️Send group message).\n\nMore info at cosmicdawn.dk/wikidawn/dawn-activities/journal-club.\n\nNote: If you are not able to moderate this time, please find someone to swap with from the list on the website, and let me know.\n\n\nCheers,\nPeter.\"
-		set theMessage to make new outgoing message with properties {sender:theFrom, subject:theSubject, content:theContent, visible:false}
-		tell theMessage
-			repeat with theTo in theTos
-				make new recipient at end of to recipients with properties {address:theTo}
-			end repeat
-		end tell
-		
-		
-		send theMessage
-		
-	end tell
-	
-	display notification "The Journal Club Reminder has been sent to the next moderator" with title "Moderator notified" sound name "Frog"'"""
+name1 = re.findall('"([^"]*)"', line1[2])[0] # First presenter in ~one week (if you send this a week before)
+name2 = re.findall('"([^"]*)"', line2[2])[0] # Second -"-
+name3 = re.findall('"([^"]*)"', line3[2])[0] # First presenter in ~two weeks
+name4 = re.findall('"([^"]*)"', line4[2])[0] # Second -"-
+
+email1     = re.findall('"([^"]*)"', line1[3])[0] #\
+email2     = re.findall('"([^"]*)"', line2[3])[0] # \_corresponding emails
+email3     = re.findall('"([^"]*)"', line3[3])[0] # /
+email4     = re.findall('"([^"]*)"', line4[3])[0] #/
+
+nextMonday = dt.datetime.strptime(date1, '%Y/%m/%d')         # next JC
+theMondayAfterThat = dt.datetime.strptime(date3, '%Y/%m/%d') # next-next JC
+deadline = nextMonday + dt.timedelta(days=-3)                # Friday before the next JC
+
+test = False # Set to True to override names and emails (for testing purposes)
+if test:
+    name1="Peter"
+    name2="Pede"
+    name3="pela"
+    name4="anisotropela"
+    email1 = "pela@nbi.ku.dk"
+    email2 = "darkpela@gmail.com"
+    email3 = "pela@astro.uio.no"
+    email4 = "anisotropela@gmail.com"
+
+email = """osascript -e "tell application \\"Mail\\"
+
+        set theFrom to \\"\\"
+                set theTos to {{\\"{email1}\\", \\"{email2}\\"}}
+                set theCcs to {{\\"{email3}\\", \\"{email4}\\"}}
+
+                set theSubject to \\"Journal Club presentation reminder for {nextMonday}\\"
+                set theDelay to 1
+                set theContent to \\"
+Dear {name1} and {name2} (cc. {name3} and {name4}; see PS in the bottom),
+
+Here's a friendly reminder that you guys are up next for presenting a paper at the DAWN Journal Club, i.e. on Monday {nextMonday}.
+
+This means that you should
+    0.  Respond to this message NOW to avoid incessant reminders,
+    1.  Pick a recent paper from the arXiv.org (you can find inspiration at benty-fields.com → DAWN Journal Club, if enough people have cast their votes),
+    2.  Get back to me with the info at the latest Friday {deadline} (before I leave work), preferably in the following format:
+        • FirstAuthor
+        • Title
+        • arXiv abstract link
+
+More info at cosmicdawn.dk/wikidawn/dawn-activities/journal-club.
+
+Note: If for any reason you are not able to present this time, please reach out to some of the next ones on the list:
+cosmicdawn.dk/wikidawn/dawn-activities/journal-club#list-of-presenters,
+and let me know once you've found someone to swap with. Note though that you can present remotely, if you like.
 
 
-# email = "osascript -e \'tell application \"Mail\"
-# 	
-# 	set theFrom to \"\"
-# 		set theTos to {\" " + theEmail + " \"}
-# 		
-# 		set theSubject to \"Journal Club moderator reminder\"
-# 		set theDelay to 1
-# 		set theContent to \"Dear " + theModerator +",\n\nThis is a reminder that it is your turn to moderate the next Journal Club session, i.e. Monday " + nextDate.strftime('%d.%m') + ".\n\nThat means that you should\n\t0.  Respond to this message to avoid incessant reminders,\n\t1.  Pick two recent papers from the arXiv.org,\n\t2.  Find two people that are willing to present them, at the latest Wednesday " + deadline.strftime('%d.%m')+" and,\n\t3.  Send out a notification to the mailing list.\n\nSee more at cosmicdawn.dk/wikidawn/dawn-activities/journal-club, where you can also find an `auto-compose email` button and a list of possible presenters for inspiration.\n\nNote: If you are not able to moderate this time, please find someone to swap with from the list on the website, and let me know.\n\n\nCheers,\nPeter.\"
-# 		set theMessage to make new outgoing message with properties {sender:theFrom, subject:theSubject, content:theContent, visible:false}
-# 		tell theMessage
-# 			repeat with theTo in theTos
-# 				make new recipient at end of to recipients with properties {address:theTo}
-# 			end repeat
-# 		end tell
-# 		
-# 		
-# 		send theMessage
-# 		
-# 	end tell
-# 	
-# 	display notification \"The Journal Club Reminder has been sent to the next moderator\" with title \"Moderator notified\" sound name \"Frog\"\'"
-# 
+Cheers,
+Peter
+
+PS: {name3} and {name4}, this is also a notification for you that you're next in line, i.e. on Monday {theMondayAfterThat}. You will get a second reminder next Monday :)\\"
+                set theMessage to make new outgoing message with properties {{sender:theFrom, subject:theSubject, content:theContent, visible:false}}
+                tell theMessage
+                        repeat with theTo in theTos
+                                make new recipient at end of to recipients with properties {{address:theTo}}
+                        end repeat
+                        repeat with theCc in theCcs
+                                make new cc recipient at end of cc recipients with properties {{address:theCc}}
+                        end repeat
+                end tell
+
+                send theMessage
+
+        end tell
+
+        display notification \\"The Journal Club Reminder has been sent to the next presenters\\" with title \\"Presenters notified\\" sound name \\"Frog\\"" """.format(
+    email1=email1,
+    email2=email2,
+    email3=email3,
+    email4=email4,
+    name1=name1,
+    name2=name2,
+    name3=name3,
+    name4=name4,
+    nextMonday=nextMonday.strftime('%d.%m'),
+    theMondayAfterThat=theMondayAfterThat.strftime('%d.%m'),
+    deadline=deadline.strftime('%d.%m')
+)
 
 print(email)
 
