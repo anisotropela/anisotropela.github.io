@@ -81,9 +81,9 @@ This means that you should
     0.  Respond to this message NOW to avoid incessant reminders,
     1.  Pick a recent paper from the arXiv.org (you can find inspiration at benty-fields.com → DAWN Journal Club, if enough people have cast their votes),
     2.  Get back to me with the info at the latest Friday {deadline} (before I leave work), preferably in the following format:
-        • FirstAuthor
-        • Title
-        • arXiv abstract link
+         • FirstAuthor
+         • Title
+         • arXiv abstract link
 
 More info at cosmicdawn.dk/wikidawn/dawn-activities/journal-club.
 
