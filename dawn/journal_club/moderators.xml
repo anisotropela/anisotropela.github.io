@@ -1,6 +1,4 @@
 <root>
-    <jcentry Date="2024/09/30" Moderator="Clara"       Email="clara.pollock@nbi.ku.dk"/>
-    <jcentry Date="2024/09/30" Moderator="Victoria"    Email="victoria.strait@nbi.ku.dk"/>
     <jcentry Date="2024/10/07" Moderator="Danial"      Email="danial.langeroodi@nbi.ku.dk"/>
     <jcentry Date="2024/10/07" Moderator="Daniele"     Email="daniele.malesani@nbi.ku.dk"/>
     <jcentry Date="2024/10/14" Moderator="Francesco"   Email="Francesco.Valentino@eso.org"/>
@@ -38,4 +36,6 @@
     <jcentry Date="2024/09/16" Moderator="Tom"         Email="thomas.reynolds@nbi.ku.dk"/>
     <jcentry Date="2024/09/23" Moderator="Joris"       Email="joris.witstok@nbi.ku.dk"/>
     <jcentry Date="2024/09/23" Moderator="Cecilia"     Email="cecilia.bacchini92@gmail.com"/>
+    <jcentry Date="2024/09/30" Moderator="Clara"       Email="clara.pollock@nbi.ku.dk"/>
+    <jcentry Date="2024/09/30" Moderator="Victoria"    Email="victoria.strait@nbi.ku.dk"/>
 </root>
