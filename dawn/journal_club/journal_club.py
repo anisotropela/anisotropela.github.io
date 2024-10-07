@@ -18,9 +18,10 @@ def next_weekday(weekday, d=datetime.date.today()):
     return d + timedelta(days_ahead)
 #------------------------------------------------------------------------------
 
-def list_days(day0=datetime.date.today(),ndays=10):
+def list_days(day0=datetime.date.today(),ndays=10,n_per_day=1):
     """
-    List every 7th day, starting with `day0`
+    List every 7th day, starting with `day0`.
+    Each date is listed `n_per_day` times
 
     >>> list_days(datetime.date(2020,9,28))
     >>> next_monday = next_weekday(datetime.date.today(), 0)
@@ -34,10 +35,13 @@ def list_days(day0=datetime.date.today(),ndays=10):
     date  = day0
     dates = []
 
-    dates.append(date.strftime('%Y/%m/%d')) # '%d %b' => 25 Oct; '%Y/%m/%d' => 2023/10/25
+    for n in range(n_per_day):
+        dates.append(date.strftime('%Y/%m/%d')) # '%d %b' => 25 Oct; '%Y/%m/%d' => 2023/10/25
+
     for nday in range(ndays):
         date = date + dt
-        dates.append(date.strftime('%Y/%m/%d'))
+        for n in range(n_per_day):
+            dates.append(date.strftime('%Y/%m/%d'))
 
     return dates
 #------------------------------------------------------------------------------
