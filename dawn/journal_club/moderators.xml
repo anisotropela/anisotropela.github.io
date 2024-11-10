@@ -1,9 +1,7 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2024/11/04" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
-    <jcentry Date="2024/11/04" Moderator="Jasleen"     Email="jasleen.matharu@nbi.ku.dk"/>
-    <jcentry Date="2024/11/11" Moderator="Johan"       Email="jfynbo@nbi.ku.dk"/>
+    <jcentry Date="2024/11/11" Moderator="Francesco"   Email="fmava@dtu.dk"/>
     <jcentry Date="2024/11/11" Moderator="Koki"        Email="koki.kakiichi@nbi.ku.dk"/>
-    <jcentry Date="2024/11/18" Moderator="Francesco"   Email="Francesco.Valentino@eso.org"/>
+    <jcentry Date="2024/11/18" Moderator="Johan"       Email="jfynbo@nbi.ku.dk"/>
     <jcentry Date="2024/11/18" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
     <jcentry Date="2024/11/25" Moderator="Lise"        Email="lichrist@nbi.ku.dk"/>
     <jcentry Date="2024/11/25" Moderator="Albert"      Email="albert.sneppen@nbi.ku.dk"/>
@@ -38,4 +36,6 @@
     <jcentry Date="2024/03/31" Moderator="Gabriel"     Email="gabriel.brammer@nbi.ku.dk"/>
     <jcentry Date="2024/03/31" Moderator="Georgios"    Email="georgios.nikopoulos@nbi.ku.dk"/>
     <jcentry Date="2024/04/28" Moderator="Georgios"    Email="geoma@space.dtu.dk"/>
+    <jcentry Date="2024/04/28" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
+    <jcentry Date="2024/05/05" Moderator="Jasleen"     Email="jasleen.matharu@nbi.ku.dk"/>
 </root>
