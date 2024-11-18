@@ -1,14 +1,10 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2024/11/11" Moderator="Francesco"   Email="fmava@dtu.dk"/>
-    <jcentry Date="2024/11/11" Moderator="Koki"        Email="koki.kakiichi@nbi.ku.dk"/>
-    <jcentry Date="2024/11/18" Moderator="Johan"       Email="jfynbo@nbi.ku.dk"/>
-    <jcentry Date="2024/11/18" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
     <jcentry Date="2024/11/25" Moderator="Lise"        Email="lichrist@nbi.ku.dk"/>
     <jcentry Date="2024/11/25" Moderator="Albert"      Email="albert.sneppen@nbi.ku.dk"/>
-    <jcentry Date="2024/12/02" Moderator="Minju"       Email="minju@space.dtu.dk"/>
+    <jcentry Date="2024/12/02" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
     <jcentry Date="2024/12/02" Moderator="Natalie"     Email="natalie.allen@nbi.ku.dk"/>
     <jcentry Date="2024/12/09" Moderator="Nikolaj"     Email="nbsi@space.dtu.dk"/>
-    <jcentry Date="2024/12/09" Moderator="Kasper"      Email="keheintz@nbi.ku.dk"/>
+    <jcentry Date="2024/12/09" Moderator="Minju"       Email="minju@space.dtu.dk"/>
     <jcentry Date="2024/12/16" Moderator="Rashmi"      Email="rashmi.gottumukkala@nbi.ku.dk"/>
     <jcentry Date="2024/12/16" Moderator="Rasmus"      Email="rasmus.damgaard@nbi.ku.dk"/>
     <jcentry Date="2025/01/13" Moderator="Shuowen"     Email="shuji@space.dtu.dk"/>
@@ -38,4 +34,8 @@
     <jcentry Date="2024/04/28" Moderator="Georgios"    Email="geoma@space.dtu.dk"/>
     <jcentry Date="2024/04/28" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
     <jcentry Date="2024/05/05" Moderator="Jasleen"     Email="jasleen.matharu@nbi.ku.dk"/>
+    <jcentry Date="2024/05/12" Moderator="Francesco"   Email="fmava@dtu.dk"/>
+    <jcentry Date="2024/05/19" Moderator="Koki"        Email="koki.kakiichi@nbi.ku.dk"/>
+    <jcentry Date="2024/05/26" Moderator="Johan"       Email="jfynbo@nbi.ku.dk"/>
+    <jcentry Date="2024/06/03" Moderator="Kasper"      Email="keheintz@nbi.ku.dk"/>
 </root>
