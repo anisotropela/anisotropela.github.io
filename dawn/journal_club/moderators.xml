@@ -1,9 +1,7 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2024/12/09" Moderator="Nikolaj"     Email="nbsi@space.dtu.dk"/>
-    <jcentry Date="2024/12/09" Moderator="Minju"       Email="minju@space.dtu.dk"/>
     <jcentry Date="2024/12/16" Moderator="Rashmi"      Email="rashmi.gottumukkala@nbi.ku.dk"/>
     <jcentry Date="2024/12/16" Moderator="Rasmus"      Email="rasmus.damgaard@nbi.ku.dk"/>
-    <jcentry Date="2025/01/13" Moderator="Shuowen"     Email="shuji@space.dtu.dk"/>
+    <jcentry Date="2025/01/13" Moderator="Georgios"    Email="geoma@space.dtu.dk"/>
     <jcentry Date="2025/01/13" Moderator="Steven"      Email="srigi@space.dtu.dk"/>
     <jcentry Date="2025/01/20" Moderator="Sune"        Email="sune@nbi.ku.dk"/>
     <jcentry Date="2025/01/20" Moderator="Thomas"      Email="tgreve@space.dtu.dk"/>
@@ -27,7 +25,7 @@
     <jcentry Date="2025/03/24" Moderator="Daniele"     Email="daniele.malesani@nbi.ku.dk"/>
     <jcentry Date="2025/03/31" Moderator="Gabriel"     Email="gabriel.brammer@nbi.ku.dk"/>
     <jcentry Date="2025/03/31" Moderator="Georgios"    Email="georgios.nikopoulos@nbi.ku.dk"/>
-    <jcentry Date="2025/04/28" Moderator="Georgios"    Email="geoma@space.dtu.dk"/>
+    <jcentry Date="2025/04/28" Moderator="Shuowen"     Email="shuji@space.dtu.dk"/>
     <jcentry Date="2025/04/28" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
     <jcentry Date="2025/05/05" Moderator="Jasleen"     Email="jasleen.matharu@nbi.ku.dk"/>
     <jcentry Date="2025/05/12" Moderator="Francesco"   Email="fmava@dtu.dk"/>
@@ -38,4 +36,6 @@
     <jcentry Date="2025/06/17" Moderator="Albert"      Email="albert.sneppen@nbi.ku.dk"/>
     <jcentry Date="2025/06/24" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
     <jcentry Date="2025/07/01" Moderator="Aayush"      Email="aayush.arya@nbi.ku.dk"/>
+    <jcentry Date="2025/07/09" Moderator="Nikolaj"     Email="nbsi@space.dtu.dk"/>
+    <jcentry Date="2025/07/09" Moderator="Minju"       Email="minju@space.dtu.dk"/>
 </root>
