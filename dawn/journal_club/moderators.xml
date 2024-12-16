@@ -1,6 +1,4 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2024/12/16" Moderator="Rashmi"      Email="rashmi.gottumukkala@nbi.ku.dk"/>
-    <jcentry Date="2024/12/16" Moderator="Rasmus"      Email="rasmus.damgaard@nbi.ku.dk"/>
     <jcentry Date="2025/01/13" Moderator="Georgios"    Email="geoma@space.dtu.dk"/>
     <jcentry Date="2025/01/13" Moderator="Steven"      Email="srigi@space.dtu.dk"/>
     <jcentry Date="2025/01/20" Moderator="Sune"        Email="sune@nbi.ku.dk"/>
@@ -31,11 +29,14 @@
     <jcentry Date="2025/05/12" Moderator="Francesco"   Email="fmava@dtu.dk"/>
     <jcentry Date="2025/05/19" Moderator="Koki"        Email="koki.kakiichi@nbi.ku.dk"/>
     <jcentry Date="2025/05/26" Moderator="Johan"       Email="jfynbo@nbi.ku.dk"/>
-    <jcentry Date="2025/06/03" Moderator="Kasper"      Email="keheintz@nbi.ku.dk"/>
-    <jcentry Date="2025/06/10" Moderator="Lise"        Email="lichrist@nbi.ku.dk"/>
-    <jcentry Date="2025/06/17" Moderator="Albert"      Email="albert.sneppen@nbi.ku.dk"/>
-    <jcentry Date="2025/06/24" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
-    <jcentry Date="2025/07/01" Moderator="Aayush"      Email="aayush.arya@nbi.ku.dk"/>
-    <jcentry Date="2025/07/09" Moderator="Nikolaj"     Email="nbsi@space.dtu.dk"/>
-    <jcentry Date="2025/07/09" Moderator="Minju"       Email="minju@space.dtu.dk"/>
+    <jcentry Date="2025/06/02" Moderator="Kasper"      Email="keheintz@nbi.ku.dk"/>
+    <jcentry Date="2025/06/02" Moderator="Lise"        Email="lichrist@nbi.ku.dk"/>
+    <jcentry Date="2025/06/09" Moderator="Albert"      Email="albert.sneppen@nbi.ku.dk"/>
+    <jcentry Date="2025/06/09" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
+    <jcentry Date="2025/06/16" Moderator="Aayush"      Email="aayush.arya@nbi.ku.dk"/>
+    <jcentry Date="2025/06/16" Moderator="Nikolaj"     Email="nbsi@space.dtu.dk"/>
+    <jcentry Date="2025/06/23" Moderator="Minju"       Email="minju@space.dtu.dk"/>
+    <jcentry Date="2025/06/23" Moderator="Rashmi"      Email="rashmi.gottumukkala@nbi.ku.dk"/>
+    <jcentry Date="2025/06/30" Moderator="Rasmus"      Email="rasmus.damgaard@nbi.ku.dk"/>
+    <jcentry Date="2025/06/30" Moderator="Gaurav"      Email="gaurav.senthil@nbi.ku.dk"/>
 </root>
