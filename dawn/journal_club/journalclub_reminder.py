@@ -55,6 +55,10 @@ def main():
     args = parser.parse_args()
 
     n     = args.nth_reminder
+  # assert n >= 2, "The *notification* was the first reminder, so you should start with n = 2."
+    if n < 2: # Cleaner exit than assertion error
+        print("The *notification* was the first reminder, so you should start with n = 2.")
+        exit()
     email_address = args.email
     try:
         name    = re.match("(.*?)<",email_address).group(1)
