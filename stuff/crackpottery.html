@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="./crackpot.jpg" />
-        <title>Crack-Pottery Course</title>
-        <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f2ec;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="../pics/crackpot-ogim.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crack-Pottery Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f2ec;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
         header {
             background-color: #d4a373;
             padding: 20px;
@@ -53,39 +53,110 @@ body {
         .cta a:hover {
             background-color: #754c29;
         }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to the Crack-Pottery Course</h1>
-        </header>
-        <div class="content">
-            <p>Are you ready to master the art of creating cracked, yet beautiful, clay vessels? Join us for an unforgettable journey into the world of crack-pottery!</p>
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course J0138: Introduction to Crack-Pottery</h1>
+    </header>
+    <div class="content">
+        <p>Are you ready to master the art of creating cracked, yet beautiful, clay vessels? Join us for an unforgettable journey into the world of crack-pottery!</p>
 
-            <h2>What You'll Learn:</h2>
-            <ul>
-                <li>How to craft pots with personality—cracks included!</li>
-                <li>The philosophy of imperfection: Wabi-sabi in pottery.</li>
-                <li>Creative glazing techniques for emphasizing cracks.</li>
-            </ul>
+        <h2>What You'll Learn:</h2>
+        <ul>
+            <li>How to craft pots with your personal cracks included.</li>
+            <li>The philosophy of imperfection: Wabi-sabi in theory and practice.</li>
+            <li>Creative glazing techniques for hiding truth for yourself and others.</li>
+        </ul>
 
-            <div class="cta">
-                <p>Sign up today and embrace the cracks in your creativity!</p>
-                <a href="#">Enroll Now</a>
-            </div>
+        <div class="cta">
+            <p>Sign up today and embrace the cracks in your creativity!</p>
+            <a href="#" id="enrollBtn">Enroll Now</a>
+        </div>
+    </div>
 
-
-            <br>
+    <br>
             <br>
             <img src="../pics/crackpot.jpg" width=40%> &nbsp; &nbsp; &nbsp; &nbsp; <img src="../pics/crackpot-equations.jpg" width=40%>
             <br>
             <br>
             <br>
             <br>
+            <br>
+            <br>
+            <br>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>No seriously, please stop emailing me about how general relativity is a hoax conjured by the woke left to conceal the truth that dark matter is made of sentient quantum loops moving backward in time 🙏</p>
         </div>
-        <footer>
-            <p>&copy; 2025 Crack-Pottery Academy. All rights reserved.</p>
-        </footer>
-    </body>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Crack-Pottery Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("enrollBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
+
