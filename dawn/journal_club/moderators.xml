@@ -1,6 +1,4 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2025/02/03" Moderator="Marko"       Email="marko.shuntov@nbi.ku.dk"/>
-    <jcentry Date="2025/02/03" Moderator="Ting-Yi"     Email="tingyi-lu@nbi.ku.dk"/>
     <jcentry Date="2025/02/10" Moderator="Pengpei"     Email="penzhu@space.dtu.dk"/>
     <jcentry Date="2025/02/10" Moderator="William"     Email="william.baker@nbi.ku.dk"/>
     <jcentry Date="2025/02/17" Moderator="Conor"       Email="conor.mcpartland@nbi.ku.dk"/>
@@ -38,4 +36,5 @@
     <jcentry Date="2025/08/18" Moderator="Zihao"       Email="zihao.li@nbi.ku.dk"/>
     <jcentry Date="2025/08/25" Moderator="Steven"      Email="srigi@space.dtu.dk"/>
     <jcentry Date="2025/09/01" Moderator="Thomas"      Email="tgreve@space.dtu.dk"/>
+    <jcentry Date="2025/09/08" Moderator="Marko"       Email="marko.shuntov@nbi.ku.dk"/>
 </root>
