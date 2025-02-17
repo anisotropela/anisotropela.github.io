@@ -1,8 +1,4 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2025/02/10" Moderator="Pengpei"     Email="penzhu@space.dtu.dk"/>
-    <jcentry Date="2025/02/10" Moderator="William"     Email="william.baker@nbi.ku.dk"/>
-    <jcentry Date="2025/02/17" Moderator="Conor"       Email="conor.mcpartland@nbi.ku.dk"/>
-    <jcentry Date="2025/02/17" Moderator="Bitten"      Email="bgullberg@space.dtu.dk"/>
     <jcentry Date="2025/02/24" Moderator="Anne"        Email="anne.hutter@nbi.ku.dk"/>
     <jcentry Date="2025/02/24" Moderator="Tom"         Email="thomas.reynolds@nbi.ku.dk"/>
     <jcentry Date="2025/03/03" Moderator="Joris"       Email="joris.witstok@nbi.ku.dk"/>
@@ -10,8 +6,8 @@
     <jcentry Date="2025/03/10" Moderator="Clara"       Email="clara.pollock@nbi.ku.dk"/>
     <jcentry Date="2025/03/10" Moderator="Victoria"    Email="victoria.strait@nbi.ku.dk"/>
     <jcentry Date="2025/03/17" Moderator="Danial"      Email="danial.langeroodi@nbi.ku.dk"/>
-    <jcentry Date="2025/03/17" Moderator="Peter"       Email="pela@nbi.ku.dk"/>
-    <jcentry Date="2025/03/24" Moderator="Daniele"     Email="daniele.malesani@nbi.ku.dk"/>
+    <jcentry Date="2025/03/17" Moderator="Daniele"     Email="daniele.malesani@nbi.ku.dk"/>        
+    <jcentry Date="2025/03/24" Moderator="Kei"         Email="keiit@dtu.dk"/>
     <jcentry Date="2025/03/24" Moderator="Gabriel"     Email="gabriel.brammer@nbi.ku.dk"/>
     <jcentry Date="2025/03/31" Moderator="Georgios"    Email="georgios.nikopoulos@nbi.ku.dk"/>
     <jcentry Date="2025/03/31" Moderator="Shuowen"     Email="shuji@space.dtu.dk"/>
@@ -34,7 +30,12 @@
     <jcentry Date="2025/08/11" Moderator="Chandana"    Email="chaheg@dtu.dk"/>
     <jcentry Date="2025/08/11" Moderator="Georgios"    Email="geoma@space.dtu.dk"/>
     <jcentry Date="2025/08/18" Moderator="Zihao"       Email="zihao.li@nbi.ku.dk"/>
-    <jcentry Date="2025/08/25" Moderator="Steven"      Email="srigi@space.dtu.dk"/>
-    <jcentry Date="2025/09/01" Moderator="Thomas"      Email="tgreve@space.dtu.dk"/>
-    <jcentry Date="2025/09/08" Moderator="Marko"       Email="marko.shuntov@nbi.ku.dk"/>
+    <jcentry Date="2025/08/18" Moderator="Steven"      Email="srigi@space.dtu.dk"/>
+    <jcentry Date="2025/09/25" Moderator="Thomas"      Email="tgreve@space.dtu.dk"/>
+    <jcentry Date="2025/09/25" Moderator="Marko"       Email="marko.shuntov@nbi.ku.dk"/>
+    <jcentry Date="2025/09/01" Moderator="Peter"       Email="pela@nbi.ku.dk"/>
+    <jcentry Date="2025/09/08" Moderator="Pengpei"     Email="penzhu@space.dtu.dk"/>
+    <jcentry Date="2025/09/08" Moderator="William"     Email="william.baker@nbi.ku.dk"/>
+    <jcentry Date="2025/09/15" Moderator="Conor"       Email="conor.mcpartland@nbi.ku.dk"/>
+    <jcentry Date="2025/09/15" Moderator="Bitten"      Email="bgullberg@space.dtu.dk"/>
 </root>
