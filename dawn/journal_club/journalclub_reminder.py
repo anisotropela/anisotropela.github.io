@@ -86,7 +86,7 @@ Dear {name},
 This is the {nth} friendly reminder that you are up next for presenting a paper at the DAWN Journal Club on Monday {next_monday}.
 
 This means that you should
-    0.  Respond to this message NOW to avoid incessant reminders,
+    0.  Respond to this message NOW to let me know you've got it and thereby avoid incessant reminders,
     1.  Pick a recent paper from the arXiv.org (you can find inspiration at benty-fields.com → DAWN Journal Club, if enough people have cast their votes),
     2.  Get back to me with the info at the latest Friday {deadline} (before I leave work), preferably in the following format:
          • FirstAuthor
