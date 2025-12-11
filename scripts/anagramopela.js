@@ -60,7 +60,7 @@ var anagramList = [
     "Tailor's <u><a href='https://en.wikipedia.org/wiki/Paeon_(prosody)'>paeon</a></u>",
     "Tao-pain? Loser...",
     "Teaspoon rail",
-    "<u><a href='https://en.wikipedia.org/wiki/Transient_ischemic_attack'>TIA</a></u>'s on parole",
+    "<u><a href='https://en.wikipedia.org/wiki/Sati_(Hindu_goddess)'>Sati</a></u> on parole",
     "To <u><a href='https://en.wikipedia.org/wiki/Palaeornis_cliftii'>Palaeornis</a></u>!",
     "Toenail's porn",
     "<u><a href='https://en.wiktionary.org/wiki/tonsorial'>Tonsorial</a></u> ape"
