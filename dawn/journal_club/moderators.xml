@@ -1,38 +1,38 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2026/02/03" Moderator="Miranda"     Email="mkhua@dtu.dk"/>
-    <jcentry Date="2026/02/03" Moderator="Marko"       Email="marko.shuntov@nbi.ku.dk"/>
-    <jcentry Date="2026/02/10" Moderator="Bitten"      Email="bgullberg@space.dtu.dk"/>
-    <jcentry Date="2026/02/10" Moderator="Joris"       Email="joris.witstok@nbi.ku.dk"/>
+    <jcentry Date="2026/02/17" Moderator="Bitten"      Email="bgullberg@space.dtu.dk"/>
     <jcentry Date="2026/02/17" Moderator="Pengpei"     Email="penzhu@space.dtu.dk"/>
-    <jcentry Date="2026/02/17" Moderator="Ivan"        Email="ivan.nikolic@nbi.ku.dk"/>
+    <jcentry Date="2026/02/24" Moderator="Ivan"        Email="ivan.nikolic@nbi.ku.dk"/>
     <jcentry Date="2026/02/24" Moderator="Yi"          Email="yi.xu@nbi.ku.dk"/>
-    <jcentry Date="2026/02/24" Moderator="Alex"        Email="alex.cameron@nbi.ku.dk"/>
+    <jcentry Date="2026/03/03" Moderator="Alex"        Email="alex.cameron@nbi.ku.dk"/>
     <jcentry Date="2026/03/03" Moderator="Viola"       Email="viola.gelli@nbi.ku.dk"/>
-    <jcentry Date="2026/03/03" Moderator="Daniele"     Email="daniele.malesani@nbi.ku.dk"/>
+    <jcentry Date="2026/03/10" Moderator="Daniele"     Email="daniele.malesani@nbi.ku.dk"/>
     <jcentry Date="2026/03/10" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
-    <jcentry Date="2026/03/10" Moderator="Clara"       Email="clara.pollock@nbi.ku.dk"/>
+    <jcentry Date="2026/03/17" Moderator="Clara"       Email="clara.pollock@nbi.ku.dk"/>
     <jcentry Date="2026/03/17" Moderator="Kei"         Email="keiit@dtu.dk"/>
-    <jcentry Date="2026/03/17" Moderator="Francesco"   Email="fmava@dtu.dk"/>
+    <jcentry Date="2026/03/24" Moderator="Francesco"   Email="fmava@dtu.dk"/>
     <jcentry Date="2026/03/24" Moderator="Antonio"     Email="anpen@dtu.dk"/>
-    <jcentry Date="2026/03/24" Moderator="Gabriel"     Email="gabriel.brammer@nbi.ku.dk"/>
+    <jcentry Date="2026/03/31" Moderator="Gabriel"     Email="gabriel.brammer@nbi.ku.dk"/>
     <jcentry Date="2026/03/31" Moderator="Georgios"    Email="georgios.nikopoulos@nbi.ku.dk"/>
-    <jcentry Date="2026/03/31" Moderator="Shuowen"     Email="shuji@space.dtu.dk"/>
+    <jcentry Date="2026/04/21" Moderator="Shuowen"     Email="shuji@space.dtu.dk"/>
     <jcentry Date="2026/04/21" Moderator="Rasmus"      Email="rasmus.damgaard@nbi.ku.dk"/>
-    <jcentry Date="2026/04/21" Moderator="Albert"      Email="albert.sneppen@nbi.ku.dk"/>
+    <jcentry Date="2026/04/28" Moderator="Albert"      Email="albert.sneppen@nbi.ku.dk"/>
     <jcentry Date="2026/04/28" Moderator="Zihao"       Email="zihao.li@nbi.ku.dk"/>
-    <jcentry Date="2026/04/28" Moderator="Nikolaj"     Email="nbsi@space.dtu.dk"/>
+    <jcentry Date="2026/05/05" Moderator="Nikolaj"     Email="nbsi@space.dtu.dk"/>
     <jcentry Date="2026/05/05" Moderator="Peter"       Email="pela@nbi.ku.dk"/>
-    <jcentry Date="2026/05/05" Moderator="Ugne"        Email="ugned@dtu.dk"/>
+    <jcentry Date="2026/05/12" Moderator="Ugne"        Email="ugned@dtu.dk"/>
     <jcentry Date="2026/05/12" Moderator="Zuyi"        Email="zuyi.chen@nbi.ku.dk"/>
-    <jcentry Date="2026/05/12" Moderator="Aayush"      Email="aayush.arya@nbi.ku.dk"/>
+    <jcentry Date="2026/05/19" Moderator="Aayush"      Email="aayush.arya@nbi.ku.dk"/>
     <jcentry Date="2026/05/19" Moderator="Chandana"    Email="chaheg@dtu.dk"/>
-    <jcentry Date="2026/05/19" Moderator="Minju"       Email="minju@space.dtu.dk"/>
+    <jcentry Date="2026/05/26" Moderator="Minju"       Email="minju@space.dtu.dk"/>
     <jcentry Date="2026/05/26" Moderator="Steven"      Email="srigi@space.dtu.dk"/>
-    <jcentry Date="2026/05/26" Moderator="Koki"        Email="koki.kakiichi@nbi.ku.dk"/>
+    <jcentry Date="2026/06/02" Moderator="Koki"        Email="koki.kakiichi@nbi.ku.dk"/>
     <jcentry Date="2026/06/02" Moderator="Kasper"      Email="keheintz@nbi.ku.dk"/>
-    <jcentry Date="2026/06/02" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
+    <jcentry Date="2026/06/09" Moderator="Kimi"        Email="kimi.cardoso.kreilgaard@nbi.ku.dk"/>
     <jcentry Date="2026/06/09" Moderator="Thomas"      Email="tgreve@space.dtu.dk"/>
-    <jcentry Date="2026/06/09" Moderator="William"     Email="william.baker@nbi.ku.dk"/>
+    <jcentry Date="2026/06/16" Moderator="William"     Email="william.baker@nbi.ku.dk"/>
     <jcentry Date="2026/06/16" Moderator="Pablo"       Email="paaar@dtu.dk"/>
-    <jcentry Date="2026/06/16" Moderator="Conor"       Email="conor.mcpartland@nbi.ku.dk"/>
-</root>
+    <jcentry Date="2026/06/23" Moderator="Conor"       Email="conor.mcpartland@nbi.ku.dk"/>
+    <jcentry Date="2026/06/23" Moderator="Marko"       Email="marko.shuntov@nbi.ku.dk"/>
+    <jcentry Date="2026/06/30" Moderator="Miranda"     Email="mkhua@dtu.dk"/>
+    <jcentry Date="2026/06/30" Moderator="Joris"       Email="joris.witstok@nbi.ku.dk"/>
+</root>                        
