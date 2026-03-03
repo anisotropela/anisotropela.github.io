@@ -1,14 +1,10 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
-    <jcentry Date="2026/02/24" Moderator="Ivan"        Email="ivan.nikolic@nbi.ku.dk"/>
-    <jcentry Date="2026/02/24" Moderator="Yi"          Email="yi.xu@nbi.ku.dk"/>
-    <jcentry Date="2026/03/03" Moderator="Alex"        Email="alex.cameron@nbi.ku.dk"/>
-    <jcentry Date="2026/03/03" Moderator="Viola"       Email="viola.gelli@nbi.ku.dk"/>
     <jcentry Date="2026/03/10" Moderator="Daniele"     Email="daniele.malesani@nbi.ku.dk"/>
-    <jcentry Date="2026/03/10" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
+    <jcentry Date="2026/03/10" Moderator="Viola"       Email="viola.gelli@nbi.ku.dk"/>
     <jcentry Date="2026/03/17" Moderator="Clara"       Email="clara.pollock@nbi.ku.dk"/>
-    <jcentry Date="2026/03/17" Moderator="Kei"         Email="keiit@dtu.dk"/>
+    <jcentry Date="2026/03/17" Moderator="Antonio"     Email="anpen@dtu.dk"/>
     <jcentry Date="2026/03/24" Moderator="Francesco"   Email="fmava@dtu.dk"/>
-    <jcentry Date="2026/03/24" Moderator="Antonio"     Email="anpen@dtu.dk"/>
+    <jcentry Date="2026/03/24" Moderator="Kei"         Email="keiit@dtu.dk"/>
     <jcentry Date="2026/03/31" Moderator="Gabriel"     Email="gabriel.brammer@nbi.ku.dk"/>
     <jcentry Date="2026/03/31" Moderator="Georgios"    Email="georgios.nikopoulos@nbi.ku.dk"/>
     <jcentry Date="2026/04/21" Moderator="Shuowen"     Email="shuji@space.dtu.dk"/>
@@ -35,4 +31,8 @@
     <jcentry Date="2026/06/30" Moderator="Joris"       Email="joris.witstok@nbi.ku.dk"/>
     <jcentry Date="2026/08/18" Moderator="Bitten"      Email="bgullberg@space.dtu.dk"/>
     <jcentry Date="2026/08/18" Moderator="Pengpei"     Email="penzhu@space.dtu.dk"/>
+    <jcentry Date="2026/08/25" Moderator="Ivan"        Email="ivan.nikolic@nbi.ku.dk"/>
+    <jcentry Date="2026/08/25" Moderator="Yi"          Email="yi.xu@nbi.ku.dk"/>
+    <jcentry Date="2026/09/01" Moderator="Alex"        Email="alex.cameron@nbi.ku.dk"/>
+    <jcentry Date="2026/09/01" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
 </root>                        
