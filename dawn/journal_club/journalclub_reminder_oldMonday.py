@@ -69,27 +69,29 @@ def main():
     nth   = n_to_ordinal(n)
     today = dt.date.today()
 
-    next_jc_day     = next_weekday('tue')                                   # Day of Journal Club
-    next_jc_day     = dt.datetime.strptime(str(next_jc_day), '%Y-%m-%d')    #    -"- ; formatted
-    days_before_jc  = 1                                                     # no. of days from deadline to Journal Club
-    deadline        = next_jc_day + dt.timedelta(days=-days_before_jc)      # Monday before the next JC
+    next_monday = next_weekday('mon')
+    next_monday = dt.datetime.strptime(str(next_monday), '%Y-%m-%d')
+    deadline    = next_monday + dt.timedelta(days=-3)                # Friday before the next JC
 
     email_text = """osascript -e "tell application \\"Mail\\"
 
             set theFrom to \\"\\"
                     set theTo to {{\\"{address}\\"}}
 
-                    set theSubject to \\"{nth} Journal Club presentation reminder for {next_jc_day}\\"
+                    set theSubject to \\"{nth} Journal Club presentation reminder for {next_monday}\\"
                     set theDelay to 1
                     set theContent to \\"
 Dear {name},
 
-This is the {nth} friendly reminder that you are up next for presenting a paper at the DAWN Journal Club on Tuesday {next_jc_day}.
+This is the {nth} friendly reminder that you are up next for presenting a paper at the DAWN Journal Club on Monday {next_monday}.
 
 This means that you should
     0.  Respond to this message NOW to let me know you've got it and thereby avoid incessant reminders,
     1.  Pick a recent paper from the arXiv.org (you can find inspiration at benty-fields.com → DAWN Journal Club, if enough people have cast their votes),
-    2.  Send the arXiv abstract ID to me at the latest Monday {deadline} (preferably before noon).
+    2.  Get back to me with the info at the latest Friday {deadline} (before I leave work), preferably in the following format:
+         • FirstAuthor
+         • Title
+         • arXiv abstract link
 
 More info at cosmicdawn.dk/wikidawn/dawn-activities/journal-club.
 
@@ -113,7 +115,7 @@ Peter\\"
         address=address,
         name=name,
         nth=nth,
-        next_jc_day=next_jc_day.strftime('%d.%m'),
+        next_monday=next_monday.strftime('%d.%m'),
         deadline=deadline.strftime('%d.%m')
     )
 

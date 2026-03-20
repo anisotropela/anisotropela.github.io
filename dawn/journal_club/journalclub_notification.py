@@ -53,7 +53,7 @@ nextTuesday = dt.datetime.strptime(date1, '%Y/%m/%d')         # next JC
 theTuesdayAfterThat = dt.datetime.strptime(date3, '%Y/%m/%d') # next-next JC
 deadline = nextTuesday + dt.timedelta(days=-1)                # Monday before the next JC
 
-test = True # Set to True to override names and emails (for testing purposes)
+test = False # Set to True to override names and emails (for testing purposes)
 if test:
     name1="Peter"
     name2="Pede"
@@ -80,7 +80,7 @@ Here's a friendly reminder that you guys are up next for presenting a paper at t
 This means that you should
     0.  Respond to this message NOW to avoid incessant reminders,
     1.  Pick a recent paper from arxiv.org (you can perhaps find inspiration at benty-fields.com → DAWN Journal Club).
-    2.  Send the arXiv abstract ID to me at the latest Monday {deadline} (before I leave work).
+    2.  Send the arXiv abstract ID to me at the latest Monday {deadline} (preferably before noon).
 
 More info at cosmicdawn.dk/wikidawn/dawn-activities/journal-club.
 

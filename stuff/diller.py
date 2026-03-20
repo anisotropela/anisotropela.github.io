@@ -3,6 +3,34 @@ from numpy import nan
 import matplotlib.pyplot as plt
 from brokenaxes import brokenaxes
 
+def draw_break(ax, side='right', size=0.02, lw=0.8):
+    fig = ax.figure
+
+    # Get actual axis size in pixels
+    bbox = ax.get_window_extent()
+    w, h = bbox.width, bbox.height
+
+    # Compensate slope
+    scale = w / h
+    norm = max(1, scale)   # prevent collapse in narrow panels
+
+    dx = size / norm
+    dy = size * scale / norm
+
+    bbox = ax.get_window_extent()
+    w, h = bbox.width, bbox.height
+
+    L = 6  # length in pixels (tweak 5–8 if desired)
+
+    dx = L / w
+    dy = L / h
+
+    x = 1 if side == 'right' else 0
+
+    kwargs = dict(transform=ax.transAxes, color='k', lw=lw, clip_on=False)
+
+    ax.plot([x - dx, x + dx], [-dy, +dy], **kwargs)
+
 def dillit(language      = 'dk',
            html          = False,
            year_hist     = True,
@@ -29,8 +57,11 @@ def dillit(language      = 'dk',
     plt.close('all')
     #                0          1                                            2     3       4                                       5                                                     6     7    8     9    10    11    12
     #                                                                                                                                                                                             Mi    Mo    Je    Kl    Pe
-    books = [['2026.01.23', 'Jevgenij Samjatin'                          , 'RUS', 'M', 'Vi'                                   , 'We'                                                 , 1921, 251, nan , nan , nan , nan , nan, 'Klaus'          ,''],
-             ['2025.09.05', 'Ngũgĩ wa Thiong\'o'                         , 'KEN', 'M', 'Blodige Kronblade'                    , 'Petals of Blood'                                    , 1977, 485, nan , nan , nan , nan , nan, 'Peter'          ,''],
+    books = [['2026.05.01', 'Hans-Jørgen Nielsen'                        , 'DEN', 'M', 'Fodboldenglen'                        , 'Fodboldenglen'                                      , 1979, 241, nan , nan , nan , nan , nan ,''               ,''],
+             ['2026.03.13', 'Thomas Rydahl'                              , 'DEN', 'M', 'Forførernes Klub'                     , 'Forførernes Klub'                                   , 2021, 352, 3.0 , 3.0 , 3.0 , 2.5 , 3.0, 'Mikkel'         ,'Understellet'],
+             ['2026.01.23', 'Jevgenij Samjatin'                          , 'RUS', 'M', 'Vi'                                   , 'We'                                                 , 1921, 251, 3.0 , 4.5 , nan , 4.0 , 4.5, 'Klaus'          ,'Fri bar på restaurant HAPS; derefter Din Nye Ven'],
+             ['2025.11.08', 'Jørgen Leth'                                , 'DEN', 'M', 'Sportsdigte'                          , 'Sportsdigte'                                        , 1967,  88, 4.0 , nan , 3.0 , 3.0 , 4.0, 'Morten'          ,'Øl og ungarsk digtoplæsning på Kompasset'],
+             ['2025.09.05', 'Ngũgĩ wa Thiong\'o'                         , 'KEN', 'M', 'Blodige Kronblade'                    , 'Petals of Blood'                                    , 1977, 485, 3.0 , nan , 2.0 , 3.5 , 3.5, 'Peter'          ,''],
              ['2025.07.11', 'Jorge Luis Borges'                          , 'ARG', 'M', 'Aleffen'                              , 'The Aleph'                                          , 1949, 195, 2.0 , 3.5 , nan , 4.0 , 4.5, 'Peter'          ,'Middag på NU&DA; øl på Stærkodder'],
              ['2025.05.09', 'Stine Askov'                                , 'DEN', 'F', 'Nøjsomheden'                          , 'The Austerity'                                      , 2022, 366, 3.5 , 3.5 , 5.0 , 3.0 , 3.5, 'Mikkel'         ,'Øl på bænk; langsom men dyr falafel; Østerbros Perle'],
              ['2025.03.28', 'Florian Illies'                             , 'GER', 'M', 'Kærlighed i hadets tid'               , 'Love in a Time of Hate'                             , 2023, 400, 3.0 , 4.5 , 5.0 , 4.0 , 4.5, 'Jeff'           ,'Pizza hos Morten'],
@@ -158,29 +189,56 @@ def dillit(language      = 'dk',
             with open(dillertable, 'a') as myfile: myfile.write(current_row)
 
     if year_hist:
-        fig = plt.figure()
-        wm = plt.get_current_fig_manager()
-        wm.window.wm_geometry('600x475+570+500')
-        bax = brokenaxes(xlims=((-2120,-2085),(-460,-435),(1740,2030)),
-                         ylims=None,
-                         wspace=.05)
-        bax.set_ylim([0,11])
-        decades = np.arange(-2200,2050,10)
-        bax.hist(year,bins=decades,color='g',alpha=.25,histtype='stepfilled')
-        bax.hist(year,bins=decades,   ec='g',          histtype='step')
-        if language=='dk':
-            plt.xlabel('\nÅrstal',size=14)
-            plt.ylabel('Antal bøger\n\n',size=14)
+        fig = plt.figure(figsize=(6, 4.75))
+
+        xlims = [(-2120, -2085), (-460, -435), (1740, 2030)]
+        widths = [x[1] - x[0] for x in xlims]
+
+        gs = fig.add_gridspec(1, 3, width_ratios=widths, wspace=0.12)
+        axes = [fig.add_subplot(gs[0, i]) for i in range(3)]
+
+        decades = np.arange(-2200, 2050, 10)
+
+        for ax, (xmin, xmax) in zip(axes, xlims):
+            ax.hist(year, bins=decades, color='g', alpha=.25, histtype='stepfilled')
+            ax.hist(year, bins=decades, ec='g', histtype='step')
+            ax.set_xlim(xmin, xmax)
+            ax.set_ylim(0, 11)
+
+        # Spine cleanup
+        axes[0].spines['right'].set_visible(False)
+        axes[1].spines['left'].set_visible(False)
+        axes[1].spines['right'].set_visible(False)
+        axes[2].spines['left'].set_visible(False)
+
+        axes[1].yaxis.set_visible(False)
+        axes[2].yaxis.set_visible(False)
+
+        # Ticks
+        axes[0].set_xticks([-2100])
+        axes[1].set_xticks([-450])
+        axes[2].set_xticks(np.arange(1750, 2051, 50))
+
+        axes[0].tick_params(axis='x', labelsize=9)
+        axes[1].tick_params(axis='x', labelsize=9)
+        axes[2].tick_params(axis='x', labelsize=10)
+
+        # Labels
+        if language == 'dk':
+            axes[0].set_ylabel('Antal bøger\n\n', size=14)
+            fig.supxlabel('\nÅrstal', size=14)
         else:
-            plt.xlabel('\nYear',size=14)
-            plt.ylabel('Number of books\n\n',size=14)
-      # fig.tight_layout()
-      # fig.subplots_adjust(bottom=0.15)
-        xlim = bax.get_xlim()[0][0], bax.get_xlim()[-1][-1]
-        ylim = bax.get_ylim()[0][0], bax.get_ylim()[-1][-1]
-        bax.plot([xlim[1],xlim[1]], [ylim[0],ylim[1]],'k')
-        bax.plot([xlim[0],xlim[1]], [ylim[1],ylim[1]],'k')
-        if savefig: plt.savefig('year_hist_'+language+ext, dpi=300, bbox_inches='tight')
+            axes[0].set_ylabel('Number of books\n\n', size=14)
+            fig.supxlabel('\nYear', size=14)
+
+        # Draw break markers (simple + stable)
+        draw_break(axes[0], 'right')
+        draw_break(axes[1], 'left')
+        draw_break(axes[1], 'right')
+        draw_break(axes[2], 'left')
+
+        if savefig:
+            plt.savefig('year_hist_' + language + ext, dpi=300, bbox_inches='tight')
 
     if country_pie:
         unique_countries = np.unique(country,return_counts=True)
@@ -318,8 +376,8 @@ def dillit(language      = 'dk',
         ax.hist(bins[:-1],bins,ec='k',            weights=counts/5, histtype='step',lw=.5,ls='-')
 
         leg = ax.legend(loc='upper left')
-        for lh in leg.legendHandles:
-            lh.set_alpha(.5)
+      # for lh in leg.legendHandles:
+      #     lh.set_alpha(.5)
 
         if language=='dk':
             ax.set_xlabel('Antal stjerner', fontsize=14)
@@ -418,10 +476,10 @@ def dillit(language      = 'dk',
                 elinewidth=1,capthick=1,ecolor='r',capsize=3)
         ax.scatter(x,y,c='r')
         if language=='dk':
-            ax.set_xlabel('Møde #', fontsize=14)
-            ax.set_ylabel('Antal stjerner (error bars viser 1'+r'$\sigma$'+')', fontsize=14)
+            ax.set_xlabel('Bog #', fontsize=14)
+            ax.set_ylabel('Antal stjerner (errorbars viser 1'+r'$\sigma$'+')', fontsize=14)
         else:
-            ax.set_xlabel('Meeting #', fontsize=14)
+            ax.set_xlabel('Book #', fontsize=14)
             ax.set_ylabel('Rating (error bars denote 1'+r'$\sigma$'+')', fontsize=14)
         if savefig: plt.savefig('agree_vs_time_'+language+ext, dpi=300, bbox_inches='tight')
 
@@ -462,9 +520,9 @@ def dillit(language      = 'dk',
         ax.set_ylabel('[Antal sider]  ' + r'$\times$' + '  [Klaus\' rating]', fontsize=14)
         if savefig: plt.savefig('corr_plot_'+language+ext, dpi=300, bbox_inches='tight')
 
-        if stats:
-            mu,std    = np.nanmean(pages), np.nanstd(pages)
-            med,lo,hi = np.nanpercentile(pages,[50,15.9,84.1])
-            print('Sider, ave+1sig: ', mu,std)
-            print('Sider, med+perc: ', med,lo,hi)
-            print('        =>       ', med,'-',med-lo,'+',hi-med)
+    if stats:
+        mu,std    = np.nanmean(pages), np.nanstd(pages)
+        med,lo,hi = np.nanpercentile(pages,[50,15.9,84.1])
+        print('Sider, ave+1sig: ', mu,std)
+        print('Sider, med+perc: ', med,lo,hi)
+        print('        =>       ', med,'-',med-lo,'+',hi-med)
