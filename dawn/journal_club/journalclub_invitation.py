@@ -63,6 +63,8 @@ def get_time_phrase():
 def fetch_arxiv(arxiv_id):
     url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}"
     r = requests.get(url)
+    print('Wait a sec...')
+    time.sleep(1)  # be nice to arXiv
 
     if r.status_code != 200:
         raise RuntimeError(f"Error contacting arXiv API (status {r.status_code}).")
@@ -174,11 +176,11 @@ def main():
         print(e)
         sys.exit(1)
     except Exception as e:
-        print(f"Unexpected error: {e}")
+        print(f"Oh no: {e}")
         sys.exit(1)
 
     subject = "DAWN Journal Club"
-    content = build_email(presenters, arxiv_ids)
+  # content = build_email(presenters, arxiv_ids)
     print()
     print("Sending the following:")
     print()
