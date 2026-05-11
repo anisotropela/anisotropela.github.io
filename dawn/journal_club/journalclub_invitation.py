@@ -62,7 +62,11 @@ def get_time_phrase():
 
 def fetch_arxiv(arxiv_id):
     url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}"
-    r = requests.get(url)
+  # r = requests.get(url)
+    headers = {
+        "User-Agent": "DAWNJournalClubBot/1.0 (contact: pela@nbi.ku.dk)"
+    }
+    r = requests.get(url, headers=headers)
     print('Wait a sec...')
     time.sleep(1)  # be nice to arXiv
 
