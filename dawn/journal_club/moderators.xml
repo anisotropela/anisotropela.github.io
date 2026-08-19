@@ -1,10 +1,10 @@
 <root> <!-- Keyword `Moderator` must not contain spaces, until I fix the Python script -->
+    <jcentry Date="2026/08/18" Moderator="Ivan"        Email="ivan.nikolic@nbi.ku.dk"/>
     <jcentry Date="2026/08/18" Moderator="Marko"       Email="marko.shuntov@nbi.ku.dk"/>
-    <jcentry Date="2026/08/18" Moderator="Miranda"     Email="mkhua@dtu.dk"/>
     <jcentry Date="2026/08/25" Moderator="Joris"       Email="joris.witstok@nbi.ku.dk"/>
-    <jcentry Date="2026/08/25" Moderator="Bitten"      Email="bgullberg@space.dtu.dk"/>
+    <jcentry Date="2026/08/25" Moderator="Miranda"     Email="mkhua@dtu.dk"/>
+    <jcentry Date="2026/09/01" Moderator="Bitten"      Email="bgullberg@space.dtu.dk"/>
     <jcentry Date="2026/09/01" Moderator="Pengpei"     Email="penzhu@space.dtu.dk"/>
-    <jcentry Date="2026/09/01" Moderator="Ivan"        Email="ivan.nikolic@nbi.ku.dk"/>
     <jcentry Date="2026/09/08" Moderator="Yi"          Email="yi.xu@nbi.ku.dk"/>
     <jcentry Date="2026/09/08" Moderator="Alex"        Email="alex.cameron@nbi.ku.dk"/>
     <jcentry Date="2026/09/15" Moderator="Iris"        Email="irisj@space.dtu.dk"/>
