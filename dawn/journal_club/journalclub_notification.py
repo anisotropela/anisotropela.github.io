@@ -75,7 +75,7 @@ email = """osascript -e "tell application \\"Mail\\"
                 set theContent to \\"
 Dear {name1} and {name2} (cc. {name3} and {name4}; see PS in the bottom),
 
-Here's a friendly reminder that you guys are up next for presenting a paper at the DAWN Journal Club, i.e. on Tuesday {nextTuesday} at 13:00.
+Here's a friendly reminder that you guys are up next for presenting a paper at the DAWN Journal Club, i.e. on Tuesday {nextTuesday} at 14:00.
 
 This means that you should
     0.  Respond to this message NOW to avoid incessant reminders,
