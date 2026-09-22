@@ -26,22 +26,22 @@ def get_time_phrase():
     now = dt.datetime.now()
     today = now.date()
 
-    # Next Tuesday 13:00 (this week's if today <= Tuesday, otherwise next week)
+    # Next Tuesday 14:00 (this week's if today <= Tuesday, otherwise next week)
     weekday_target = 1  # Tuesday (Monday=0)
     days_ahead = weekday_target - today.weekday()
     if days_ahead < 0:
         days_ahead += 7
 
     jc_date = today + dt.timedelta(days=days_ahead)
-    jc_datetime = dt.datetime.combine(jc_date, dt.time(13, 0))
+    jc_datetime = dt.datetime.combine(jc_date, dt.time(14, 0))
 
     delta = jc_datetime - now
 
     if today.weekday() < 0 or today.weekday() > 1:
-        return "tomorrow at 13:00"
+        return "tomorrow at 14:00"
 
     if today.weekday() == 0:  # Monday
-        return "Tuesday at 13:00"
+        return "Tuesday at 14:00"
 
     if today.weekday() == 1:  # Tuesday
         total_minutes = int(delta.total_seconds() // 60)
@@ -53,7 +53,7 @@ def get_time_phrase():
         else:
             return f"in {total_minutes} minutes"
 
-    return "tomorrow at 13:00"
+    return "tomorrow at 14:00"
 
 
 # ------------------------------------------------------------
